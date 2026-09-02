@@ -1,0 +1,112 @@
+{
+  "_meta": {
+    "paciente": "Juan Marin",
+    "nacimiento": "1994-07-11",
+    "edad_al_examen": 32,
+    "laboratorio": "Clinpath (NATA 3307)",
+    "medico": "Dr Brenton Martin",
+    "muestra": "Sangre en ayunas",
+    "fechas": {"previo": "2025-05-13", "actual": "2026-07-09"},
+    "aviso_importante": "Esto NO es una interpretacion medica. Es tu propia data transcrita y ordenada para que el plan se disene alrededor de ella y para que sepas que preguntarle a tu medico. Las decisiones clinicas son de Dr Brenton Martin, no de este bot."
+  },
+
+  "banderas": [
+    {
+      "marcador": "ALT (alanina aminotransferasa)",
+      "previo": 28, "actual": 68, "referencia": "5-40", "unidad": "U/L",
+      "estado": "ALTO",
+      "prioridad": 1,
+      "que_es": "Enzima del higado. Cuando sube, hay celulas hepaticas irritadas.",
+      "contexto": "Se te mas que duplico en 14 meses (28 -> 68). El GGT acompano (32 -> 47, dentro de rango pero subiendo). El laboratorio escribio textual: 'non-specific hepatic impairment. Possible causes... alcohol effect and viral infections. Repeat LFTs in one [mes] to assess chronicity of abnormality.'",
+      "accion": "Repetir las pruebas de funcion hepatica con tu medico. El laboratorio ya lo pidio; no lo dejes pasar. Mientras tanto: alcohol en cero hasta el reexamen, y perder grasa. En higado graso una perdida del 7-10% del peso es la intervencion con mas evidencia que existe: de 96 kg son 7-10 kg.",
+      "objetivo_reexamen": "ALT por debajo de 40"
+    },
+    {
+      "marcador": "LDL colesterol",
+      "previo": 3.5, "actual": 3.4, "referencia": "0.0-2.5", "unidad": "mmol/L",
+      "estado": "ALTO",
+      "prioridad": 2,
+      "que_es": "El colesterol que se deposita en las arterias.",
+      "contexto": "Alto en los dos examenes, casi sin moverse. Tu colesterol total (5.2) esta al borde y tu no-HDL (3.8) roza el limite de 3.9. Lo bueno: trigliceridos 0.8 y HDL 1.4 estan excelentes, y la relacion Chol/HDL de 3.7 esta bien.",
+      "accion": "La fibra soluble baja el LDL de forma medible: avena, frijoles, garbanzos, lentejas, berries. Tu plan ya trae 35-40 g de fibra al dia, que es el doble del promedio. Cambia grasa saturada (ghee, mozzarella, chocolate) por insaturada (nueces, mantequilla de mani, aceite de oliva) sin subir el total.",
+      "objetivo_reexamen": "LDL bajando hacia 2.5"
+    },
+    {
+      "marcador": "Creatinina",
+      "previo": 79, "actual": 56, "referencia": "60-110", "unidad": "umol/L",
+      "estado": "BAJO",
+      "prioridad": 3,
+      "que_es": "Producto de desecho del musculo. Se filtra por el rinon.",
+      "contexto": "Tu eGFR sigue >90, o sea el rinon filtra perfecto: esto NO es un problema renal. En un vegetariano la creatinina baja es esperable porque la creatina viene de la carne. Tambien puede reflejar menos masa muscular de la que te conviene tener.",
+      "accion": "5 g de creatina monohidrato al dia. Los vegetarianos son quienes mas responden a la creatina porque parten de reservas mas bajas. Cuesta poco, tiene decadas de evidencia de seguridad, y en deficit calorico ayuda a mantener fuerza. Avisale a tu medico que la tomas: sube la creatinina medida sin que nada este mal.",
+      "objetivo_reexamen": "Mantener eGFR >90"
+    },
+    {
+      "marcador": "Ferritina",
+      "previo": 17, "actual": 50, "referencia": "30-400", "unidad": "ug/L",
+      "estado": "NORMAL BAJO - VIGILAR",
+      "prioridad": 4,
+      "que_es": "Tus reservas de hierro.",
+      "contexto": "Buena noticia: subio de 17 (bajo) a 50 (normal). Pero el hierro serico bajo de 17.7 a 11.7 y la saturacion de 25% a 18%. Siendo vegetariano y entrando en deficit calorico, esto se puede erosionar otra vez.",
+      "accion": "El hierro vegetal (espinaca, frijoles, lentejas, tofu) se absorbe mal solo. Con vitamina C se absorbe hasta 3 veces mas: por eso el limon y el Tajin sobre la espinaca y los frijoles en las recetas no son decoracion. Y no tomes cafe ni te con las comidas de hierro, bloquean la absorcion.",
+      "objetivo_reexamen": "Ferritina estable o subiendo"
+    }
+  ],
+
+  "en_rango": {
+    "metabolico": {
+      "glucosa_ayunas": {"actual": 4.7, "referencia": "3.6-5.4", "unidad": "mmol/L", "lectura": "Excelente. Cero senal de resistencia a la insulina."},
+      "trigliceridos": {"previo": 0.7, "actual": 0.8, "referencia": "0.0-1.5", "unidad": "mmol/L", "lectura": "Muy bueno. La relacion TG/HDL de 0.57 indica muy buena sensibilidad a la insulina."},
+      "hdl": {"previo": 1.4, "actual": 1.4, "referencia": "1.0-2.2", "unidad": "mmol/L", "lectura": "Bien."},
+      "colesterol_total": {"previo": 5.2, "actual": 5.2, "referencia": "3.5-5.5", "unidad": "mmol/L", "lectura": "Al borde alto."},
+      "no_hdl": {"actual": 3.8, "referencia": "<3.9", "unidad": "mmol/L", "lectura": "Justo por debajo del limite."}
+    },
+    "tiroides": {
+      "tsh": {"previo": 2.0, "actual": 1.2, "referencia": "0.40-3.50", "unidad": "mU/L", "lectura": "Tiroides normal. Importante decirlo: tu metabolismo NO es la razon del peso. El deficit va a funcionar."}
+    },
+    "vitaminas": {
+      "vitamina_d": {"previo": 93, "actual": 88, "referencia": "50-160", "unidad": "nmol/L", "lectura": "Muy bien, sin deficiencia. Australia ayuda."},
+      "vitamina_b12": {"previo": 265, "actual": 319, "referencia": "130-855", "unidad": "pmol/L", "lectura": "Subio. Con homocisteina en 6.6 (rango 6.0-14.0) el laboratorio concluye que tus reservas de B12 estan repletas. Siendo vegetariano, seguir vigilando."},
+      "homocisteina": {"actual": 6.6, "referencia": "6.0-14.0", "unidad": "umol/L", "lectura": "Optima."}
+    },
+    "higado_resto": {
+      "ast": {"previo": 32, "actual": 36, "referencia": "5-40", "unidad": "U/L", "lectura": "En rango. Que el ALT (68) este mucho mas alto que el AST es el patron tipico de higado graso mas que de dano alcoholico puro, pero eso lo define tu medico, no yo."},
+      "ggt": {"previo": 32, "actual": 47, "referencia": "5-50", "unidad": "U/L", "lectura": "En rango pero se disparo. Vigilar junto al ALT."},
+      "alp": {"previo": 70, "actual": 85, "referencia": "35-110", "unidad": "U/L", "lectura": "En rango."},
+      "bilirrubina": {"previo": 12, "actual": 7, "referencia": "4-20", "unidad": "umol/L", "lectura": "En rango."},
+      "albumina": {"previo": 47, "actual": 46, "referencia": "39-50", "unidad": "g/L", "lectura": "En rango. El higado sigue sintetizando bien."}
+    },
+    "rinon_electrolitos": {
+      "egfr": {"actual": ">90", "referencia": ">59", "unidad": "ml/min", "lectura": "Filtracion renal perfecta."},
+      "sodio": {"actual": 140, "referencia": "135-145", "unidad": "mmol/L"},
+      "potasio": {"actual": 4.4, "referencia": "3.5-5.5", "unidad": "mmol/L"},
+      "urea": {"actual": 5.8, "referencia": "3.0-8.0", "unidad": "mmol/L"},
+      "calcio_corregido": {"actual": 2.34, "referencia": "2.10-2.60", "unidad": "mmol/L"}
+    },
+    "hemograma": {
+      "hemoglobina": {"previo": 151, "actual": 152, "referencia": "130-180", "unidad": "g/L"},
+      "hematocrito": {"actual": 0.46, "referencia": "0.39-0.54"},
+      "mcv": {"actual": 87, "referencia": "80-100", "unidad": "fL"},
+      "leucocitos": {"previo": 4.1, "actual": 6.5, "referencia": "4.0-11.0", "unidad": "x10^9/L"},
+      "plaquetas": {"previo": 260, "actual": 351, "referencia": "150-450", "unidad": "x10^9/L"},
+      "lectura": "El laboratorio lo resumio en dos palabras: 'Results normal.'"
+    }
+  },
+
+  "resumen_en_una_frase": "Tu metabolismo esta sano (glucosa 4.7, trigliceridos 0.8, TSH 1.2: no hay ninguna excusa fisiologica), pero tu higado levanto la mano (ALT 68) y tu LDL sigue alto. Las dos cosas responden a lo mismo: perder grasa, comer fibra y parar el alcohol.",
+
+  "que_preguntarle_al_medico": [
+    "El laboratorio pidio repetir las pruebas de funcion hepatica. Cuando las hacemos?",
+    "Con ALT en 68 y BMI 30, vale la pena un ultrasonido de higado o un FibroScan para descartar higado graso?",
+    "Se justifica serologia de hepatitis B y C, ya que el laboratorio menciono infecciones virales como causa posible?",
+    "Con LDL en 3.4 sostenido por 14 meses, cual es el plan si la dieta no lo baja en 3-6 meses?",
+    "Voy a tomar 5 g de creatina al dia: eso sube la creatinina medida sin que haya problema renal. Lo anotamos para no confundir el proximo examen?",
+    "Siendo vegetariano y con ferritina en 50, cada cuanto revisamos hierro y B12?"
+  ],
+
+  "reexamen": {
+    "objetivo": "Repetir LFT (ALT, AST, GGT), lipidos, hierro y B12",
+    "cuando": "LFT en 4-8 semanas segun indique el medico; lipidos y hierro a los 3 meses",
+    "peso_esperado_para_entonces": "88-90 kg si el plan se cumple, o sea el 7-8% de perdida que la evidencia asocia a mejoria hepatica"
+  }
+}
