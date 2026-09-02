@@ -31,7 +31,8 @@
     "p": 10.9,
     "c": 0.7,
     "f": 0.2,
-    "fib": 0
+    "fib": 0,
+    "nota_compra": "Compra claras liquidas en carton (Coles las tiene) o separa de huevos enteros: 1 clara por huevo. Si separas, suma estos huevos a los enteros de arriba."
   },
   "cottage": {
     "nombre": "Bulla High Protein Cottage Cheese",
@@ -299,7 +300,8 @@
     "p": 2.9,
     "c": 1.4,
     "f": 0.4,
-    "fib": 2.2
+    "fib": 2.2,
+    "nota_compra": "2 kg por semana suena a mucho pero se marchita a nada. Las bolsas de 280 g rinden ~7."
   },
   "tomate": {
     "nombre": "Tomate",
@@ -555,7 +557,8 @@
     "c": 1.5,
     "f": 0.1,
     "fib": 0,
-    "nota": "Practicamente gratis en calorias y transforma el arroz y las sopas."
+    "nota": "Practicamente gratis en calorias y transforma el arroz y las sopas.",
+    "nota_compra": "Un carton de 1 L cubre 8 tandas de arroz."
   },
   "berries_congelados": {
     "nombre": "Kirkland Three Berry Blend (congelado)",
@@ -747,7 +750,8 @@
     "c": 0,
     "f": 0,
     "fib": 0,
-    "nota": "Cero calorias. 5 g al dia, a cualquier hora. Ver labs.json: tu creatinina esta baja y eres vegetariano, este es el suplemento con mejor retorno que puedes tomar."
+    "nota": "Cero calorias. 5 g al dia, a cualquier hora. Ver labs.json: tu creatinina esta baja y eres vegetariano, este es el suplemento con mejor retorno que puedes tomar.",
+    "nota_compra": "Un tarro de 300 g dura 2 meses a 5 g/dia."
   },
   "_por_comprar": {
     "_nota": "No los tienes todavia. Estan aqui porque el plan los usa para cerrar la brecha de proteina.",
@@ -765,7 +769,8 @@
       "p": 80,
       "c": 7,
       "f": 5,
-      "fib": 0
+      "fib": 0,
+      "nota_compra": "Se compra por tarro de 1-2 kg, no por scoop. Un tarro de 1 kg dura ~5 semanas a este ritmo."
     },
     "edamame": {
       "nombre": "Edamame sin cascara (congelado)",
@@ -778,5 +783,73 @@
       "f": 5,
       "fib": 5
     }
+  },
+  "_secciones": {
+    "_nota": "Donde encontrar cada cosa en Coles. La lista de mercado se agrupa asi para que el recorrido sea de una sola pasada.",
+    "Frutas y verduras": [
+      "espinaca",
+      "tomate",
+      "cebolla_morada",
+      "cebolleta",
+      "zanahoria",
+      "papa",
+      "fresa",
+      "pera",
+      "banana",
+      "limon"
+    ],
+    "Nevera": [
+      "huevo",
+      "clara",
+      "cottage",
+      "yogurt_griego",
+      "yogurt_protein",
+      "yopro",
+      "mozzarella",
+      "crema_light",
+      "tofu_firme",
+      "tofu_extrafirme",
+      "leche_almendra"
+    ],
+    "Congelador": [
+      "quorn",
+      "tiras_veg",
+      "maiz",
+      "berries_congelados"
+    ],
+    "Despensa": [
+      "avena",
+      "muesli_gf",
+      "nutrigrain",
+      "arroz_basmati",
+      "pasta_gf",
+      "frijol_negro",
+      "garbanzo",
+      "lenteja",
+      "frijol_refrito",
+      "palomitas",
+      "nueces",
+      "datil",
+      "mantequilla_mani",
+      "choco_85",
+      "caldo_verdura",
+      "salsa_pizza",
+      "salsa_bolognese",
+      "salsa_mexicana",
+      "aceite_oliva",
+      "ghee",
+      "sriracha",
+      "balsamico",
+      "maple",
+      "creatina",
+      "whey",
+      "edamame"
+    ],
+    "Panaderia": [
+      "thins",
+      "base_pizza",
+      "wrap",
+      "tortilla_maiz"
+    ]
   }
 }

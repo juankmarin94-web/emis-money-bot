@@ -2,3 +2,5 @@ pyTelegramBotAPI==4.14.0
 firebase-admin==6.4.0
 anthropic==0.34.0
 requests==2.31.0
+# zoneinfo necesita la base de datos de zonas: la imagen de Render no la trae
+tzdata==2024.1

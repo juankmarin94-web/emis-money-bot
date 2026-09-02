@@ -6,7 +6,7 @@ import anthropic
 import firebase_admin
 from firebase_admin import credentials, firestore
 
-import nutricion, gym, whoop
+import nutricion, gym, whoop, recordatorios
 
 # ── Init ──────────────────────────────────────────────────────────────────────
 BOT_TOKEN = os.environ['BOT_TOKEN']
@@ -266,5 +266,7 @@ def handle_text(msg):
         "/summary  /undo  ·  /nutricion  /hoy  /gym")
 
 # ── Run ───────────────────────────────────────────────────────────────────────
+recordatorios.iniciar(bot, db, nutricion, gym)
+
 print("🤖 Emi's Money + Nutrition Bot is running!")
 bot.infinity_polling(timeout=20, long_polling_timeout=15)

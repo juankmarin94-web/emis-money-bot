@@ -25,6 +25,9 @@ FOODS.update({k: v for k, v in _RAW_FOODS.get('_por_comprar', {}).items()
               if not k.startswith('_')})
 
 # Indice alias -> id, para buscar por lo que la gente realmente escribe.
+SECCIONES = {k: v for k, v in _RAW_FOODS.get('_secciones', {}).items()
+              if not k.startswith('_')}
+
 ALIAS = {}
 for _fid, _f in FOODS.items():
     ALIAS[_fid.replace('_', ' ')] = _fid
@@ -474,6 +477,68 @@ def fmt_plan(plan):
     return '\n'.join(out)
 
 
+# ── Lista de mercado ──────────────────────────────────────────────────────────
+def lista_mercado(perfil, dias=7):
+    """Suma los gramos de una semana de planes y los agrupa por seccion.
+
+    Genera la semana real (4 dias de entreno + 3 de descanso) en vez de
+    multiplicar un dia por siete: los menus rotan y los gramajes cambian entre
+    dia de entreno y de descanso.
+    """
+    gramos = {}
+    entrenos = min(4, dias)
+    tipos = [True] * entrenos + [False] * (dias - entrenos)
+    for i, entreno in enumerate(tipos):
+        plan = plan_dia(perfil, entreno=entreno, semilla=i)
+        for r in plan['comidas'] + plan['snacks']:
+            for ing in r['ingredientes']:
+                gramos[ing['food']] = gramos.get(ing['food'], 0) + ing['g']
+
+    fuera = []
+    secciones = {}
+    for fid, g in gramos.items():
+        sec = next((s for s, ids in SECCIONES.items() if fid in ids), None)
+        if sec is None:
+            fuera.append(fid)
+            continue
+        secciones.setdefault(sec, []).append((fid, g))
+
+    orden = list(SECCIONES)
+    return {
+        'dias': dias,
+        'secciones': {s: sorted(secciones[s], key=lambda x: -x[1])
+                      for s in orden if s in secciones},
+        'sin_seccion': fuera,
+    }
+
+
+def _cantidad(fid, g):
+    """Gramos en una cantidad que se pueda comprar de verdad."""
+    f = FOODS[fid]
+    if f.get('unit_g'):
+        import math
+        u = math.ceil(g / f['unit_g'])
+        return f"{u} u ({g:.0f} g)"
+    if g >= 1000:
+        return f"{g/1000:.1f} kg"
+    return f"{g:.0f} g"
+
+
+def fmt_mercado(m):
+    out = [f"🛒 *Lista de mercado — {m['dias']} dias*", ""]
+    for sec, items in m['secciones'].items():
+        out.append(f"*{sec}*")
+        for fid, g in items:
+            out.append(f"  ☐ {FOODS[fid]['nombre']} — {_cantidad(fid, g)}")
+            if FOODS[fid].get('nota_compra'):
+                out.append(f"      _{FOODS[fid]['nota_compra']}_")
+        out.append("")
+    if m['sin_seccion']:
+        out.append("_Sin seccion asignada: " + ', '.join(m['sin_seccion']) + "_")
+    out += ["_Cantidades para las recetas del plan. Lo que ya tengas en casa, tachalo._"]
+    return '\n'.join(out)
+
+
 # ── Handlers de Telegram ──────────────────────────────────────────────────────
 PENDIENTES = {}   # "chat:mensaje" -> items, esperando confirmacion del usuario
 
@@ -508,7 +573,8 @@ def register(bot, ac, db, require_person):
             "*Plan*\n"
             "• `/plan` — dia completo que cuadra con tus macros\n"
             "• `/receta` — receta que cabe en lo que te falta\n"
-            "• `/gym` — entreno de hoy\n\n"
+            "• `/gym` — entreno de hoy\n"
+            "• `/mercado` — lista de compras de la semana\n\n"
             "*Contexto*\n"
             "• `/perfil` — tus numeros y como se calculan\n"
             "• `/labs` — tus examenes de sangre\n"
@@ -738,6 +804,16 @@ def register(bot, ac, db, require_person):
             txt.append(f"      {m['kcal']:.0f} kcal · {m['p']:.0f} P / {m['c']:.0f} C / {m['f']:.0f} G")
         txt.append("\n_`/receta l3` para ver los pasos._")
         bot.send_message(msg.chat.id, '\n'.join(txt))
+
+    # ── /mercado ──────────────────────────────────────────────────────────────
+    @bot.message_handler(commands=['mercado', 'compras'])
+    def cmd_mercado(msg):
+        persona = require_person(msg)
+        if not persona:
+            return
+        m = re.search(r'(\d+)', msg.text)
+        dias = max(1, min(14, int(m.group(1)))) if m else 7
+        bot.send_message(msg.chat.id, fmt_mercado(lista_mercado(st.perfil(persona), dias)))
 
     # ── /labs ─────────────────────────────────────────────────────────────────
     @bot.message_handler(commands=['labs', 'examenes'])
