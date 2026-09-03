@@ -539,6 +539,108 @@ def fmt_mercado(m):
     return '\n'.join(out)
 
 
+# ── El registro ───────────────────────────────────────────────────────────────
+FILAS_CSV = ['fecha', 'dia', 'peso_kg', 'media_7d', 'kcal', 'proteina_g', 'carbos_g',
+             'grasa_g', 'fibra_g', 'meta_kcal', 'meta_proteina_g', 'adherencia_kcal_pct',
+             'entreno', 'series', 'volumen_kg', 'recovery', 'sueno_h', 'strain', 'comidas']
+
+DIAS_ES = ['lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado', 'domingo']
+
+
+def construir_registro(perfil, dias_datos):
+    """Una fila por dia con todo lo que se registro, ya cruzado con los targets.
+
+    Los targets se recalculan por dia con el peso de ESE dia cuando existe: si el
+    peso baja, el target baja con el, y comparar el consumo de marzo contra el
+    target de septiembre daria una adherencia falsa.
+    """
+    por_fecha = {d['fecha']: d for d in dias_datos}
+    pesos = sorted((f, float(d['peso_kg'])) for f, d in por_fecha.items() if d.get('peso_kg'))
+
+    def media_hasta(fecha):
+        previos = [p for f, p in pesos if f <= fecha][-7:]
+        return sum(previos) / len(previos) if previos else None
+
+    ultimo_peso = perfil['peso_kg']
+    filas = []
+    for fecha in sorted(por_fecha):
+        d = por_fecha[fecha]
+        dt = datetime.strptime(fecha, '%Y-%m-%d')
+        if d.get('peso_kg'):
+            ultimo_peso = float(d['peso_kg'])
+        t = targets_de_hoy({**perfil, 'peso_kg': ultimo_peso},
+                           es_dia_entreno(perfil, fecha))
+        tot = sumar(d.get('comidas', []))
+        ent = d.get('entreno') or {}
+        sets = ent.get('sets', [])
+        whoop = d.get('whoop') or {}
+        media = media_hasta(fecha)
+
+        filas.append({
+            'fecha': fecha,
+            'dia': DIAS_ES[dt.weekday()],
+            'peso_kg': round(float(d['peso_kg']), 1) if d.get('peso_kg') else '',
+            'media_7d': round(media, 2) if media else '',
+            'kcal': round(tot['kcal']) if d.get('comidas') else '',
+            'proteina_g': round(tot['p']) if d.get('comidas') else '',
+            'carbos_g': round(tot['c']) if d.get('comidas') else '',
+            'grasa_g': round(tot['f']) if d.get('comidas') else '',
+            'fibra_g': round(tot['fib']) if d.get('comidas') else '',
+            'meta_kcal': t['kcal'],
+            'meta_proteina_g': t['p'],
+            'adherencia_kcal_pct': round(tot['kcal'] / t['kcal'] * 100) if d.get('comidas') else '',
+            'entreno': ent.get('sesion', ''),
+            'series': len(sets),
+            'volumen_kg': round(sum(s['kg'] * sum(s['reps']) for s in sets)) if sets else '',
+            'recovery': whoop.get('recovery', ''),
+            'sueno_h': whoop.get('sueno_h', ''),
+            'strain': round(whoop['strain'], 1) if whoop.get('strain') else '',
+            'comidas': ' | '.join(c.get('etiqueta', '') for c in d.get('comidas', [])),
+        })
+    return filas
+
+
+def registro_csv(filas):
+    import csv, io
+    buf = io.StringIO()
+    w = csv.DictWriter(buf, fieldnames=FILAS_CSV, extrasaction='ignore')
+    w.writeheader()
+    w.writerows(filas)
+    return buf.getvalue()
+
+
+def resumen_registro(filas, perfil):
+    """Los numeros que importan de todo el periodo, no de un dia."""
+    comidos = [f for f in filas if f['kcal'] != '']
+    pesados = [f for f in filas if f['peso_kg'] != '']
+    entrenados = [f for f in filas if f['series']]
+    r = {
+        'dias_total': len(filas),
+        'dias_registrados': len(comidos),
+        'dias_pesados': len(pesados),
+        'entrenos': len(entrenados),
+        'series_totales': sum(f['series'] for f in filas),
+        'volumen_total': sum(f['volumen_kg'] for f in filas if f['volumen_kg']),
+    }
+    if comidos:
+        r['kcal_prom'] = round(sum(f['kcal'] for f in comidos) / len(comidos))
+        r['prot_prom'] = round(sum(f['proteina_g'] for f in comidos) / len(comidos))
+        r['fibra_prom'] = round(sum(f['fibra_g'] for f in comidos) / len(comidos))
+        r['adherencia'] = round(sum(f['adherencia_kcal_pct'] for f in comidos) / len(comidos))
+        # Dias en los que llego a la proteina: el marcador que protege el musculo.
+        r['dias_proteina_ok'] = sum(1 for f in comidos
+                                    if f['proteina_g'] >= f['meta_proteina_g'] * 0.95)
+    if len(pesados) >= 2:
+        r['peso_inicial'] = pesados[0]['peso_kg']
+        r['peso_final'] = pesados[-1]['peso_kg']
+        r['cambio_kg'] = round(pesados[-1]['peso_kg'] - pesados[0]['peso_kg'], 1)
+        d0 = datetime.strptime(pesados[0]['fecha'], '%Y-%m-%d')
+        d1 = datetime.strptime(pesados[-1]['fecha'], '%Y-%m-%d')
+        semanas = max(1, (d1 - d0).days) / 7
+        r['ritmo_semanal'] = round(r['cambio_kg'] / semanas, 2)
+    return r
+
+
 # ── Handlers de Telegram ──────────────────────────────────────────────────────
 PENDIENTES = {}   # "chat:mensaje" -> items, esperando confirmacion del usuario
 
@@ -569,6 +671,8 @@ def register(bot, ac, db, require_person):
             "*Ver donde vas*\n"
             "• `/hoy` — calorias y macros de hoy\n"
             "• `/semana` — promedio y tendencia de peso\n"
+            "• `/historial` — el registro completo\n"
+            "• `/export` — el registro en CSV para Sheets\n"
             "• `/peso 95.4` — registra tu peso\n\n"
             "*Plan*\n"
             "• `/plan` — dia completo que cuadra con tus macros\n"
@@ -804,6 +908,106 @@ def register(bot, ac, db, require_person):
             txt.append(f"      {m['kcal']:.0f} kcal · {m['p']:.0f} P / {m['c']:.0f} C / {m['f']:.0f} G")
         txt.append("\n_`/receta l3` para ver los pasos._")
         bot.send_message(msg.chat.id, '\n'.join(txt))
+
+    # ── /historial ────────────────────────────────────────────────────────────
+    @bot.message_handler(commands=['historial', 'registro'])
+    def cmd_historial(msg):
+        persona = require_person(msg)
+        if not persona:
+            return
+        m = re.search(r'(\d+)', msg.text)
+        dias = max(3, min(60, int(m.group(1)))) if m else 14
+        p = st.perfil(persona)
+        filas = construir_registro(p, st.ultimos_dias(persona, dias))
+        if not filas:
+            bot.send_message(msg.chat.id,
+                "Todavia no hay nada registrado.\n\n"
+                "Empieza con `/peso 96` y `comi ...` — el registro se llena solo "
+                "desde ahi.")
+            return
+        r = resumen_registro(filas, p)
+
+        txt = [f"📓 *Registro — ultimos {dias} dias*", ""]
+        # Tabla compacta: solo los dias con algo, los mas recientes arriba.
+        txt.append("```")
+        txt.append("fecha   peso   kcal  prot  gym")
+        # Telegram corta en 4096 caracteres; 30 filas de ~30 chars caben de sobra.
+        visibles = filas[-30:]
+        for f in reversed(visibles):
+            peso = f"{f['peso_kg']:>5.1f}" if f['peso_kg'] != '' else "    ·"
+            kcal = f"{f['kcal']:>5}" if f['kcal'] != '' else "    ·"
+            prot = f"{f['proteina_g']:>4}" if f['proteina_g'] != '' else "   ·"
+            gym = f"{f['series']:>2}s" if f['series'] else " ·"
+            txt.append(f"{f['fecha'][5:]}  {peso} {kcal}  {prot}  {gym}")
+        txt.append("```")
+        if len(visibles) < len(filas):
+            txt.append(f"_Tabla: los {len(visibles)} dias mas recientes. "
+                       f"Los promedios de abajo cubren los {len(filas)}._")
+
+        txt += ["", "*Consistencia*",
+                f"Dias con comida registrada: *{r['dias_registrados']}/{r['dias_total']}*",
+                f"Dias pesados: *{r['dias_pesados']}/{r['dias_total']}*",
+                f"Entrenos: *{r['entrenos']}* · {r['series_totales']} series"]
+        if r.get('volumen_total'):
+            txt.append(f"Volumen movido: *{r['volumen_total']:,} kg*")
+
+        if r.get('kcal_prom'):
+            txt += ["", "*Promedios*",
+                    f"Calorias: *{r['kcal_prom']}* ({r['adherencia']}% del target)",
+                    f"Proteina: *{r['prot_prom']} g* — llegaste en "
+                    f"*{r['dias_proteina_ok']}/{r['dias_registrados']}* dias",
+                    f"Fibra: *{r['fibra_prom']} g*"]
+
+        if r.get('cambio_kg') is not None:
+            flecha = '📉' if r['cambio_kg'] < 0 else ('📈' if r['cambio_kg'] > 0 else '➡️')
+            txt += ["", "*Peso*",
+                    f"{r['peso_inicial']:.1f} → {r['peso_final']:.1f} kg  "
+                    f"{flecha} *{r['cambio_kg']:+.1f} kg*",
+                    f"Ritmo: *{r['ritmo_semanal']:+.2f} kg/semana*"]
+            faltan = r['peso_final'] - p['peso_meta_kg']
+            if r['ritmo_semanal'] < -0.05 and faltan > 0:
+                txt.append(f"A este ritmo real: ~{faltan / -r['ritmo_semanal']:.0f} "
+                           f"semanas para los {p['peso_meta_kg']:.0f} kg.")
+
+        txt += ["", "_`/export` te manda el archivo completo para Excel o Sheets._"]
+        bot.send_message(msg.chat.id, '\n'.join(txt))
+
+    # ── /export ───────────────────────────────────────────────────────────────
+    @bot.message_handler(commands=['export', 'exportar'])
+    def cmd_export(msg):
+        persona = require_person(msg)
+        if not persona:
+            return
+        m = re.search(r'(\d+)', msg.text)
+        # Tope de 180 dias: cada dia es una lectura a Firestore y el plan free
+        # de Render no da para barrer un ano de golpe.
+        dias = max(7, min(180, int(m.group(1)))) if m else 90
+        aviso = bot.send_message(msg.chat.id, f"⏳ Armando {dias} dias…")
+        try:
+            p = st.perfil(persona)
+            filas = construir_registro(p, st.ultimos_dias(persona, dias))
+            if not filas:
+                bot.edit_message_text("Todavia no hay nada que exportar.",
+                                      msg.chat.id, aviso.message_id)
+                return
+            import io
+            datos = registro_csv(filas).encode('utf-8-sig')   # BOM: Excel abre bien los acentos
+            archivo = io.BytesIO(datos)
+            archivo.name = f"registro-{persona}-{hoy()}.csv"
+            r = resumen_registro(filas, p)
+            pie = [f"📓 *Registro de {persona.title()}*",
+                   f"{len(filas)} dias · {r['dias_registrados']} con comida · "
+                   f"{r['entrenos']} entrenos"]
+            if r.get('cambio_kg') is not None:
+                pie.append(f"Peso: {r['peso_inicial']:.1f} → {r['peso_final']:.1f} kg "
+                           f"({r['cambio_kg']:+.1f})")
+            pie.append("\nAbrelo en Sheets o Excel. Una fila por dia, "
+                       "con el target de ESE dia al lado de lo que comiste.")
+            bot.delete_message(msg.chat.id, aviso.message_id)
+            bot.send_document(msg.chat.id, archivo, caption='\n'.join(pie))
+        except Exception as e:
+            bot.edit_message_text(f"⚠️ No pude armarlo: `{str(e)[:180]}`",
+                                  msg.chat.id, aviso.message_id)
 
     # ── /mercado ──────────────────────────────────────────────────────────────
     @bot.message_handler(commands=['mercado', 'compras'])
