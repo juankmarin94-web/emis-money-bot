@@ -44,7 +44,12 @@ const HABITOS = [
 
 /* ── Estado ───────────────────────────────────────────────────────── */
 let DB = null, SAMPLE = null, PUEDE_IMG = false;
-let HOY = iso(new Date());
+let HOY = iso(new Date());     // el día real
+let VIENDO = HOY;              // el día en pantalla
+let ANCLA = HOY;               // cualquier día de la semana mostrada
+const masDias = (f, n) => iso(new Date(desdeIso(f).getTime() + n*864e5));
+const esFuturo = f => f > HOY;
+const lunesDe = f => { const d = desdeIso(f); return masDias(f, -luDom(d)); };
 let dia = {};                 // documento de hoy
 let semana = {};              // iso -> documento
 const abiertos = new Set();
@@ -54,7 +59,7 @@ const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;
 
 function totales(dd){
   const t = {kcal:0,p:0,c:0,f:0,fib:0};
-  const plan = planDe(desdeIso(dd.fecha || HOY));
+  const plan = planDe(desdeIso(dd.fecha || VIENDO));
   const ticks = dd.ticks || {};
   for (const rid of [...plan.comidas, ...plan.snacks]) {
     if (!ticks['r_'+rid]) continue;
@@ -75,14 +80,16 @@ const pesoVigente = () => {
 /* ── Persistencia ─────────────────────────────────────────────────── */
 let cola = Promise.resolve();
 function guardar(campos){
+  if (esFuturo(VIENDO)) return;      // un día que no ha pasado no se registra
   Object.assign(dia, campos);
-  dia.fecha = HOY;
-  semana[HOY] = dia;
+  dia.fecha = VIENDO;
+  semana[VIENDO] = dia;
+  const destino = VIENDO;            // se fija ahora: la cola es asíncrona
   render();
   if (!DB) return;
   // Serializa las escrituras: el store es last-writer-wins y dos ticks
   // rápidos en paralelo pueden hacer que el segundo pise al primero.
-  cola = cola.then(() => DB.doc('dias/' + HOY).set(JSON.parse(JSON.stringify(dia))))
+  cola = cola.then(() => DB.doc('dias/' + destino).set(JSON.parse(JSON.stringify(dia))))
              .then(() => { $('savedTag').textContent = 'guardado'; })
              .catch(e => {
                $('savedTag').textContent = '';
@@ -94,6 +101,7 @@ function guardar(campos){
 function mostrarOffline(msg){ const o = $('offline'); o.textContent = msg; o.hidden = !msg; }
 
 function toggle(id){
+  if (esFuturo(VIENDO)) return;
   const t = {...(dia.ticks || {})};
   t[id] ? delete t[id] : t[id] = true;
   guardar({ticks: t});
@@ -101,7 +109,7 @@ function toggle(id){
 
 /* ── Render: cabecera ─────────────────────────────────────────────── */
 function renderHead(){
-  const d = desdeIso(HOY), ent = esEntreno(d);
+  const d = desdeIso(VIENDO), ent = esEntreno(d);
   $('hTitle').textContent = `${DIAS[d.getDay()]} ${d.getDate()} de ${MESES[d.getMonth()]}`;
   const b = $('hType');
   b.textContent = ent ? 'día de entreno' : 'día de descanso';
@@ -129,7 +137,8 @@ function renderHead(){
     $('hTrend').textContent = 'registra tu peso';
   }
 
-  // Racha: días consecutivos hacia atrás con algo anotado.
+  // Racha: días consecutivos hacia atrás con algo anotado. Siempre desde HOY,
+  // no desde el día que se esté mirando: es una propiedad del presente.
   let racha = 0;
   for (let i = 0; i < 60; i++){
     const f = iso(new Date(Date.now() - i*864e5));
@@ -142,7 +151,7 @@ function renderHead(){
 
 /* ── Render: macros ───────────────────────────────────────────────── */
 function renderMacros(){
-  const t = targets(pesoVigente(), esEntreno(desdeIso(HOY)));
+  const t = targets(pesoVigente(), esEntreno(desdeIso(VIENDO)));
   const tot = totales(dia);
   const filas = [
     ['kcal', tot.kcal, t.kcal, ''], ['prot', tot.p, t.p, 'g'],
@@ -161,8 +170,9 @@ function renderMacros(){
 /* ── Render: comidas ──────────────────────────────────────────────── */
 function fila({id, titulo, sub, acciones = '', detalle = ''}){
   const on = !!(dia.ticks || {})[id];
+  const bloq = esFuturo(VIENDO) ? ' disabled' : '';
   return `<div class="item ${on?'done':''}">
-    <button class="tick" data-tick="${id}" aria-pressed="${on}" aria-label="Marcar ${esc(titulo)}">
+    <button class="tick" data-tick="${id}" aria-pressed="${on}"${bloq} aria-label="Marcar ${esc(titulo)}">
       <svg viewBox="0 0 16 16" aria-hidden="true"><polyline points="2.5,8.5 6,12 13.5,4"/></svg></button>
     <div class="itxt"><div class="t">${esc(titulo)}</div><div class="s">${sub}</div></div>
     <div class="iact">${acciones}</div>
@@ -171,7 +181,7 @@ function fila({id, titulo, sub, acciones = '', detalle = ''}){
 }
 
 function renderComidas(){
-  const plan = planDe(desdeIso(HOY));
+  const plan = planDe(desdeIso(VIENDO));
   const etiquetas = {b:'Desayuno', l:'Almuerzo', d:'Cena'};
   const filas = [];
   for (const rid of plan.comidas.concat(plan.snacks)){
@@ -200,7 +210,7 @@ function renderComidas(){
 
 /* ── Render: entreno ──────────────────────────────────────────────── */
 function renderGym(){
-  const d = desdeIso(HOY), clave = sesionDe(d);
+  const d = desdeIso(VIENDO), clave = sesionDe(d);
   if (clave === 'descanso'){
     $('gym').innerHTML = `<div class="item"><div></div><div class="itxt">
       <div class="t">Descanso total</div>
@@ -261,7 +271,7 @@ function renderWhoop(){
   if (w.strain != null) chips.push(`<span class="chip">strain <b>${(+w.strain).toFixed(1)}</b></span>`);
   $('whoopChips').innerHTML = chips.join('');
 
-  const ent = esEntreno(desdeIso(HOY)), av = [];
+  const ent = esEntreno(desdeIso(VIENDO)), av = [];
   if (w.recovery != null){
     if (w.recovery < 34) av.push(['v-bad', ent
       ? 'Recovery rojo. Haz la sesión pero baja una serie de cada compuesto y quédate en RIR 3. Hoy no es día de records.'
@@ -296,13 +306,20 @@ function renderExtras(){
 
 /* ── Render: semana ───────────────────────────────────────────────── */
 function renderSemana(){
-  const hoyD = desdeIso(HOY);
-  const dias = [];
-  for (let i = 6; i >= 0; i--) dias.push(new Date(hoyD.getTime() - i*864e5));
+  const lunes = lunesDe(ANCLA);
+  const fechas = Array.from({length: 7}, (_, i) => masDias(lunes, i));
+  const dias = fechas.map(desdeIso);
+
+  const d0 = desdeIso(fechas[0]), d6 = desdeIso(fechas[6]);
+  const mismoMes = d0.getMonth() === d6.getMonth();
+  $('weekTitle').textContent = mismoMes
+    ? `${d0.getDate()}–${d6.getDate()} de ${MESES[d0.getMonth()]}`
+    : `${d0.getDate()} ${MESES[d0.getMonth()].slice(0,3)} – ${d6.getDate()} ${MESES[d6.getMonth()].slice(0,3)}`;
+  $('wkNow').setAttribute('aria-current', String(lunes === lunesDe(HOY)));
 
   $('week').innerHTML = dias.map(d => {
     const f = iso(d), dd = semana[f] || {}, esHoy = f === HOY;
-    const futuro = d > hoyD;
+    const futuro = esFuturo(f);
     const plan = planDe(d), ent = esEntreno(d);
     const totalTicks = plan.comidas.length + plan.snacks.length + HABITOS.length +
                        (sesionDe(d) === 'descanso' ? 0 : 1);
@@ -311,32 +328,54 @@ function renderSemana(){
     const t = targets(dd.peso ? +dd.peso : pesoVigente(), ent);
     const tot = totales({...dd, fecha:f});
     const R = 14, C = 2*Math.PI*R;
-    return `<div class="wday ${esHoy?'today':''} ${futuro?'future':''}">
-      <div class="wd-h"><span class="dn2">${DIAS_C[d.getDay()]}</span>
+    // Lo que el día TRAE PLANEADO: es lo único informativo en un día futuro.
+    const planKcal = [...plan.comidas, ...plan.snacks]
+      .reduce((a, id) => a + (D.recetas[id]?.kcal || 0), 0);
+    const ses = sesionDe(d);
+    const sesTxt = ses === 'descanso' ? 'descanso' : ses === 'cardio' ? 'caminadora'
+      : (D.entrenos[ses]?.n || ses).replace(/ - .*$/, '');
+
+    const cuerpo = futuro
+      ? `<div class="wplan">
+           <span><b>${Math.round(planKcal)}</b> kcal en plan</span><br>
+           <span>${esc(sesTxt)}</span><br>
+           <span>${plan.comidas.length + plan.snacks.length} comidas</span>
+         </div>`
+      : `<div class="ring">
+          <svg viewBox="0 0 34 34" aria-hidden="true">
+            <circle cx="17" cy="17" r="${R}" fill="none" stroke="var(--surface-3)" stroke-width="4"/>
+            <circle cx="17" cy="17" r="${R}" fill="none" stroke="var(--accent)" stroke-width="4"
+              stroke-linecap="round" stroke-dasharray="${C.toFixed(1)}"
+              stroke-dashoffset="${(C*(1-pct)).toFixed(1)}"/>
+          </svg>
+          <span class="rt">${hechos}/${totalTicks}<br>hechos</span>
+        </div>
+        <div class="wstat">
+          <span>${tot.kcal ? `<b>${Math.round(tot.kcal)}</b>/${t.kcal}` : `<span class="miss">— kcal</span>`}</span>
+          <span>${tot.p ? `<b>${Math.round(tot.p)}</b> g prot` : `<span class="miss">— prot</span>`}</span>
+          <span>${dd.peso ? `<b>${(+dd.peso).toFixed(1)}</b> kg` : `<span class="miss">sin peso</span>`}</span>
+          <span>${dd.whoop?.recovery != null ? `<b>${Math.round(dd.whoop.recovery)}%</b> rec` : `<span class="miss">sin whoop</span>`}</span>
+        </div>`;
+
+    return `<div class="wday ${esHoy?'today':''} ${futuro?'future':''} ${f===VIENDO?'viendo':''}"
+        data-dia="${f}" role="button" tabindex="0"
+        aria-label="Ver ${DIAS[d.getDay()]} ${d.getDate()}">
+      <div class="wd-h"><span class="dn2">${DIAS_C[d.getDay()]}${esHoy?' · hoy':''}</span>
         <span class="dd">${String(d.getDate()).padStart(2,'0')}</span></div>
       <span class="wd-t">${ent?'entreno':'descanso'}</span>
-      <div class="ring">
-        <svg viewBox="0 0 34 34" aria-hidden="true">
-          <circle cx="17" cy="17" r="${R}" fill="none" stroke="var(--surface-3)" stroke-width="4"/>
-          <circle cx="17" cy="17" r="${R}" fill="none" stroke="var(--accent)" stroke-width="4"
-            stroke-linecap="round" stroke-dasharray="${C.toFixed(1)}"
-            stroke-dashoffset="${(C*(1-pct)).toFixed(1)}"/>
-        </svg>
-        <span class="rt">${hechos}/${totalTicks}<br>hechos</span>
-      </div>
-      <div class="wstat">
-        <span>${tot.kcal ? `<b>${Math.round(tot.kcal)}</b>/${t.kcal}` : `<span class="miss">— kcal</span>`}</span>
-        <span>${tot.p ? `<b>${Math.round(tot.p)}</b> g prot` : `<span class="miss">— prot</span>`}</span>
-        <span>${dd.peso ? `<b>${(+dd.peso).toFixed(1)}</b> kg` : `<span class="miss">sin peso</span>`}</span>
-        <span>${dd.whoop?.recovery != null ? `<b>${Math.round(dd.whoop.recovery)}%</b> rec` : `<span class="miss">sin whoop</span>`}</span>
-      </div>
+      ${cuerpo}
     </div>`;
   }).join('');
 
-  // Agregados del periodo
-  const conAlgo = dias.map(d => semana[iso(d)]).filter(x => x && Object.keys(x.ticks||{}).length);
-  const pesados = dias.map(d => semana[iso(d)]).filter(x => x?.peso);
-  const entrenados = dias.filter(d => (semana[iso(d)]?.ticks||{}).gym).length;
+  // Agregados: solo días ya transcurridos. Contra 7 en una semana futura
+  // el porcentaje diría "0/7" y parecería un fracaso en vez de un futuro.
+  const pasadas = fechas.filter(f => !esFuturo(f));
+  const conAlgo = pasadas.map(f => semana[f]).filter(x => x && Object.keys(x.ticks||{}).length);
+  const pesados = pasadas.map(f => semana[f]).filter(x => x?.peso);
+  const entrenados = pasadas.filter(f => (semana[f]?.ticks||{}).gym).length;
+  const nDias = pasadas.length;
+  // Semana entera por venir: "0/7" leería como un fracaso en vez de un futuro.
+  const porVenir = nDias === 0;
   let kcalProm = 0, protProm = 0;
   if (conAlgo.length){
     const sum = conAlgo.reduce((a,dd) => {
@@ -346,13 +385,20 @@ function renderSemana(){
     protProm = Math.round(sum.p/conAlgo.length);
   }
   const cel = (v,l) => `<div class="sumcell"><div class="v2">${v}</div><div class="l2">${l}</div></div>`;
-  $('weekSum').innerHTML =
-    cel(`${conAlgo.length}/7`, 'días con registro') +
-    cel(`${pesados.length}/7`, 'días pesados') +
-    cel(entrenados, 'entrenos marcados') +
-    cel(kcalProm || '—', 'kcal promedio') +
-    cel(protProm ? protProm+' g' : '—', 'proteína promedio');
-  $('weekTag').textContent = conAlgo.length ? `${conAlgo.length} con datos` : 'sin datos aún';
+  const planSemana = fechas.reduce((a, f) => a + [...planDe(desdeIso(f)).comidas,
+    ...planDe(desdeIso(f)).snacks].reduce((b, id) => b + (D.recetas[id]?.kcal || 0), 0), 0);
+  $('weekSum').innerHTML = porVenir
+    ? cel('7', 'días planeados') +
+      cel(fechas.filter(f => esEntreno(desdeIso(f))).length, 'días de entreno') +
+      cel(Math.round(planSemana/7), 'kcal/día en plan') +
+      cel('—', 'aún sin registrar')
+    : cel(`${conAlgo.length}/${nDias}`, 'días con registro') +
+      cel(`${pesados.length}/${nDias}`, 'días pesados') +
+      cel(entrenados, 'entrenos marcados') +
+      cel(kcalProm || '—', 'kcal promedio') +
+      cel(protProm ? protProm+' g' : '—', 'proteína promedio');
+  $('weekTag').textContent = pasadas.length === 0 ? 'semana por venir'
+    : conAlgo.length ? `${conAlgo.length} con datos` : 'sin datos aún';
 
   renderSpark();
   $('flags').innerHTML = D.banderas.map(b => `<div class="item">
@@ -405,10 +451,45 @@ function renderSpark(){
   $('sparkTag').textContent = `${pts.length} pesos`;
 }
 
+function renderNav(){
+  const fut = esFuturo(VIENDO), n = $('dayNote');
+  $('navToday').setAttribute('aria-current', String(VIENDO === HOY));
+  // El plan se genera para cualquier fecha, así que no hay tope de navegación.
+  $('navNext').disabled = false;
+  $('navPrev').disabled = false;
+
+  // Todo lo que escribe se apaga en un día que aún no ha llegado.
+  const apagar = ['inWeight','btnWeight','inRec','inSleep','inStrain','btnWhoopSave',
+                  'btnWhoopManual','inExtra'];
+  apagar.forEach(id => { const el = $(id); if (el) el.disabled = fut; });
+  $('btnExtra').disabled = fut || !SAMPLE;
+  $('whoopFileWrap').style.pointerEvents = fut ? 'none' : '';
+  $('whoopFileWrap').style.opacity = fut ? '.45' : '';
+
+  if (VIENDO === HOY){ n.hidden = true; return; }
+  const d = desdeIso(VIENDO);
+  const dif = Math.round((d - desdeIso(HOY)) / 864e5);
+  n.hidden = false;
+  n.innerHTML = fut
+    ? `<b>Estás viendo ${DIAS[d.getDay()]}, en ${dif} día${dif===1?'':'s'}.</b>
+       <span>Es para preparar: el plan y el entreno son los definitivos, pero no se
+       puede marcar nada hasta que llegue el día.</span>`
+    : `<b>Estás viendo ${DIAS[d.getDay()]} ${d.getDate()}, hace ${-dif} día${dif===-1?'':'s'}.</b>
+       <span>Puedes marcar lo que se te olvidó y registrar el peso de ese día.</span>`;
+}
+
 function render(){
-  renderHead(); renderMacros(); renderComidas(); renderGym();
+  renderNav(); renderHead(); renderMacros(); renderComidas(); renderGym();
   renderHabitos(); renderWhoop(); renderExtras();
   if (!$('vSem').hidden) renderSemana();
+}
+
+function irA(f){
+  VIENDO = f;
+  ANCLA = f;
+  dia = semana[VIENDO] ? {...semana[VIENDO]} : {fecha: VIENDO};
+  abiertos.clear();
+  render();
 }
 
 /* ── Eventos ──────────────────────────────────────────────────────── */
@@ -430,6 +511,35 @@ document.addEventListener('click', ev => {
     ex.splice(+t.dataset.delextra, 1);
     return guardar({extras: ex});
   }
+});
+
+$('navPrev').onclick = () => irA(masDias(VIENDO, -1));
+$('navNext').onclick = () => irA(masDias(VIENDO,  1));
+$('navToday').onclick = () => irA(HOY);
+$('wkPrev').onclick = () => { ANCLA = masDias(lunesDe(ANCLA), -7); renderSemana(); };
+$('wkNext').onclick = () => { ANCLA = masDias(lunesDe(ANCLA),  7); renderSemana(); };
+$('wkNow').onclick  = () => { ANCLA = HOY; renderSemana(); };
+
+// Una columna de la semana salta a ese día
+document.addEventListener('click', ev => {
+  const c = ev.target.closest('[data-dia]');
+  if (!c) return;
+  irA(c.dataset.dia);
+  vista(true);
+});
+document.addEventListener('keydown', ev => {
+  if (ev.key !== 'Enter' && ev.key !== ' ') return;
+  const c = ev.target.closest?.('[data-dia]');
+  if (!c) return;
+  ev.preventDefault();
+  irA(c.dataset.dia);
+  vista(true);
+});
+// Flechas del teclado para moverse de día
+document.addEventListener('keydown', ev => {
+  if (ev.target.matches('input, textarea') || ev.metaKey || ev.ctrlKey) return;
+  if (ev.key === 'ArrowLeft')  irA(masDias(VIENDO, -1));
+  if (ev.key === 'ArrowRight') irA(masDias(VIENDO,  1));
 });
 
 $('tabHoy').onclick = () => vista(true);
@@ -524,7 +634,7 @@ $('btnExtra').onclick = async () => {
       kcal: +r?.kcal||0, p: +r?.p||0, c: +r?.c||0, f: +r?.f||0, fib: +r?.fib||0,
     };
     // El veredicto sale de aritmética, no del modelo: siempre consistente.
-    const t = targets(pesoVigente(), esEntreno(desdeIso(HOY)));
+    const t = targets(pesoVigente(), esEntreno(desdeIso(VIENDO)));
     const antes = totales(dia), despues = antes.kcal + e.kcal;
     const sobra = despues - t.kcal;
     if (sobra <= 0) e.aviso = `Cabe. Te quedan ${Math.round(-sobra)} kcal y ${Math.max(0, Math.round(t.p - antes.p - e.p))} g de proteína para cerrar el día.`;
@@ -581,13 +691,15 @@ render();     // La página sirve sin nada conectado: ya dice qué hacer hoy.
     return;
   }
   // Suscripción a los últimos 21 días: el rango que necesita la media móvil.
+  // 21 días atrás cubren la media móvil; el rango no se corta arriba para que
+  // un día futuro ya registrado (por ejemplo un peso adelantado) también entre.
   const desde = iso(new Date(Date.now() - 20*864e5));
-  DB.collection('dias').where('fecha', '>=', desde).orderBy('fecha', 'asc').limit(40)
+  DB.collection('dias').where('fecha', '>=', desde).orderBy('fecha', 'asc').limit(60)
     .onSnapshot(snap => {
       const nuevo = {};
       snap.docs.forEach(d => { const v = d.data(); if (v) nuevo[d.id] = v; });
       semana = nuevo;
-      dia = semana[HOY] ? {...semana[HOY]} : {fecha: HOY};
+      dia = semana[VIENDO] ? {...semana[VIENDO]} : {fecha: VIENDO};
       mostrarOffline('');
       render();
     }, e => {
@@ -601,10 +713,11 @@ render();     // La página sirve sin nada conectado: ya dice qué hacer hoy.
 setInterval(() => {
   const f = iso(new Date());
   if (f !== HOY){
+    const seguiaEnHoy = VIENDO === HOY;
     HOY = f;
-    dia = semana[HOY] ? {...semana[HOY]} : {fecha: HOY};
-    abiertos.clear();
-    render();
+    // Si estaba mirando "hoy", lo mueve al nuevo hoy; si estaba navegando,
+    // lo deja donde estaba y solo recalcula qué cuenta como futuro.
+    if (seguiaEnHoy) irA(HOY); else render();
   }
 }, 60000);
 </script>

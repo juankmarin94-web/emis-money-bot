@@ -72,7 +72,29 @@ header{background:var(--surface);background-image:var(--diag);
   font-variant-numeric:tabular-nums;line-height:1}
 .kpi .d{font-size:11px;color:var(--ink-soft);margin-top:2px}
 .kpi .d.dn{color:var(--ok)} .kpi .d.up{color:var(--high)}
-.tabs{display:flex;gap:2px;padding-bottom:8px}
+.tabrow{display:flex;align-items:center;gap:12px;padding-bottom:8px;flex-wrap:wrap}
+.tabs{display:flex;gap:2px}
+.daynav{display:flex;gap:2px;margin-left:auto}
+.nav{border:1px solid var(--rule-strong);background:var(--surface);color:var(--ink-soft);
+  padding:5px 11px;border-radius:2px;font-size:13px;font-weight:600;line-height:1.2;
+  font-family:var(--f-mono);transition:background .15s,color .15s,border-color .15s}
+.nav:hover:not([disabled]){background:var(--accent-wash);color:var(--accent-ink);border-color:var(--accent)}
+.nav[disabled]{opacity:.35;cursor:not-allowed}
+.nav.today{font-family:var(--f-ui);letter-spacing:.02em}
+.nav.today[aria-current="true"]{background:var(--accent);color:var(--accent-on);border-color:var(--accent)}
+.daynote{border:1px solid var(--accent);border-left-width:3px;background:var(--accent-wash);
+  color:var(--accent-ink);border-radius:var(--r);padding:10px 14px;font-size:13px;
+  margin-bottom:14px;line-height:1.45;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.daynote b{font-weight:700}
+.wday{cursor:pointer;transition:background .15s}
+.wday:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.wday:hover{background:var(--accent-wash)}
+.wday.future{opacity:1}
+.wday.future .wd-h .dd,.wday.future .wd-t{color:var(--ink-faint)}
+.wday.viendo{box-shadow:inset 0 0 0 2px var(--accent)}
+.wplan{font-family:var(--f-mono);font-size:10.5px;color:var(--ink-faint);line-height:1.4;
+  border-top:1px dashed var(--rule-strong);padding-top:6px}
+.wplan b{color:var(--ink-soft);font-weight:700}
 .tab{border:1px solid var(--rule);background:var(--surface-2);color:var(--ink-soft);
   padding:6px 16px;border-radius:2px;font-size:12px;font-weight:600;letter-spacing:.03em;
   transition:background .15s,color .15s,border-color .15s}
@@ -84,7 +106,7 @@ main{padding:18px 0 64px}
   margin-bottom:14px;overflow:hidden}
 .chead{display:flex;align-items:center;gap:10px;padding:11px 16px;
   border-bottom:1px solid var(--accent);background:var(--surface-2)}
-.chead h2{font-size:13px;letter-spacing:.03em;flex:1;color:var(--accent-ink);
+.chead h2{font-size:13px;min-width:0;letter-spacing:.03em;flex:1;color:var(--accent-ink);
   text-transform:uppercase;font-weight:700}
 .cbody{padding:14px 16px}
 .cbody.tight{padding:0}

@@ -15,14 +15,22 @@
       <div class="d">días seguidos</div>
     </div>
   </div>
-  <div class="tabs" role="tablist">
-    <button class="tab" role="tab" id="tabHoy" aria-selected="true" aria-controls="vHoy">Hoy</button>
-    <button class="tab" role="tab" id="tabSem" aria-selected="false" aria-controls="vSem">Semana</button>
+  <div class="tabrow">
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" id="tabHoy" aria-selected="true" aria-controls="vHoy">Día</button>
+      <button class="tab" role="tab" id="tabSem" aria-selected="false" aria-controls="vSem">Semana</button>
+    </div>
+    <div class="daynav" id="dayNav">
+      <button class="nav" id="navPrev" aria-label="Día anterior">←</button>
+      <button class="nav today" id="navToday">Hoy</button>
+      <button class="nav" id="navNext" aria-label="Día siguiente">→</button>
+    </div>
   </div>
 </div></header>
 
 <main><div class="wrap">
   <div class="offline" id="offline" hidden></div>
+  <div class="daynote" id="dayNote" hidden></div>
 
   <!-- ══════════ HOY ══════════ -->
   <section id="vHoy" role="tabpanel" aria-labelledby="tabHoy">
@@ -101,7 +109,13 @@
   <!-- ══════════ SEMANA ══════════ -->
   <section id="vSem" role="tabpanel" aria-labelledby="tabSem" hidden>
     <div class="card">
-      <div class="chead"><h2>Los últimos 7 días</h2><span class="lbl" id="weekTag"></span></div>
+      <div class="chead"><h2 id="weekTitle">La semana</h2>
+        <span class="lbl" id="weekTag"></span>
+        <div class="daynav">
+          <button class="nav" id="wkPrev" aria-label="Semana anterior">←</button>
+          <button class="nav today" id="wkNow">Esta</button>
+          <button class="nav" id="wkNext" aria-label="Semana siguiente">→</button>
+        </div></div>
       <div class="cbody tight">
         <div class="weekscroll"><div class="week" id="week"></div></div>
       </div>
