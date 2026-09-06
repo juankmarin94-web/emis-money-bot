@@ -408,7 +408,10 @@ def plan_dia(perfil, entreno=None, semilla=0):
         d += (falta_p / obj_p * 4.0) if falta_p > 0 else (-falta_p / obj_p * 0.5)
         d += abs(tot['c'] - obj_c) / max(1.0, obj_c) * 1.5
         d += abs(tot['f'] - obj_f) / max(1.0, obj_f) * 1.0
-        d -= min(tot['fib'], 40) / 40 * 0.4      # la fibra siempre suma
+        # La fibra no es un extra: es el tratamiento del LDL 3.4. Los snacks
+        # aportan 8-12 g, asi que el trio tiene que traer ~26 para cerrar en 35.
+        falta_fib = 26 - tot['fib']
+        d += (falta_fib / 26 * 1.4) if falta_fib > 0 else -0.35
         return d
 
     # Los snacks aportan alrededor del 22% del dia; los principales, el resto.

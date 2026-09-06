@@ -21,7 +21,8 @@
       "Moroccan seasoning",
       "lemon pepper",
       "romero"
-    ]
+    ],
+    "regla_desayunos": "Todo desayuno se construye sobre huevos, avena o cereal. Es una preferencia de Camilo, no una restriccion nutricional: si la cambias, el planificador acepta cualquier receta que este en el grupo 'desayunos'."
   },
   "desayunos": [
     {
@@ -132,36 +133,6 @@
       ]
     },
     {
-      "id": "b4",
-      "nombre": "Batido pre-gym de banana y avena",
-      "minutos": 3,
-      "ingredientes": [
-        {
-          "food": "yogurt_griego",
-          "g": 200
-        },
-        {
-          "food": "banana",
-          "g": 120
-        },
-        {
-          "food": "avena",
-          "g": 20
-        },
-        {
-          "food": "whey",
-          "g": 30
-        }
-      ],
-      "especias": [
-        "canela"
-      ],
-      "pasos": [
-        "Todo a la licuadora con 150 ml de agua y hielo.",
-        "Tomalo 60-90 min antes de entrenar."
-      ]
-    },
-    {
       "id": "b5",
       "nombre": "Overnight oats con leche de almendra y berries",
       "minutos": 4,
@@ -199,45 +170,182 @@
       ]
     },
     {
-      "id": "b6",
-      "nombre": "Scramble de tofu con Tajin",
-      "minutos": 12,
+      "id": "b7",
+      "nombre": "Omelette de espinaca, tomate y cottage",
+      "minutos": 10,
+      "base": "huevos",
       "ingredientes": [
         {
-          "food": "tofu_firme",
-          "g": 200
+          "food": "huevo",
+          "g": 100
+        },
+        {
+          "food": "clara",
+          "g": 132
         },
         {
           "food": "espinaca",
-          "g": 150
+          "g": 120
         },
         {
           "food": "tomate",
-          "g": 150
+          "g": 120
         },
         {
-          "food": "cebolleta",
-          "g": 30
-        },
-        {
-          "food": "aceite_oliva",
-          "g": 5
+          "food": "cottage",
+          "g": 100
         }
       ],
       "especias": [
-        "turmeric",
-        "cumin",
         "paprika",
         "ajo en polvo",
-        "Tajin",
-        "cilantro"
+        "oregano",
+        "Tajin"
       ],
       "pasos": [
-        "Escurre el tofu y APRIETALO con papel de cocina 2 min: el agua es la diferencia entre dorado y aguado.",
-        "Desmenuzalo con las manos. Sarten caliente con el aceite, tofu 5 min sin moverlo mucho.",
-        "Turmeric + cumin + paprika (el turmeric le da el color de huevo), luego tomate y cebolleta 3 min.",
-        "Espinaca al final, 1 min. Tajin y cilantro encima.",
-        "33 g de proteina sin un solo huevo, por si ese dia ya usaste los huevos en otra cosa."
+        "Bate los 2 huevos con las 4 claras, paprika y ajo en polvo.",
+        "Sarten antiadherente a fuego MEDIO-BAJO (fuego alto = omelette de goma).",
+        "Vierte, espera 2 min sin tocar hasta que cuaje el fondo.",
+        "Espinaca y tomate sobre una mitad, dobla, 1 min mas.",
+        "Cottage encima fuera del fuego y Tajin. 40 g de proteina."
+      ]
+    },
+    {
+      "id": "b8",
+      "nombre": "Huevos revueltos sobre Thins",
+      "minutos": 8,
+      "base": "huevos",
+      "ingredientes": [
+        {
+          "food": "huevo",
+          "g": 150
+        },
+        {
+          "food": "clara",
+          "g": 66
+        },
+        {
+          "food": "thins",
+          "g": 36
+        },
+        {
+          "food": "tomate",
+          "g": 100
+        },
+        {
+          "food": "espinaca",
+          "g": 80
+        }
+      ],
+      "especias": [
+        "cebolleta",
+        "paprika",
+        "Tajin",
+        "lemon pepper"
+      ],
+      "pasos": [
+        "Tuesta el Thin mientras haces el resto.",
+        "Espinaca y tomate 2 min en la sarten, escurre el agua que suelten.",
+        "Huevos + claras batidos, fuego BAJO, revuelve constante 3 min.",
+        "APAGA el fuego cuando todavia se vean humedos: se terminan de cuajar con el calor residual.",
+        "Sobre el Thin tostado, Tajin encima."
+      ]
+    },
+    {
+      "id": "b9",
+      "nombre": "Avena caliente con proteina y banana",
+      "minutos": 6,
+      "base": "avena",
+      "ingredientes": [
+        {
+          "food": "avena",
+          "g": 50
+        },
+        {
+          "food": "leche_almendra",
+          "g": 250
+        },
+        {
+          "food": "whey",
+          "g": 25
+        },
+        {
+          "food": "banana",
+          "g": 120
+        }
+      ],
+      "especias": [
+        "canela",
+        "vanilla"
+      ],
+      "pasos": [
+        "Avena + leche de almendra al microondas 2 min, o 4 min en olla.",
+        "Deja que baje del hervor un minuto ANTES de meter el whey: si lo echas hirviendo se corta y queda grumoso.",
+        "Banana en rodajas y canela encima.",
+        "El desayuno caliente de los dias frios de Adelaide."
+      ]
+    },
+    {
+      "id": "b10",
+      "nombre": "Muesli GF con yogurt griego y berries",
+      "minutos": 3,
+      "base": "cereal",
+      "sin_cocina": true,
+      "ingredientes": [
+        {
+          "food": "muesli_gf",
+          "g": 45
+        },
+        {
+          "food": "yogurt_griego",
+          "g": 200
+        },
+        {
+          "food": "cottage",
+          "g": 80
+        },
+        {
+          "food": "berries_congelados",
+          "g": 120
+        }
+      ],
+      "especias": [
+        "canela"
+      ],
+      "pasos": [
+        "Yogurt griego + cottage de base (el cottage es lo que sube la proteina sin subir calorias).",
+        "Muesli encima justo antes de comer, para que quede crujiente.",
+        "Berries congelados directo: se descongelan en 5 min y sueltan jugo."
+      ]
+    },
+    {
+      "id": "b11",
+      "nombre": "Nutri-Grain con huevos duros al lado",
+      "minutos": 3,
+      "base": "cereal",
+      "sin_cocina": true,
+      "ingredientes": [
+        {
+          "food": "nutrigrain",
+          "g": 45
+        },
+        {
+          "food": "leche_almendra",
+          "g": 200
+        },
+        {
+          "food": "huevo",
+          "g": 100
+        }
+      ],
+      "especias": [
+        "Tajin"
+      ],
+      "pasos": [
+        "Cereal con leche de almendra, y 2 huevos duros al lado con Tajin.",
+        "Los huevos no son opcionales: el Nutri-Grain solo te deja en 8 g de proteina y con hambre a las 10 am.",
+        "Ojo honesto: el Nutri-Grain trae 22 g de azucar por 100 g. Es el desayuno mas debil de la lista.",
+        "Cocina 6 huevos duros el domingo y este desayuno son 60 segundos."
       ]
     }
   ],
@@ -772,6 +880,48 @@
         "Pasta GF al dente (prueba 1 min antes de lo que dice la caja), espinaca al final.",
         "Mozzarella rallada encima. La bolognesa vegetariana que no sabe a sustituto."
       ]
+    },
+    {
+      "id": "d7",
+      "nombre": "Scramble de tofu con Tajin (cena rapida)",
+      "minutos": 12,
+      "ingredientes": [
+        {
+          "food": "tofu_firme",
+          "g": 200
+        },
+        {
+          "food": "espinaca",
+          "g": 150
+        },
+        {
+          "food": "tomate",
+          "g": 150
+        },
+        {
+          "food": "cebolleta",
+          "g": 30
+        },
+        {
+          "food": "aceite_oliva",
+          "g": 5
+        }
+      ],
+      "especias": [
+        "turmeric",
+        "cumin",
+        "paprika",
+        "ajo en polvo",
+        "Tajin",
+        "cilantro"
+      ],
+      "pasos": [
+        "Escurre el tofu y APRIETALO con papel de cocina 2 min: el agua es la diferencia entre dorado y aguado.",
+        "Desmenuzalo con las manos. Sarten caliente con el aceite, tofu 5 min sin moverlo mucho.",
+        "Turmeric + cumin + paprika (el turmeric le da el color de huevo), luego tomate y cebolleta 3 min.",
+        "Espinaca al final, 1 min. Tajin y cilantro encima.",
+        "33 g de proteina sin un solo huevo, por si ese dia ya usaste los huevos en otra cosa."
+      ]
     }
   ],
   "snacks": [
@@ -959,6 +1109,37 @@
         "20 g de Mayver's. PESALOS. La cucharada a ojo son 35-40 g y ahi se van 130 kcal fantasma.",
         "Es el error de conteo mas comun de toda tu despensa."
       ]
+    },
+    {
+      "id": "s10",
+      "nombre": "Batido pre-gym de banana y avena",
+      "minutos": 3,
+      "ingredientes": [
+        {
+          "food": "yogurt_griego",
+          "g": 200
+        },
+        {
+          "food": "banana",
+          "g": 120
+        },
+        {
+          "food": "avena",
+          "g": 20
+        },
+        {
+          "food": "whey",
+          "g": 30
+        }
+      ],
+      "especias": [
+        "canela"
+      ],
+      "pasos": [
+        "Todo a la licuadora con 150 ml de agua y hielo.",
+        "Tomalo 60-90 min antes de entrenar."
+      ],
+      "sin_cocina": true
     }
   ]
 }
