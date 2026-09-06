@@ -1,0 +1,125 @@
+
+<header><div class="wrap">
+  <div class="htop">
+    <div class="hdate">
+      <h1 id="hTitle">—</h1>
+      <p id="hSub">Diario de Camilo · 96 → 80 kg</p>
+    </div>
+    <span class="badge b-rest" id="hType">—</span>
+    <div class="kpi">
+      <div class="v mono" id="hWeight">—</div>
+      <div class="d" id="hTrend">sin peso aún</div>
+    </div>
+    <div class="kpi">
+      <div class="v mono" id="hStreak">0</div>
+      <div class="d">días seguidos</div>
+    </div>
+  </div>
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" id="tabHoy" aria-selected="true" aria-controls="vHoy">Hoy</button>
+    <button class="tab" role="tab" id="tabSem" aria-selected="false" aria-controls="vSem">Semana</button>
+  </div>
+</div></header>
+
+<main><div class="wrap">
+  <div class="offline" id="offline" hidden></div>
+
+  <!-- ══════════ HOY ══════════ -->
+  <section id="vHoy" role="tabpanel" aria-labelledby="tabHoy">
+
+    <div class="card">
+      <div class="chead"><h2>Entrada del día</h2><span class="lbl" id="savedTag"></span></div>
+      <div class="cbody">
+        <div class="inputs">
+          <div class="field">
+            <span class="lbl">Peso de hoy (kg)</span>
+            <div class="row">
+              <input type="number" id="inWeight" step="0.1" min="40" max="250" placeholder="95.4"
+                     inputmode="decimal" aria-label="Peso de hoy en kilogramos">
+              <button class="btn" id="btnWeight">Guardar</button>
+            </div>
+            <span class="hint">En ayunas, después del baño. El dato diario es ruido; la media de 7 días es la señal.</span>
+          </div>
+
+          <div class="field">
+            <span class="lbl">WHOOP de anoche</span>
+            <div class="row" id="whoopRow">
+              <span class="btn ghost filebtn" id="whoopFileWrap">Subir captura
+                <input type="file" id="whoopFile" accept="image/*" aria-label="Captura del WHOOP">
+              </span>
+              <button class="btn ghost sm" id="btnWhoopManual">A mano</button>
+            </div>
+            <div class="row" id="whoopManual" hidden>
+              <input type="number" id="inRec" min="0" max="100" placeholder="rec %" aria-label="Recovery en porcentaje">
+              <input type="number" id="inSleep" step="0.1" min="0" max="14" placeholder="sueño h" aria-label="Horas de sueño">
+              <input type="number" id="inStrain" step="0.1" min="0" max="21" placeholder="strain" aria-label="Strain">
+              <button class="btn" id="btnWhoopSave">OK</button>
+            </div>
+            <div class="whoopchips" id="whoopChips"></div>
+            <span class="hint" id="whoopHint">La captura la lee Claude para sacar los números. La imagen no se guarda, solo los datos.</span>
+          </div>
+        </div>
+        <div id="whoopAdvice" style="margin-top:12px"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="chead"><h2>Macros de hoy</h2><span class="lbl" id="macroTag"></span></div>
+      <div class="cbody"><div class="macros" id="macros"></div></div>
+    </div>
+
+    <div class="card">
+      <div class="chead"><h2>Comidas del plan</h2><span class="lbl" id="mealTag"></span></div>
+      <div class="cbody tight"><div class="items" id="meals"></div></div>
+    </div>
+
+    <div class="card">
+      <div class="chead"><h2>Entreno</h2><span class="lbl" id="gymTag"></span></div>
+      <div class="cbody tight"><div class="items" id="gym"></div></div>
+    </div>
+
+    <div class="card">
+      <div class="chead"><h2>Hábitos</h2><span class="lbl" id="habitTag"></span></div>
+      <div class="cbody tight"><div class="items" id="habits"></div></div>
+    </div>
+
+    <div class="card">
+      <div class="chead"><h2>Comí algo fuera del plan</h2></div>
+      <div class="cbody">
+        <div class="row">
+          <input type="text" id="inExtra" placeholder="2 empanadas y una gaseosa"
+                 aria-label="Qué comiste fuera del plan">
+          <button class="btn" id="btnExtra">Calcular</button>
+        </div>
+        <span class="hint">Dilo como se te ocurra. Claude estima los macros y yo te digo cómo queda tu día — sin regaños, con números.</span>
+        <div id="extraOut"></div>
+        <div id="extraList" style="margin-top:12px"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ SEMANA ══════════ -->
+  <section id="vSem" role="tabpanel" aria-labelledby="tabSem" hidden>
+    <div class="card">
+      <div class="chead"><h2>Los últimos 7 días</h2><span class="lbl" id="weekTag"></span></div>
+      <div class="cbody tight">
+        <div class="weekscroll"><div class="week" id="week"></div></div>
+      </div>
+      <div class="sumgrid" id="weekSum"></div>
+    </div>
+
+    <div class="card">
+      <div class="chead"><h2>Peso · media móvil de 7 días</h2><span class="lbl" id="sparkTag"></span></div>
+      <div class="spark" id="spark"></div>
+    </div>
+
+    <div class="card">
+      <div class="chead"><h2>Lo que vigilan tus análisis</h2></div>
+      <div class="cbody tight"><div class="items" id="flags"></div></div>
+    </div>
+  </section>
+
+  <footer>
+    <p id="footNote">Los macros salen de <span class="mono">foods.json</span> y <span class="mono">recipes.json</span> del bot: mismos gramos, mismos números. Esto no es consejo médico — tus análisis los interpreta Dr Brenton Martin.</p>
+  </footer>
+</div></main>
