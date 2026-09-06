@@ -19,6 +19,7 @@
     <div class="tabs" role="tablist">
       <button class="tab" role="tab" id="tabHoy" aria-selected="true" aria-controls="vHoy">Día</button>
       <button class="tab" role="tab" id="tabSem" aria-selected="false" aria-controls="vSem">Semana</button>
+      <button class="tab" role="tab" id="tabPlan" aria-selected="false" aria-controls="vPlan">Plan</button>
     </div>
     <div class="daynav" id="dayNav">
       <button class="nav" id="navPrev" aria-label="Día anterior">←</button>
@@ -77,6 +78,11 @@
     </div>
 
     <div class="card">
+      <div class="chead"><h2>Métricas del día</h2><span class="lbl" id="mdTag"></span></div>
+      <div class="cbody tight"><div class="tiles" id="mdTiles"></div></div>
+    </div>
+
+    <div class="card">
       <div class="chead"><h2>Comidas del plan</h2><span class="lbl" id="mealTag"></span></div>
       <div class="cbody tight"><div class="items" id="meals"></div></div>
     </div>
@@ -123,6 +129,19 @@
     </div>
 
     <div class="card">
+      <div class="chead"><h2>Métricas de la semana</h2><span class="lbl" id="msTag"></span></div>
+      <div class="cbody tight">
+        <p class="grouplbl">Consistencia — lo que predice todo lo demás</p>
+        <div class="tiles" id="msConsist"></div>
+        <p class="grouplbl">Nutrición</p>
+        <div class="tiles" id="msNutri"></div>
+        <p class="grouplbl">Resultado</p>
+        <div class="tiles" id="msResult"></div>
+        <div id="msCalib"></div>
+      </div>
+    </div>
+
+    <div class="card">
       <div class="chead"><h2>Peso · media móvil de 7 días</h2><span class="lbl" id="sparkTag"></span></div>
       <div class="spark" id="spark"></div>
     </div>
@@ -130,6 +149,20 @@
     <div class="card">
       <div class="chead"><h2>Lo que vigilan tus análisis</h2></div>
       <div class="cbody tight"><div class="items" id="flags"></div></div>
+    </div>
+  </section>
+
+  <section id="vPlan" role="tabpanel" aria-labelledby="tabPlan" hidden>
+    <div class="card">
+      <div class="chead"><h2 id="planTitle">Plan de la semana</h2>
+        <span class="lbl" id="planTag"></span>
+        <div class="daynav">
+          <button class="nav" id="plPrev" aria-label="Semana anterior">←</button>
+          <button class="nav today" id="plNow">Esta</button>
+          <button class="nav" id="plNext" aria-label="Semana siguiente">→</button>
+        </div></div>
+      <div class="cbody tight"><div id="planDias"></div></div>
+      <div class="sumgrid" id="planSum"></div>
     </div>
   </section>
 

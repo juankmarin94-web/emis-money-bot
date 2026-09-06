@@ -107,6 +107,79 @@ function toggle(id){
   guardar({ticks: t});
 }
 
+/* ── Métricas ─────────────────────────────────────────────────────── */
+const ticksTotales = f => {
+  const pl = planDe(desdeIso(f));
+  return pl.comidas.length + pl.snacks.length + HABITOS.length +
+         (sesionDe(desdeIso(f)) === 'descanso' ? 0 : 1);
+};
+
+function metricasDia(f){
+  const dd = semana[f] || {};
+  const ent = esEntreno(desdeIso(f));
+  const t = targets(dd.peso ? +dd.peso : pesoVigente(), ent);
+  const tot = totales({...dd, fecha: f});
+  const registrado = tot.kcal > 0;
+  const hechos = Object.keys(dd.ticks || {}).length;
+  const total = ticksTotales(f);
+  return {
+    fecha: f, ent, t, tot, registrado, hechos, total,
+    adherencia: registrado ? tot.kcal / t.kcal * 100 : null,
+    // El déficit del día se mide contra el TDEE, no contra el target: es lo
+    // que de verdad mueve la aguja del peso.
+    deficit: registrado ? t.tdee - tot.kcal : null,
+    proteinaOk: registrado && tot.p >= t.p * 0.95,
+    fibraOk: tot.fib >= 30,
+    cumplimiento: total ? hechos / total * 100 : 0,
+    sinAlcohol: !!(dd.ticks || {}).h_sinalcohol,
+    entrenoHecho: !!(dd.ticks || {}).gym,
+    peso: dd.peso ? +dd.peso : null,
+    whoop: dd.whoop || null,
+  };
+}
+
+function metricasSemana(fechas){
+  const pasadas = fechas.filter(f => !esFuturo(f));
+  const m = pasadas.map(metricasDia);
+  const reg = m.filter(x => x.registrado);
+  const n = pasadas.length;
+  const entPlan = pasadas.filter(f => !['descanso','cardio'].includes(sesionDe(desdeIso(f)))).length;
+  const prom = (arr, k) => arr.length ? arr.reduce((a,x) => a + x[k], 0) / arr.length : null;
+
+  // Déficit acumulado solo de los días registrados. Extrapolar los no
+  // registrados sería inventar el dato que más importa.
+  const deficitReg = reg.reduce((a,x) => a + x.deficit, 0);
+  const esperada = deficitReg / 7700;
+
+  // Pérdida real por medias móviles: un peso suelto contra otro es ruido.
+  const pesos = Object.keys(semana).filter(f => semana[f]?.peso).sort()
+    .map(f => ({f, v: +semana[f].peso}));
+  const hasta = fechas[6];
+  const antes = masDias(fechas[0], -1);
+  const media = (fin) => {
+    const v = pesos.filter(p => p.f <= fin).slice(-7);
+    return v.length >= 3 ? v.reduce((a,x) => a + x.v, 0) / v.length : null;
+  };
+  const m1 = media(hasta > HOY ? HOY : hasta), m0 = media(antes);
+  const real = (m1 != null && m0 != null) ? (m0 - m1) : null;
+
+  return {
+    n, dias: m, registrados: reg.length,
+    entrenos: m.filter(x => x.entrenoHecho).length, entPlan,
+    pesados: m.filter(x => x.peso != null).length,
+    sinAlcohol: m.filter(x => x.sinAlcohol).length,
+    diasConAlgo: m.filter(x => x.hechos > 0).length,
+    adherencia: prom(reg, 'adherencia'),
+    proteinaDias: reg.filter(x => x.proteinaOk).length,
+    fibra: reg.length ? reg.reduce((a,x) => a + x.tot.fib, 0) / reg.length : null,
+    cumplimiento: prom(m, 'cumplimiento'),
+    sueno: prom(m.filter(x => x.whoop?.sueno != null).map(x => ({s:+x.whoop.sueno})), 's'),
+    recovery: prom(m.filter(x => x.whoop?.recovery != null).map(x => ({r:+x.whoop.recovery})), 'r'),
+    deficitDia: reg.length ? deficitReg / reg.length : null,
+    esperada, real,
+  };
+}
+
 /* ── Render: cabecera ─────────────────────────────────────────────── */
 function renderHead(){
   const d = desdeIso(VIENDO), ent = esEntreno(d);
@@ -400,6 +473,7 @@ function renderSemana(){
   $('weekTag').textContent = pasadas.length === 0 ? 'semana por venir'
     : conAlgo.length ? `${conAlgo.length} con datos` : 'sin datos aún';
 
+  renderMetricasSemana(fechas);
   renderSpark();
   $('flags').innerHTML = D.banderas.map(b => `<div class="item">
     <span class="verdict ${b.est.startsWith('ALTO')?'v-bad':b.est.startsWith('BAJO')?'v-warn':'v-warn'}"
@@ -478,10 +552,209 @@ function renderNav(){
        <span>Puedes marcar lo que se te olvidó y registrar el peso de ese día.</span>`;
 }
 
+function tile({v, u = '', l, estado = '', barra = null}){
+  const b = barra == null ? '' :
+    `<div class="tb"><i style="width:${Math.min(100, Math.max(0, barra*100)).toFixed(0)}%"></i></div>`;
+  return `<div class="tile ${estado}"><div class="tv">${v}${u ? `<span class="tu">${u}</span>` : ''}</div>
+    <div class="tl">${l}</div>${b}</div>`;
+}
+
+function renderMetricasDia(){
+  const x = metricasDia(VIENDO);
+  if (!x.registrado && !x.hechos){
+    $('mdTiles').innerHTML = `<div class="tile" style="grid-column:1/-1;border-right:0">
+      <div class="tl">${esFuturo(VIENDO)
+        ? 'Este día todavía no llega. Las métricas aparecen cuando empieces a marcar.'
+        : 'Nada marcado en este día. Marca una comida y las métricas se llenan solas.'}</div></div>`;
+    $('mdTag').textContent = '';
+    return;
+  }
+  const ad = x.adherencia;
+  const est = ad == null ? '' : ad > 110 ? 'bad' : ad >= 90 ? 'ok' : 'warn';
+  $('mdTiles').innerHTML = [
+    tile({v: ad == null ? '—' : Math.round(ad), u: ad == null ? '' : '%', estado: est,
+          l: `adherencia · ${Math.round(x.tot.kcal)} de ${x.t.kcal} kcal`,
+          barra: ad == null ? null : ad/100}),
+    tile({v: x.deficit == null ? '—' : (x.deficit > 0 ? '−' : '+') + Math.abs(Math.round(x.deficit)),
+          estado: x.deficit == null ? '' : x.deficit >= 500 ? 'ok' : x.deficit > 0 ? 'warn' : 'bad',
+          l: `déficit vs tdee ${x.t.tdee}`}),
+    tile({v: Math.round(x.tot.p), u: `/${x.t.p} g`, estado: x.proteinaOk ? 'ok' : 'warn',
+          l: x.proteinaOk ? 'proteína · en meta' : 'proteína · falta',
+          barra: x.tot.p / x.t.p}),
+    tile({v: Math.round(x.tot.fib), u: 'g', estado: x.fibraOk ? 'ok' : 'warn',
+          l: 'fibra · palanca del LDL', barra: x.tot.fib / 35}),
+    tile({v: x.hechos, u: `/${x.total}`, estado: x.cumplimiento >= 80 ? 'ok' : x.cumplimiento >= 50 ? 'warn' : '',
+          l: 'cumplimiento del día', barra: x.hechos / x.total}),
+  ].join('');
+  $('mdTag').textContent = `${Math.round(x.cumplimiento)}% del día`;
+}
+
+function renderMetricasSemana(fechas){
+  const w = metricasSemana(fechas);
+  if (!w.n){
+    ['msConsist','msNutri','msResult'].forEach(id => $(id).innerHTML =
+      `<div class="tile" style="grid-column:1/-1;border-right:0"><div class="tl">Semana por venir: aún no hay nada que medir.</div></div>`);
+    $('msCalib').innerHTML = ''; $('msTag').textContent = 'por venir';
+    return;
+  }
+  const pct = (a,b) => b ? a/b : 0;
+  $('msConsist').innerHTML = [
+    tile({v: w.registrados, u: `/${w.n}`, l: 'días con comida registrada',
+          estado: pct(w.registrados,w.n) >= .85 ? 'ok' : pct(w.registrados,w.n) >= .6 ? 'warn' : 'bad',
+          barra: pct(w.registrados,w.n)}),
+    tile({v: w.pesados, u: `/${w.n}`, l: 'días pesados',
+          estado: pct(w.pesados,w.n) >= .85 ? 'ok' : 'warn', barra: pct(w.pesados,w.n)}),
+    tile({v: w.entrenos, u: `/${w.entPlan}`, l: 'entrenos hechos',
+          estado: w.entPlan && w.entrenos >= w.entPlan ? 'ok' : 'warn',
+          barra: pct(w.entrenos,w.entPlan)}),
+    tile({v: w.sinAlcohol, u: `/${w.diasConAlgo || w.n}`, l: 'días sin alcohol · ALT 68',
+          estado: !w.diasConAlgo ? '' : w.sinAlcohol >= w.diasConAlgo ? 'ok'
+                : w.sinAlcohol >= w.diasConAlgo - 1 ? 'warn' : 'bad',
+          barra: pct(w.sinAlcohol, w.diasConAlgo || w.n)}),
+  ].join('');
+  $('msNutri').innerHTML = [
+    tile({v: w.adherencia == null ? '—' : Math.round(w.adherencia), u: w.adherencia==null?'':'%',
+          l: 'adherencia promedio',
+          estado: w.adherencia == null ? '' : Math.abs(w.adherencia-100) <= 8 ? 'ok' : 'warn',
+          barra: w.adherencia == null ? null : w.adherencia/100}),
+    tile({v: w.proteinaDias, u: `/${w.registrados||0}`, l: 'días con proteína en meta',
+          estado: w.registrados && w.proteinaDias >= w.registrados*.8 ? 'ok' : 'warn',
+          barra: pct(w.proteinaDias, w.registrados)}),
+    tile({v: w.fibra == null ? '—' : Math.round(w.fibra), u: w.fibra==null?'':'g',
+          l: 'fibra promedio · meta 35',
+          estado: w.fibra == null ? '' : w.fibra >= 32 ? 'ok' : 'warn',
+          barra: w.fibra == null ? null : w.fibra/35}),
+    tile({v: w.sueno == null ? '—' : w.sueno.toFixed(1), u: w.sueno==null?'':'h',
+          l: 'sueño promedio',
+          estado: w.sueno == null ? '' : w.sueno >= 7 ? 'ok' : w.sueno >= 6.5 ? 'warn' : 'bad'}),
+    tile({v: w.recovery == null ? '—' : Math.round(w.recovery), u: w.recovery==null?'':'%',
+          l: 'recovery promedio',
+          estado: w.recovery == null ? '' : w.recovery >= 67 ? 'ok' : w.recovery >= 34 ? 'warn' : 'bad'}),
+  ].join('');
+  $('msResult').innerHTML = [
+    tile({v: w.deficitDia == null ? '—' : '−' + Math.round(w.deficitDia),
+          l: 'déficit medio por día registrado',
+          estado: w.deficitDia == null ? '' : w.deficitDia >= 600 ? 'ok' : 'warn'}),
+    tile({v: w.esperada ? w.esperada.toFixed(2) : '—', u: w.esperada?'kg':'',
+          l: 'pérdida que predice tu registro'}),
+    tile({v: w.real == null ? '—' : w.real.toFixed(2), u: w.real==null?'':'kg',
+          l: 'pérdida real · medias móviles',
+          estado: w.real == null ? '' : w.real > 0 ? 'ok' : 'bad'}),
+    tile({v: Math.round(w.cumplimiento), u: '%', l: 'cumplimiento medio del checklist',
+          estado: w.cumplimiento >= 80 ? 'ok' : w.cumplimiento >= 50 ? 'warn' : '',
+          barra: w.cumplimiento/100}),
+  ].join('');
+  $('msTag').textContent = `${w.registrados}/${w.n} registrados`;
+  $('msCalib').innerHTML = calibracion(w);
+}
+
+/* La métrica que nadie construye: ¿cuadra el modelo con la realidad? */
+function calibracion(w){
+  const caja = (cls, tit, txt) =>
+    `<div class="calib" style="background:var(--${cls}-wash);border-left:3px solid var(--${cls})">
+      <span class="ct" style="color:var(--${cls})">${tit}</span>${txt}</div>`;
+
+  if (w.registrados < 5)
+    return caja('low', 'Sin calibrar',
+      `Con <b>${w.registrados} de ${w.n}</b> días registrados no puedo comparar la predicción
+       con la realidad. Cinco días es el mínimo para que el promedio signifique algo —
+       y registrar es la única de todas estas métricas que depende solo de ti.`);
+  if (w.real == null)
+    return caja('low', 'Falta peso',
+      `Tengo tu comida pero no suficientes pesos para una media móvil. Pésate en ayunas
+       varios días seguidos y esta comparación se activa sola.`);
+
+  const dif = w.real - w.esperada;
+  if (Math.abs(dif) <= 0.3)
+    return caja('ok', 'El modelo cuadra',
+      `Tu registro predecía <b>${w.esperada.toFixed(2)} kg</b> y perdiste
+       <b>${w.real.toFixed(2)} kg</b>. Eso significa dos cosas buenas a la vez: estás
+       registrando con honestidad y tu TDEE estimado de <b>${metricasDia(HOY).t.tdee} kcal</b>
+       es correcto. No cambies nada.`);
+  if (dif < -0.3)
+    return caja('low', 'Perdiste menos de lo previsto',
+      `Tu registro predecía <b>${w.esperada.toFixed(2)} kg</b> pero la media móvil bajó
+       <b>${w.real.toFixed(2)} kg</b>. Hay dos explicaciones honestas y no incluyen
+       "metabolismo lento": o estás subestimando lo que comes — el aceite, la mantequilla
+       de maní y las porciones a ojo son los sospechosos de siempre — o tu TDEE real está
+       por debajo de ${metricasDia(HOY).t.tdee}. <b>Antes de bajar calorías, pesa todo
+       durante una semana.</b> Si con todo pesado la brecha sigue, ahí sí ajustamos el TDEE.`);
+  return caja('warn', 'Perdiste más de lo previsto',
+    `Tu registro predecía <b>${w.esperada.toFixed(2)} kg</b> y la media móvil bajó
+     <b>${w.real.toFixed(2)} kg</b>. Si es de las primeras dos semanas es agua y glucógeno,
+     normal. Si se repite, tu TDEE es más alto de lo estimado y puedes comer un poco más:
+     bajar más de 1,2 kg por semana de forma sostenida se paga con músculo.`);
+}
+
+/* ── Render: plan de la semana día por día ────────────────────────── */
+function renderPlan(){
+  const lunes = lunesDe(ANCLA);
+  const fechas = Array.from({length: 7}, (_, i) => masDias(lunes, i));
+  const d0 = desdeIso(fechas[0]), d6 = desdeIso(fechas[6]);
+  $('planTitle').textContent = d0.getMonth() === d6.getMonth()
+    ? `${d0.getDate()}–${d6.getDate()} de ${MESES[d0.getMonth()]}`
+    : `${d0.getDate()} ${MESES[d0.getMonth()].slice(0,3)} – ${d6.getDate()} ${MESES[d6.getMonth()].slice(0,3)}`;
+  $('plNow').setAttribute('aria-current', String(lunes === lunesDe(HOY)));
+  $('planTag').textContent = lunes === lunesDe(HOY) ? 'esta semana'
+    : lunes > lunesDe(HOY) ? 'por venir' : 'pasada';
+
+  const etiquetas = {b:'Desayuno', l:'Almuerzo', d:'Cena'};
+  let sk = 0, sp = 0, sc = 0, sf = 0, sfib = 0;
+
+  $('planDias').innerHTML = fechas.map(f => {
+    const d = desdeIso(f), pl = planDe(d), ent = esEntreno(d), ses = sesionDe(d);
+    const items = [...pl.comidas, ...pl.snacks].map(id => ({id, r: D.recetas[id]})).filter(x => x.r);
+    const tot = items.reduce((a,{r}) => ({kcal:a.kcal+r.kcal, p:a.p+r.p, c:a.c+r.c,
+      f:a.f+r.f, fib:a.fib+r.fib}), {kcal:0,p:0,c:0,f:0,fib:0});
+    sk+=tot.kcal; sp+=tot.p; sc+=tot.c; sf+=tot.f; sfib+=tot.fib;
+
+    const comidas = items.map(({id, r}) => `<div class="pdi">
+        <span class="pn"><i>${id}</i>${esc(r.n)}</span>
+        <span class="pm">${r.kcal} kcal · ${r.p} P · ${r.min} min</span></div>`).join('');
+
+    let gym;
+    if (ses === 'descanso') gym = `<div class="pdi"><span class="pn">Descanso total</span></div>`;
+    else if (ses === 'cardio') gym = D.cardio.sesiones.filter(x => !/almuerzo/i.test(x.cuando))
+      .map(x => `<div class="pdi"><span class="pn">${esc(x.tipo)}</span>
+        <span class="pm">${x.duracion_min} min</span></div>`).join('')
+      || `<div class="pdi"><span class="pn">Caminadora zona 2</span><span class="pm">45 min</span></div>`;
+    else {
+      const S = D.entrenos[ses];
+      gym = `<div class="pdi"><span class="pn"><b>${esc(S.n)}</b></span>
+          <span class="pm">${S.ej.reduce((a,e)=>a+e.s,0)} series · ${S.min} min</span></div>` +
+        S.ej.map((e,i) => `<div class="pdi">
+          <span class="pn"><i>${i+1}</i>${esc(e.n)}</span>
+          <span class="pm">${e.s}×${esc(e.r)} · RIR ${e.rir}</span></div>`).join('');
+    }
+
+    return `<div class="pday ${f===HOY?'hoy':''}">
+      <div class="pdh">
+        <span class="pdd">${DIAS_C[d.getDay()].toUpperCase()} ${String(d.getDate()).padStart(2,'0')}</span>
+        <span class="pdt">${ent?'entreno':'descanso'}${f===HOY?' · hoy':''}</span>
+        <span class="pdk"><b>${Math.round(tot.kcal)}</b> kcal ·
+          <b>${Math.round(tot.p)}</b> P · <b>${Math.round(tot.c)}</b> C ·
+          <b>${Math.round(tot.f)}</b> G · <b>${Math.round(tot.fib)}</b> fib</span>
+      </div>
+      <div class="pdgrid">
+        <div class="pdcol"><h5>Comer · ${items.length} tomas</h5><div class="pdlist">${comidas}</div></div>
+        <div class="pdcol"><h5>Entrenar</h5><div class="pdlist">${gym}</div></div>
+      </div>
+    </div>`;
+  }).join('');
+
+  const cel = (v,l) => `<div class="sumcell"><div class="v2">${v}</div><div class="l2">${l}</div></div>`;
+  $('planSum').innerHTML =
+    cel(Math.round(sk/7), 'kcal/día promedio') +
+    cel(Math.round(sp/7)+' g', 'proteína/día') +
+    cel(Math.round(sfib/7)+' g', 'fibra/día') +
+    cel(fechas.filter(f => !['descanso','cardio'].includes(sesionDe(desdeIso(f)))).length, 'días de pesas');
+}
+
 function render(){
   renderNav(); renderHead(); renderMacros(); renderComidas(); renderGym();
-  renderHabitos(); renderWhoop(); renderExtras();
+  renderHabitos(); renderWhoop(); renderExtras(); renderMetricasDia();
   if (!$('vSem').hidden) renderSemana();
+  if (!$('vPlan').hidden) renderPlan();
 }
 
 function irA(f){
@@ -525,7 +798,7 @@ document.addEventListener('click', ev => {
   const c = ev.target.closest('[data-dia]');
   if (!c) return;
   irA(c.dataset.dia);
-  vista(true);
+  vista('dia');
 });
 document.addEventListener('keydown', ev => {
   if (ev.key !== 'Enter' && ev.key !== ' ') return;
@@ -533,7 +806,7 @@ document.addEventListener('keydown', ev => {
   if (!c) return;
   ev.preventDefault();
   irA(c.dataset.dia);
-  vista(true);
+  vista('dia');
 });
 // Flechas del teclado para moverse de día
 document.addEventListener('keydown', ev => {
@@ -542,13 +815,22 @@ document.addEventListener('keydown', ev => {
   if (ev.key === 'ArrowRight') irA(masDias(VIENDO,  1));
 });
 
-$('tabHoy').onclick = () => vista(true);
-$('tabSem').onclick = () => vista(false);
-function vista(hoy){
-  $('vHoy').hidden = !hoy; $('vSem').hidden = hoy;
-  $('tabHoy').setAttribute('aria-selected', String(hoy));
-  $('tabSem').setAttribute('aria-selected', String(!hoy));
-  if (!hoy) renderSemana();
+$('tabHoy').onclick  = () => vista('dia');
+$('tabSem').onclick  = () => vista('semana');
+$('tabPlan').onclick = () => vista('plan');
+$('plPrev').onclick = () => { ANCLA = masDias(lunesDe(ANCLA), -7); renderPlan(); };
+$('plNext').onclick = () => { ANCLA = masDias(lunesDe(ANCLA),  7); renderPlan(); };
+$('plNow').onclick  = () => { ANCLA = HOY; renderPlan(); };
+
+function vista(cual){
+  const mapa = {dia:['vHoy','tabHoy'], semana:['vSem','tabSem'], plan:['vPlan','tabPlan']};
+  for (const [k, [sec, tab]] of Object.entries(mapa)){
+    $(sec).hidden = k !== cual;
+    $(tab).setAttribute('aria-selected', String(k === cual));
+  }
+  $('dayNav').hidden = cual !== 'dia';
+  if (cual === 'semana') renderSemana();
+  if (cual === 'plan') renderPlan();
 }
 
 $('btnWeight').onclick = () => {
