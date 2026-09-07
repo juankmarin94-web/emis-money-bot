@@ -1,0 +1,1145 @@
+{
+  "_meta": {
+    "descripcion": "Recetas vegetarianas altas en proteina, construidas SOLO con lo que hay en la despensa de Camilo y su especiero.",
+    "nota": "Los macros NO estan escritos aqui: el bot los calcula desde data/foods.json con los gramos de cada ingrediente. Cambia un gramaje y el macro se recalcula solo.",
+    "especiero_disponible": [
+      "cumin",
+      "paprika",
+      "all purpose",
+      "oregano",
+      "Tajin",
+      "ajo en polvo",
+      "cebolla en polvo",
+      "cilantro seco",
+      "chili powder",
+      "canela",
+      "garam masala",
+      "jengibre",
+      "turmeric",
+      "hierbas italianas",
+      "curry",
+      "Moroccan seasoning",
+      "lemon pepper",
+      "romero"
+    ],
+    "regla_desayunos": "Todo desayuno se construye sobre huevos, avena o cereal. Es una preferencia de Camilo, no una restriccion nutricional: si la cambias, el planificador acepta cualquier receta que este en el grupo 'desayunos'."
+  },
+  "desayunos": [
+    {
+      "id": "b1",
+      "nombre": "Huevos rancheros de sarten",
+      "minutos": 12,
+      "ingredientes": [
+        {
+          "food": "huevo",
+          "g": 100
+        },
+        {
+          "food": "clara",
+          "g": 132
+        },
+        {
+          "food": "tomate",
+          "g": 150
+        },
+        {
+          "food": "espinaca",
+          "g": 100
+        },
+        {
+          "food": "frijol_negro",
+          "g": 60
+        },
+        {
+          "food": "thins",
+          "g": 36
+        }
+      ],
+      "especias": [
+        "Tajin",
+        "cumin",
+        "chili powder",
+        "cilantro"
+      ],
+      "pasos": [
+        "Sofrie el tomate picado 3 min con cumin y chili powder (sin aceite, la sarten antiadherente basta).",
+        "Anade los frijoles escurridos y la espinaca, tapa 2 min hasta que se marchite.",
+        "Bate los huevos con las claras, viertelos y revuelve a fuego bajo 3 min.",
+        "Tajin encima, cilantro fresco, y el Thin tostado al lado."
+      ]
+    },
+    {
+      "id": "b2",
+      "nombre": "Bowl de yogurt griego con avena y fresas",
+      "minutos": 5,
+      "ingredientes": [
+        {
+          "food": "yogurt_griego",
+          "g": 250
+        },
+        {
+          "food": "cottage",
+          "g": 100
+        },
+        {
+          "food": "avena",
+          "g": 30
+        },
+        {
+          "food": "fresa",
+          "g": 150
+        }
+      ],
+      "especias": [
+        "canela"
+      ],
+      "pasos": [
+        "Mezcla el yogurt con el cottage: sube la proteina sin subir calorias.",
+        "Anade la avena cruda y canela, remueve.",
+        "Fresas partidas encima. Si lo dejas 10 min la avena se ablanda sola."
+      ]
+    },
+    {
+      "id": "b3",
+      "nombre": "Overnight oats proteicos",
+      "minutos": 4,
+      "prep_noche_anterior": true,
+      "ingredientes": [
+        {
+          "food": "avena",
+          "g": 40
+        },
+        {
+          "food": "cottage",
+          "g": 200
+        },
+        {
+          "food": "yogurt_griego",
+          "g": 100
+        },
+        {
+          "food": "fresa",
+          "g": 100
+        }
+      ],
+      "especias": [
+        "canela",
+        "vanilla"
+      ],
+      "pasos": [
+        "En un frasco: avena + cottage + yogurt + canela + gotas de vanilla.",
+        "Nevera toda la noche.",
+        "En la manana anade las fresas. Se come frio, cero cocina."
+      ]
+    },
+    {
+      "id": "b5",
+      "nombre": "Overnight oats con leche de almendra y berries",
+      "minutos": 4,
+      "prep_noche_anterior": true,
+      "ingredientes": [
+        {
+          "food": "avena",
+          "g": 45
+        },
+        {
+          "food": "leche_almendra",
+          "g": 200
+        },
+        {
+          "food": "cottage",
+          "g": 150
+        },
+        {
+          "food": "berries_congelados",
+          "g": 120
+        },
+        {
+          "food": "whey",
+          "g": 15
+        }
+      ],
+      "especias": [
+        "canela",
+        "vanilla"
+      ],
+      "pasos": [
+        "Frasco: avena + leche de almendra + cottage + medio scoop de whey + canela.",
+        "Los berries CONGELADOS van directo: se descongelan en la nevera y sueltan jugo morado sobre todo.",
+        "Nevera toda la noche. Cero cocina en la manana."
+      ]
+    },
+    {
+      "id": "b7",
+      "nombre": "Omelette de espinaca, tomate y cottage",
+      "minutos": 10,
+      "base": "huevos",
+      "ingredientes": [
+        {
+          "food": "huevo",
+          "g": 100
+        },
+        {
+          "food": "clara",
+          "g": 132
+        },
+        {
+          "food": "espinaca",
+          "g": 120
+        },
+        {
+          "food": "tomate",
+          "g": 120
+        },
+        {
+          "food": "cottage",
+          "g": 100
+        }
+      ],
+      "especias": [
+        "paprika",
+        "ajo en polvo",
+        "oregano",
+        "Tajin"
+      ],
+      "pasos": [
+        "Bate los 2 huevos con las 4 claras, paprika y ajo en polvo.",
+        "Sarten antiadherente a fuego MEDIO-BAJO (fuego alto = omelette de goma).",
+        "Vierte, espera 2 min sin tocar hasta que cuaje el fondo.",
+        "Espinaca y tomate sobre una mitad, dobla, 1 min mas.",
+        "Cottage encima fuera del fuego y Tajin. 40 g de proteina."
+      ]
+    },
+    {
+      "id": "b8",
+      "nombre": "Huevos revueltos sobre Thins",
+      "minutos": 8,
+      "base": "huevos",
+      "ingredientes": [
+        {
+          "food": "huevo",
+          "g": 150
+        },
+        {
+          "food": "clara",
+          "g": 66
+        },
+        {
+          "food": "thins",
+          "g": 36
+        },
+        {
+          "food": "tomate",
+          "g": 100
+        },
+        {
+          "food": "espinaca",
+          "g": 80
+        }
+      ],
+      "especias": [
+        "cebolleta",
+        "paprika",
+        "Tajin",
+        "lemon pepper"
+      ],
+      "pasos": [
+        "Tuesta el Thin mientras haces el resto.",
+        "Espinaca y tomate 2 min en la sarten, escurre el agua que suelten.",
+        "Huevos + claras batidos, fuego BAJO, revuelve constante 3 min.",
+        "APAGA el fuego cuando todavia se vean humedos: se terminan de cuajar con el calor residual.",
+        "Sobre el Thin tostado, Tajin encima."
+      ]
+    },
+    {
+      "id": "b9",
+      "nombre": "Avena caliente con proteina y banana",
+      "minutos": 6,
+      "base": "avena",
+      "ingredientes": [
+        {
+          "food": "avena",
+          "g": 50
+        },
+        {
+          "food": "leche_almendra",
+          "g": 250
+        },
+        {
+          "food": "whey",
+          "g": 25
+        },
+        {
+          "food": "banana",
+          "g": 120
+        }
+      ],
+      "especias": [
+        "canela",
+        "vanilla"
+      ],
+      "pasos": [
+        "Avena + leche de almendra al microondas 2 min, o 4 min en olla.",
+        "Deja que baje del hervor un minuto ANTES de meter el whey: si lo echas hirviendo se corta y queda grumoso.",
+        "Banana en rodajas y canela encima.",
+        "El desayuno caliente de los dias frios de Adelaide."
+      ]
+    },
+    {
+      "id": "b10",
+      "nombre": "Muesli GF con yogurt griego y berries",
+      "minutos": 3,
+      "base": "cereal",
+      "sin_cocina": true,
+      "ingredientes": [
+        {
+          "food": "muesli_gf",
+          "g": 45
+        },
+        {
+          "food": "yogurt_griego",
+          "g": 200
+        },
+        {
+          "food": "cottage",
+          "g": 80
+        },
+        {
+          "food": "berries_congelados",
+          "g": 120
+        }
+      ],
+      "especias": [
+        "canela"
+      ],
+      "pasos": [
+        "Yogurt griego + cottage de base (el cottage es lo que sube la proteina sin subir calorias).",
+        "Muesli encima justo antes de comer, para que quede crujiente.",
+        "Berries congelados directo: se descongelan en 5 min y sueltan jugo."
+      ]
+    },
+    {
+      "id": "b11",
+      "nombre": "Nutri-Grain con huevos duros al lado",
+      "minutos": 3,
+      "base": "cereal",
+      "sin_cocina": true,
+      "ingredientes": [
+        {
+          "food": "nutrigrain",
+          "g": 45
+        },
+        {
+          "food": "leche_almendra",
+          "g": 200
+        },
+        {
+          "food": "huevo",
+          "g": 100
+        }
+      ],
+      "especias": [
+        "Tajin"
+      ],
+      "pasos": [
+        "Cereal con leche de almendra, y 2 huevos duros al lado con Tajin.",
+        "Los huevos no son opcionales: el Nutri-Grain solo te deja en 8 g de proteina y con hambre a las 10 am.",
+        "Ojo honesto: el Nutri-Grain trae 22 g de azucar por 100 g. Es el desayuno mas debil de la lista.",
+        "Cocina 6 huevos duros el domingo y este desayuno son 60 segundos."
+      ]
+    }
+  ],
+  "almuerzos": [
+    {
+      "id": "l1",
+      "nombre": "Quorn al curry con basmati y espinaca",
+      "minutos": 20,
+      "ingredientes": [
+        {
+          "food": "quorn",
+          "g": 150
+        },
+        {
+          "food": "arroz_basmati",
+          "g": 60
+        },
+        {
+          "food": "espinaca",
+          "g": 150
+        },
+        {
+          "food": "tomate",
+          "g": 100
+        },
+        {
+          "food": "yogurt_griego",
+          "g": 40
+        },
+        {
+          "food": "aceite_oliva",
+          "g": 5
+        }
+      ],
+      "especias": [
+        "curry",
+        "garam masala",
+        "turmeric",
+        "jengibre",
+        "ajo en polvo",
+        "cebolla en polvo"
+      ],
+      "pasos": [
+        "Pon el basmati a cocinar (60 g crudo, 1:1.6 de agua, 12 min tapado).",
+        "En la sarten con el aceite: curry, garam masala, turmeric y jengibre 30 s hasta que huelan.",
+        "Anade el Quorn, dorar 4 min. Luego el tomate picado, 5 min mas.",
+        "Espinaca al final, tapa 2 min. Apaga el fuego y recien ahi mezcla el yogurt (si hierve se corta).",
+        "Sirve sobre el arroz."
+      ]
+    },
+    {
+      "id": "l2",
+      "nombre": "Pasta GF con tiras vegetales y tomate",
+      "minutos": 18,
+      "ingredientes": [
+        {
+          "food": "pasta_gf",
+          "g": 75
+        },
+        {
+          "food": "tiras_veg",
+          "g": 120
+        },
+        {
+          "food": "tomate",
+          "g": 200
+        },
+        {
+          "food": "espinaca",
+          "g": 100
+        },
+        {
+          "food": "mozzarella",
+          "g": 20
+        }
+      ],
+      "especias": [
+        "hierbas italianas",
+        "oregano",
+        "ajo en polvo",
+        "chili powder"
+      ],
+      "pasos": [
+        "Pasta GF al dente (ojo: se pasa mas rapido que la de trigo, prueba 1 min antes).",
+        "Dora las tiras vegetales 5 min con ajo en polvo.",
+        "Tomate picado + hierbas italianas + oregano, 8 min a fuego medio hasta salsa.",
+        "Espinaca 1 min, mezcla con la pasta y la mozzarella rallada encima."
+      ]
+    },
+    {
+      "id": "l3",
+      "nombre": "Bowl mexicano de frijol y maiz con Tajin",
+      "minutos": 10,
+      "sin_cocina": true,
+      "ingredientes": [
+        {
+          "food": "frijol_negro",
+          "g": 200
+        },
+        {
+          "food": "maiz",
+          "g": 80
+        },
+        {
+          "food": "tomate",
+          "g": 150
+        },
+        {
+          "food": "espinaca",
+          "g": 100
+        },
+        {
+          "food": "cottage",
+          "g": 100
+        },
+        {
+          "food": "crema_light",
+          "g": 40
+        },
+        {
+          "food": "limon",
+          "g": 15
+        }
+      ],
+      "especias": [
+        "Tajin",
+        "cumin",
+        "chili powder",
+        "cilantro fresco"
+      ],
+      "pasos": [
+        "Frijoles y maiz escurridos, tibios o frios, da igual.",
+        "Pico de gallo rapido: tomate + cebolleta + cilantro + limon + Tajin.",
+        "Monta: espinaca de base, frijol y maiz, pico de gallo, cottage y crema light encima.",
+        "18 g de fibra en un plato. Este es tu almuerzo de oficina."
+      ]
+    },
+    {
+      "id": "l4",
+      "nombre": "Ensalada tibia de papa, huevo y lemon pepper",
+      "minutos": 25,
+      "ingredientes": [
+        {
+          "food": "papa",
+          "g": 250
+        },
+        {
+          "food": "huevo",
+          "g": 100
+        },
+        {
+          "food": "clara",
+          "g": 132
+        },
+        {
+          "food": "cottage",
+          "g": 100
+        },
+        {
+          "food": "espinaca",
+          "g": 100
+        },
+        {
+          "food": "tomate",
+          "g": 100
+        },
+        {
+          "food": "yogurt_griego",
+          "g": 60
+        },
+        {
+          "food": "limon",
+          "g": 15
+        }
+      ],
+      "especias": [
+        "lemon pepper",
+        "paprika",
+        "cebolleta"
+      ],
+      "pasos": [
+        "Papa en cubos, hervir 15 min. Huevos duros en la misma agua los ultimos 9 min.",
+        "Aderezo: yogurt griego + limon + lemon pepper + paprika.",
+        "Mezcla todo tibio con la espinaca y el tomate. El cottage al final.",
+        "Truco: si enfrias la papa en la nevera y la comes al dia siguiente, gana almidon resistente (mejor para la saciedad)."
+      ]
+    },
+    {
+      "id": "l5",
+      "nombre": "Wrap de tofu al curry con espinaca",
+      "minutos": 15,
+      "ingredientes": [
+        {
+          "food": "wrap",
+          "g": 71
+        },
+        {
+          "food": "tofu_firme",
+          "g": 180
+        },
+        {
+          "food": "espinaca",
+          "g": 80
+        },
+        {
+          "food": "zanahoria",
+          "g": 80
+        },
+        {
+          "food": "yogurt_griego",
+          "g": 60
+        },
+        {
+          "food": "limon",
+          "g": 10
+        }
+      ],
+      "especias": [
+        "curry",
+        "garam masala",
+        "jengibre",
+        "ajo en polvo",
+        "Tajin"
+      ],
+      "pasos": [
+        "Tofu en cubos, apretado y seco. Dorar 6 min con curry y garam masala.",
+        "Aderezo: yogurt griego + limon + jengibre + una pizca de curry.",
+        "Wrap tibio 20 s en la sarten seca (se dobla sin romperse).",
+        "Rellena: espinaca, zanahoria rallada, tofu, aderezo. Enrolla apretado.",
+        "Se lleva al trabajo envuelto en papel aluminio."
+      ]
+    },
+    {
+      "id": "l6",
+      "nombre": "Burrito bowl de frijol refrito y arroz",
+      "minutos": 15,
+      "ingredientes": [
+        {
+          "food": "arroz_basmati",
+          "g": 55
+        },
+        {
+          "food": "frijol_refrito",
+          "g": 180
+        },
+        {
+          "food": "maiz",
+          "g": 80
+        },
+        {
+          "food": "salsa_mexicana",
+          "g": 60
+        },
+        {
+          "food": "cottage",
+          "g": 120
+        },
+        {
+          "food": "espinaca",
+          "g": 80
+        },
+        {
+          "food": "caldo_verdura",
+          "g": 100
+        },
+        {
+          "food": "limon",
+          "g": 15
+        }
+      ],
+      "especias": [
+        "cumin",
+        "chili powder",
+        "Tajin",
+        "cilantro fresco"
+      ],
+      "pasos": [
+        "Cocina el arroz con CALDO DE VERDURA en vez de agua: cero calorias extra, el doble de sabor.",
+        "Calienta los frijoles refritos con cumin y un chorro de agua para que queden cremosos.",
+        "Monta el bowl: arroz, frijol, maiz, salsa, espinaca cruda, cottage encima de todo.",
+        "Limon y Tajin al final. El limon sobre los frijoles y la espinaca te triplica la absorcion del hierro: con tu ferritina en 50 eso importa."
+      ]
+    }
+  ],
+  "cenas": [
+    {
+      "id": "d1",
+      "nombre": "Pizza proteica en base delgada",
+      "minutos": 15,
+      "ingredientes": [
+        {
+          "food": "base_pizza",
+          "g": 75
+        },
+        {
+          "food": "tomate",
+          "g": 100
+        },
+        {
+          "food": "mozzarella",
+          "g": 60
+        },
+        {
+          "food": "quorn",
+          "g": 100
+        },
+        {
+          "food": "espinaca",
+          "g": 60
+        }
+      ],
+      "especias": [
+        "oregano",
+        "hierbas italianas",
+        "ajo en polvo",
+        "chili powder"
+      ],
+      "pasos": [
+        "MEDIA base, no entera. Horno a 220 C.",
+        "Salsa: tomate triturado + oregano + ajo en polvo, 5 min en sarten para que espese.",
+        "Monta: salsa, Quorn, espinaca, mozzarella. 10-12 min al horno.",
+        "Esta es tu valvula de escape los viernes. Cabe en el plan, no lo rompe."
+      ]
+    },
+    {
+      "id": "d2",
+      "nombre": "Curry marroqui de garbanzos y espinaca",
+      "minutos": 22,
+      "ingredientes": [
+        {
+          "food": "garbanzo",
+          "g": 240
+        },
+        {
+          "food": "espinaca",
+          "g": 200
+        },
+        {
+          "food": "tomate",
+          "g": 200
+        },
+        {
+          "food": "yogurt_griego",
+          "g": 100
+        },
+        {
+          "food": "aceite_oliva",
+          "g": 5
+        }
+      ],
+      "especias": [
+        "Moroccan seasoning",
+        "garam masala",
+        "jengibre",
+        "turmeric",
+        "cumin"
+      ],
+      "pasos": [
+        "Aceite + Moroccan seasoning + cumin + jengibre, 30 s.",
+        "Tomate picado 8 min hasta que se deshaga.",
+        "Garbanzos escurridos + garam masala + turmeric, 8 min a fuego bajo, machaca un tercio con el tenedor para espesar.",
+        "Espinaca al final. Yogurt griego encima fuera del fuego.",
+        "20 g de fibra. Hace el doble de porciones si duplicas: aguanta 3 dias en nevera."
+      ]
+    },
+    {
+      "id": "d3",
+      "nombre": "Revuelto grande de espinaca, maiz y cottage (bajo en carbos)",
+      "minutos": 10,
+      "ingredientes": [
+        {
+          "food": "huevo",
+          "g": 100
+        },
+        {
+          "food": "clara",
+          "g": 165
+        },
+        {
+          "food": "espinaca",
+          "g": 200
+        },
+        {
+          "food": "maiz",
+          "g": 80
+        },
+        {
+          "food": "cottage",
+          "g": 150
+        },
+        {
+          "food": "cebolleta",
+          "g": 30
+        }
+      ],
+      "especias": [
+        "paprika",
+        "ajo en polvo",
+        "Tajin"
+      ],
+      "pasos": [
+        "Cebolleta y maiz 3 min en la sarten.",
+        "Espinaca, tapa 2 min, escurre el agua que suelte (si no, aguado).",
+        "Huevos + claras batidos, fuego BAJO, revuelve constante 3 min. Apaga antes de que se vea seco.",
+        "Cottage encima fuera del fuego + Tajin.",
+        "55 g de proteina. Esta es tu cena de dia de descanso."
+      ]
+    },
+    {
+      "id": "d4",
+      "nombre": "Salteado asiatico de tiras vegetales",
+      "minutos": 15,
+      "ingredientes": [
+        {
+          "food": "tiras_veg",
+          "g": 150
+        },
+        {
+          "food": "espinaca",
+          "g": 200
+        },
+        {
+          "food": "maiz",
+          "g": 100
+        },
+        {
+          "food": "arroz_basmati",
+          "g": 50
+        },
+        {
+          "food": "cebolleta",
+          "g": 40
+        }
+      ],
+      "especias": [
+        "jengibre",
+        "ajo en polvo",
+        "chili powder",
+        "salsa de soya (por comprar)"
+      ],
+      "pasos": [
+        "Arroz a cocinar primero.",
+        "Sarten muy caliente: tiras vegetales 5 min sin moverlas mucho para que doren.",
+        "Jengibre + ajo en polvo + chili, luego maiz y cebolleta 2 min.",
+        "Espinaca 1 min, un chorro de soya, fuera del fuego. Sirve sobre el arroz."
+      ]
+    },
+    {
+      "id": "d5",
+      "nombre": "Tofu a la plancha con arroz al caldo",
+      "minutos": 20,
+      "ingredientes": [
+        {
+          "food": "tofu_extrafirme",
+          "g": 220
+        },
+        {
+          "food": "arroz_basmati",
+          "g": 50
+        },
+        {
+          "food": "caldo_verdura",
+          "g": 120
+        },
+        {
+          "food": "espinaca",
+          "g": 200
+        },
+        {
+          "food": "zanahoria",
+          "g": 100
+        },
+        {
+          "food": "cebolleta",
+          "g": 30
+        },
+        {
+          "food": "sriracha",
+          "g": 15
+        }
+      ],
+      "especias": [
+        "jengibre",
+        "ajo en polvo",
+        "chili powder",
+        "lemon pepper"
+      ],
+      "pasos": [
+        "Tofu en lonjas de 1.5 cm, apretado y seco, sal y lemon pepper.",
+        "Sarten MUY caliente, 4 min por lado sin tocarlo. Costra dorada de verdad.",
+        "Arroz cocido en caldo de verdura con jengibre.",
+        "Zanahoria en bastones y espinaca al vapor 3 min encima del arroz.",
+        "Sriracha por encima. 40 g de proteina."
+      ]
+    },
+    {
+      "id": "d6",
+      "nombre": "Pasta GF con Dolmio y tofu desmenuzado",
+      "minutos": 18,
+      "ingredientes": [
+        {
+          "food": "pasta_gf",
+          "g": 70
+        },
+        {
+          "food": "tofu_firme",
+          "g": 200
+        },
+        {
+          "food": "salsa_bolognese",
+          "g": 150
+        },
+        {
+          "food": "espinaca",
+          "g": 150
+        },
+        {
+          "food": "mozzarella",
+          "g": 25
+        }
+      ],
+      "especias": [
+        "hierbas italianas",
+        "oregano",
+        "ajo en polvo",
+        "chili powder"
+      ],
+      "pasos": [
+        "Desmenuza el tofu con las manos hasta que parezca carne molida. Este es el truco de toda la receta.",
+        "Dora el tofu desmenuzado 8 min SIN moverlo mucho, con ajo en polvo y oregano, hasta que quede tostadito.",
+        "Anade el Dolmio y las hierbas italianas, 4 min.",
+        "Pasta GF al dente (prueba 1 min antes de lo que dice la caja), espinaca al final.",
+        "Mozzarella rallada encima. La bolognesa vegetariana que no sabe a sustituto."
+      ]
+    },
+    {
+      "id": "d7",
+      "nombre": "Scramble de tofu con Tajin (cena rapida)",
+      "minutos": 12,
+      "ingredientes": [
+        {
+          "food": "tofu_firme",
+          "g": 200
+        },
+        {
+          "food": "espinaca",
+          "g": 150
+        },
+        {
+          "food": "tomate",
+          "g": 150
+        },
+        {
+          "food": "cebolleta",
+          "g": 30
+        },
+        {
+          "food": "aceite_oliva",
+          "g": 5
+        }
+      ],
+      "especias": [
+        "turmeric",
+        "cumin",
+        "paprika",
+        "ajo en polvo",
+        "Tajin",
+        "cilantro"
+      ],
+      "pasos": [
+        "Escurre el tofu y APRIETALO con papel de cocina 2 min: el agua es la diferencia entre dorado y aguado.",
+        "Desmenuzalo con las manos. Sarten caliente con el aceite, tofu 5 min sin moverlo mucho.",
+        "Turmeric + cumin + paprika (el turmeric le da el color de huevo), luego tomate y cebolleta 3 min.",
+        "Espinaca al final, 1 min. Tajin y cilantro encima.",
+        "33 g de proteina sin un solo huevo, por si ese dia ya usaste los huevos en otra cosa."
+      ]
+    }
+  ],
+  "snacks": [
+    {
+      "id": "s1",
+      "nombre": "Cottage con Tajin y tomate",
+      "minutos": 2,
+      "sin_cocina": true,
+      "ingredientes": [
+        {
+          "food": "cottage",
+          "g": 150
+        },
+        {
+          "food": "tomate",
+          "g": 100
+        }
+      ],
+      "especias": [
+        "Tajin"
+      ],
+      "pasos": [
+        "Cottage en un bowl, tomate picado, Tajin generoso. 19 g de proteina en 2 minutos."
+      ]
+    },
+    {
+      "id": "s2",
+      "nombre": "Vasito de yogurt protein con fresas",
+      "minutos": 1,
+      "sin_cocina": true,
+      "ingredientes": [
+        {
+          "food": "yogurt_protein",
+          "g": 160
+        },
+        {
+          "food": "fresa",
+          "g": 100
+        }
+      ],
+      "especias": [],
+      "pasos": [
+        "Directo del refrigerador. Tu snack de emergencia."
+      ]
+    },
+    {
+      "id": "s3",
+      "nombre": "Pera con nueces",
+      "minutos": 1,
+      "sin_cocina": true,
+      "ingredientes": [
+        {
+          "food": "pera",
+          "g": 170
+        },
+        {
+          "food": "nueces",
+          "g": 20
+        }
+      ],
+      "especias": [
+        "canela"
+      ],
+      "pasos": [
+        "Pera en gajos con canela, 20 g de nueces (peselas: a ojo siempre son 50)."
+      ]
+    },
+    {
+      "id": "s4",
+      "nombre": "Dos huevos duros con Tajin",
+      "minutos": 10,
+      "sin_cocina": true,
+      "ingredientes": [
+        {
+          "food": "huevo",
+          "g": 100
+        }
+      ],
+      "especias": [
+        "Tajin",
+        "lemon pepper"
+      ],
+      "pasos": [
+        "Cocina 6 de golpe el domingo. 9 min de hervor, agua con hielo despues, pelan facil."
+      ]
+    },
+    {
+      "id": "s5",
+      "nombre": "Batido de whey con fresas",
+      "minutos": 2,
+      "sin_cocina": true,
+      "ingredientes": [
+        {
+          "food": "whey",
+          "g": 30
+        },
+        {
+          "food": "fresa",
+          "g": 150
+        }
+      ],
+      "especias": [],
+      "pasos": [
+        "Whey + 300 ml de agua + fresas congeladas. Cierra 25 g de proteina por 150 kcal."
+      ]
+    },
+    {
+      "id": "s6",
+      "nombre": "Palomitas caseras con Tajin",
+      "minutos": 6,
+      "sin_cocina": false,
+      "ingredientes": [
+        {
+          "food": "palomitas",
+          "g": 25
+        }
+      ],
+      "especias": [
+        "Tajin",
+        "paprika"
+      ],
+      "pasos": [
+        "25 g de granos en una olla tapada, fuego medio, SIN aceite. Sacude cada 20 s.",
+        "Tajin y paprika al final.",
+        "Un bowl gigante por menos de 100 kcal. Cuando el hambre es de masticar y no de comer, esto es la respuesta."
+      ]
+    },
+    {
+      "id": "s7",
+      "nombre": "Pouch de YoPRO",
+      "minutos": 1,
+      "sin_cocina": true,
+      "ingredientes": [
+        {
+          "food": "yopro",
+          "g": 160
+        }
+      ],
+      "especias": [],
+      "pasos": [
+        "Del refrigerador a la boca. 15 g de proteina, cero azucar anadido, nada que lavar.",
+        "Este es el que te salva cuando llegas a casa con hambre de las 6 pm."
+      ]
+    },
+    {
+      "id": "s8",
+      "nombre": "Chocolate 85% con berries",
+      "minutos": 2,
+      "sin_cocina": true,
+      "ingredientes": [
+        {
+          "food": "choco_85",
+          "g": 25
+        },
+        {
+          "food": "berries_congelados",
+          "g": 150
+        }
+      ],
+      "especias": [],
+      "pasos": [
+        "Una barrita de 25 g (no la caja) con berries semi-descongelados.",
+        "Postre planeado, no antojo. Que este en el plan es justo lo que evita que te comas la caja."
+      ]
+    },
+    {
+      "id": "s9",
+      "nombre": "Manzana o pera con mantequilla de mani",
+      "minutos": 2,
+      "sin_cocina": true,
+      "ingredientes": [
+        {
+          "food": "pera",
+          "g": 170
+        },
+        {
+          "food": "mantequilla_mani",
+          "g": 20
+        }
+      ],
+      "especias": [
+        "canela"
+      ],
+      "pasos": [
+        "20 g de Mayver's. PESALOS. La cucharada a ojo son 35-40 g y ahi se van 130 kcal fantasma.",
+        "Es el error de conteo mas comun de toda tu despensa."
+      ]
+    },
+    {
+      "id": "s10",
+      "nombre": "Batido pre-gym de banana y avena",
+      "minutos": 3,
+      "ingredientes": [
+        {
+          "food": "yogurt_griego",
+          "g": 200
+        },
+        {
+          "food": "banana",
+          "g": 120
+        },
+        {
+          "food": "avena",
+          "g": 20
+        },
+        {
+          "food": "whey",
+          "g": 30
+        }
+      ],
+      "especias": [
+        "canela"
+      ],
+      "pasos": [
+        "Todo a la licuadora con 150 ml de agua y hielo.",
+        "Tomalo 60-90 min antes de entrenar."
+      ],
+      "sin_cocina": true
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "_meta": {
+    "programa": "Upper / Lower x2 - 4 dias por semana",
+    "equipamiento": {
+      "confirmado_en_fotos": [
+        "Power rack con barra de dominadas arriba",
+        "Barra olimpica + seguros de resorte",
+        "Discos: 4 grandes en el rack + varios medianos y pequenos en la pared",
+        "Banco ajustable (plano / inclinado)",
+        "Mancuernas de rosca (varias barras en la caja de madera)",
+        "Barra Z (EZ curl) colgada en la pared",
+        "Bandas elasticas",
+        "Rodillos de espuma (foam roller)",
+        "Caminadora",
+        "Piso de caucho"
+      ],
+      "no_tienes": ["poleas", "jalon al pecho", "prensa de piernas", "curl femoral", "maquina de abductores", "peck deck", "dominadas asistidas"],
+      "implicacion": "Todo el programa esta armado con barra, mancuernas, banco, rack y peso corporal. Ni un solo ejercicio depende de una maquina que no tengas. Y tener el gym en el garage elimina la excusa mas comun de todas: el traslado."
+    },
+    "objetivo": "Retener toda la masa muscular posible mientras se pierde grasa en deficit de ~780 kcal/dia",
+    "principio": "En deficit NO se busca subir peso en la barra cada semana. Se busca MANTENERLO. Si sostienes los mismos kilos mientras bajas de peso corporal, tu fuerza relativa esta subiendo y no estas perdiendo musculo. Ese es el examen que importa.",
+    "rir": "RIR = repeticiones que te quedan en el tanque. RIR 2 = podias hacer 2 mas. En deficit trabaja RIR 1-2 y nunca al fallo en compuestos: entrenando solo en un garage, el fallo con barra es un riesgo real.",
+    "seguridad_entrenando_solo": [
+      "Pon SIEMPRE los pines o brazos de seguridad del rack a la altura correcta antes de sentadilla y press de banca.",
+      "Sin observador, en press de banca no llegues al fallo. Nunca.",
+      "Si el rack no tiene pines para banca, haz press con mancuernas: se sueltan a los lados sin peligro."
+    ],
+    "split_semanal": {
+      "lunes": "upper_a", "martes": "lower_a",
+      "miercoles": "descanso activo (caminadora 45 min zona 2)",
+      "jueves": "upper_b", "viernes": "lower_b",
+      "sabado": "descanso activo (caminata larga afuera)", "domingo": "descanso total"
+    }
+  },
+
+  "upper_a": {
+    "nombre": "Upper A - Horizontal (fuerza)",
+    "duracion_min": 60,
+    "calentamiento": "5 min de caminadora + circulos de hombro con banda + 3 series ascendentes de press de banca (barra sola, 50%, 75%)",
+    "ejercicios": [
+      {"nombre": "Press de banca con barra", "series": 4, "reps": "5-7", "rir": 2, "descanso_s": 150,
+       "alternativas": ["Press de banca con mancuernas", "Press de piso con barra"],
+       "nota": "Pines de seguridad puestos. Sin observador, deja siempre 2 reps en el tanque."},
+      {"nombre": "Remo con barra (pronado, torso a 45 grados)", "series": 4, "reps": "6-8", "rir": 2, "descanso_s": 150,
+       "alternativas": ["Remo con barra Z", "Remo Pendlay desde el piso"],
+       "nota": "Tu unico jalon horizontal pesado. El remo es lo que compensa todo el press de banca."},
+      {"nombre": "Press inclinado con mancuernas", "series": 3, "reps": "8-10", "rir": 2, "descanso_s": 120,
+       "alternativas": ["Press inclinado con barra en el rack"],
+       "nota": "El banco ya lo tienes en inclinado en la foto. 30-45 grados."},
+      {"nombre": "Dominadas en la barra del rack", "series": 3, "reps": "maximas (AMRAP)", "rir": 1, "descanso_s": 120,
+       "alternativas": ["Dominadas con banda elastica de asistencia", "Remo invertido con la barra en los ganchos bajos del rack"],
+       "nota": "A 96 kg puede que salgan 0-3. Usa la banda por el pie. Anota la banda que usaste: cuando pases a una mas delgada vas a ver el progreso mas motivante de todo el programa."},
+      {"nombre": "Elevaciones laterales con mancuernas", "series": 3, "reps": "12-15", "rir": 1, "descanso_s": 60,
+       "alternativas": ["Elevaciones laterales con banda"],
+       "nota": "Los hombros anchos son lo que mas cambia como te ves cuando bajas de peso. Peso liviano, control total."},
+      {"nombre": "Curl con barra Z", "series": 3, "reps": "10-12", "rir": 1, "descanso_s": 60,
+       "alternativas": ["Curl con mancuernas", "Curl martillo"]},
+      {"nombre": "Extension de triceps con barra Z sobre la cabeza", "series": 3, "reps": "12-15", "rir": 1, "descanso_s": 60,
+       "alternativas": ["Press frances acostado en el banco", "Fondos entre banco y silla"]}
+    ]
+  },
+
+  "lower_a": {
+    "nombre": "Lower A - Sentadilla (cuadriceps dominante)",
+    "duracion_min": 55,
+    "calentamiento": "5 min de caminadora + movilidad de tobillo y cadera + sentadillas con barra sola, 50% y 75%",
+    "ejercicios": [
+      {"nombre": "Sentadilla trasera con barra", "series": 4, "reps": "5-7", "rir": 2, "descanso_s": 180,
+       "alternativas": ["Sentadilla frontal", "Sentadilla goblet con mancuerna"],
+       "nota": "Pines de seguridad a la altura del punto mas bajo de tu sentadilla. Si algo falla, sueltas la barra y ya."},
+      {"nombre": "Peso muerto rumano con barra", "series": 3, "reps": "8-10", "rir": 2, "descanso_s": 150,
+       "alternativas": ["RDL con mancuernas", "Buenos dias con barra (peso ligero)"],
+       "nota": "Sin maquina de femoral, el RDL es TU ejercicio de isquiotibiales. No lo cambies."},
+      {"nombre": "Sentadilla bulgara con mancuernas", "series": 3, "reps": "8-10 por pierna", "rir": 2, "descanso_s": 120,
+       "alternativas": ["Zancadas caminando con mancuernas", "Zancadas en el sitio"],
+       "nota": "Pie de atras sobre el banco. Brutal, y no necesita nada mas que el banco que ya tienes."},
+      {"nombre": "Hip thrust con barra apoyado en el banco", "series": 3, "reps": "8-12", "rir": 1, "descanso_s": 120,
+       "alternativas": ["Puente de gluteo con mancuerna en la cadera"],
+       "nota": "Pon una toalla doblada o el foam roller entre la barra y la cadera."},
+      {"nombre": "Elevacion de talones con barra en la espalda", "series": 4, "reps": "12-15", "rir": 1, "descanso_s": 60,
+       "alternativas": ["Gemelos a una pierna con mancuerna", "Gemelos sobre un disco para mas rango"],
+       "nota": "Parate con la punta del pie sobre un disco para ganar rango de movimiento."},
+      {"nombre": "Plancha frontal", "series": 3, "reps": "45-60 s", "rir": 1, "descanso_s": 60,
+       "alternativas": ["Rueda abdominal", "Dead bug"]}
+    ]
+  },
+
+  "upper_b": {
+    "nombre": "Upper B - Vertical (hipertrofia)",
+    "duracion_min": 60,
+    "calentamiento": "5 min de caminadora + rotaciones de hombro con banda + press militar con barra sola x15",
+    "ejercicios": [
+      {"nombre": "Press militar de pie con barra", "series": 4, "reps": "6-8", "rir": 2, "descanso_s": 150,
+       "alternativas": ["Press de hombro sentado con mancuernas (banco en vertical)"],
+       "nota": "Saca la barra de los ganchos del rack a la altura de la clavicula. Gluteos y abdomen apretados, sin arquear la espalda."},
+      {"nombre": "Dominadas (lastradas si ya te salen 8+)", "series": 4, "reps": "6-10", "rir": 2, "descanso_s": 150,
+       "alternativas": ["Dominadas con banda", "Remo invertido en el rack"],
+       "nota": "Cuando pases de 8 limpias, cuelga una mancuerna entre los pies o un disco en un cinturon."},
+      {"nombre": "Press de banca con mancuernas (plano)", "series": 3, "reps": "8-12", "rir": 1, "descanso_s": 120,
+       "alternativas": ["Aperturas con mancuernas en el banco", "Flexiones con los pies elevados"]},
+      {"nombre": "Remo con mancuerna a una mano", "series": 3, "reps": "10-12 por lado", "rir": 1, "descanso_s": 90,
+       "alternativas": ["Remo con barra Z agarre supino"],
+       "nota": "Rodilla y mano sobre el banco. Tira con el codo hacia la cadera, no hacia el hombro."},
+      {"nombre": "Face pull con banda elastica", "series": 3, "reps": "15-20", "rir": 1, "descanso_s": 60,
+       "alternativas": ["Pajaros con mancuernas inclinado sobre el banco"],
+       "nota": "Ancla la banda en el rack a la altura de la cara. Salud de hombro: barato de hacer, caro de saltarse."},
+      {"nombre": "Curl martillo con mancuernas", "series": 3, "reps": "10-12", "rir": 1, "descanso_s": 60,
+       "alternativas": ["Curl inclinado en el banco", "Curl con barra Z agarre ancho"]},
+      {"nombre": "Press cerrado con barra en el banco", "series": 3, "reps": "10-15", "rir": 1, "descanso_s": 60,
+       "alternativas": ["Fondos entre dos bancos", "Extension de triceps acostado con barra Z"]}
+    ]
+  },
+
+  "lower_b": {
+    "nombre": "Lower B - Bisagra de cadera (posterior dominante)",
+    "duracion_min": 55,
+    "calentamiento": "5 min de caminadora + puentes de gluteo + peso muerto con barra sola, 50% y 75%",
+    "ejercicios": [
+      {"nombre": "Peso muerto convencional", "series": 3, "reps": "4-6", "rir": 2, "descanso_s": 210,
+       "alternativas": ["Peso muerto sumo", "RDL pesado si la espalda baja se queja"],
+       "nota": "Solo 3 series. El peso muerto cobra caro en recuperacion y en deficit calorico recuperas peor. Calidad, no cantidad."},
+      {"nombre": "Sentadilla frontal con barra", "series": 3, "reps": "6-8", "rir": 2, "descanso_s": 150,
+       "alternativas": ["Sentadilla goblet pesada con mancuerna", "Sentadilla trasera con pausa"],
+       "nota": "Menos peso que la trasera y mucho mas cuadriceps. Si las munecas te molestan, usa agarre cruzado de brazos."},
+      {"nombre": "Zancadas caminando con mancuernas", "series": 3, "reps": "10 por pierna", "rir": 2, "descanso_s": 120,
+       "alternativas": ["Zancadas en el sitio", "Step-up al banco con mancuernas"],
+       "nota": "El garage da para ida y vuelta. Si no, hazlas en el sitio."},
+      {"nombre": "Buenos dias con barra", "series": 3, "reps": "10-12", "rir": 2, "descanso_s": 90,
+       "alternativas": ["RDL a una pierna con mancuerna", "Hiperextension sobre el banco"],
+       "nota": "Peso ligero, rango controlado. Es un ejercicio de isquios y espalda baja, no de ego."},
+      {"nombre": "Elevacion de piernas colgado en la barra de dominadas", "series": 3, "reps": "10-15", "rir": 1, "descanso_s": 60,
+       "alternativas": ["Elevacion de rodillas colgado", "Crunch inverso en el piso"]},
+      {"nombre": "Carga del granjero con mancuernas", "series": 3, "reps": "40 metros", "rir": 1, "descanso_s": 90,
+       "alternativas": ["Plancha lateral 30 s por lado"],
+       "nota": "Las mancuernas mas pesadas que tengas, camina el garage. Agarre, core y hombros de una."}
+    ]
+  },
+
+  "progresion": {
+    "metodo": "Doble progresion",
+    "regla": [
+      "Cada ejercicio tiene un rango de reps (ej. 5-7).",
+      "Arranca con un peso donde llegas al TOPE BAJO del rango con el RIR indicado.",
+      "Cada semana intentas sumar 1 repeticion por serie con el mismo peso.",
+      "Cuando alcanzas el tope alto en TODAS las series, subes el peso (2.5 kg en compuestos, 1-2 kg en accesorios) y vuelves al tope bajo.",
+      "En deficit te vas a estancar. Estancarte manteniendo el peso mientras bajas grasa NO es fallar: es exactamente el objetivo del programa."
+    ],
+    "limitacion_del_garage": "Con discos de rosca y mancuernas fijas los saltos minimos pueden ser de 2.5 kg o mas. Cuando un salto de peso sea demasiado grande, progresa sumando reps o una serie extra antes de subir el disco.",
+    "deload": "Cada 6 semanas: mismo peso, la mitad de las series. No la negocies. En deficit la necesitas mas que en volumen."
+  },
+
+  "cardio": {
+    "principio": "El cardio NO pone el deficit, lo pone la comida. El cardio es para tu corazon, tu higado y tus pasos.",
+    "pasos_objetivo": 9000,
+    "sesiones": [
+      {"tipo": "Caminadora zona 2", "cuando": "Miercoles", "duracion_min": 45, "intensidad": "Puedes hablar sin ahogarte. Inclinacion 5-8%, velocidad comoda.",
+       "nota": "La inclinacion sube el gasto sin castigar rodillas ni robarte recuperacion como correr."},
+      {"tipo": "Caminata larga afuera", "cuando": "Sabado", "duracion_min": 60, "intensidad": "Suave", "nota": "Afuera, no en la caminadora. Sol = vitamina D y cabeza despejada."},
+      {"tipo": "Caminata post-almuerzo", "cuando": "Todos los dias", "duracion_min": 12, "intensidad": "Suave",
+       "nota": "12 min despues de comer aplana el pico de glucosa. Barato, corto, y funciona."}
+    ],
+    "no_hacer": "No metas HIIT encima de 4 dias de pesas en deficit: te canibaliza la recuperacion y la fuerza. Si el WHOOP marca recovery rojo dos dias seguidos, esto es lo primero que sobra."
+  },
+
+  "suplementos": {
+    "creatina": {"dosis": "5 g al dia", "cuando": "Cualquier hora, con o sin comida",
+      "por_que": "Tu creatinina salio en 56 (bajo, rango 60-110) y eres vegetariano: partes de reservas bajas, que es justo el perfil que mas responde. Ayuda a sostener fuerza en deficit.",
+      "aviso": "Sube la creatinina medida en sangre sin que haya nada mal en el rinon. Avisale a tu medico antes del proximo examen."},
+    "proteina_en_polvo": {"dosis": "1-2 scoops al dia segun te falte",
+      "por_que": "Llegar a 182 g de proteina siendo vegetariano con comida sola es posible pero apretado. El polvo es el atajo honesto.",
+      "aviso": "Es comida, no magia. Si ya llegas a la meta comiendo, no lo necesitas."},
+    "vitamina_b12": {"dosis": "Segun tu medico",
+      "por_que": "Tu B12 esta en 319 con homocisteina normal, o sea bien por ahora. Pero eres vegetariano: es el marcador que hay que seguir revisando."}
+  }
+}
