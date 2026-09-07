@@ -54,10 +54,8 @@ git show HEAD~1:nutricion.py
 | Variable | Requerida | Para qué |
 |---|---|---|
 | `BOT_TOKEN` | sí | Token del bot de Telegram |
-| `ANTHROPIC_KEY` | sí | Visión de fotos y estimación de comida fuera de la base |
+| `ANTHROPIC_KEY` | sí | Lectura de recibos en las fotos |
 | `FIREBASE_CREDS` | sí | JSON de service account (una línea, con `\n` escapados) |
-| `WHOOP_CLIENT_ID` | no | Solo si conectas WHOOP |
-| `WHOOP_CLIENT_SECRET` | no | Solo si conectas WHOOP |
 
 ## Deploy
 
@@ -68,9 +66,6 @@ código — no hay paso de build que lo filtre.
 buildCommand: pip install -r requirements.txt
 startCommand: python bot.py
 ```
-
-`tzdata` está en requirements porque `zoneinfo` no encuentra la base de datos de zonas en la
-imagen de Render sin él, y los recordatorios se calcularían en UTC (9.5 horas corridos).
 
 ## Aviso
 
