@@ -6,8 +6,6 @@ import anthropic
 import firebase_admin
 from firebase_admin import credentials, firestore
 
-import nutricion, gym, whoop, recordatorios
-
 # ── Init ──────────────────────────────────────────────────────────────────────
 BOT_TOKEN = os.environ['BOT_TOKEN']
 ANTH_KEY  = os.environ['ANTHROPIC_KEY']
@@ -93,8 +91,7 @@ def cmd_start(msg):
             "• *balance 1500* — update your card balance\n"
             "• Or send a photo of a receipt 📸\n\n"
             "/summary — this month's totals\n"
-            "/undo — delete your last entry\n\n"
-            "🥗 *Nutricion y gym:* /nutricion")
+            "/undo — delete your last entry")
     else:
         mk = types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
         mk.add('Juli', 'Camilo')
@@ -145,64 +142,42 @@ def cmd_undo(msg):
     else:
         bot.send_message(msg.chat.id, "Nothing to undo.")
 
-# ── Modulos de nutricion y entreno ────────────────────────────────────────────
-# Se registran ANTES de los handlers catch-all de gastos (handle_cb con
-# func=lambda c: True y handle_text con func=lambda m: True). telebot recorre
-# los handlers en orden de registro, asi que si los de gastos entraran primero
-# se comerian /hoy, /gym y los callbacks "nut|".
-NUT = nutricion.register(bot, ac, db, require_person)
-gym.register(bot, db, require_person)
-whoop.register(bot, db, require_person)
-
-
 # ── Photos ────────────────────────────────────────────────────────────────────
 @bot.message_handler(content_types=['photo'])
 def handle_photo(msg):
-    """Una foto puede ser un recibo del banco o un plato de comida.
-
-    Una sola llamada de vision hace las dos cosas: clasifica y extrae. Antes
-    eran dos usos distintos del bot; ahora el usuario solo manda la foto.
-    """
     p = require_person(msg)
     if not p:
         return
-    wait = bot.send_message(msg.chat.id, "⏳ Mirando la foto…")
+    wait = bot.send_message(msg.chat.id, "⏳ Reading transaction…")
     try:
         fi   = bot.get_file(msg.photo[-1].file_id)
         data = requests.get(
             f"https://api.telegram.org/file/bot{BOT_TOKEN}/{fi.file_path}"
         ).content
-        parsed = nutricion.analizar_foto(ac, data)
-        tipo   = parsed.get('tipo')
+        b64  = base64.b64encode(data).decode()
+        resp = ac.messages.create(
+            model="claude-haiku-4-5-20251001",
+            max_tokens=128,
+            messages=[{"role": "user", "content": [
+                {"type": "image", "source": {"type": "base64", "media_type": "image/jpeg", "data": b64}},
+                {"type": "text",  "text": "Bank transaction screenshot. Reply ONLY with JSON: {\"description\":\"merchant name\",\"amount\":0.00}"}
+            ]}]
+        )
+        parsed = json.loads(resp.content[0].text.strip())
+        amt  = float(parsed['amount'])
+        desc = str(parsed['description'])
         bot.delete_message(msg.chat.id, wait.message_id)
-
-        if tipo == 'comida':
-            NUT['pedir_confirmacion'](msg.chat.id, parsed)
-            return
-
-        if tipo == 'recibo':
-            amt  = float(parsed['amount'])
-            desc = str(parsed['description'])
-            mk = types.InlineKeyboardMarkup()
-            mk.row(
-                types.InlineKeyboardButton(f"✅ Mine ({p.title()})", callback_data=f"sv|{p}|{amt}|{desc[:40]}"),
-                types.InlineKeyboardButton("🤝 Together",           callback_data=f"sv|together|{amt}|{desc[:40]}")
-            )
-            mk.row(types.InlineKeyboardButton("❌ Cancel", callback_data="cancel"))
-            bot.send_message(msg.chat.id, f"📋 *{desc}*\nA${amt:.2f}\n\nSave as?", reply_markup=mk)
-            return
-
-        bot.send_message(msg.chat.id,
-            "🤔 No supe si era un recibo o comida.\n\n"
-            "Gasto: *50 groceries*\n"
-            "Comida: `comi 200g arroz, 3 huevos`")
+        mk = types.InlineKeyboardMarkup()
+        mk.row(
+            types.InlineKeyboardButton(f"✅ Mine ({p.title()})", callback_data=f"sv|{p}|{amt}|{desc[:40]}"),
+            types.InlineKeyboardButton("🤝 Together",           callback_data=f"sv|together|{amt}|{desc[:40]}")
+        )
+        mk.row(types.InlineKeyboardButton("❌ Cancel", callback_data="cancel"))
+        bot.send_message(msg.chat.id, f"📋 *{desc}*\nA${amt:.2f}\n\nSave as?", reply_markup=mk)
     except Exception:
         bot.edit_message_text(
-            "⚠️ No pude leerla. Escribelo:\n"
-            "Gasto: *50 groceries*\n"
-            "Comida: `comi 200g arroz, 3 huevos`",
+            "⚠️ Couldn't read it. Type manually:\n*50 groceries* or *together 80 dinner*",
             msg.chat.id, wait.message_id)
-
 
 @bot.callback_query_handler(func=lambda c: True)
 def handle_cb(call):
@@ -224,12 +199,6 @@ def handle_text(msg):
     p = require_person(msg)
     if not p:
         return
-    # "comi 3 huevos" va a nutricion. Sin este desvio, el regex de gastos de
-    # mas abajo leeria "3 huevos" como un gasto de A$3.
-    if nutricion.es_comida(msg.text):
-        NUT['log_texto'](msg, p)
-        return
-
     t = msg.text.strip().lower()
 
     # balance 1500
@@ -261,12 +230,8 @@ def handle_text(msg):
         return
 
     bot.send_message(msg.chat.id,
-        "Try:\n• *50 groceries*\n• *together 80 dinner*\n• *balance 1500*\n"
-        "• `comi 200g arroz, 3 huevos`\n\n"
-        "/summary  /undo  ·  /nutricion  /hoy  /gym")
+        "Try:\n• *50 groceries*\n• *together 80 dinner*\n• *balance 1500*\n/summary  /undo")
 
 # ── Run ───────────────────────────────────────────────────────────────────────
-recordatorios.iniciar(bot, db, nutricion, gym)
-
-print("🤖 Emi's Money + Nutrition Bot is running!")
+print("🤖 Emi's Money Bot is running!")
 bot.infinity_polling(timeout=20, long_polling_timeout=15)

@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 """
-Arma el panel diario (Artifact) desde los datos reales del bot.
+Arma el panel diario (Artifact) desde los datos de data/.
 
 El panel no puede leer Firestore ni el repo en tiempo de ejecucion, asi que los
-datos del plan se hornean en la pagina. Este script los genera desde los mismos
-JSON que usa el bot, para que /plan en Telegram y el panel nunca muestren cosas
-distintas el mismo dia.
+datos del plan se hornean en la pagina. Este script los genera desde los JSON de
+data/, que son la unica fuente de verdad de los macros.
 
     python3 panel/construir.py           -> panel/panel.html
 
@@ -15,8 +14,8 @@ Despues se publica con:
 import json, os, sys
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, RAIZ)
-import nutricion as n
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import plan as n
 
 AQUI = os.path.join(RAIZ, 'panel')
 
@@ -29,8 +28,7 @@ def payload():
         planes[clave] = [
             {'comidas': [r['id'] for r in p['comidas']],
              'snacks':  [r['id'] for r in p['snacks']]}
-            for p in (n.plan_dia(n.PERFIL_DEFAULT, entreno=entreno, semilla=s)
-                      for s in range(6))
+            for p in (n.plan_dia(entreno, semilla=s) for s in range(6))
         ]
 
     recetas = {}
@@ -47,8 +45,7 @@ def payload():
                 'esp': r.get('especias', []), 'pasos': r['pasos'],
             }
 
-    with open(os.path.join(n.DATA, 'workouts.json'), encoding='utf-8') as fh:
-        W = json.load(fh)
+    W = n.WORKOUTS
     entrenos = {}
     for k in ('upper_a', 'lower_a', 'upper_b', 'lower_b'):
         s = W[k]
@@ -59,11 +56,10 @@ def payload():
                    for e in s['ejercicios']],
         }
 
-    with open(os.path.join(n.DATA, 'labs.json'), encoding='utf-8') as fh:
-        L = json.load(fh)
+    L = n.LABS
 
     return {
-        'perfil': {k: n.PERFIL_DEFAULT[k] for k in
+        'perfil': {k: n.PERFIL[k] for k in
                    ('peso_kg', 'altura_cm', 'edad', 'sexo', 'dias_entreno',
                     'ritmo', 'peso_meta_kg')},
         'planes': planes, 'recetas': recetas, 'entrenos': entrenos,
