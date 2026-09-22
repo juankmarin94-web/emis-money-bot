@@ -475,3 +475,79 @@ champiñones, tomate, limones.
 1. **Peso actual** en ayunas → fija los números de arriba.
 2. **¿Repetiste las pruebas hepáticas?** Clinpath las pidió para un mes después del 9 de julio. Ya van dos meses y medio. Es lo único de todo este plan que no es negociable.
 3. **¿Sigue el entreno de 4 días?** Si no, el TDEE baja y las calorías con él.
+
+---
+
+## 08 · Despensa e inventario final
+
+### Ya lo tienes (y cancela media lista de compras)
+
+**Legumbres** — latas de garbanzos (×3), lata de lentejas, frijoles refritos Old El Paso,
+y en los contenedores: lentejas secas, arvejas partidas, garbanzos o frijoles secos.
+*Esto ya era mi compra #1 y #2. Canceladas.*
+
+**Granos y almidones** — arroz blanco (2 contenedores), pasta en espiral, penne, avena,
+cuscús o burghul, harina, **Harina P.A.N.**
+
+**Salsas y grasas** — Dolmio, salsa mild Old El Paso, mostaza French's, aceite de oliva,
+aceite de canola, aceite en espray, balsámico, sal Saxa, pimienta.
+
+**Herramientas que no sabías que tenías**
+- **Whole Earth (eritritol/monk fruit)** — endulza el yogurt casero y la avena a cero calorías. En un déficit agresivo, poder endulzar sin costo es adherencia pura.
+- **Sandía** — ~30 kcal/100 g. Una tajada enorme por lo que cuesta medio puñado de nueces. Herramienta de volumen: para cuando el hambre es de cantidad.
+- **Harina P.A.N.** — arepas del tamaño que tú decidas, no del que trae el paquete. 30 g de harina = una arepa de ~110 kcal contra los ~60 g por porción de las Sary con queso.
+- **Aceite en espray** — 1 segundo = ~5 kcal contra los ~120 de un chorro a ojo. Úsalo en todo lo que va a la sartén.
+
+### Sale de la despensa hoy
+
+- Papas fritas y paquetes (estante de arriba)
+- Tartas de chocolate Cadbury
+- La bolsita de dulces
+- Los panecillos
+- **El segundo pote de ghee** (Moksha, además del Dokshaa de la nevera) — casi toda grasa saturada, y tu LDL está en 3,4. No es prohibición: es que tienes aceite de oliva y aceite en espray al lado. Dos potes de ghee en la casa es una decisión que ya tomaste sin darte cuenta.
+
+Lo que no compras, no te lo comes. Es la regla más barata del plan.
+
+### No pude identificar (dime qué son)
+
+Frasco crema pálida junto a los garbanzos (¿tahini? ¿mantequilla de maní?) · lata pequeña de
+etiqueta rosada · tarrito con algo naranja (¿duraznos en lata?) · el tetra pak del estante de
+arriba · el bloque pálido de la nevera junto al tofu.
+
+---
+
+## 09 · Lista de compras final (una semana)
+
+### Proteína — lo que de verdad falta
+| Qué | Cuánto | Por qué |
+|---|---|---|
+| **Proteína en polvo** | 1 kg | Sin esto los 200 g/día no cuadran siendo vegetariano. No es opcional. |
+| **Leche en polvo descremada** | 1 kg | ~35 g proteína/100 g: lo más barato del supermercado por gramo. Motor del yogurt casero. |
+| **Leche descremada** | 4 L | 3 L para el yogurt de la olla, 1 L para cocinar. |
+| **Cottage cheese alto en proteína** (Bulla) | 2 × 500 g | 12,8 g de proteína por 100 kcal. Tu caballo de batalla. |
+| **Tofu firme** | 3 × 450 g | 22 g por serve. Sauté/sear high, nunca presión. |
+| **Claras congeladas** (Farm Pride) | 2 pouches | 21 g por 100 kcal. Lo más eficiente de tu cocina. |
+| **Huevos** | 2 docenas | 12 duros en la olla el domingo. |
+| **Yogurt griego natural** | 1 kg | Hasta que el tuyo esté listo. |
+| **Creatina monohidrato** | 500 g | 5 g/día. Avísale al médico. |
+
+### Verdura de volumen — tu punto más débil
+Solo tienes espinaca, zanahoria y cebolla larga. En un déficit agresivo la verdura es lo que
+llena el plato sin costo calórico.
+
+Brócoli (2) · calabacín (4) · champiñones (500 g) · tomates (1 kg) · pimentón (3) ·
+coliflor (1) · habichuela (500 g) · **limones (6)**
+
+*Los limones no son decoración: la vitamina C triplica la absorción del hierro vegetal, y con
+ferritina en 50 siendo vegetariano eso importa.*
+
+### Congelados — comida de emergencia que no se echa a perder
+Edamame (1 kg, 12 g proteína/100 g) · espinaca (1 kg) · berries (1 kg) · maíz (500 g)
+
+### Fruta
+Bananas (6) · manzanas o peras (6)
+
+---
+
+**Total: ~10 líneas de proteína, una bandeja de verdura y cuatro bolsas del congelador.**
+El resto ya está en tu casa.
