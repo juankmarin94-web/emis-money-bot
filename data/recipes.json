@@ -60,7 +60,7 @@
    "p": 54,
    "c": 48,
    "f": 13,
-   "fib": 10,
+   "fib": 9,
    "ing": [
     [
      "Yogurt griego casero",
@@ -79,7 +79,7 @@
      120
     ],
     [
-     "Almendras",
+     "Mantequilla de maní",
      15
     ]
    ]
@@ -859,15 +859,15 @@
      100
     ],
     [
-     "Almendras",
+     "Mantequilla de maní",
      15
     ]
    ],
    "kcal": 458,
    "p": 58,
-   "c": 28,
+   "c": 29,
    "f": 11,
-   "fib": 6
+   "fib": 5
   },
   "l7": {
    "n": "Ensalada grande de tofu y edamame",
@@ -974,9 +974,9 @@
    "total": [
     1993,
     197,
-    152,
+    153,
     59,
-    41
+    40
    ]
   },
   "Miércoles": {
@@ -1024,9 +1024,9 @@
    "total": [
     2034,
     198,
-    162,
+    163,
     58,
-    41
+    40
    ]
   },
   "Sábado": {
@@ -1042,7 +1042,7 @@
     194,
     163,
     56,
-    44
+    43
    ]
   },
   "Domingo": {
@@ -1061,5 +1061,24 @@
     51
    ]
   }
+ },
+ "preferencias": {
+  "vegetariano": true,
+  "no_come": [
+   "pescado",
+   "salmón",
+   "tahini"
+  ],
+  "al_fondo_del_estante": [
+   "Aceite de coco (87% grasa saturada)",
+   "Ghee (62%)",
+   "Arepas Sary con queso"
+  ],
+  "ya_en_casa": [
+   "Mantequilla de maní"
+  ],
+  "opcional": [
+   "Almendras"
+  ]
  }
 }
