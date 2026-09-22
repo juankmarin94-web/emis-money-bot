@@ -1,0 +1,1707 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found]){display:none!important}</style></head><body>
+<title>Diario 98→80</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Big+Shoulders+Display:wght@600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>
+:root{
+  --ground:#D7D7D4; --surface:#FFFFFF; --surface-2:#EDEDEA; --surface-3:#DEDEDB;
+  --ink:#1C1A19; --ink-soft:#55514F; --ink-faint:#8A8683;
+  --rule:#C9C9C5; --rule-strong:#AFAFAA;
+  --accent:#AC0000; --accent-ink:#8A0000; --accent-wash:#F7E4E4; --accent-on:#FFFFFF;
+  --high:#AC0000; --high-wash:#F7E4E4;
+  --low:#9A6200;  --low-wash:#F6EDDC;
+  --ok:#1F6B3B;   --ok-wash:#E4EFE7;
+  --shadow:0 1px 2px rgba(28,26,25,.07), 0 10px 26px -18px rgba(28,26,25,.28);
+  --f-ui:"Bai Jamjuree","Helvetica Neue",Arial,sans-serif;
+  --f-display:"Big Shoulders Display","Bai Jamjuree",Impact,sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  --f-read:"Bai Jamjuree","Helvetica Neue",Arial,sans-serif;
+  --r:4px;
+  /* El patron diagonal de la guia, en dosis de fondo. */
+  --diag:repeating-linear-gradient(115deg, transparent 0 9px, rgba(172,0,0,.05) 9px 13px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --ground:#171514; --surface:#201D1C; --surface-2:#292524; --surface-3:#332E2D;
+  --ink:#EDE9E7; --ink-soft:#A8A2A0; --ink-faint:#7B7573;
+  --rule:#332E2D; --rule-strong:#453F3E;
+  --accent:#C41F16; --accent-ink:#FF8A80; --accent-wash:#2E1917; --accent-on:#FFFFFF;
+  --high:#FF8A80; --high-wash:#2E1917;
+  --low:#D6A64F;  --low-wash:#2F2718;
+  --ok:#6FBF93;   --ok-wash:#1B2A21;
+  --shadow:0 1px 2px rgba(0,0,0,.45), 0 10px 26px -18px rgba(0,0,0,.8);
+  --diag:repeating-linear-gradient(115deg, transparent 0 9px, rgba(255,138,128,.055) 9px 13px);
+}}
+:root[data-theme="dark"]{
+  --ground:#171514; --surface:#201D1C; --surface-2:#292524; --surface-3:#332E2D;
+  --ink:#EDE9E7; --ink-soft:#A8A2A0; --ink-faint:#7B7573;
+  --rule:#332E2D; --rule-strong:#453F3E;
+  --accent:#C41F16; --accent-ink:#FF8A80; --accent-wash:#2E1917; --accent-on:#FFFFFF;
+  --high:#FF8A80; --high-wash:#2E1917;
+  --low:#D6A64F;  --low-wash:#2F2718;
+  --ok:#6FBF93;   --ok-wash:#1B2A21;
+  --shadow:0 1px 2px rgba(0,0,0,.45), 0 10px 26px -18px rgba(0,0,0,.8);
+  --diag:repeating-linear-gradient(115deg, transparent 0 9px, rgba(255,138,128,.055) 9px 13px);
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:var(--f-ui);font-size:15px;
+  line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:960px;margin:0 auto;padding:0 16px}
+h1,h2,h3{margin:0;line-height:1.05;text-wrap:balance}
+h1{font-family:var(--f-display);font-weight:800;text-transform:uppercase;letter-spacing:.005em}
+h2,h3{font-family:var(--f-ui);font-weight:600;line-height:1.2}
+button{font-family:inherit;font-size:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:2px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.lbl{font-family:var(--f-mono);font-size:10px;font-weight:700;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink-faint)}
+
+/* ── Barra superior ─────────────────────────────────── */
+header{background:var(--surface);background-image:var(--diag);
+  border-bottom:2px solid var(--accent);position:sticky;top:0;z-index:20}
+.htop{display:flex;align-items:center;gap:14px;padding:12px 0 10px;flex-wrap:wrap}
+.hdate{flex:1 1 auto;min-width:150px}
+.hdate h1{font-size:29px;color:var(--accent-ink)}
+.hdate p{margin:0;font-size:11.5px;color:var(--ink-soft);letter-spacing:.02em}
+.badge{font-family:var(--f-mono);font-size:10px;font-weight:700;letter-spacing:.1em;
+  text-transform:uppercase;padding:4px 9px;border-radius:2px;white-space:nowrap;
+  border:1px solid transparent}
+.b-train{background:var(--accent);color:var(--accent-on)}
+.b-rest{background:var(--surface-3);color:var(--ink-soft);border-color:var(--rule-strong)}
+.kpi{text-align:right;flex:none}
+.kpi .v{font-family:var(--f-display);font-size:30px;font-weight:800;letter-spacing:0;
+  font-variant-numeric:tabular-nums;line-height:1}
+.kpi .d{font-size:11px;color:var(--ink-soft);margin-top:2px}
+.kpi .d.dn{color:var(--ok)} .kpi .d.up{color:var(--high)}
+.tabrow{display:flex;align-items:center;gap:12px;padding-bottom:8px;flex-wrap:wrap}
+.tabs{display:flex;gap:2px}
+.daynav{display:flex;gap:2px;margin-left:auto}
+.nav{border:1px solid var(--rule-strong);background:var(--surface);color:var(--ink-soft);
+  padding:5px 11px;border-radius:2px;font-size:13px;font-weight:600;line-height:1.2;
+  font-family:var(--f-mono);transition:background .15s,color .15s,border-color .15s}
+.nav:hover:not([disabled]){background:var(--accent-wash);color:var(--accent-ink);border-color:var(--accent)}
+.nav[disabled]{opacity:.35;cursor:not-allowed}
+.nav.today{font-family:var(--f-ui);letter-spacing:.02em}
+.nav.today[aria-current="true"]{background:var(--accent);color:var(--accent-on);border-color:var(--accent)}
+.daynote{border:1px solid var(--accent);border-left-width:3px;background:var(--accent-wash);
+  color:var(--accent-ink);border-radius:var(--r);padding:10px 14px;font-size:13px;
+  margin-bottom:14px;line-height:1.45;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.daynote b{font-weight:700}
+.wday{cursor:pointer;transition:background .15s}
+.wday:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.wday:hover{background:var(--accent-wash)}
+.wday.future{opacity:1}
+.wday.future .wd-h .dd,.wday.future .wd-t{color:var(--ink-faint)}
+.wday.viendo{box-shadow:inset 0 0 0 2px var(--accent)}
+.wplan{font-family:var(--f-mono);font-size:10.5px;color:var(--ink-faint);line-height:1.4;
+  border-top:1px dashed var(--rule-strong);padding-top:6px}
+.wplan b{color:var(--ink-soft);font-weight:700}
+.tab{border:1px solid var(--rule);background:var(--surface-2);color:var(--ink-soft);
+  padding:6px 16px;border-radius:2px;font-size:12px;font-weight:600;letter-spacing:.03em;
+  transition:background .15s,color .15s,border-color .15s}
+.tab[aria-selected="true"]{background:var(--accent);color:var(--accent-on);border-color:var(--accent)}
+.tab:hover:not([aria-selected="true"]){background:var(--surface-3);color:var(--ink)}
+
+main{padding:18px 0 64px}
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:var(--r);
+  margin-bottom:14px;overflow:hidden}
+.chead{display:flex;align-items:center;gap:10px;padding:11px 16px;
+  border-bottom:1px solid var(--accent);background:var(--surface-2)}
+.chead h2{font-size:13px;min-width:0;letter-spacing:.03em;flex:1;color:var(--accent-ink);
+  text-transform:uppercase;font-weight:700}
+.cbody{padding:14px 16px}
+.cbody.tight{padding:0}
+
+/* ── Entrada del dia ───────────────────────────────── */
+.inputs{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+.field{display:grid;gap:5px}
+.field .lbl{margin:0}
+.row{display:flex;gap:6px}
+input[type=number],input[type=text]{font-family:var(--f-mono);font-size:15px;
+  font-variant-numeric:tabular-nums;padding:8px 10px;border:1px solid var(--rule-strong);
+  border-radius:2px;background:var(--ground);color:var(--ink);width:100%;min-width:0}
+input::placeholder{color:var(--ink-faint);font-weight:400}
+.btn{border:1px solid var(--accent);background:var(--accent);color:var(--accent-on);
+  padding:8px 14px;border-radius:2px;font-weight:600;font-size:13px;white-space:nowrap;
+  transition:filter .15s}
+.btn:hover{filter:brightness(1.12)}
+.btn[disabled]{opacity:.5;cursor:not-allowed;filter:none}
+.btn.ghost{background:transparent;color:var(--accent);border-color:var(--rule-strong)}
+.btn.ghost:hover{background:var(--accent-wash)}
+.btn.sm{padding:5px 10px;font-size:12px}
+.filebtn{position:relative;overflow:hidden;display:inline-block}
+.filebtn input{position:absolute;inset:0;opacity:0;cursor:pointer;font-size:200px}
+.hint{font-size:11px;color:var(--ink-faint);line-height:1.4}
+.whoopchips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{font-family:var(--f-mono);font-size:12px;font-weight:500;padding:4px 9px;
+  border-radius:2px;background:var(--surface-2);border:1px solid var(--rule);white-space:nowrap}
+.chip b{font-weight:700}
+.chip.rec-g{background:var(--ok-wash);border-color:var(--ok);color:var(--ok)}
+.chip.rec-y{background:var(--low-wash);border-color:var(--low);color:var(--low)}
+.chip.rec-r{background:var(--high-wash);border-color:var(--high);color:var(--high)}
+
+/* ── Macros ────────────────────────────────────────── */
+.macros{display:grid;gap:9px}
+.mrow{display:grid;grid-template-columns:52px 1fr 96px;gap:10px;align-items:center}
+.mrow .nm{font-family:var(--f-mono);font-size:11px;font-weight:700;color:var(--ink-soft);
+  letter-spacing:.04em}
+.track{height:9px;background:var(--surface-3);border-radius:5px;overflow:hidden;position:relative}
+.fill{height:100%;background:var(--accent);border-radius:5px;transition:width .35s ease}
+.fill.over{background:var(--high)}
+.fill.good{background:var(--ok)}
+.mrow .vv{font-family:var(--f-mono);font-size:12px;text-align:right;
+  font-variant-numeric:tabular-nums;color:var(--ink-soft)}
+.mrow .vv b{color:var(--ink);font-weight:700}
+
+/* ── Checklist ─────────────────────────────────────── */
+.items{display:grid}
+.item{display:grid;grid-template-columns:auto 1fr auto;gap:11px;padding:11px 16px;
+  border-bottom:1px solid var(--rule);align-items:start}
+.item:last-child{border-bottom:0}
+.item.done{background:var(--accent-wash)}
+.tick{width:22px;height:22px;border:1.5px solid var(--rule-strong);border-radius:3px;
+  background:var(--surface);display:grid;place-items:center;flex:none;padding:0;
+  transition:background .15s,border-color .15s;margin-top:1px}
+.tick:hover{border-color:var(--accent)}
+.tick[aria-pressed="true"]{background:var(--accent);border-color:var(--accent)}
+.tick svg{width:13px;height:13px;stroke:var(--accent-on);stroke-width:3;fill:none;
+  stroke-linecap:round;stroke-linejoin:round;opacity:0}
+.tick[aria-pressed="true"] svg{opacity:1}
+.itxt{min-width:0}
+.itxt .t{font-weight:600;font-size:14px;line-height:1.35}
+.item.done .itxt .t{color:var(--ink-soft)}
+.itxt .s{font-family:var(--f-mono);font-size:11px;color:var(--ink-faint);margin-top:2px;
+  font-variant-numeric:tabular-nums}
+.iact{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end;flex:none}
+.mini{border:1px solid var(--rule-strong);background:var(--surface);color:var(--ink-soft);
+  padding:3px 8px;border-radius:2px;font-size:11px;font-weight:600;white-space:nowrap;
+  transition:background .15s,color .15s}
+.mini:hover{background:var(--accent-wash);color:var(--accent-ink);border-color:var(--accent)}
+.detail{grid-column:1/-1;margin-top:8px;padding:12px 14px;background:var(--ground);
+  border:1px solid var(--rule);border-radius:2px;font-family:var(--f-read);font-size:14px;
+  line-height:1.6}
+.detail ol{margin:6px 0 0;padding-left:20px}
+.detail li{margin-bottom:5px}
+.detail .ing{font-family:var(--f-mono);font-size:11.5px;color:var(--ink-soft);
+  display:grid;gap:2px;margin:6px 0 10px}
+.detail h4{margin:10px 0 2px;font-family:var(--f-mono);font-size:10px;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--ink-faint);font-weight:700}
+.exlist{display:grid;gap:0;margin:6px 0 0}
+.ex{display:grid;grid-template-columns:auto 1fr auto;gap:9px;padding:8px 0;
+  border-bottom:1px solid var(--rule);align-items:center;font-family:var(--f-ui)}
+.ex:last-child{border-bottom:0}
+.ex .en{font-size:13px;font-weight:500}
+.ex .es{font-family:var(--f-mono);font-size:11px;color:var(--ink-faint);
+  font-variant-numeric:tabular-nums;white-space:nowrap}
+.ex .enote{grid-column:2/-1;font-size:12px;color:var(--ink-soft);font-family:var(--f-ui);
+  line-height:1.4;margin-top:2px}
+
+/* ── Extras / aviso ────────────────────────────────── */
+.extra{border:1px solid var(--rule);border-left:3px solid var(--low);border-radius:2px;
+  background:var(--low-wash);padding:11px 13px;margin-bottom:8px}
+.extra .eh{display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.extra .en2{font-weight:600;font-size:14px}
+.extra .em{font-family:var(--f-mono);font-size:11.5px;color:var(--ink-soft);margin-top:3px;
+  font-variant-numeric:tabular-nums}
+.extra .ev{font-size:13px;margin-top:7px;line-height:1.45}
+.verdict{font-family:var(--f-mono);font-size:10px;font-weight:700;letter-spacing:.1em;
+  text-transform:uppercase;padding:3px 7px;border-radius:2px;white-space:nowrap}
+.v-ok{background:var(--ok-wash);color:var(--ok);border:1px solid var(--ok)}
+.v-warn{background:var(--low-wash);color:var(--low);border:1px solid var(--low)}
+.v-bad{background:var(--high-wash);color:var(--high);border:1px solid var(--high)}
+.thinking{font-family:var(--f-mono);font-size:12px;color:var(--ink-faint);padding:8px 0}
+.err{font-size:12.5px;color:var(--high);background:var(--high-wash);border:1px solid var(--high);
+  border-radius:2px;padding:9px 11px;margin-top:8px}
+
+/* ── Semana ────────────────────────────────────────── */
+.weekscroll{overflow-x:auto}
+.week{display:grid;grid-template-columns:repeat(7,minmax(104px,1fr));min-width:740px}
+.wday{border-right:1px solid var(--rule);padding:12px 11px;display:grid;gap:8px;
+  align-content:start}
+.wday:last-child{border-right:0}
+.wday.today{background:var(--accent-wash)}
+.wday.future{opacity:.5}
+.wd-h{display:grid;gap:2px}
+.wd-h .dn2{font-family:var(--f-mono);font-size:10px;font-weight:700;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-faint)}
+.wd-h .dd{font-family:var(--f-display);font-size:26px;font-weight:800;
+  font-variant-numeric:tabular-nums;letter-spacing:0;color:var(--accent-ink)}
+.wd-t{font-family:var(--f-mono);font-size:9px;font-weight:700;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--ink-faint)}
+.ring{display:flex;align-items:center;gap:7px}
+.ring svg{width:34px;height:34px;flex:none;transform:rotate(-90deg)}
+.ring .rt{font-family:var(--f-mono);font-size:11px;color:var(--ink-soft);
+  font-variant-numeric:tabular-nums;line-height:1.3}
+.wstat{font-family:var(--f-mono);font-size:11px;color:var(--ink-soft);display:grid;gap:1px;
+  font-variant-numeric:tabular-nums}
+.wstat b{color:var(--ink);font-weight:700}
+.wstat .miss{color:var(--ink-faint)}
+.spark{padding:14px 16px}
+.spark svg{width:100%;height:96px;display:block;overflow:visible}
+.sumgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:0;
+  border-top:1px solid var(--rule)}
+.sumcell{padding:13px 16px;border-right:1px solid var(--rule)}
+.sumcell:last-child{border-right:0}
+.sumcell .v2{font-family:var(--f-display);font-size:30px;font-weight:800;letter-spacing:0;
+  font-variant-numeric:tabular-nums;line-height:1.1}
+.sumcell .l2{font-size:11.5px;color:var(--ink-soft);margin-top:2px}
+
+/* ── Tiles de métricas ─────────────────────────────── */
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(122px,1fr));gap:0;
+  border-top:1px solid var(--rule)}
+.tile{padding:11px 14px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.tile:last-child{border-right:0}
+.tile .tv{font-family:var(--f-display);font-size:27px;font-weight:800;line-height:1;
+  font-variant-numeric:tabular-nums;display:flex;align-items:baseline;gap:4px}
+.tile .tu{font-family:var(--f-mono);font-size:11px;font-weight:500;color:var(--ink-faint)}
+.tile .tl{font-size:11.5px;color:var(--ink-soft);margin-top:3px;line-height:1.3}
+.tile.ok .tv{color:var(--ok)} .tile.warn .tv{color:var(--low)} .tile.bad .tv{color:var(--high)}
+.tile .tb{height:3px;background:var(--surface-3);border-radius:2px;margin-top:7px;overflow:hidden}
+.tile .tb i{display:block;height:100%;background:var(--accent);border-radius:2px}
+.tile.ok .tb i{background:var(--ok)} .tile.warn .tb i{background:var(--low)}
+.tile.bad .tb i{background:var(--high)}
+.grouplbl{font-family:var(--f-mono);font-size:10px;font-weight:700;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--accent-ink);margin:0;padding:11px 14px 7px;
+  background:var(--surface-2)}
+.calib{padding:13px 15px;border-top:1px solid var(--rule);font-size:13.5px;line-height:1.5}
+.calib b{font-weight:700}
+.calib .ct{font-family:var(--f-mono);font-size:11px;font-weight:700;letter-spacing:.1em;
+  text-transform:uppercase;margin-bottom:5px;display:block}
+
+/* ── Plan día por día ──────────────────────────────── */
+.pday{border-bottom:1px solid var(--rule);padding:0}
+.pday:last-child{border-bottom:0}
+.pday.hoy{background:var(--accent-wash)}
+.pdh{display:flex;align-items:baseline;gap:10px;padding:11px 15px 8px;flex-wrap:wrap}
+.pdh .pdd{font-family:var(--f-display);font-size:21px;font-weight:800;line-height:1;
+  color:var(--accent-ink)}
+.pdh .pdt{font-family:var(--f-mono);font-size:10px;font-weight:700;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-faint)}
+.pdh .pdk{margin-left:auto;font-family:var(--f-mono);font-size:11.5px;color:var(--ink-soft);
+  font-variant-numeric:tabular-nums}
+.pdh .pdk b{color:var(--ink);font-weight:700}
+.pdgrid{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px dashed var(--rule)}
+@media (max-width:640px){.pdgrid{grid-template-columns:1fr}}
+.pdcol{padding:10px 15px 13px}
+.pdcol+.pdcol{border-left:1px dashed var(--rule)}
+@media (max-width:640px){.pdcol+.pdcol{border-left:0;border-top:1px dashed var(--rule)}}
+.pdcol h5{margin:0 0 7px;font-family:var(--f-mono);font-size:9.5px;font-weight:700;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint)}
+.pdlist{display:grid;gap:5px}
+.pdi{display:grid;grid-template-columns:1fr auto;gap:9px;align-items:baseline;font-size:13px}
+.pdi .pn{line-height:1.3}
+.pdi .pn i{font-style:normal;color:var(--ink-faint);font-size:11px;
+  font-family:var(--f-mono);margin-right:5px}
+.pdi .pm{font-family:var(--f-mono);font-size:10.5px;color:var(--ink-faint);white-space:nowrap;
+  font-variant-numeric:tabular-nums}
+.note{font-size:12px;color:var(--ink-faint);line-height:1.5}
+.offline{background:var(--low-wash);border:1px solid var(--low);color:var(--low);
+  border-radius:var(--r);padding:11px 14px;font-size:13px;margin-bottom:14px;line-height:1.45}
+footer{padding:8px 0 40px;color:var(--ink-faint);font-size:11.5px;line-height:1.6}
+[hidden]{display:none!important}
+
+/* ── Tandas y mercado ───────────────────────────────── */
+.tblock{border-bottom:1px solid var(--rule);padding:13px 15px}
+.tblock:last-child{border-bottom:0}
+.th{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:3px}
+.th .tn{font-weight:600;font-size:15px;line-height:1.25}
+.th .tid{font-family:var(--f-mono);font-size:10.5px;color:var(--ink-faint);
+  background:var(--surface-2);padding:1px 5px;border-radius:2px}
+.tmeta{font-family:var(--f-mono);font-size:11px;color:var(--ink-soft);
+  font-variant-numeric:tabular-nums;line-height:1.5}
+.tmeta b{color:var(--ink);font-weight:700}
+.step{display:flex;align-items:center;gap:6px;margin:9px 0 4px}
+.step .lbl{margin:0}
+.step .n{font-family:var(--f-display);font-size:23px;font-weight:800;line-height:1;
+  font-variant-numeric:tabular-nums;min-width:2ch;text-align:center;color:var(--accent-ink)}
+.gr{margin-top:9px}
+.gr h5{margin:0 0 3px;font-family:var(--f-mono);font-size:9.5px;font-weight:700;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--ink-faint)}
+.gr h5 em{font-style:normal;text-transform:none;letter-spacing:0;font-size:10.5px;
+  font-family:var(--f-ui);color:var(--ink-faint)}
+.gr .row2{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:baseline;
+  font-size:13px;padding:2px 0}
+.gr .row2 b{font-family:var(--f-mono);font-size:12.5px;font-variant-numeric:tabular-nums}
+.tope{font-size:12.5px;color:var(--low);background:var(--low-wash);border:1px solid var(--low);
+  border-radius:2px;padding:8px 10px;margin-top:9px;line-height:1.45}
+.msec{font-family:var(--f-mono);font-size:10px;font-weight:700;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--accent-ink);padding:11px 15px 6px;background:var(--surface-2)}
+.mitem{display:grid;grid-template-columns:auto 1fr auto;gap:12px;padding:10px 15px;
+  border-bottom:1px solid var(--rule);align-items:center}
+.mitem:last-child{border-bottom:0}
+.mitem.done .mn{color:var(--ink-faint);text-decoration:line-through}
+.mitem .mn{font-size:14.5px;line-height:1.3}
+.mitem .mu{font-family:var(--f-mono);font-size:11.5px;color:var(--ink-soft);
+  text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.mitem.done .mu{color:var(--ink-faint)}
+</style>
+
+<header><div class="wrap">
+  <div class="htop">
+    <div class="hdate">
+      <h1 id="hTitle">—</h1>
+      <p id="hSub">Diario de Camilo · 98 → 80 kg</p>
+    </div>
+    <span class="badge b-rest" id="hType">—</span>
+    <div class="kpi">
+      <div class="v mono" id="hWeight">—</div>
+      <div class="d" id="hTrend">sin peso aún</div>
+    </div>
+    <div class="kpi">
+      <div class="v mono" id="hStreak">0</div>
+      <div class="d">días seguidos</div>
+    </div>
+  </div>
+  <div class="tabrow">
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" id="tabHoy" aria-selected="true" aria-controls="vHoy">Día</button>
+      <button class="tab" role="tab" id="tabSem" aria-selected="false" aria-controls="vSem">Semana</button>
+      <button class="tab" role="tab" id="tabPlan" aria-selected="false" aria-controls="vPlan">Plan</button>
+      <button class="tab" role="tab" id="tabOlla" aria-selected="false" aria-controls="vOlla">Olla</button>
+      <button class="tab" role="tab" id="tabMerc" aria-selected="false" aria-controls="vMerc">Mercado</button>
+    </div>
+    <div class="daynav" id="dayNav">
+      <button class="nav" id="navPrev" aria-label="Día anterior">←</button>
+      <button class="nav today" id="navToday">Hoy</button>
+      <button class="nav" id="navNext" aria-label="Día siguiente">→</button>
+    </div>
+  </div>
+</div></header>
+
+<main><div class="wrap">
+  <div class="offline" id="offline" hidden></div>
+  <div class="daynote" id="dayNote" hidden></div>
+
+  <!-- ══════════ HOY ══════════ -->
+  <section id="vHoy" role="tabpanel" aria-labelledby="tabHoy">
+
+    <div class="card">
+      <div class="chead"><h2>Entrada del día</h2><span class="lbl" id="savedTag"></span></div>
+      <div class="cbody">
+        <div class="inputs">
+          <div class="field">
+            <span class="lbl">Peso de hoy (kg)</span>
+            <div class="row">
+              <input type="number" id="inWeight" step="0.1" min="40" max="250" placeholder="95.4"
+                     inputmode="decimal" aria-label="Peso de hoy en kilogramos">
+              <button class="btn" id="btnWeight">Guardar</button>
+            </div>
+            <span class="hint">En ayunas, después del baño. El dato diario es ruido; la media de 7 días es la señal.</span>
+          </div>
+
+          <div class="field">
+            <span class="lbl">WHOOP de anoche</span>
+            <div class="row" id="whoopRow">
+              <span class="btn ghost filebtn" id="whoopFileWrap">Subir captura
+                <input type="file" id="whoopFile" accept="image/*" aria-label="Captura del WHOOP">
+              </span>
+              <button class="btn ghost sm" id="btnWhoopManual">A mano</button>
+            </div>
+            <div class="row" id="whoopManual" hidden>
+              <input type="number" id="inRec" min="0" max="100" placeholder="rec %" aria-label="Recovery en porcentaje">
+              <input type="number" id="inSleep" step="0.1" min="0" max="14" placeholder="sueño h" aria-label="Horas de sueño">
+              <input type="number" id="inStrain" step="0.1" min="0" max="21" placeholder="strain" aria-label="Strain">
+              <button class="btn" id="btnWhoopSave">OK</button>
+            </div>
+            <div class="whoopchips" id="whoopChips"></div>
+            <span class="hint" id="whoopHint">La captura la lee Claude para sacar los números. La imagen no se guarda, solo los datos.</span>
+          </div>
+        </div>
+        <div id="whoopAdvice" style="margin-top:12px"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="chead"><h2>Macros de hoy</h2><span class="lbl" id="macroTag"></span></div>
+      <div class="cbody"><div class="macros" id="macros"></div></div>
+    </div>
+
+    <div class="card">
+      <div class="chead"><h2>Métricas del día</h2><span class="lbl" id="mdTag"></span></div>
+      <div class="cbody tight"><div class="tiles" id="mdTiles"></div></div>
+    </div>
+
+    <div class="card">
+      <div class="chead"><h2>Comidas del plan</h2><span class="lbl" id="mealTag"></span></div>
+      <div class="cbody tight"><div class="items" id="meals"></div></div>
+    </div>
+
+    <div class="card">
+      <div class="chead"><h2>Entreno</h2><span class="lbl" id="gymTag"></span></div>
+      <div class="cbody tight"><div class="items" id="gym"></div></div>
+    </div>
+
+    <div class="card">
+      <div class="chead"><h2>Hábitos</h2><span class="lbl" id="habitTag"></span></div>
+      <div class="cbody tight"><div class="items" id="habits"></div></div>
+    </div>
+
+    <div class="card">
+      <div class="chead"><h2>Comí algo fuera del plan</h2></div>
+      <div class="cbody">
+        <div class="row">
+          <input type="text" id="inExtra" placeholder="2 empanadas y una gaseosa"
+                 aria-label="Qué comiste fuera del plan">
+          <button class="btn" id="btnExtra">Calcular</button>
+        </div>
+        <span class="hint">Dilo como se te ocurra. Claude estima los macros y yo te digo cómo queda tu día — sin regaños, con números.</span>
+        <div id="extraOut"></div>
+        <div id="extraList" style="margin-top:12px"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ SEMANA ══════════ -->
+  <section id="vSem" role="tabpanel" aria-labelledby="tabSem" hidden>
+    <div class="card">
+      <div class="chead"><h2 id="weekTitle">La semana</h2>
+        <span class="lbl" id="weekTag"></span>
+        <div class="daynav">
+          <button class="nav" id="wkPrev" aria-label="Semana anterior">←</button>
+          <button class="nav today" id="wkNow">Esta</button>
+          <button class="nav" id="wkNext" aria-label="Semana siguiente">→</button>
+        </div></div>
+      <div class="cbody tight">
+        <div class="weekscroll"><div class="week" id="week"></div></div>
+      </div>
+      <div class="sumgrid" id="weekSum"></div>
+    </div>
+
+    <div class="card">
+      <div class="chead"><h2>Métricas de la semana</h2><span class="lbl" id="msTag"></span></div>
+      <div class="cbody tight">
+        <p class="grouplbl">Consistencia — lo que predice todo lo demás</p>
+        <div class="tiles" id="msConsist"></div>
+        <p class="grouplbl">Nutrición</p>
+        <div class="tiles" id="msNutri"></div>
+        <p class="grouplbl">Resultado</p>
+        <div class="tiles" id="msResult"></div>
+        <div id="msCalib"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="chead"><h2>Peso · media móvil de 7 días</h2><span class="lbl" id="sparkTag"></span></div>
+      <div class="spark" id="spark"></div>
+    </div>
+
+    <div class="card">
+      <div class="chead"><h2>Lo que vigilan tus análisis</h2></div>
+      <div class="cbody tight"><div class="items" id="flags"></div></div>
+    </div>
+  </section>
+
+  <section id="vPlan" role="tabpanel" aria-labelledby="tabPlan" hidden>
+    <div class="card">
+      <div class="chead"><h2 id="planTitle">Plan de la semana</h2>
+        <span class="lbl" id="planTag"></span>
+        <div class="daynav">
+          <button class="nav" id="plPrev" aria-label="Semana anterior">←</button>
+          <button class="nav today" id="plNow">Esta</button>
+          <button class="nav" id="plNext" aria-label="Semana siguiente">→</button>
+        </div></div>
+      <div class="cbody tight"><div id="planDias"></div></div>
+      <div class="sumgrid" id="planSum"></div>
+    </div>
+  </section>
+
+
+  <!-- ══════════ OLLA ══════════ -->
+  <section id="vOlla" role="tabpanel" aria-labelledby="tabOlla" hidden>
+    <div class="card">
+      <div class="chead"><h2 id="ollaTitulo">La olla</h2><span class="lbl">6 litros</span></div>
+      <div class="cbody tight"><div class="tiles" id="ollaLlenado"></div>
+        <p class="calib" id="ollaNota"></p></div>
+    </div>
+    <div class="card">
+      <div class="chead"><h2>Las seis reglas</h2></div>
+      <div class="cbody"><div class="pdlist" id="ollaReglas"></div></div>
+    </div>
+    <div class="card">
+      <div class="chead"><h2>Tiempos de presión</h2><span class="lbl">olla de 6 L</span></div>
+      <div class="cbody"><div class="pdlist" id="ollaTiempos"></div></div>
+    </div>
+    <div class="card">
+      <div class="chead"><h2>Domingo — cocinar para varios días</h2><span class="lbl" id="tandaTag"></span></div>
+      <div class="cbody tight"><div id="ollaTanda"></div></div>
+    </div>
+  </section>
+
+  <!-- ══════════ MERCADO ══════════ -->
+  <section id="vMerc" role="tabpanel" aria-labelledby="tabMerc" hidden>
+    <div class="card">
+      <div class="chead"><h2>Lista de mercado</h2><span class="lbl" id="mercTag"></span></div>
+      <div class="cbody tight"><div id="mercLista"></div></div>
+    </div>
+    <div class="card">
+      <div class="chead"><h2>El yogurt no se compra, se hace</h2></div>
+      <div class="cbody"><p class="note" id="mercYogurt"></p></div>
+    </div>
+    <div class="card">
+      <div class="chead"><h2>Ya está en casa</h2><span class="lbl">no lo compres</span></div>
+      <div class="cbody tight"><div class="pdlist" id="mercCasa" style="padding:12px 15px"></div></div>
+    </div>
+    <div class="card">
+      <div class="chead"><h2>Al fondo del estante</h2></div>
+      <div class="cbody"><p class="note" id="mercFondo"></p></div>
+    </div>
+  </section>
+
+  <footer>
+    <p id="footNote">Los macros salen de <span class="mono">foods.json</span> y <span class="mono">recipes.json</span> del bot: mismos gramos, mismos números. Esto no es consejo médico — tus análisis los interpreta Dr Brenton Martin.</p>
+  </footer>
+</div></main>
+<script>
+const D = {"perfil":{"peso_kg":98.0,"altura_cm":179,"edad":32,"sexo":"h","dias_entreno":4,"peso_meta_kg":80.0,"bmr":1944,"tdee":2818,"kcal_dia":1985,"deficit_dia":833,"p":195,"c":170,"f":58,"fib":38,"actualizado":"2026-09-22","ritmo":"agresivo"},"planes":{"entreno":[{"comidas":["b5","l5","d2"],"snacks":["s3","s8"]},{"comidas":["b7","l6","d7"],"snacks":["s4","s5"]},{"comidas":["b5","l4","d2"],"snacks":["s1","s8"]},{"comidas":["b7","l5","d4"],"snacks":["s3","s5"]}],"descanso":[{"comidas":["b3","l7","d1"],"snacks":["s1"]},{"comidas":["b2","l2","d1"],"snacks":["s5"]},{"comidas":["b3","l7","d5"],"snacks":["s1"]}]},"recetas":{"b1":{"n":"Huevos rancheros en la olla","g":"desayunos","min":10,"kcal":473,"p":45,"c":41,"f":12,"fib":9,"ing":[["Huevo entero",100],["Clara de huevo",200],["Tomate",150],["Espinaca",100],["Frijoles refritos",80],["Harina PAN",30]],"esp":[],"pasos":["**Sauté/sear high**: tomate con comino y chili, 3 min. Frijoles y espinaca, tapa 2 min.","Baja a **Sauté/sear low**. Huevos y claras batidos, revuelve constante 3 min.","**Apaga cuando todavía se vean húmedos**: se terminan con el calor residual.","Arepa de Harina PAN al lado (30 g de harina = arepa de ~110 kcal)."],"olla":{"modo":"Sauté/sear low","lib":"—"},"tanda":{"max_porciones":1,"nevera_dias":0,"congela":false,"nota":"El huevo revuelto recalentado es horrible. 10 min al momento."}},"b2":{"n":"Bowl de yogurt casero con avena y berries","g":"desayunos","min":10,"kcal":542,"p":54,"c":48,"f":13,"fib":9,"ing":[["Yogurt griego casero",300],["Proteína en polvo",20],["Avena en hojuelas",30],["Berries congelados",120],["Mantequilla de maní",15]],"esp":[],"pasos":["Yogurt casero + proteína en polvo, mezcla.","Avena cruda y canela encima, remueve.","Berries y almendras al final. Si lo dejas 10 min la avena se ablanda sola."]},"b3":{"n":"Overnight oats proteicos","g":"desayunos","min":10,"kcal":571,"p":50,"c":51,"f":17,"fib":9,"ing":[["Avena en hojuelas",40],["Cottage alto en proteína",200],["Yogurt griego casero",150],["Berries congelados",100],["Mantequilla de maní",15]],"esp":[],"pasos":["En un frasco: avena + cottage + yogurt + mantequilla de maní + canela.","Nevera toda la noche.","Berries en la mañana. Se come frío, cero cocina."],"tanda":{"max_porciones":4,"nevera_dias":4,"congela":false,"nota":"4 frascos el domingo. Se come frío, cero cocina entre semana."}},"b4":{"n":"Avena de la olla con proteína y banana","g":"desayunos","min":10,"kcal":547,"p":43,"c":65,"f":13,"fib":8,"ing":[["Avena en hojuelas",40],["Leche descremada",250],["Proteína en polvo",30],["Banana",110],["Mantequilla de maní",15]],"esp":[],"pasos":["Avena + leche descremada, 2 min al microondas.","Deja que baje del hervor ANTES de meter la proteína: hirviendo se corta y queda grumosa.","Banana en rodajas, canela y la mantequilla de maní encima."]},"b5":{"n":"Omelette de espinaca, champiñones y cottage","g":"desayunos","min":10,"kcal":431,"p":54,"c":9,"f":19,"fib":4,"ing":[["Huevo entero",100],["Clara de huevo",200],["Espinaca",120],["Champiñones",100],["Cottage alto en proteína",100],["Aceite de oliva",5]],"esp":[],"pasos":["**Sauté/sear high**: champiñones 3 min hasta que suelten y reabsorban el agua. Espinaca 1 min. Escurre.","Baja a **Sauté/sear low**. Huevos + claras batidos, 2 min sin tocar hasta que cuaje el fondo.","Dobla, 1 min más. Cottage encima **fuera del fuego**."],"olla":{"modo":"Sauté/sear low","lib":"—"},"tanda":{"max_porciones":1,"nevera_dias":0,"congela":false,"nota":"Al momento. 10 minutos."}},"b6":{"n":"Arepas caseras con huevos pericos","g":"desayunos","min":10,"kcal":537,"p":45,"c":56,"f":13,"fib":3,"ing":[["Harina PAN",60],["Huevo entero",100],["Clara de huevo",150],["Tomate",100],["Cebolla larga",30],["Cottage alto en proteína",80]],"esp":[],"pasos":["Masa: 30 g de Harina PAN por 45 ml de agua tibia con sal. Reposa 5 min.","Asa 4 min por lado en Sauté/sear high.","Pericos aparte: tomate y cebolla larga 3 min, huevos y claras a fuego bajo.","Cottage al lado. La arepa la haces del tamaño que tú decidas."]},"l1":{"n":"Dahl de lentejas rojas (olla, 5 min)","g":"almuerzos","min":5,"kcal":695,"p":49,"c":90,"f":8,"fib":17,"ing":[["Lentejas rojas secas",100],["Tomate",150],["Espinaca",150],["Yogurt griego casero",150],["Arroz basmati crudo",40],["Aceite de oliva",5]],"esp":[],"pasos":["**Sauté/sear high**, destapada: espray + curry, comino y jengibre, 30 s hasta que huelan.","Tomate picado, 3 min, hasta que suelte el agua.","Lentejas rojas + caldo (1 : 2,5). Rasca el fondo: lo pegado hace que la olla marque quemado.","Tapa. **Pressure cook 5 min.** Liberación **natural** — la rápida salpica espuma por la válvula.","**Cancel.** Espinaca con el calor residual, 2 min con la tapa puesta.","El yogurt SIEMPRE al servir, fuera del fuego. Si hierve se corta."],"olla":{"modo":"Pressure cook","lib":"natural"},"tanda":{"max_porciones":4,"nevera_dias":4,"congela":true,"nota":"Congela en porciones. Espesa en la nevera: afloja con caldo al recalentar. El arroz y el yogurt van aparte, nunca dentro de lo que guardas."}},"l2":{"n":"Bowl de garbanzos al curry con arroz al caldo","g":"almuerzos","min":8,"kcal":716,"p":52,"c":87,"f":15,"fib":19,"ing":[["Garbanzos de lata",240],["Tomate",150],["Espinaca",120],["Yogurt griego casero",150],["Arroz basmati crudo",40],["Cottage alto en proteína",100],["Aceite de oliva",5]],"esp":[],"pasos":["**Sauté/sear high**: espray + curry y garam masala, 30 s.","Tomate, 5 min hasta que se deshaga.","Garbanzos escurridos + 200 ml de caldo. **Machaca un tercio con el tenedor**: espesa sin harina.","**Pressure cook 8 min**, liberación natural.","Espinaca al final con la olla apagada. Yogurt y cottage al servir."],"olla":{"modo":"Pressure cook","lib":"natural"},"tanda":{"max_porciones":4,"nevera_dias":4,"congela":true,"nota":"El yogurt y el cottage se agregan al plato, nunca a la olla que guardas."}},"l3":{"n":"Pasta con Dolmio y tofu desmenuzado","g":"almuerzos","min":20,"kcal":672,"p":48,"c":69,"f":20,"fib":12,"ing":[["Pasta cruda",70],["Tofu firme",200],["Dolmio",150],["Espinaca",150],["Champiñones",100]],"esp":[],"pasos":["Pasta al dente: pruébala 1 min antes de lo que dice la caja.","Desmenuza el tofu con las manos hasta que parezca carne molida. Ese es el truco.","Sauté/sear high: tofu 8 min SIN moverlo mucho, con ajo y orégano, hasta tostadito.","Dolmio y hierbas 4 min. Champiñones y espinaca al final."]},"l4":{"n":"Wrap de tofu al curry","g":"almuerzos","min":20,"kcal":620,"p":49,"c":50,"f":22,"fib":10,"ing":[["Wrap Mission wholegrain",71],["Tofu firme",200],["Espinaca",80],["Zanahoria",80],["Yogurt griego casero",100],["Limón",10]],"esp":[],"pasos":["Tofu en cubos, apretado y seco. Sauté/sear high 6 min con curry y garam masala.","Aderezo: yogurt + limón + jengibre.","Wrap tibio 20 s en la olla seca: se dobla sin romperse.","Rellena con espinaca, zanahoria rallada, tofu y aderezo. Enrolla apretado."]},"l5":{"n":"Ensalada tibia de papa y huevo (olla, 8 min)","g":"almuerzos","min":8,"kcal":620,"p":62,"c":56,"f":15,"fib":9,"ing":[["Papa",250],["Huevo entero",100],["Clara de huevo",200],["Cottage alto en proteína",150],["Espinaca",100],["Tomate",100],["Limón",15]],"esp":[],"pasos":["Primero los huevos: 1 taza de agua, canasta, **5 min de presión + 5 de natural**, al hielo.","Saca los huevos. Papa en cubos en la canasta, misma agua, **8 min**, liberación **rápida** — con natural se deshace.","Aderezo aparte: yogurt + limón + lemon pepper + paprika. Nunca lo calientes.","Mezcla tibio con espinaca y tomate. Cottage al final.","**Truco:** enfría la papa en la nevera y cómela al día siguiente — gana almidón resistente y sacia más."],"olla":{"modo":"Pressure cook","lib":"rápida"},"tanda":{"max_porciones":4,"nevera_dias":3,"congela":false,"nota":"No congela: la papa se vuelve harinosa. La papa fría gana almidón resistente."}},"l6":{"n":"Burrito bowl de frijoles refritos y arroz al caldo","g":"almuerzos","min":5,"kcal":597,"p":47,"c":76,"f":8,"fib":13,"ing":[["Arroz basmati crudo",50],["Frijoles refritos",180],["Salsa mild",60],["Cottage alto en proteína",250],["Espinaca",80],["Limón",15]],"esp":[],"pasos":["Arroz + caldo de verdura (1 : 1,25), **Pressure cook 5 min**, natural 10 min. Cero calorías extra, el doble de sabor.","Frijoles refritos aparte con comino y un chorro de agua, en **Sauté/sear low**, hasta que queden cremosos.","Monta el bowl frío: arroz, frijol, salsa, espinaca cruda, cottage encima.","Limón y sal al final. **El limón sobre el frijol triplica la absorción del hierro.**"],"olla":{"modo":"Pressure cook","lib":"natural 10 min"},"tanda":{"max_porciones":4,"nevera_dias":4,"congela":false,"nota":"Guarda el arroz y el frijol aparte. Arma el bowl al momento."}},"d1":{"n":"Revuelto grande de espinaca y cottage (bajo en carbos)","g":"cenas","min":10,"kcal":541,"p":70,"c":14,"f":20,"fib":7,"ing":[["Huevo entero",100],["Clara de huevo",250],["Espinaca",200],["Champiñones",150],["Cottage alto en proteína",150],["Cebolla larga",30],["Aceite de oliva",5]],"esp":[],"pasos":["**Sauté/sear high**: champiñones y cebolla larga 3 min. Espinaca, tapa 2 min, **escurre el agua** o queda aguado.","Baja a **Sauté/sear low**. Huevos + claras, revuelve constante 3 min.","Apaga antes de que se vea seco. Cottage encima fuera del fuego.","70 g de proteína. Esta es tu cena cuando el día viene pasado de carbos."],"olla":{"modo":"Sauté/sear low","lib":"—"},"tanda":{"max_porciones":1,"nevera_dias":0,"congela":false,"nota":"Al momento. 10 minutos."}},"d2":{"n":"Curry marroquí de garbanzos y espinaca (olla, 8 min)","g":"cenas","min":8,"kcal":603,"p":52,"c":59,"f":15,"fib":21,"ing":[["Garbanzos de lata",240],["Tomate",200],["Espinaca",200],["Yogurt griego casero",150],["Cottage alto en proteína",100],["Aceite de oliva",5]],"esp":[],"pasos":["**Sauté/sear high**: espray + Moroccan seasoning, comino y jengibre, 30 s.","Tomate, 8 min hasta que se deshaga del todo.","Garbanzos + 200 ml de caldo. Machaca un tercio.","**Pressure cook 8 min**, natural.","Espinaca con la olla apagada. Yogurt y cottage fuera del fuego."],"olla":{"modo":"Pressure cook","lib":"natural"},"tanda":{"max_porciones":4,"nevera_dias":4,"congela":true,"nota":"Rinde el doble si duplicas. Aguanta 4 días y congela perfecto."}},"d3":{"n":"Tofu sellado con verduras y arroz al caldo","g":"cenas","min":8,"kcal":631,"p":49,"c":49,"f":24,"fib":13,"ing":[["Tofu firme",260],["Arroz basmati crudo",35],["Brócoli",150],["Calabacín",150],["Zanahoria",80],["Cebolla larga",30]],"esp":[],"pasos":["**Nunca a presión: el tofu queda esponja.**","Tofu en lonjas de 1,5 cm. **Aprieta con papel de cocina 2 min** — el agua es la diferencia entre dorado y aguado.","**Sauté/sear high**, destapada, espray. 4 min por lado **sin tocarlo**. Costra de verdad.","Saca el tofu. Brócoli, calabacín y zanahoria 5 min en la misma olla.","Arroz aparte al caldo (Pressure cook 5 min)."],"olla":{"modo":"Sauté/sear high","lib":"—"},"tanda":{"max_porciones":1,"nevera_dias":0,"congela":false,"nota":"NO se hace por tandas: el tofu recalentado pierde la costra. 10 min al momento."}},"d4":{"n":"Sopa de lentejas y verduras (olla, 9 min)","g":"cenas","min":9,"kcal":631,"p":47,"c":63,"f":14,"fib":18,"ing":[["Lentejas cafés secas",80],["Zanahoria",120],["Calabacín",150],["Tomate",150],["Espinaca",100],["Caldo Campbell's",500],["Cottage alto en proteína",150],["Aceite de oliva",8]],"esp":[],"pasos":["**Sauté/sear high**: zanahoria, calabacín y cebolla larga, 5 min.","Lentejas cafés + tomate + caldo (1 : 3).","**Pressure cook 9 min**, liberación natural.","Espinaca al final. Cottage al servir, nunca dentro.","Es sopa: ocupa mucho volumen. **Máximo 3 porciones por tanda en la olla de 6 L.**"],"olla":{"modo":"Pressure cook","lib":"natural"},"tanda":{"max_porciones":3,"nevera_dias":4,"congela":true,"nota":"Es sopa: ocupa volumen. Máximo 3 porciones por tanda en la olla de 6 L."}},"d5":{"n":"Chili de frijoles negros (olla, 30 min)","g":"cenas","min":30,"kcal":643,"p":51,"c":64,"f":14,"fib":19,"ing":[["Frijoles negros secos",80],["Tomate",200],["Pimentón",100],["Espinaca",100],["Salsa mild",60],["Yogurt griego casero",150],["Cottage alto en proteína",100],["Aceite de oliva",8]],"esp":[],"pasos":["Frijoles negros **secos, sin remojar** + 4 partes de agua. **Pressure cook 30 min**, natural 15 min. Escurre.","**Sauté/sear high**: pimentón y tomate, 5 min.","Devuelve los frijoles + salsa + comino + chili. **Sauté/sear low** 5 min para que espese.","Yogurt y cottage al servir.","Los secos cuestan la cuarta parte de la lata y la olla borra la diferencia de esfuerzo."],"olla":{"modo":"Pressure cook","lib":"natural"},"tanda":{"max_porciones":4,"nevera_dias":5,"congela":true,"nota":"El que mejor congela de todos. Haz 4 y guarda 2."}},"d6":{"n":"Salteado de edamame y tofu","g":"cenas","min":10,"kcal":641,"p":50,"c":60,"f":22,"fib":18,"ing":[["Edamame congelado",150],["Tofu firme",150],["Brócoli",150],["Habichuela",100],["Cebolla larga",40],["Arroz basmati crudo",40]],"esp":[],"pasos":["Tofu seco y apretado, **Sauté/sear high** 4 min por lado. Sácalo.","Edamame del congelador directo + brócoli + habichuela, 5 min.","Jengibre, ajo y chili al final, 1 min. Devuelve el tofu.","Arroz aparte al caldo."],"olla":{"modo":"Sauté/sear high","lib":"—"},"tanda":{"max_porciones":1,"nevera_dias":0,"congela":false,"nota":"Al momento. El edamame recalentado se arruga."}},"s1":{"n":"Batido de proteína con berries","g":"snacks","min":3,"kcal":195,"p":26,"c":17,"f":2,"fib":6,"ing":[["Proteína en polvo",30],["Berries congelados",150]],"esp":[],"pasos":["Proteína + 300 ml de agua + berries congelados a la licuadora."]},"s2":{"n":"Cottage con sriracha y tomate","g":"snacks","min":3,"kcal":198,"p":26,"c":11,"f":5,"fib":1,"ing":[["Cottage alto en proteína",200],["Tomate",100]],"esp":[],"pasos":["Cottage en un bowl, tomate picado, sriracha generosa. 26 g de proteína en 2 minutos."]},"s3":{"n":"Dos huevos duros de la olla","g":"snacks","min":3,"kcal":143,"p":13,"c":1,"f":10,"fib":0,"ing":[["Huevo entero",100]],"esp":[],"pasos":["Del domingo: 12 de una en la olla. 1 taza de agua, canasta, 5 min de presión + 5 natural + hielo 3 min."],"tanda":{"max_porciones":12,"nevera_dias":7,"congela":false,"nota":"12 huevos de una: 1 taza de agua, canasta, 5 min presión + 5 natural + hielo 3 min."}},"s4":{"n":"Yogurt casero con Whole Earth y canela","g":"snacks","min":3,"kcal":165,"p":24,"c":12,"f":1,"fib":0,"ing":[["Yogurt griego casero",250],["Whole Earth",5]],"esp":[],"pasos":["Yogurt casero con Whole Earth y canela. Endulzar a cero calorías es adherencia pura."]},"s5":{"n":"Edamame con sal","g":"snacks","min":3,"kcal":182,"p":18,"c":14,"f":8,"fib":8,"ing":[["Edamame congelado",150]],"esp":[],"pasos":["Edamame congelado, 4 min en agua hirviendo. Sal gruesa."]},"s6":{"n":"Tajada grande de sandia","g":"snacks","min":3,"kcal":150,"p":3,"c":38,"f":1,"fib":2,"ing":[["Sandía",500]],"esp":[],"pasos":["Una tajada grande. 500 g son 150 kcal: para cuando el hambre es de cantidad, no de comida."]},"s7":{"n":"Batido pre-gym de banana y avena","g":"snacks","min":3,"kcal":406,"p":43,"c":49,"f":4,"fib":5,"ing":[["Yogurt griego casero",200],["Banana",110],["Avena en hojuelas",20],["Proteína en polvo",25]],"esp":[],"pasos":["Todo a la licuadora con 150 ml de agua y hielo. 60-90 min antes de entrenar."]},"s8":{"n":"Manzana con yogurt","g":"snacks","min":3,"kcal":193,"p":15,"c":33,"f":1,"fib":4,"ing":[["Manzana",180],["Yogurt griego casero",150]],"esp":[],"pasos":["Manzana en gajos con el yogurt casero al lado."]},"s9":{"n":"Manzana con mantequilla de maní","g":"snacks","min":3,"kcal":214,"p":6,"c":28,"f":10,"fib":6,"ing":[["Manzana",180],["Mantequilla de maní",20]],"esp":[],"pasos":["20 g de mantequilla de maní. PÉSALOS: la cucharada a ojo son 35-40 g y ahí se van 130 kcal fantasma."]},"s10":{"n":"Puñado de almendras (pesado)","g":"snacks","min":3,"kcal":150,"p":5,"c":2,"f":12,"fib":3,"ing":[["Almendras",25]],"esp":[],"pasos":["25 g de almendras, pesadas. A ojo siempre son 50."]},"b7":{"n":"Bowl de yogurt y proteína (sin avena)","g":"desayunos","min":10,"kcal":458,"p":58,"c":29,"f":11,"fib":5,"ing":[["Yogurt griego casero",300],["Proteína en polvo",30],["Berries congelados",100],["Mantequilla de maní",15]],"esp":[],"pasos":["Yogurt casero + proteína en polvo.","Berries y mantequilla de maní encima.","Dos minutos. El desayuno de los días sin tiempo."]},"l7":{"n":"Ensalada grande de tofu y edamame","g":"almuerzos","min":20,"kcal":615,"p":51,"c":29,"f":32,"fib":17,"ing":[["Tofu firme",200],["Edamame congelado",120],["Espinaca",150],["Tomate",150],["Zanahoria",80],["Limón",15],["Aceite de oliva",8]],"esp":[],"pasos":["Tofu apretado y seco, Sauté/sear high 4 min por lado. Déjalo enfriar.","Edamame del congelador, 4 min en agua hirviendo.","Todo lo demás crudo: espinaca, tomate, zanahoria rallada.","Limón y aceite de oliva al final. El limón es lo que te sube la absorción del hierro."]},"d7":{"n":"Tofu y verduras al wok (sin arroz)","g":"cenas","min":10,"kcal":591,"p":50,"c":22,"f":31,"fib":14,"ing":[["Tofu firme",250],["Brócoli",200],["Champiñones",150],["Habichuela",100],["Cebolla larga",40],["Aceite de oliva",8]],"esp":[],"pasos":["Tofu apretado y seco, **Sauté/sear high** 4 min por lado, destapada.","Brócoli, champiñones y habichuela 5 min. Cebolla larga al final.","Sin arroz: esta es la cena de los días que el presupuesto de carbos ya se gastó."],"olla":{"modo":"Sauté/sear high","lib":"—"},"tanda":{"max_porciones":1,"nevera_dias":0,"congela":false,"nota":"Al momento."}}},"entrenos":{"upper_a":{"n":"Upper A - Horizontal (fuerza)","min":60,"cal":"5 min de caminadora + circulos de hombro con banda + 3 series ascendentes de press de banca (barra sola, 50%, 75%)","ej":[{"n":"Press de banca con barra","s":4,"r":"5-7","rir":2,"d":150,"alt":["Press de banca con mancuernas","Press de piso con barra"],"nota":"Pines de seguridad puestos. Sin observador, deja siempre 2 reps en el tanque."},{"n":"Remo con barra (pronado, torso a 45 grados)","s":4,"r":"6-8","rir":2,"d":150,"alt":["Remo con barra Z","Remo Pendlay desde el piso"],"nota":"Tu unico jalon horizontal pesado. El remo es lo que compensa todo el press de banca."},{"n":"Press inclinado con mancuernas","s":3,"r":"8-10","rir":2,"d":120,"alt":["Press inclinado con barra en el rack"],"nota":"El banco ya lo tienes en inclinado en la foto. 30-45 grados."},{"n":"Dominadas en la barra del rack","s":3,"r":"maximas (AMRAP)","rir":1,"d":120,"alt":["Dominadas con banda elastica de asistencia","Remo invertido con la barra en los ganchos bajos del rack"],"nota":"A 98 kg puede que salgan 0-3. Usa la banda por el pie. Anota la banda que usaste: cuando pases a una mas delgada vas a ver el progreso mas motivante de todo el programa."},{"n":"Elevaciones laterales con mancuernas","s":3,"r":"12-15","rir":1,"d":60,"alt":["Elevaciones laterales con banda"],"nota":"Los hombros anchos son lo que mas cambia como te ves cuando bajas de peso. Peso liviano, control total."},{"n":"Curl con barra Z","s":3,"r":"10-12","rir":1,"d":60,"alt":["Curl con mancuernas","Curl martillo"],"nota":""},{"n":"Extension de triceps con barra Z sobre la cabeza","s":3,"r":"12-15","rir":1,"d":60,"alt":["Press frances acostado en el banco","Fondos entre banco y silla"],"nota":""}]},"lower_a":{"n":"Lower A - Sentadilla (cuadriceps dominante)","min":55,"cal":"5 min de caminadora + movilidad de tobillo y cadera + sentadillas con barra sola, 50% y 75%","ej":[{"n":"Sentadilla trasera con barra","s":4,"r":"5-7","rir":2,"d":180,"alt":["Sentadilla frontal","Sentadilla goblet con mancuerna"],"nota":"Pines de seguridad a la altura del punto mas bajo de tu sentadilla. Si algo falla, sueltas la barra y ya."},{"n":"Peso muerto rumano con barra","s":3,"r":"8-10","rir":2,"d":150,"alt":["RDL con mancuernas","Buenos dias con barra (peso ligero)"],"nota":"Sin maquina de femoral, el RDL es TU ejercicio de isquiotibiales. No lo cambies."},{"n":"Sentadilla bulgara con mancuernas","s":3,"r":"8-10 por pierna","rir":2,"d":120,"alt":["Zancadas caminando con mancuernas","Zancadas en el sitio"],"nota":"Pie de atras sobre el banco. Brutal, y no necesita nada mas que el banco que ya tienes."},{"n":"Hip thrust con barra apoyado en el banco","s":3,"r":"8-12","rir":1,"d":120,"alt":["Puente de gluteo con mancuerna en la cadera"],"nota":"Pon una toalla doblada o el foam roller entre la barra y la cadera."},{"n":"Elevacion de talones con barra en la espalda","s":4,"r":"12-15","rir":1,"d":60,"alt":["Gemelos a una pierna con mancuerna","Gemelos sobre un disco para mas rango"],"nota":"Parate con la punta del pie sobre un disco para ganar rango de movimiento."},{"n":"Plancha frontal","s":3,"r":"45-60 s","rir":1,"d":60,"alt":["Rueda abdominal","Dead bug"],"nota":""}]},"upper_b":{"n":"Upper B - Vertical (hipertrofia)","min":60,"cal":"5 min de caminadora + rotaciones de hombro con banda + press militar con barra sola x15","ej":[{"n":"Press militar de pie con barra","s":4,"r":"6-8","rir":2,"d":150,"alt":["Press de hombro sentado con mancuernas (banco en vertical)"],"nota":"Saca la barra de los ganchos del rack a la altura de la clavicula. Gluteos y abdomen apretados, sin arquear la espalda."},{"n":"Dominadas (lastradas si ya te salen 8+)","s":4,"r":"6-10","rir":2,"d":150,"alt":["Dominadas con banda","Remo invertido en el rack"],"nota":"Cuando pases de 8 limpias, cuelga una mancuerna entre los pies o un disco en un cinturon."},{"n":"Press de banca con mancuernas (plano)","s":3,"r":"8-12","rir":1,"d":120,"alt":["Aperturas con mancuernas en el banco","Flexiones con los pies elevados"],"nota":""},{"n":"Remo con mancuerna a una mano","s":3,"r":"10-12 por lado","rir":1,"d":90,"alt":["Remo con barra Z agarre supino"],"nota":"Rodilla y mano sobre el banco. Tira con el codo hacia la cadera, no hacia el hombro."},{"n":"Face pull con banda elastica","s":3,"r":"15-20","rir":1,"d":60,"alt":["Pajaros con mancuernas inclinado sobre el banco"],"nota":"Ancla la banda en el rack a la altura de la cara. Salud de hombro: barato de hacer, caro de saltarse."},{"n":"Curl martillo con mancuernas","s":3,"r":"10-12","rir":1,"d":60,"alt":["Curl inclinado en el banco","Curl con barra Z agarre ancho"],"nota":""},{"n":"Press cerrado con barra en el banco","s":3,"r":"10-15","rir":1,"d":60,"alt":["Fondos entre dos bancos","Extension de triceps acostado con barra Z"],"nota":""}]},"lower_b":{"n":"Lower B - Bisagra de cadera (posterior dominante)","min":55,"cal":"5 min de caminadora + puentes de gluteo + peso muerto con barra sola, 50% y 75%","ej":[{"n":"Peso muerto convencional","s":3,"r":"4-6","rir":2,"d":210,"alt":["Peso muerto sumo","RDL pesado si la espalda baja se queja"],"nota":"Solo 3 series. El peso muerto cobra caro en recuperacion y en deficit calorico recuperas peor. Calidad, no cantidad."},{"n":"Sentadilla frontal con barra","s":3,"r":"6-8","rir":2,"d":150,"alt":["Sentadilla goblet pesada con mancuerna","Sentadilla trasera con pausa"],"nota":"Menos peso que la trasera y mucho mas cuadriceps. Si las munecas te molestan, usa agarre cruzado de brazos."},{"n":"Zancadas caminando con mancuernas","s":3,"r":"10 por pierna","rir":2,"d":120,"alt":["Zancadas en el sitio","Step-up al banco con mancuernas"],"nota":"El garage da para ida y vuelta. Si no, hazlas en el sitio."},{"n":"Buenos dias con barra","s":3,"r":"10-12","rir":2,"d":90,"alt":["RDL a una pierna con mancuerna","Hiperextension sobre el banco"],"nota":"Peso ligero, rango controlado. Es un ejercicio de isquios y espalda baja, no de ego."},{"n":"Elevacion de piernas colgado en la barra de dominadas","s":3,"r":"10-15","rir":1,"d":60,"alt":["Elevacion de rodillas colgado","Crunch inverso en el piso"],"nota":""},{"n":"Carga del granjero con mancuernas","s":3,"r":"40 metros","rir":1,"d":90,"alt":["Plancha lateral 30 s por lado"],"nota":"Las mancuernas mas pesadas que tengas, camina el garage. Agarre, core y hombros de una."}]}},"cardio":{"principio":"El cardio NO pone el deficit, lo pone la comida. El cardio es para tu corazon, tu higado y tus pasos.","pasos_objetivo":9000,"sesiones":[{"tipo":"Caminadora zona 2","cuando":"Miercoles","duracion_min":45,"intensidad":"Puedes hablar sin ahogarte. Inclinacion 5-8%, velocidad comoda.","nota":"La inclinacion sube el gasto sin castigar rodillas ni robarte recuperacion como correr."},{"tipo":"Caminata larga afuera","cuando":"Sabado","duracion_min":60,"intensidad":"Suave","nota":"Afuera, no en la caminadora. Sol = vitamina D y cabeza despejada."},{"tipo":"Caminata post-almuerzo","cuando":"Todos los dias","duracion_min":12,"intensidad":"Suave","nota":"12 min despues de comer aplana el pico de glucosa. Barato, corto, y funciona."}],"no_hacer":"No metas HIIT encima de 4 dias de pesas en deficit: te canibaliza la recuperacion y la fuerza. Si el WHOOP marca recovery rojo dos dias seguidos, esto es lo primero que sobra."},"banderas":[{"m":"ALT (alanina aminotransferasa)","prev":28,"act":68,"ref":"5-40","u":"U/L","est":"ALTO","acc":"Repetir las pruebas de función hepática con tu médico. El laboratorio ya lo pidió; no lo dejes pasar. Mientras tanto: alcohol en cero hasta el reexamen, y perder grasa. En hígado graso una pérdida del 7-10% del peso es la intervención con más evidencia que existe: de 98 kg son 7-10 kg."},{"m":"LDL colesterol","prev":3.5,"act":3.4,"ref":"0.0-2.5","u":"mmol/L","est":"ALTO","acc":"La fibra soluble baja el LDL de forma medible: avena, frijoles, garbanzos, lentejas, berries. Tu plan ya trae 38-42 g de fibra al día, que es el doble del promedio. Cambia grasa saturada (ghee, mozzarella, chocolate) por insaturada (nueces, mantequilla de maní, aceite de oliva) sin subir el total."},{"m":"Creatinina","prev":79,"act":56,"ref":"60-110","u":"umol/L","est":"BAJO","acc":"5 g de creatina monohidrato al día. Los vegetarianos son quienes más responden a la creatina porque parten de reservas más bajas. Cuesta poco, tiene décadas de evidencia de seguridad, y en déficit calórico ayuda a mantener fuerza. Avísale a tu médico que la tomas: sube la creatinina medida sin que nada esté mal."},{"m":"Ferritina","prev":17,"act":50,"ref":"30-400","u":"ug/L","est":"NORMAL BAJO - VIGILAR","acc":"El hierro vegetal (espinaca, frijoles, lentejas, tofu) se absorbe mal solo. Con vitamina C se absorbe hasta 3 veces más: por eso el limón y el Tajín sobre la espinaca y los frijoles en las recetas no son decoración. Y no tomes café ni té con las comidas de hierro, bloquean la absorción."}],"diaSesion":{"0":"upper_a","1":"lower_a","2":"cardio","3":"upper_b","4":"lower_b","5":"cardio","6":"descanso"},"olla":{"modelo":"Philips All-in-One 6 L","llenado":{"guisos":"máximo 2/3 = 4 L","legumbres_granos_pasta_avena":"máximo 1/2 = 3 L — espuman y pueden tapar la válvula"},"liquido_minimo_ml":250,"nunca_en_presion":["Yogurt","Cottage","Leche","Kéfir","Tofu","Huevo revuelto","Hoja verde"],"reglas":["Los lácteos NUNCA entran a presión: se cortan. Van fuera del fuego, al servir.","Lo espeso (Dolmio, tomate concentrado, salsa) va ARRIBA sin revolver. Si se pega al fondo la olla marca error de quemado.","Legumbres y granos: liberación NATURAL siempre. La rápida hace que la espuma salte por la válvula.","La hoja verde entra con la olla ya apagada: 2 minutos de calor residual bastan.","El tofu va en Sauté/sear high, destapado. A presión queda esponja.","Mínimo 250 ml de líquido o nunca alcanza presión."],"tiempos":{"Lentejas rojas":[5,"1:2,5","natural"],"Lentejas cafés":[9,"1:3","natural"],"Arvejas partidas":[12,"1:3","natural"],"Garbanzos secos sin remojo":[45,"1:4","natural 15 min"],"Garbanzos remojados":[15,"1:3","natural"],"Frijoles negros secos":[30,"1:4","natural"],"Arroz basmati":[5,"1:1,25","natural 10 min"],"Avena steel-cut":[4,"1:3","natural"],"Papa en cubos":[8,"1 taza en canasta","rápida"],"Huevos duros":[5,"1 taza en canasta","natural 5 min + hielo"]},"fuera_de_la_olla":{"al_servir":["Yogurt griego casero","Cottage alto en proteína","Leche descremada","Limón","Mantequilla de maní","Almendras","Berries congelados","Banana","Manzana","Sandía"],"aparte":["Arroz basmati crudo","Pasta cruda","Wrap Mission wholegrain","Arepa Sary con queso","Harina PAN","Avena en hojuelas"]},"domingo":["d5","d2","l1","b3"]},"mercado":{"secciones":[{"t":"Lácteos y proteína","items":[{"n":"Cottage alto en proteína (Bulla)","u":"4 × tarro de 500 g","g":2000,"casa":0},{"n":"Leche descremada","u":"3 × botella de 2 L","g":4092,"casa":0},{"n":"Leche en polvo descremada","u":"1 × bolsa de 1 kg","g":306,"casa":0},{"n":"Proteína en polvo","u":"1 × bolsa de 1 kg","g":170,"casa":0},{"n":"Huevos","u":"1 × docena (~700 g)","g":800,"casa":700},{"n":"Claras congeladas","u":"1 × pouch de 950 ml","g":1300,"casa":950},{"n":"Tofu firme","u":"1 × paquete de 450 g","g":850,"casa":450}]},{"t":"Verdura","items":[{"n":"Espinaca fresca","u":"3 × bolsa de 280 g","g":780,"casa":200},{"n":"Champiñones","u":"3 × bandeja de 250 g","g":650,"casa":0},{"n":"Brócoli","u":"1 × cabeza (~350 g)","g":200,"casa":0},{"n":"Calabacín","u":"1 × unidad (~200 g)","g":150,"casa":0},{"n":"Tomates","u":"10 × unidad (~150 g)","g":1400,"casa":0},{"n":"Habichuela","u":"1 × bolsa de 250 g","g":100,"casa":0},{"n":"Pimentón","u":"1 × unidad (~150 g)","g":100,"casa":0},{"n":"Papa","u":"1 × bolsa de 1 kg","g":500,"casa":0},{"n":"Limones","u":"2 × unidad","g":85,"casa":0}]},{"t":"Fruta","items":[{"n":"Manzanas","u":"2 × unidad (~180 g)","g":360,"casa":0}]},{"t":"Congelados","items":[{"n":"Berries congelados","u":"1 × bolsa de 1 kg","g":970,"casa":0},{"n":"Edamame congelado","u":"2 × bolsa de 500 g","g":690,"casa":0},{"n":"Espinaca congelada","u":"3 × bolsa de 500 g","g":1240,"casa":0}]}],"casa":[{"n":"Aceite de oliva","g":75,"hay":null},{"n":"Arroz basmati crudo","g":90,"hay":null},{"n":"Avena en hojuelas","g":110,"hay":null},{"n":"Caldo Campbell's","g":500,"hay":null},{"n":"Frijoles negros secos","g":80,"hay":null},{"n":"Lentejas cafés secas","g":80,"hay":null},{"n":"Mantequilla de maní","g":75,"hay":null},{"n":"Salsa mild","g":120,"hay":null},{"n":"Whole Earth","g":5,"hay":null},{"n":"Cebolla larga","g":100,"hay":150},{"n":"Frijoles refritos","g":180,"hay":400},{"n":"Garbanzos de lata","g":720,"hay":1200},{"n":"Wrap Mission wholegrain","g":71,"hay":567},{"n":"Zanahoria","g":360,"hay":400}],"yogurt":{"g":2450,"leche":4092,"polvo":306},"fondo":"Aceite de coco (~87% grasa saturada) y ghee ×2 (~62%). Con LDL en 3,4 el de todos los días es el aceite de oliva (~14%)."}};
+
+/* ── Fechas y targets ─────────────────────────────────────────────── */
+const DIAS = ['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
+const DIAS_C = ['dom','lun','mar','mié','jue','vie','sáb'];
+const MESES = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto',
+               'septiembre','octubre','noviembre','diciembre'];
+const iso = d => `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+const desdeIso = s => { const [y,m,dd] = s.split('-').map(Number); return new Date(y, m-1, dd); };
+const luDom = d => (d.getDay() + 6) % 7;            // 0 = lunes
+const esEntreno = d => [0,1,3,4].includes(luDom(d));
+const diaDelAno = d => Math.floor((d - new Date(d.getFullYear(),0,0)) / 864e5);
+
+/* Mifflin-St Jeor, igual que nutricion.py: si divergen, los números mienten. */
+function targets(pesoKg){
+  // Un solo objetivo diario. El ciclado de carbos murió con el cálculo:
+  // 195 g de proteína + el piso de 58 g de grasa ya ocupan 1.302 de 1.985 kcal,
+  // y lo que queda de carbos no alcanza para ciclar nada. Los carbos se mueven
+  // dentro del día, alrededor de la sesión, no entre días.
+  const p = D.perfil, kg = pesoKg || p.peso_kg;
+  const bmr  = 10*kg + 6.25*p.altura_cm - 5*p.edad + (p.sexo === 'h' ? 5 : -161);
+  const tdee = bmr * 1.45;
+  const obj  = Math.max(tdee * 0.70, bmr * 0.95, 1400);
+  const prot = Math.round(2.0*kg), gras = Math.round(0.6*kg);
+  const carb = Math.max(0, Math.round((obj - prot*4 - gras*9)/4));
+  return {kcal: Math.round(obj), p: prot, c: carb, f: gras, fib: 38,
+          bmr: Math.round(bmr), tdee: Math.round(tdee)};
+}
+
+function planDe(d){
+  // Fijo por día de la semana: lo que muestra el diario es lo mismo que dice
+  // el plan. Antes rotaba por día del año y los dos documentos no calzaban.
+  const i = luDom(d);
+  const ENT = {0:0, 1:1, 3:2, 4:3};   // lun, mar, jue, vie
+  const DES = {2:0, 5:1, 6:2};        // mié, sáb, dom
+  return esEntreno(d) ? D.planes.entreno[ENT[i]] : D.planes.descanso[DES[i]];
+}
+const sesionDe = d => D.diaSesion[String(luDom(d))];
+
+/* Hábitos: el de alcohol está aquí por el ALT de 68, no de relleno. */
+const HABITOS = [
+  {id:'creatina', t:'Creatina — 5 g',            s:'Cualquier hora. Tu creatinina salió en 56 y eres vegetariano.'},
+  {id:'pasos',    t:'9.000 pasos',               s:'El déficit lo pone la comida; esto es para tu corazón.'},
+  {id:'caminata', t:'12 min después del almuerzo', s:'Aplana el pico de glucosa. Corto y gratis.'},
+  {id:'sinalcohol', t:'Sin alcohol',             s:'Cero hasta que repitas las pruebas hepáticas.'},
+  {id:'agua',     t:'2,5 L de agua',             s:'Con 35 g de fibra al día, sin agua te vas a sentir pesado.'},
+];
+
+/* ── Estado ───────────────────────────────────────────────────────── */
+let DB = null, SAMPLE = null, PUEDE_IMG = false;
+let HOY = iso(new Date());     // el día real
+let VIENDO = HOY;              // el día en pantalla
+let ANCLA = HOY;               // cualquier día de la semana mostrada
+const masDias = (f, n) => iso(new Date(desdeIso(f).getTime() + n*864e5));
+const esFuturo = f => f > HOY;
+const lunesDe = f => { const d = desdeIso(f); return masDias(f, -luDom(d)); };
+let dia = {};                 // documento de hoy
+let semana = {};              // iso -> documento
+const abiertos = new Set();
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+function totales(dd){
+  const t = {kcal:0,p:0,c:0,f:0,fib:0};
+  const plan = planDe(desdeIso(dd.fecha || VIENDO));
+  const ticks = dd.ticks || {};
+  for (const rid of [...plan.comidas, ...plan.snacks]) {
+    if (!ticks['r_'+rid]) continue;
+    const r = D.recetas[rid]; if (!r) continue;
+    t.kcal += r.kcal; t.p += r.p; t.c += r.c; t.f += r.f; t.fib += r.fib;
+  }
+  for (const e of (dd.extras || [])) {
+    t.kcal += +e.kcal||0; t.p += +e.p||0; t.c += +e.c||0; t.f += +e.f||0; t.fib += +e.fib||0;
+  }
+  return t;
+}
+
+const pesoVigente = () => {
+  const fechas = Object.keys(semana).filter(f => semana[f]?.peso).sort();
+  return fechas.length ? +semana[fechas[fechas.length-1]].peso : D.perfil.peso_kg;
+};
+
+/* ── Persistencia ─────────────────────────────────────────────────── */
+let cola = Promise.resolve();
+function guardar(campos){
+  if (esFuturo(VIENDO)) return;      // un día que no ha pasado no se registra
+  Object.assign(dia, campos);
+  dia.fecha = VIENDO;
+  semana[VIENDO] = dia;
+  const destino = VIENDO;            // se fija ahora: la cola es asíncrona
+  render();
+  if (!DB) return;
+  // Serializa las escrituras: el store es last-writer-wins y dos ticks
+  // rápidos en paralelo pueden hacer que el segundo pise al primero.
+  cola = cola.then(() => DB.doc('dias/' + destino).set(JSON.parse(JSON.stringify(dia))))
+             .then(() => { $('savedTag').textContent = 'guardado'; })
+             .catch(e => {
+               $('savedTag').textContent = '';
+               mostrarOffline(e.code === 'revoked'
+                 ? 'Se perdió el permiso de guardar. Lo que veas sigue en pantalla pero no se está guardando.'
+                 : 'No pude guardar el último cambio (' + (e.code || 'error') + '). Sigue anotando: se reintenta al próximo cambio.');
+             });
+}
+function mostrarOffline(msg){ const o = $('offline'); o.textContent = msg; o.hidden = !msg; }
+
+function toggle(id){
+  if (esFuturo(VIENDO)) return;
+  const t = {...(dia.ticks || {})};
+  t[id] ? delete t[id] : t[id] = true;
+  guardar({ticks: t});
+}
+
+/* ── Métricas ─────────────────────────────────────────────────────── */
+const ticksTotales = f => {
+  const pl = planDe(desdeIso(f));
+  return pl.comidas.length + pl.snacks.length + HABITOS.length +
+         (sesionDe(desdeIso(f)) === 'descanso' ? 0 : 1);
+};
+
+function metricasDia(f){
+  const dd = semana[f] || {};
+  const ent = esEntreno(desdeIso(f));
+  const t = targets(dd.peso ? +dd.peso : pesoVigente(), ent);
+  const tot = totales({...dd, fecha: f});
+  const registrado = tot.kcal > 0;
+  const hechos = Object.keys(dd.ticks || {}).length;
+  const total = ticksTotales(f);
+  return {
+    fecha: f, ent, t, tot, registrado, hechos, total,
+    adherencia: registrado ? tot.kcal / t.kcal * 100 : null,
+    // El déficit del día se mide contra el TDEE, no contra el target: es lo
+    // que de verdad mueve la aguja del peso.
+    deficit: registrado ? t.tdee - tot.kcal : null,
+    proteinaOk: registrado && tot.p >= t.p * 0.95,
+    fibraOk: tot.fib >= 30,
+    cumplimiento: total ? hechos / total * 100 : 0,
+    sinAlcohol: !!(dd.ticks || {}).h_sinalcohol,
+    entrenoHecho: !!(dd.ticks || {}).gym,
+    peso: dd.peso ? +dd.peso : null,
+    whoop: dd.whoop || null,
+  };
+}
+
+function metricasSemana(fechas){
+  const pasadas = fechas.filter(f => !esFuturo(f));
+  const m = pasadas.map(metricasDia);
+  const reg = m.filter(x => x.registrado);
+  const n = pasadas.length;
+  const entPlan = pasadas.filter(f => !['descanso','cardio'].includes(sesionDe(desdeIso(f)))).length;
+  const prom = (arr, k) => arr.length ? arr.reduce((a,x) => a + x[k], 0) / arr.length : null;
+
+  // Déficit acumulado solo de los días registrados. Extrapolar los no
+  // registrados sería inventar el dato que más importa.
+  const deficitReg = reg.reduce((a,x) => a + x.deficit, 0);
+  const esperada = deficitReg / 7700;
+
+  // Pérdida real por medias móviles: un peso suelto contra otro es ruido.
+  const pesos = Object.keys(semana).filter(f => semana[f]?.peso).sort()
+    .map(f => ({f, v: +semana[f].peso}));
+  const hasta = fechas[6];
+  const antes = masDias(fechas[0], -1);
+  const media = (fin) => {
+    const v = pesos.filter(p => p.f <= fin).slice(-7);
+    return v.length >= 3 ? v.reduce((a,x) => a + x.v, 0) / v.length : null;
+  };
+  const m1 = media(hasta > HOY ? HOY : hasta), m0 = media(antes);
+  const real = (m1 != null && m0 != null) ? (m0 - m1) : null;
+
+  return {
+    n, dias: m, registrados: reg.length,
+    entrenos: m.filter(x => x.entrenoHecho).length, entPlan,
+    pesados: m.filter(x => x.peso != null).length,
+    sinAlcohol: m.filter(x => x.sinAlcohol).length,
+    diasConAlgo: m.filter(x => x.hechos > 0).length,
+    adherencia: prom(reg, 'adherencia'),
+    proteinaDias: reg.filter(x => x.proteinaOk).length,
+    fibra: reg.length ? reg.reduce((a,x) => a + x.tot.fib, 0) / reg.length : null,
+    cumplimiento: prom(m, 'cumplimiento'),
+    sueno: prom(m.filter(x => x.whoop?.sueno != null).map(x => ({s:+x.whoop.sueno})), 's'),
+    recovery: prom(m.filter(x => x.whoop?.recovery != null).map(x => ({r:+x.whoop.recovery})), 'r'),
+    deficitDia: reg.length ? deficitReg / reg.length : null,
+    esperada, real,
+  };
+}
+
+/* ── Render: cabecera ─────────────────────────────────────────────── */
+function renderHead(){
+  const d = desdeIso(VIENDO), ent = esEntreno(d);
+  $('hTitle').textContent = `${DIAS[d.getDay()]} ${d.getDate()} de ${MESES[d.getMonth()]}`;
+  const b = $('hType');
+  b.textContent = ent ? 'día de entreno' : 'día de descanso';
+  b.className = 'badge ' + (ent ? 'b-train' : 'b-rest');
+
+  const pesos = Object.keys(semana).filter(f => semana[f]?.peso).sort()
+                      .map(f => ({f, v:+semana[f].peso}));
+  if (pesos.length){
+    const ult = pesos[pesos.length-1];
+    $('hWeight').textContent = ult.v.toFixed(1) + ' kg';
+    const rec = pesos.slice(-7), prev = pesos.slice(-14,-7);
+    if (prev.length){
+      const m1 = rec.reduce((a,x)=>a+x.v,0)/rec.length;
+      const m0 = prev.reduce((a,x)=>a+x.v,0)/prev.length;
+      const dl = m1 - m0;
+      const el = $('hTrend');
+      el.textContent = (dl>0?'+':'') + dl.toFixed(2) + ' kg / semana';
+      el.className = 'd ' + (dl < 0 ? 'dn' : dl > 0 ? 'up' : '');
+    } else {
+      $('hTrend').textContent = `faltan ${(ult.v - D.perfil.peso_meta_kg).toFixed(1)} kg`;
+      $('hTrend').className = 'd';
+    }
+  } else {
+    $('hWeight').textContent = D.perfil.peso_kg.toFixed(1) + ' kg';
+    $('hTrend').textContent = 'registra tu peso';
+  }
+
+  // Racha: días consecutivos hacia atrás con algo anotado. Siempre desde HOY,
+  // no desde el día que se esté mirando: es una propiedad del presente.
+  let racha = 0;
+  for (let i = 0; i < 60; i++){
+    const f = iso(new Date(Date.now() - i*864e5));
+    const dd = semana[f];
+    const algo = dd && (dd.peso || Object.keys(dd.ticks||{}).length || (dd.extras||[]).length || dd.whoop);
+    if (algo) racha++; else if (i > 0) break;
+  }
+  $('hStreak').textContent = racha;
+}
+
+/* ── Render: macros ───────────────────────────────────────────────── */
+function renderMacros(){
+  const t = targets(pesoVigente(), esEntreno(desdeIso(VIENDO)));
+  const tot = totales(dia);
+  const filas = [
+    ['kcal', tot.kcal, t.kcal, ''], ['prot', tot.p, t.p, 'g'],
+    ['carb', tot.c, t.c, 'g'], ['gras', tot.f, t.f, 'g'], ['fibra', tot.fib, t.fib, 'g'],
+  ];
+  $('macros').innerHTML = filas.map(([nm,a,m,u]) => {
+    const pct = m ? a/m : 0;
+    const cls = pct > 1.08 ? 'over' : pct >= 0.92 ? 'good' : '';
+    return `<div class="mrow"><span class="nm">${nm}</span>
+      <div class="track"><div class="fill ${cls}" style="width:${Math.min(100, pct*100).toFixed(1)}%"></div></div>
+      <span class="vv"><b>${Math.round(a)}</b>/${m}${u}</span></div>`;
+  }).join('');
+  $('macroTag').textContent = `meta ${t.kcal} kcal · tdee ${t.tdee}`;
+}
+
+/* ── Render: comidas ──────────────────────────────────────────────── */
+function fila({id, titulo, sub, acciones = '', detalle = ''}){
+  const on = !!(dia.ticks || {})[id];
+  const bloq = esFuturo(VIENDO) ? ' disabled' : '';
+  return `<div class="item ${on?'done':''}">
+    <button class="tick" data-tick="${id}" aria-pressed="${on}"${bloq} aria-label="Marcar ${esc(titulo)}">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><polyline points="2.5,8.5 6,12 13.5,4"/></svg></button>
+    <div class="itxt"><div class="t">${esc(titulo)}</div><div class="s">${sub}</div></div>
+    <div class="iact">${acciones}</div>
+    ${detalle}
+  </div>`;
+}
+
+function renderComidas(){
+  const plan = planDe(desdeIso(VIENDO));
+  const etiquetas = {b:'Desayuno', l:'Almuerzo', d:'Cena'};
+  const filas = [];
+  for (const rid of plan.comidas.concat(plan.snacks)){
+    const r = D.recetas[rid]; if (!r) continue;
+    const et = etiquetas[rid[0]] || 'Snack';
+    const abierto = abiertos.has(rid);
+    let det = '';
+    if (abierto){
+      det = `<div class="detail">
+        <h4>Ingredientes</h4><div class="ing">${r.ing.map(([n,g]) => `<span>${esc(n)} — ${g} g</span>`).join('')}</div>
+        ${r.esp.length ? `<h4>Especias</h4><div class="ing"><span>${esc(r.esp.join(', '))}</span></div>` : ''}
+        <h4>Pasos</h4><ol>${r.pasos.map(p => `<li>${esc(p)}</li>`).join('')}</ol></div>`;
+    }
+    filas.push(fila({
+      id: 'r_'+rid, titulo: `${et} · ${r.n}`,
+      sub: `${r.kcal} kcal · ${r.p} P / ${r.c} C / ${r.f} G · ${r.min} min`,
+      acciones: `<button class="mini" data-receta="${rid}">${abierto?'Cerrar':'Receta'}</button>`,
+      detalle: det,
+    }));
+  }
+  $('meals').innerHTML = filas.join('');
+  const total = plan.comidas.length + plan.snacks.length;
+  const hechas = Object.keys(dia.ticks || {}).filter(k => k.startsWith('r_')).length;
+  $('mealTag').textContent = `${hechas}/${total}`;
+}
+
+/* ── Olla y tandas ────────────────────────────────────────────────── */
+const TN = {};                       // rid -> porciones elegidas en pantalla
+
+function grupoDe(nombre){
+  const F = D.olla.fuera_de_la_olla;
+  return F.al_servir.includes(nombre) ? 'Al servir'
+       : F.aparte.includes(nombre)    ? 'Aparte' : 'A la olla';
+}
+const gramos = g => g >= 1000 ? (g/1000).toFixed(1).replace('.', ',') + ' kg' : Math.round(g) + ' g';
+
+function bloqueTanda(rid){
+  const r = D.recetas[rid], t = r.tanda, max = t.max_porciones;
+  const n = Math.min(TN[rid] ?? max, max);
+  const NOTAS = {'Aparte':'en su propia tanda',
+                 'Al servir':'no los guardes dentro: se cortan o se aguan'};
+  const grupos = {'A la olla':[], 'Aparte':[], 'Al servir':[]};
+  for (const [nom, g] of r.ing) grupos[grupoDe(nom)].push([nom, g*n]);
+
+  const cuerpo = Object.entries(grupos).filter(([,v]) => v.length).map(([k, v]) => `
+    <div class="gr"><h5>${k}${NOTAS[k] ? ` <em>— ${NOTAS[k]}</em>` : ''}</h5>
+      ${v.map(([nom, g]) => `<div class="row2"><span>${esc(nom)}</span>
+        <b>${gramos(g)}</b></div>`).join('')}</div>`).join('');
+
+  return `<div class="tblock">
+    <div class="th"><span class="tn">${esc(r.n)}</span><span class="tid">${rid}</span></div>
+    <div class="tmeta">${r.olla ? esc(r.olla.modo) + (r.min ? ` · ${r.min} min` : '') +
+        (r.olla.lib !== '—' ? ` · liberación ${esc(r.olla.lib)}` : '') + ' · ' : ''}nevera <b>${t.nevera_dias} días</b> · ${t.congela ? 'congela el resto' : 'no congela'}</div>
+    <div class="step">
+      <span class="lbl">Porciones</span>
+      <button class="nav" data-tn="${rid}" data-d="-1" aria-label="Menos porciones"${n<=1?' disabled':''}>−</button>
+      <span class="n">${n}</span>
+      <button class="nav" data-tn="${rid}" data-d="1" aria-label="Más porciones"${n>=max?' disabled':''}>+</button>
+      <span class="tmeta" style="margin-left:6px">${r.kcal*n} kcal · <b>${r.p*n} g P</b></span>
+    </div>
+    ${cuerpo}
+    ${n >= max ? `<p class="tope"><b>Tope de ${max} porciones.</b> ${esc(t.nota)}</p>` : ''}
+  </div>`;
+}
+
+function renderOlla(){
+  const O = D.olla;
+  $('ollaTitulo').textContent = O.modelo;
+  $('ollaLlenado').innerHTML =
+    `<div class="tile"><div class="tv">2/3<span class="tu">= 4 L</span></div>
+       <div class="tl">Guisos y sopas</div></div>
+     <div class="tile warn"><div class="tv">1/2<span class="tu">= 3 L</span></div>
+       <div class="tl">Legumbres, granos, pasta y avena</div></div>`;
+  $('ollaNota').innerHTML = '<span class="ct">Por qué</span>Las legumbres y los granos '
+    + 'hacen espuma y pueden tapar la válvula. Ese límite es el que fija el tamaño máximo de '
+    + 'cada tanda: no es una sugerencia, es la razón por la que el tope de abajo existe.';
+  $('ollaReglas').innerHTML = O.reglas.map((r, i) =>
+    `<div class="pdi"><span class="pn"><i>${i+1}</i>${esc(r)}</span></div>`).join('')
+    + `<div class="pdi" style="margin-top:8px"><span class="pn"><b>Nunca a presión:</b> ${esc(O.nunca_en_presion.join(' · '))}</span></div>`;
+  $('ollaTiempos').innerHTML = Object.entries(O.tiempos).map(([k, [m, liq, lib]]) =>
+    `<div class="pdi"><span class="pn">${esc(k)}<i style="margin:0 0 0 8px">${esc(liq)}</i></span>
+      <span class="pm"><b>${m} min</b> · ${esc(lib)}</span></div>`).join('');
+
+  const dom = O.domingo;
+  $('ollaTanda').innerHTML =
+    `<p class="calib"><span class="ct">Cómo funciona</span>Cocinas al tamaño máximo que aguanta
+      la olla, no la porción del día. Sube o baja las porciones y las cantidades se recalculan.
+      Una tanda de 4 significa comer ese plato 4 veces: si prefieres variedad, haz 2 y vuelve a
+      cocinar el miércoles.</p>`
+    + `<div class="tblock"><div class="th"><span class="tn">12 huevos duros</span></div>
+        <div class="tmeta">1 taza de agua, canasta · <b>5 min de presión + 5 natural</b> + hielo 3 min</div></div>`
+    + dom.map(bloqueTanda).join('')
+    + `<div class="tblock"><div class="th"><span class="tn">Arroz al caldo</span></div>
+        <div class="tmeta">1 : 1,25 · <b>5 min de presión</b> · natural 10 min · rinde 6 porciones</div></div>
+       <div class="tblock"><div class="th"><span class="tn">2 L de yogurt</span><span class="tid">de noche</span></div>
+        <div class="tmeta">85 °C → enfriar a 43 °C → 3 cucharadas de kéfir → <b>9 h en Yogurt</b>.
+        Cuélalo 3 h. ~120 g de proteína por unos $5</div></div>`;
+  const porciones = dom.filter(r => !r.startsWith('b'))
+    .reduce((a, r) => a + Math.min(TN[r] ?? D.recetas[r].tanda.max_porciones,
+                                   D.recetas[r].tanda.max_porciones), 0);
+  $('tandaTag').textContent = porciones + ' porciones';
+}
+
+/* ── Mercado ──────────────────────────────────────────────────────── */
+const lunesActual = () => lunesDe(HOY);
+const mercTicks = () => (semana[lunesActual()] || {}).mercado || {};
+
+function guardarMercado(ticks){
+  const f = lunesActual();
+  const doc = {...(semana[f] || {}), fecha: f, mercado: ticks};
+  semana[f] = doc;
+  if (f === VIENDO) dia = {...doc};
+  renderMercado();
+  if (!DB) return;
+  cola = cola.then(() => DB.doc('dias/' + f).set(JSON.parse(JSON.stringify(doc))))
+             .catch(e => mostrarOffline('No pude guardar la lista ('
+               + (e.code || 'error') + '). Sigue marcando: se reintenta al próximo cambio.'));
+}
+
+function renderMercado(){
+  const M = D.mercado, t = mercTicks();
+  let total = 0, hechos = 0;
+  $('mercLista').innerHTML = M.secciones.map(sec => {
+    const filas = sec.items.map(it => {
+      total++; const on = !!t[it.n]; if (on) hechos++;
+      return `<div class="mitem ${on ? 'done' : ''}">
+        <button class="tick" data-merc="${esc(it.n)}" aria-pressed="${on}"
+          aria-label="Marcar ${esc(it.n)}">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><polyline points="2.5,8.5 6,12 13.5,4"/></svg></button>
+        <div class="mn">${esc(it.n)}${it.casa ? `<div class="s" style="font-family:var(--f-mono);font-size:10.5px;color:var(--ink-faint)">usa ${it.g} g · tienes ${it.casa} g</div>` : ''}</div>
+        <div class="mu">${esc(it.u)}</div></div>`;
+    }).join('');
+    return `<p class="msec">${esc(sec.t)}</p>${filas}`;
+  }).join('');
+  $('mercTag').textContent = `${hechos}/${total}`;
+  const y = M.yogurt;
+  $('mercYogurt').innerHTML = `La semana usa <b>${y.g} g de yogurt griego casero</b>. Eso no es
+    un tarro que se compra: son <b>${(y.leche/1000).toFixed(1).replace('.', ',')} L de leche
+    descremada</b> y <b>${y.polvo} g de leche en polvo</b> en la función Yogurt. Por eso la leche
+    está en la lista y el yogurt no.`;
+  $('mercCasa').innerHTML = M.casa.map(c => `<div class="pdi">
+      <span class="pn">${esc(c.n)}</span>
+      <span class="pm">${c.hay == null ? `usa ${c.g} g · revisa que alcance`
+                                        : `usa ${c.g} g · tienes ${c.hay} g`}</span></div>`).join('');
+  $('mercFondo').textContent = M.fondo;
+}
+
+/* ── Render: entreno ──────────────────────────────────────────────── */
+function renderGym(){
+  const d = desdeIso(VIENDO), clave = sesionDe(d);
+  if (clave === 'descanso'){
+    $('gym').innerHTML = `<div class="item"><div></div><div class="itxt">
+      <div class="t">Descanso total</div>
+      <div class="s" style="font-family:var(--f-ui);font-size:12.5px">No es pereza: en déficit recuperas peor, y el músculo se construye descansando.</div>
+      </div><div></div></div>`;
+    $('gymTag').textContent = 'domingo';
+    return;
+  }
+  if (clave === 'cardio'){
+    const c = D.cardio;
+    const ses = c.sesiones.filter(s => !/almuerzo/i.test(s.cuando));
+    $('gym').innerHTML = ses.map((s,i) => fila({
+      id: 'cardio_'+i, titulo: `${s.tipo} — ${s.duracion_min} min`, sub: esc(s.intensidad),
+    })).join('');
+    $('gymTag').textContent = 'descanso activo';
+    return;
+  }
+  const s = D.entrenos[clave];
+  const abierto = abiertos.has('gym');
+  const det = abierto ? `<div class="detail">
+      <h4>Calentamiento</h4><div style="font-size:13.5px">${esc(s.cal)}</div>
+      <h4>Sesión</h4><div class="exlist">${s.ej.map((e,i) => `<div class="ex">
+        <span class="es">${i+1}</span>
+        <span class="en">${esc(e.n)}</span>
+        <span class="es">${e.s} × ${esc(e.r)} · RIR ${e.rir} · ${e.d}s</span>
+        ${e.nota ? `<div class="enote">${esc(e.nota)}</div>` : ''}
+        <div class="enote" style="color:var(--ink-faint)">↳ ${esc(e.alt.join(', '))}</div>
+      </div>`).join('')}</div>
+      <h4>Seguridad</h4><div style="font-size:13.5px">Pines del rack puestos antes de la primera serie. Sin observador, nunca al fallo en press de banca.</div>
+    </div>` : '';
+  const series = s.ej.reduce((a,e) => a+e.s, 0);
+  $('gym').innerHTML = fila({
+    id: 'gym', titulo: s.n,
+    sub: `${s.ej.length} ejercicios · ${series} series · ${s.min} min`,
+    acciones: `<button class="mini" data-gym="1">${abierto?'Cerrar':'Ver sesión'}</button>`,
+    detalle: det,
+  });
+  $('gymTag').textContent = (dia.ticks||{}).gym ? 'hecho' : `${series} series`;
+}
+
+function renderHabitos(){
+  $('habits').innerHTML = HABITOS.map(h => fila({
+    id: 'h_'+h.id, titulo: h.t,
+    sub: `<span style="font-family:var(--f-ui);font-size:12.5px">${esc(h.s)}</span>`,
+  })).join('');
+  const n = HABITOS.filter(h => (dia.ticks||{})['h_'+h.id]).length;
+  $('habitTag').textContent = `${n}/${HABITOS.length}`;
+}
+
+/* ── Render: WHOOP ────────────────────────────────────────────────── */
+function renderWhoop(){
+  const w = dia.whoop;
+  if (!w){ $('whoopChips').innerHTML = ''; $('whoopAdvice').innerHTML = ''; return; }
+  const cls = w.recovery == null ? '' : w.recovery < 34 ? 'rec-r' : w.recovery < 67 ? 'rec-y' : 'rec-g';
+  const chips = [];
+  if (w.recovery != null) chips.push(`<span class="chip ${cls}">recovery <b>${Math.round(w.recovery)}%</b></span>`);
+  if (w.sueno != null) chips.push(`<span class="chip">sueño <b>${(+w.sueno).toFixed(1)} h</b></span>`);
+  if (w.strain != null) chips.push(`<span class="chip">strain <b>${(+w.strain).toFixed(1)}</b></span>`);
+  $('whoopChips').innerHTML = chips.join('');
+
+  const ent = esEntreno(desdeIso(VIENDO)), av = [];
+  if (w.recovery != null){
+    if (w.recovery < 34) av.push(['v-bad', ent
+      ? 'Recovery rojo. Haz la sesión pero baja una serie de cada compuesto y quédate en RIR 3. Hoy no es día de records.'
+      : 'Recovery rojo en día de descanso. Camina y ya, no agregues nada.']);
+    else if (w.recovery < 67) av.push(['v-warn',
+      'Recovery amarillo. Entrena normal sin forzar el fallo. Si el primer compuesto pesa de más, quédate en el peso de la semana pasada.']);
+    else av.push(['v-ok', ent
+      ? 'Recovery verde. Este es el día para intentar sumar la repetición o el disco.'
+      : 'Recovery verde en descanso. Camina largo y aprovecha para cocinar en tanda.']);
+  }
+  if (w.sueno != null && w.sueno < 6.5) av.push(['v-warn',
+    `Solo ${(+w.sueno).toFixed(1)} h. Dormir poco sube la grelina y baja la leptina: el hambre de hoy es bioquímica, no falta de voluntad. Sostente en la proteína y en las palomitas de volumen.`]);
+  if (w.strain != null && w.strain > 15) av.push(['v-warn',
+    `Strain ${(+w.strain).toFixed(1)}, día muy cargado. Si te sientes vacío suma 150 kcal de carbos: un día así no rompe el déficit semanal.`]);
+  $('whoopAdvice').innerHTML = av.map(([c,t]) =>
+    `<div class="extra" style="border-left-color:var(--${c==='v-ok'?'ok':c==='v-bad'?'high':'low'});background:transparent">
+      <span class="verdict ${c}">${c==='v-ok'?'verde':c==='v-bad'?'atención':'ojo'}</span>
+      <div class="ev">${esc(t)}</div></div>`).join('');
+}
+
+/* ── Render: extras fuera del plan ────────────────────────────────── */
+function renderExtras(){
+  const ex = dia.extras || [];
+  if (!ex.length){ $('extraList').innerHTML = ''; return; }
+  $('extraList').innerHTML = ex.map((e,i) => `<div class="extra">
+    <div class="eh"><span class="en2">${esc(e.desc)}</span>
+      <button class="mini" data-delextra="${i}">Quitar</button></div>
+    <div class="em">${Math.round(e.kcal)} kcal · ${Math.round(e.p)} P / ${Math.round(e.c)} C / ${Math.round(e.f)} G</div>
+    ${e.aviso ? `<div class="ev">${esc(e.aviso)}</div>` : ''}
+  </div>`).join('');
+}
+
+/* ── Render: semana ───────────────────────────────────────────────── */
+function renderSemana(){
+  const lunes = lunesDe(ANCLA);
+  const fechas = Array.from({length: 7}, (_, i) => masDias(lunes, i));
+  const dias = fechas.map(desdeIso);
+
+  const d0 = desdeIso(fechas[0]), d6 = desdeIso(fechas[6]);
+  const mismoMes = d0.getMonth() === d6.getMonth();
+  $('weekTitle').textContent = mismoMes
+    ? `${d0.getDate()}–${d6.getDate()} de ${MESES[d0.getMonth()]}`
+    : `${d0.getDate()} ${MESES[d0.getMonth()].slice(0,3)} – ${d6.getDate()} ${MESES[d6.getMonth()].slice(0,3)}`;
+  $('wkNow').setAttribute('aria-current', String(lunes === lunesDe(HOY)));
+
+  $('week').innerHTML = dias.map(d => {
+    const f = iso(d), dd = semana[f] || {}, esHoy = f === HOY;
+    const futuro = esFuturo(f);
+    const plan = planDe(d), ent = esEntreno(d);
+    const totalTicks = plan.comidas.length + plan.snacks.length + HABITOS.length +
+                       (sesionDe(d) === 'descanso' ? 0 : 1);
+    const hechos = Object.keys(dd.ticks || {}).length;
+    const pct = totalTicks ? Math.min(1, hechos/totalTicks) : 0;
+    const t = targets(dd.peso ? +dd.peso : pesoVigente(), ent);
+    const tot = totales({...dd, fecha:f});
+    const R = 14, C = 2*Math.PI*R;
+    // Lo que el día TRAE PLANEADO: es lo único informativo en un día futuro.
+    const planKcal = [...plan.comidas, ...plan.snacks]
+      .reduce((a, id) => a + (D.recetas[id]?.kcal || 0), 0);
+    const ses = sesionDe(d);
+    const sesTxt = ses === 'descanso' ? 'descanso' : ses === 'cardio' ? 'caminadora'
+      : (D.entrenos[ses]?.n || ses).replace(/ - .*$/, '');
+
+    const cuerpo = futuro
+      ? `<div class="wplan">
+           <span><b>${Math.round(planKcal)}</b> kcal en plan</span><br>
+           <span>${esc(sesTxt)}</span><br>
+           <span>${plan.comidas.length + plan.snacks.length} comidas</span>
+         </div>`
+      : `<div class="ring">
+          <svg viewBox="0 0 34 34" aria-hidden="true">
+            <circle cx="17" cy="17" r="${R}" fill="none" stroke="var(--surface-3)" stroke-width="4"/>
+            <circle cx="17" cy="17" r="${R}" fill="none" stroke="var(--accent)" stroke-width="4"
+              stroke-linecap="round" stroke-dasharray="${C.toFixed(1)}"
+              stroke-dashoffset="${(C*(1-pct)).toFixed(1)}"/>
+          </svg>
+          <span class="rt">${hechos}/${totalTicks}<br>hechos</span>
+        </div>
+        <div class="wstat">
+          <span>${tot.kcal ? `<b>${Math.round(tot.kcal)}</b>/${t.kcal}` : `<span class="miss">— kcal</span>`}</span>
+          <span>${tot.p ? `<b>${Math.round(tot.p)}</b> g prot` : `<span class="miss">— prot</span>`}</span>
+          <span>${dd.peso ? `<b>${(+dd.peso).toFixed(1)}</b> kg` : `<span class="miss">sin peso</span>`}</span>
+          <span>${dd.whoop?.recovery != null ? `<b>${Math.round(dd.whoop.recovery)}%</b> rec` : `<span class="miss">sin whoop</span>`}</span>
+        </div>`;
+
+    return `<div class="wday ${esHoy?'today':''} ${futuro?'future':''} ${f===VIENDO?'viendo':''}"
+        data-dia="${f}" role="button" tabindex="0"
+        aria-label="Ver ${DIAS[d.getDay()]} ${d.getDate()}">
+      <div class="wd-h"><span class="dn2">${DIAS_C[d.getDay()]}${esHoy?' · hoy':''}</span>
+        <span class="dd">${String(d.getDate()).padStart(2,'0')}</span></div>
+      <span class="wd-t">${ent?'entreno':'descanso'}</span>
+      ${cuerpo}
+    </div>`;
+  }).join('');
+
+  // Agregados: solo días ya transcurridos. Contra 7 en una semana futura
+  // el porcentaje diría "0/7" y parecería un fracaso en vez de un futuro.
+  const pasadas = fechas.filter(f => !esFuturo(f));
+  const conAlgo = pasadas.map(f => semana[f]).filter(x => x && Object.keys(x.ticks||{}).length);
+  const pesados = pasadas.map(f => semana[f]).filter(x => x?.peso);
+  const entrenados = pasadas.filter(f => (semana[f]?.ticks||{}).gym).length;
+  const nDias = pasadas.length;
+  // Semana entera por venir: "0/7" leería como un fracaso en vez de un futuro.
+  const porVenir = nDias === 0;
+  let kcalProm = 0, protProm = 0;
+  if (conAlgo.length){
+    const sum = conAlgo.reduce((a,dd) => {
+      const t = totales(dd); a.k += t.kcal; a.p += t.p; return a;
+    }, {k:0,p:0});
+    kcalProm = Math.round(sum.k/conAlgo.length);
+    protProm = Math.round(sum.p/conAlgo.length);
+  }
+  const cel = (v,l) => `<div class="sumcell"><div class="v2">${v}</div><div class="l2">${l}</div></div>`;
+  const planSemana = fechas.reduce((a, f) => a + [...planDe(desdeIso(f)).comidas,
+    ...planDe(desdeIso(f)).snacks].reduce((b, id) => b + (D.recetas[id]?.kcal || 0), 0), 0);
+  $('weekSum').innerHTML = porVenir
+    ? cel('7', 'días planeados') +
+      cel(fechas.filter(f => esEntreno(desdeIso(f))).length, 'días de entreno') +
+      cel(Math.round(planSemana/7), 'kcal/día en plan') +
+      cel('—', 'aún sin registrar')
+    : cel(`${conAlgo.length}/${nDias}`, 'días con registro') +
+      cel(`${pesados.length}/${nDias}`, 'días pesados') +
+      cel(entrenados, 'entrenos marcados') +
+      cel(kcalProm || '—', 'kcal promedio') +
+      cel(protProm ? protProm+' g' : '—', 'proteína promedio');
+  $('weekTag').textContent = pasadas.length === 0 ? 'semana por venir'
+    : conAlgo.length ? `${conAlgo.length} con datos` : 'sin datos aún';
+
+  renderMetricasSemana(fechas);
+  renderSpark();
+  $('flags').innerHTML = D.banderas.map(b => `<div class="item">
+    <span class="verdict ${b.est.startsWith('ALTO')?'v-bad':b.est.startsWith('BAJO')?'v-warn':'v-warn'}"
+      style="margin-top:2px">${b.est.startsWith('ALTO')?'alto':'bajo'}</span>
+    <div class="itxt"><div class="t">${esc(b.m)} — ${b.prev} → ${b.act} ${esc(b.u)}</div>
+      <div class="s" style="font-family:var(--f-ui);font-size:12.5px;color:var(--ink-soft)">${esc(b.acc)}</div></div>
+    <span class="es mono" style="color:var(--ink-faint);font-size:11px">ref ${esc(b.ref)}</span>
+  </div>`).join('');
+}
+
+function renderSpark(){
+  const pts = Object.keys(semana).filter(f => semana[f]?.peso).sort()
+    .map(f => ({f, v:+semana[f].peso}));
+  if (pts.length < 2){
+    $('spark').innerHTML = `<p class="note">Con dos pesos ya te dibujo la tendencia. Registra el de hoy arriba.</p>`;
+    $('sparkTag').textContent = `${pts.length} dato${pts.length===1?'':'s'}`;
+    return;
+  }
+  // Media móvil de 7 días: el peso diario es ruido, esta es la señal.
+  const media = pts.map((_,i) => {
+    const v = pts.slice(Math.max(0,i-6), i+1);
+    return {f: pts[i].f, v: v.reduce((a,x)=>a+x.v,0)/v.length};
+  });
+  const W = 100, H = 96, pad = 4;
+  const vals = media.map(m => m.v).concat(pts.map(p => p.v));
+  let lo = Math.min(...vals), hi = Math.max(...vals);
+  if (hi - lo < 1){ const c = (hi+lo)/2; lo = c-0.5; hi = c+0.5; }
+  const x = i => pad + i*(W-2*pad)/Math.max(1, media.length-1);
+  const y = v => H-14 - (v-lo)/(hi-lo)*(H-28);
+  const linea = media.map((m,i) => `${x(i).toFixed(2)},${y(m.v).toFixed(2)}`).join(' ');
+  const area = `${x(0).toFixed(2)},${(H-14).toFixed(2)} ${linea} ${x(media.length-1).toFixed(2)},${(H-14).toFixed(2)}`;
+  const ult = media[media.length-1], prim = media[0];
+  const dl = ult.v - prim.v;
+  $('spark').innerHTML = `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" role="img"
+      aria-label="Media móvil del peso: ${prim.v.toFixed(1)} a ${ult.v.toFixed(1)} kg">
+    <polygon points="${area}" fill="var(--accent-wash)"/>
+    <polyline points="${linea}" fill="none" stroke="var(--accent)" stroke-width="1.2"
+      vector-effect="non-scaling-stroke" stroke-linejoin="round"/>
+    ${pts.map((p,i) => `<circle cx="${x(Math.min(i,media.length-1)).toFixed(2)}" cy="${y(p.v).toFixed(2)}"
+      r="1.4" fill="var(--ink-faint)" vector-effect="non-scaling-stroke"/>`).join('')}
+    <circle cx="${x(media.length-1).toFixed(2)}" cy="${y(ult.v).toFixed(2)}" r="2.4"
+      fill="var(--accent)" vector-effect="non-scaling-stroke"/>
+  </svg>
+  <p class="note" style="margin-top:8px">
+    Media: <span class="mono">${prim.v.toFixed(1)}</span> → <span class="mono">${ult.v.toFixed(1)} kg</span>
+    (<span class="mono">${dl>0?'+':''}${dl.toFixed(1)}</span>) ·
+    meta <span class="mono">${D.perfil.peso_meta_kg} kg</span>.
+    Los puntos grises son los pesos diarios; la línea es la media de 7 días, que es la que hay que leer.</p>`;
+  $('sparkTag').textContent = `${pts.length} pesos`;
+}
+
+function renderNav(){
+  const fut = esFuturo(VIENDO), n = $('dayNote');
+  $('navToday').setAttribute('aria-current', String(VIENDO === HOY));
+  // El plan se genera para cualquier fecha, así que no hay tope de navegación.
+  $('navNext').disabled = false;
+  $('navPrev').disabled = false;
+
+  // Todo lo que escribe se apaga en un día que aún no ha llegado.
+  const apagar = ['inWeight','btnWeight','inRec','inSleep','inStrain','btnWhoopSave',
+                  'btnWhoopManual','inExtra'];
+  apagar.forEach(id => { const el = $(id); if (el) el.disabled = fut; });
+  $('btnExtra').disabled = fut || !SAMPLE;
+  $('whoopFileWrap').style.pointerEvents = fut ? 'none' : '';
+  $('whoopFileWrap').style.opacity = fut ? '.45' : '';
+
+  if (VIENDO === HOY){ n.hidden = true; return; }
+  const d = desdeIso(VIENDO);
+  const dif = Math.round((d - desdeIso(HOY)) / 864e5);
+  n.hidden = false;
+  n.innerHTML = fut
+    ? `<b>Estás viendo ${DIAS[d.getDay()]}, en ${dif} día${dif===1?'':'s'}.</b>
+       <span>Es para preparar: el plan y el entreno son los definitivos, pero no se
+       puede marcar nada hasta que llegue el día.</span>`
+    : `<b>Estás viendo ${DIAS[d.getDay()]} ${d.getDate()}, hace ${-dif} día${dif===-1?'':'s'}.</b>
+       <span>Puedes marcar lo que se te olvidó y registrar el peso de ese día.</span>`;
+}
+
+function tile({v, u = '', l, estado = '', barra = null}){
+  const b = barra == null ? '' :
+    `<div class="tb"><i style="width:${Math.min(100, Math.max(0, barra*100)).toFixed(0)}%"></i></div>`;
+  return `<div class="tile ${estado}"><div class="tv">${v}${u ? `<span class="tu">${u}</span>` : ''}</div>
+    <div class="tl">${l}</div>${b}</div>`;
+}
+
+function renderMetricasDia(){
+  const x = metricasDia(VIENDO);
+  if (!x.registrado && !x.hechos){
+    $('mdTiles').innerHTML = `<div class="tile" style="grid-column:1/-1;border-right:0">
+      <div class="tl">${esFuturo(VIENDO)
+        ? 'Este día todavía no llega. Las métricas aparecen cuando empieces a marcar.'
+        : 'Nada marcado en este día. Marca una comida y las métricas se llenan solas.'}</div></div>`;
+    $('mdTag').textContent = '';
+    return;
+  }
+  const ad = x.adherencia;
+  const est = ad == null ? '' : ad > 110 ? 'bad' : ad >= 90 ? 'ok' : 'warn';
+  $('mdTiles').innerHTML = [
+    tile({v: ad == null ? '—' : Math.round(ad), u: ad == null ? '' : '%', estado: est,
+          l: `adherencia · ${Math.round(x.tot.kcal)} de ${x.t.kcal} kcal`,
+          barra: ad == null ? null : ad/100}),
+    tile({v: x.deficit == null ? '—' : (x.deficit > 0 ? '−' : '+') + Math.abs(Math.round(x.deficit)),
+          estado: x.deficit == null ? '' : x.deficit >= 500 ? 'ok' : x.deficit > 0 ? 'warn' : 'bad',
+          l: `déficit vs tdee ${x.t.tdee}`}),
+    tile({v: Math.round(x.tot.p), u: `/${x.t.p} g`, estado: x.proteinaOk ? 'ok' : 'warn',
+          l: x.proteinaOk ? 'proteína · en meta' : 'proteína · falta',
+          barra: x.tot.p / x.t.p}),
+    tile({v: Math.round(x.tot.fib), u: 'g', estado: x.fibraOk ? 'ok' : 'warn',
+          l: 'fibra · palanca del LDL', barra: x.tot.fib / 35}),
+    tile({v: x.hechos, u: `/${x.total}`, estado: x.cumplimiento >= 80 ? 'ok' : x.cumplimiento >= 50 ? 'warn' : '',
+          l: 'cumplimiento del día', barra: x.hechos / x.total}),
+  ].join('');
+  $('mdTag').textContent = `${Math.round(x.cumplimiento)}% del día`;
+}
+
+function renderMetricasSemana(fechas){
+  const w = metricasSemana(fechas);
+  if (!w.n){
+    ['msConsist','msNutri','msResult'].forEach(id => $(id).innerHTML =
+      `<div class="tile" style="grid-column:1/-1;border-right:0"><div class="tl">Semana por venir: aún no hay nada que medir.</div></div>`);
+    $('msCalib').innerHTML = ''; $('msTag').textContent = 'por venir';
+    return;
+  }
+  const pct = (a,b) => b ? a/b : 0;
+  $('msConsist').innerHTML = [
+    tile({v: w.registrados, u: `/${w.n}`, l: 'días con comida registrada',
+          estado: pct(w.registrados,w.n) >= .85 ? 'ok' : pct(w.registrados,w.n) >= .6 ? 'warn' : 'bad',
+          barra: pct(w.registrados,w.n)}),
+    tile({v: w.pesados, u: `/${w.n}`, l: 'días pesados',
+          estado: pct(w.pesados,w.n) >= .85 ? 'ok' : 'warn', barra: pct(w.pesados,w.n)}),
+    tile({v: w.entrenos, u: `/${w.entPlan}`, l: 'entrenos hechos',
+          estado: w.entPlan && w.entrenos >= w.entPlan ? 'ok' : 'warn',
+          barra: pct(w.entrenos,w.entPlan)}),
+    tile({v: w.sinAlcohol, u: `/${w.diasConAlgo || w.n}`, l: 'días sin alcohol · ALT 68',
+          estado: !w.diasConAlgo ? '' : w.sinAlcohol >= w.diasConAlgo ? 'ok'
+                : w.sinAlcohol >= w.diasConAlgo - 1 ? 'warn' : 'bad',
+          barra: pct(w.sinAlcohol, w.diasConAlgo || w.n)}),
+  ].join('');
+  $('msNutri').innerHTML = [
+    tile({v: w.adherencia == null ? '—' : Math.round(w.adherencia), u: w.adherencia==null?'':'%',
+          l: 'adherencia promedio',
+          estado: w.adherencia == null ? '' : Math.abs(w.adherencia-100) <= 8 ? 'ok' : 'warn',
+          barra: w.adherencia == null ? null : w.adherencia/100}),
+    tile({v: w.proteinaDias, u: `/${w.registrados||0}`, l: 'días con proteína en meta',
+          estado: w.registrados && w.proteinaDias >= w.registrados*.8 ? 'ok' : 'warn',
+          barra: pct(w.proteinaDias, w.registrados)}),
+    tile({v: w.fibra == null ? '—' : Math.round(w.fibra), u: w.fibra==null?'':'g',
+          l: 'fibra promedio · meta 35',
+          estado: w.fibra == null ? '' : w.fibra >= 32 ? 'ok' : 'warn',
+          barra: w.fibra == null ? null : w.fibra/35}),
+    tile({v: w.sueno == null ? '—' : w.sueno.toFixed(1), u: w.sueno==null?'':'h',
+          l: 'sueño promedio',
+          estado: w.sueno == null ? '' : w.sueno >= 7 ? 'ok' : w.sueno >= 6.5 ? 'warn' : 'bad'}),
+    tile({v: w.recovery == null ? '—' : Math.round(w.recovery), u: w.recovery==null?'':'%',
+          l: 'recovery promedio',
+          estado: w.recovery == null ? '' : w.recovery >= 67 ? 'ok' : w.recovery >= 34 ? 'warn' : 'bad'}),
+  ].join('');
+  $('msResult').innerHTML = [
+    tile({v: w.deficitDia == null ? '—' : '−' + Math.round(w.deficitDia),
+          l: 'déficit medio por día registrado',
+          estado: w.deficitDia == null ? '' : w.deficitDia >= 600 ? 'ok' : 'warn'}),
+    tile({v: w.esperada ? w.esperada.toFixed(2) : '—', u: w.esperada?'kg':'',
+          l: 'pérdida que predice tu registro'}),
+    tile({v: w.real == null ? '—' : w.real.toFixed(2), u: w.real==null?'':'kg',
+          l: 'pérdida real · medias móviles',
+          estado: w.real == null ? '' : w.real > 0 ? 'ok' : 'bad'}),
+    tile({v: Math.round(w.cumplimiento), u: '%', l: 'cumplimiento medio del checklist',
+          estado: w.cumplimiento >= 80 ? 'ok' : w.cumplimiento >= 50 ? 'warn' : '',
+          barra: w.cumplimiento/100}),
+  ].join('');
+  $('msTag').textContent = `${w.registrados}/${w.n} registrados`;
+  $('msCalib').innerHTML = calibracion(w);
+}
+
+/* La métrica que nadie construye: ¿cuadra el modelo con la realidad? */
+function calibracion(w){
+  const caja = (cls, tit, txt) =>
+    `<div class="calib" style="background:var(--${cls}-wash);border-left:3px solid var(--${cls})">
+      <span class="ct" style="color:var(--${cls})">${tit}</span>${txt}</div>`;
+
+  if (w.registrados < 5)
+    return caja('low', 'Sin calibrar',
+      `Con <b>${w.registrados} de ${w.n}</b> días registrados no puedo comparar la predicción
+       con la realidad. Cinco días es el mínimo para que el promedio signifique algo —
+       y registrar es la única de todas estas métricas que depende solo de ti.`);
+  if (w.real == null)
+    return caja('low', 'Falta peso',
+      `Tengo tu comida pero no suficientes pesos para una media móvil. Pésate en ayunas
+       varios días seguidos y esta comparación se activa sola.`);
+
+  const dif = w.real - w.esperada;
+  if (Math.abs(dif) <= 0.3)
+    return caja('ok', 'El modelo cuadra',
+      `Tu registro predecía <b>${w.esperada.toFixed(2)} kg</b> y perdiste
+       <b>${w.real.toFixed(2)} kg</b>. Eso significa dos cosas buenas a la vez: estás
+       registrando con honestidad y tu TDEE estimado de <b>${metricasDia(HOY).t.tdee} kcal</b>
+       es correcto. No cambies nada.`);
+  if (dif < -0.3)
+    return caja('low', 'Perdiste menos de lo previsto',
+      `Tu registro predecía <b>${w.esperada.toFixed(2)} kg</b> pero la media móvil bajó
+       <b>${w.real.toFixed(2)} kg</b>. Hay dos explicaciones honestas y no incluyen
+       "metabolismo lento": o estás subestimando lo que comes — el aceite, la mantequilla
+       de maní y las porciones a ojo son los sospechosos de siempre — o tu TDEE real está
+       por debajo de ${metricasDia(HOY).t.tdee}. <b>Antes de bajar calorías, pesa todo
+       durante una semana.</b> Si con todo pesado la brecha sigue, ahí sí ajustamos el TDEE.`);
+  return caja('warn', 'Perdiste más de lo previsto',
+    `Tu registro predecía <b>${w.esperada.toFixed(2)} kg</b> y la media móvil bajó
+     <b>${w.real.toFixed(2)} kg</b>. Si es de las primeras dos semanas es agua y glucógeno,
+     normal. Si se repite, tu TDEE es más alto de lo estimado y puedes comer un poco más:
+     bajar más de 1,2 kg por semana de forma sostenida se paga con músculo.`);
+}
+
+/* ── Render: plan de la semana día por día ────────────────────────── */
+function renderPlan(){
+  const lunes = lunesDe(ANCLA);
+  const fechas = Array.from({length: 7}, (_, i) => masDias(lunes, i));
+  const d0 = desdeIso(fechas[0]), d6 = desdeIso(fechas[6]);
+  $('planTitle').textContent = d0.getMonth() === d6.getMonth()
+    ? `${d0.getDate()}–${d6.getDate()} de ${MESES[d0.getMonth()]}`
+    : `${d0.getDate()} ${MESES[d0.getMonth()].slice(0,3)} – ${d6.getDate()} ${MESES[d6.getMonth()].slice(0,3)}`;
+  $('plNow').setAttribute('aria-current', String(lunes === lunesDe(HOY)));
+  $('planTag').textContent = lunes === lunesDe(HOY) ? 'esta semana'
+    : lunes > lunesDe(HOY) ? 'por venir' : 'pasada';
+
+  const etiquetas = {b:'Desayuno', l:'Almuerzo', d:'Cena'};
+  let sk = 0, sp = 0, sc = 0, sf = 0, sfib = 0;
+
+  $('planDias').innerHTML = fechas.map(f => {
+    const d = desdeIso(f), pl = planDe(d), ent = esEntreno(d), ses = sesionDe(d);
+    const items = [...pl.comidas, ...pl.snacks].map(id => ({id, r: D.recetas[id]})).filter(x => x.r);
+    const tot = items.reduce((a,{r}) => ({kcal:a.kcal+r.kcal, p:a.p+r.p, c:a.c+r.c,
+      f:a.f+r.f, fib:a.fib+r.fib}), {kcal:0,p:0,c:0,f:0,fib:0});
+    sk+=tot.kcal; sp+=tot.p; sc+=tot.c; sf+=tot.f; sfib+=tot.fib;
+
+    const comidas = items.map(({id, r}) => `<div class="pdi">
+        <span class="pn"><i>${id}</i>${esc(r.n)}</span>
+        <span class="pm">${r.kcal} kcal · ${r.p} P · ${r.min} min</span></div>`).join('');
+
+    let gym;
+    if (ses === 'descanso') gym = `<div class="pdi"><span class="pn">Descanso total</span></div>`;
+    else if (ses === 'cardio') gym = D.cardio.sesiones.filter(x => !/almuerzo/i.test(x.cuando))
+      .map(x => `<div class="pdi"><span class="pn">${esc(x.tipo)}</span>
+        <span class="pm">${x.duracion_min} min</span></div>`).join('')
+      || `<div class="pdi"><span class="pn">Caminadora zona 2</span><span class="pm">45 min</span></div>`;
+    else {
+      const S = D.entrenos[ses];
+      gym = `<div class="pdi"><span class="pn"><b>${esc(S.n)}</b></span>
+          <span class="pm">${S.ej.reduce((a,e)=>a+e.s,0)} series · ${S.min} min</span></div>` +
+        S.ej.map((e,i) => `<div class="pdi">
+          <span class="pn"><i>${i+1}</i>${esc(e.n)}</span>
+          <span class="pm">${e.s}×${esc(e.r)} · RIR ${e.rir}</span></div>`).join('');
+    }
+
+    return `<div class="pday ${f===HOY?'hoy':''}">
+      <div class="pdh">
+        <span class="pdd">${DIAS_C[d.getDay()].toUpperCase()} ${String(d.getDate()).padStart(2,'0')}</span>
+        <span class="pdt">${ent?'entreno':'descanso'}${f===HOY?' · hoy':''}</span>
+        <span class="pdk"><b>${Math.round(tot.kcal)}</b> kcal ·
+          <b>${Math.round(tot.p)}</b> P · <b>${Math.round(tot.c)}</b> C ·
+          <b>${Math.round(tot.f)}</b> G · <b>${Math.round(tot.fib)}</b> fib</span>
+      </div>
+      <div class="pdgrid">
+        <div class="pdcol"><h5>Comer · ${items.length} tomas</h5><div class="pdlist">${comidas}</div></div>
+        <div class="pdcol"><h5>Entrenar</h5><div class="pdlist">${gym}</div></div>
+      </div>
+    </div>`;
+  }).join('');
+
+  const cel = (v,l) => `<div class="sumcell"><div class="v2">${v}</div><div class="l2">${l}</div></div>`;
+  $('planSum').innerHTML =
+    cel(Math.round(sk/7), 'kcal/día promedio') +
+    cel(Math.round(sp/7)+' g', 'proteína/día') +
+    cel(Math.round(sfib/7)+' g', 'fibra/día') +
+    cel(fechas.filter(f => !['descanso','cardio'].includes(sesionDe(desdeIso(f)))).length, 'días de pesas');
+}
+
+function render(){
+  renderNav(); renderHead(); renderMacros(); renderComidas(); renderGym();
+  renderHabitos(); renderWhoop(); renderExtras(); renderMetricasDia();
+  if (!$('vSem').hidden) renderSemana();
+  if (!$('vPlan').hidden) renderPlan();
+  if (!$('vMerc').hidden) renderMercado();
+}
+
+function irA(f){
+  VIENDO = f;
+  ANCLA = f;
+  dia = semana[VIENDO] ? {...semana[VIENDO]} : {fecha: VIENDO};
+  abiertos.clear();
+  render();
+}
+
+/* ── Eventos ──────────────────────────────────────────────────────── */
+document.addEventListener('click', ev => {
+  const tn = ev.target.closest('[data-tn]');
+  if (tn){
+    const rid = tn.dataset.tn, max = D.recetas[rid].tanda.max_porciones;
+    const actual = Math.min(TN[rid] ?? max, max);
+    TN[rid] = Math.max(1, Math.min(max, actual + (+tn.dataset.d)));
+    renderOlla();
+    return;
+  }
+  const mc = ev.target.closest('[data-merc]');
+  if (mc){
+    const k = mc.dataset.merc, t2 = {...mercTicks()};
+    t2[k] ? delete t2[k] : t2[k] = true;
+    guardarMercado(t2);
+    return;
+  }
+  const t = ev.target.closest('[data-tick],[data-receta],[data-gym],[data-delextra]');
+  if (!t) return;
+  if (t.dataset.tick) return toggle(t.dataset.tick);
+  if (t.dataset.receta){
+    const id = t.dataset.receta;
+    abiertos.has(id) ? abiertos.delete(id) : abiertos.add(id);
+    return renderComidas();
+  }
+  if (t.dataset.gym){
+    abiertos.has('gym') ? abiertos.delete('gym') : abiertos.add('gym');
+    return renderGym();
+  }
+  if (t.dataset.delextra){
+    const ex = [...(dia.extras||[])];
+    ex.splice(+t.dataset.delextra, 1);
+    return guardar({extras: ex});
+  }
+});
+
+$('navPrev').onclick = () => irA(masDias(VIENDO, -1));
+$('navNext').onclick = () => irA(masDias(VIENDO,  1));
+$('navToday').onclick = () => irA(HOY);
+$('wkPrev').onclick = () => { ANCLA = masDias(lunesDe(ANCLA), -7); renderSemana(); };
+$('wkNext').onclick = () => { ANCLA = masDias(lunesDe(ANCLA),  7); renderSemana(); };
+$('wkNow').onclick  = () => { ANCLA = HOY; renderSemana(); };
+
+// Una columna de la semana salta a ese día
+document.addEventListener('click', ev => {
+  const c = ev.target.closest('[data-dia]');
+  if (!c) return;
+  irA(c.dataset.dia);
+  vista('dia');
+});
+document.addEventListener('keydown', ev => {
+  if (ev.key !== 'Enter' && ev.key !== ' ') return;
+  const c = ev.target.closest?.('[data-dia]');
+  if (!c) return;
+  ev.preventDefault();
+  irA(c.dataset.dia);
+  vista('dia');
+});
+// Flechas del teclado para moverse de día
+document.addEventListener('keydown', ev => {
+  if (ev.target.matches('input, textarea') || ev.metaKey || ev.ctrlKey) return;
+  if (ev.key === 'ArrowLeft')  irA(masDias(VIENDO, -1));
+  if (ev.key === 'ArrowRight') irA(masDias(VIENDO,  1));
+});
+
+$('tabHoy').onclick  = () => vista('dia');
+$('tabSem').onclick  = () => vista('semana');
+$('tabPlan').onclick = () => vista('plan');
+$('tabOlla').onclick = () => vista('olla');
+$('tabMerc').onclick = () => vista('mercado');
+$('plPrev').onclick = () => { ANCLA = masDias(lunesDe(ANCLA), -7); renderPlan(); };
+$('plNext').onclick = () => { ANCLA = masDias(lunesDe(ANCLA),  7); renderPlan(); };
+$('plNow').onclick  = () => { ANCLA = HOY; renderPlan(); };
+
+function vista(cual){
+  const mapa = {dia:['vHoy','tabHoy'], semana:['vSem','tabSem'], plan:['vPlan','tabPlan'],
+                olla:['vOlla','tabOlla'], mercado:['vMerc','tabMerc']};
+  for (const [k, [sec, tab]] of Object.entries(mapa)){
+    $(sec).hidden = k !== cual;
+    $(tab).setAttribute('aria-selected', String(k === cual));
+  }
+  $('dayNav').hidden = cual !== 'dia';
+  if (cual === 'semana') renderSemana();
+  if (cual === 'plan') renderPlan();
+  if (cual === 'olla') renderOlla();
+  if (cual === 'mercado') renderMercado();
+}
+
+$('btnWeight').onclick = () => {
+  const v = parseFloat($('inWeight').value);
+  if (!(v > 40 && v < 250)) return;
+  guardar({peso: v});
+  $('inWeight').value = '';
+};
+$('inWeight').addEventListener('keydown', e => { if (e.key === 'Enter') $('btnWeight').click(); });
+
+$('btnWhoopManual').onclick = () => {
+  const m = $('whoopManual');
+  m.hidden = !m.hidden;
+  if (!m.hidden) $('inRec').focus();
+};
+$('btnWhoopSave').onclick = () => {
+  const w = {};
+  const r = parseFloat($('inRec').value), s = parseFloat($('inSleep').value), st = parseFloat($('inStrain').value);
+  if (r >= 0) w.recovery = r;
+  if (s >= 0) w.sueno = s;
+  if (st >= 0) w.strain = st;
+  if (!Object.keys(w).length) return;
+  guardar({whoop: {...(dia.whoop||{}), ...w}});
+  $('whoopManual').hidden = true;
+  ['inRec','inSleep','inStrain'].forEach(id => $(id).value = '');
+};
+
+/* Captura del WHOOP: Claude la lee, se guardan los números, no la imagen. */
+$('whoopFile').onchange = async ev => {
+  const file = ev.target.files?.[0];
+  ev.target.value = '';
+  if (!file || !SAMPLE) return;
+  const hint = $('whoopHint');
+  hint.textContent = 'Leyendo la captura…';
+  try {
+    const r = await SAMPLE.json(
+      'Esta es una captura de la app WHOOP. Devuelve SOLO este JSON, sin markdown:\n' +
+      '{"recovery":<0-100 o null>,"sueno":<horas dormidas como decimal, o null>,"strain":<0-21 o null>}\n' +
+      'recovery es el porcentaje de Recovery. sueno son las horas de sueño (si ves "7:12" son 7.2). ' +
+      'strain es el Day Strain. Si un valor no aparece en la imagen, pon null. No inventes números.',
+      {images: file, modelTier: 'quick', cache: false});
+    const w = {};
+    if (r && r.recovery != null && isFinite(r.recovery)) w.recovery = Math.max(0, Math.min(100, +r.recovery));
+    if (r && r.sueno != null && isFinite(r.sueno)) w.sueno = Math.max(0, Math.min(16, +r.sueno));
+    if (r && r.strain != null && isFinite(r.strain)) w.strain = Math.max(0, Math.min(21, +r.strain));
+    if (!Object.keys(w).length){
+      hint.textContent = 'No encontré números en esa captura. Métela a mano con el botón de al lado.';
+      return;
+    }
+    guardar({whoop: {...(dia.whoop||{}), ...w}});
+    hint.textContent = 'Leído. Revisa los números: si alguno quedó mal, corrígelo a mano.';
+  } catch (e) {
+    hint.textContent = e.code === 'not_granted'
+      ? 'No diste permiso para usar Claude. Métele los números a mano.'
+      : e.code === 'rate_limited' ? 'Demasiadas peticiones seguidas. Espera un momento o métela a mano.'
+      : e.code === 'images_unavailable' ? 'Tu cuenta no puede mandar imágenes aquí. Usa el botón "A mano".'
+      : 'No pude leer la captura (' + (e.code||'error') + '). Métela a mano.';
+  }
+};
+
+/* Comida fuera del plan: Claude estima los macros, el veredicto lo calculo yo. */
+$('btnExtra').onclick = async () => {
+  const desc = $('inExtra').value.trim();
+  if (!desc) return;
+  const out = $('extraOut');
+  if (!SAMPLE){
+    out.innerHTML = `<div class="err">Claude no está disponible en esta vista, así que no puedo estimar los macros. Anótalo en el bot con <span class="mono">comi ${esc(desc)}</span>.</div>`;
+    return;
+  }
+  $('btnExtra').disabled = true;
+  out.innerHTML = `<div class="thinking">Estimando macros…</div>`;
+  try {
+    const r = await SAMPLE.json(
+      'Eres nutricionista y estimas los macros de una comida descrita en español (Australia). ' +
+      'Devuelve SOLO este JSON, sin markdown:\n' +
+      '{"nombre":"","kcal":0,"p":0,"c":0,"f":0,"fib":0}\n' +
+      'p/c/f/fib son gramos de proteína, carbohidratos, grasa y fibra de la porción COMPLETA descrita. ' +
+      'Si no se da cantidad, asume una porción normal de adulto. Sé realista: la gente subestima el aceite, ' +
+      'las salsas y el tamaño de las porciones de restaurante.\n\nComida: ' + desc,
+      {modelTier: 'quick', cache: false});
+    const e = {
+      desc: String(r?.nombre || desc).slice(0,90),
+      kcal: +r?.kcal||0, p: +r?.p||0, c: +r?.c||0, f: +r?.f||0, fib: +r?.fib||0,
+    };
+    // El veredicto sale de aritmética, no del modelo: siempre consistente.
+    const t = targets(pesoVigente(), esEntreno(desdeIso(VIENDO)));
+    const antes = totales(dia), despues = antes.kcal + e.kcal;
+    const sobra = despues - t.kcal;
+    if (sobra <= 0) e.aviso = `Cabe. Te quedan ${Math.round(-sobra)} kcal y ${Math.max(0, Math.round(t.p - antes.p - e.p))} g de proteína para cerrar el día.`;
+    else if (sobra <= 250) e.aviso = `Te pasa ${Math.round(sobra)} kcal del día — eso es ruido, no un problema: el déficit se cuenta por semana. Si quieres compensar, cambia la cena por el revuelto de espinaca y cottage (503 kcal, 58 g de proteína).`;
+    else if (sobra <= 600) e.aviso = `Te pasa ${Math.round(sobra)} kcal. Un día no rompe nada, pero no lo repitas mañana: dos así seguidos ya te borran el déficit de la semana. Camina 30 min extra y sostén la proteína.`;
+    else e.aviso = `Te pasa ${Math.round(sobra)} kcal, que es un día entero de déficit. Sigue registrando y mañana vuelve al plan sin compensar de más: recortar mucho al día siguiente es lo que dispara el siguiente atracón.`;
+    if (e.p >= 25) e.aviso += ` A favor: trae ${Math.round(e.p)} g de proteína.`;
+    guardar({extras: [...(dia.extras||[]), e]});
+    $('inExtra').value = '';
+    out.innerHTML = '';
+  } catch (err) {
+    out.innerHTML = `<div class="err">${err.code === 'not_granted'
+      ? 'No diste permiso para usar Claude en esta página.'
+      : err.code === 'rate_limited' ? 'Demasiadas peticiones seguidas, espera un momento.'
+      : 'No pude estimarlo (' + esc(err.code||'error') + '). Intenta describirlo más simple.'}</div>`;
+  } finally {
+    $('btnExtra').disabled = false;
+  }
+};
+$('inExtra').addEventListener('keydown', e => { if (e.key === 'Enter') $('btnExtra').click(); });
+
+/* ── Arranque ─────────────────────────────────────────────────────── */
+render();     // La página sirve sin nada conectado: ya dice qué hacer hoy.
+
+(async () => {
+  const use = n => (typeof claude === 'undefined' || !claude?.use)
+    ? Promise.resolve(null) : claude.use(n).catch(() => null);
+  SAMPLE = await use('sample');
+  if (!SAMPLE){
+    $('whoopFileWrap').hidden = true;
+    $('whoopManual').hidden = false;
+    $('whoopHint').textContent = 'Métele los números a mano: leer la captura necesita Claude, que no está disponible aquí.';
+    $('btnExtra').textContent = 'No disponible';
+    $('btnExtra').disabled = true;
+  } else {
+    const lim = await SAMPLE.limits().catch(() => null);
+    PUEDE_IMG = !!lim?.images;
+    if (!PUEDE_IMG){
+      $('whoopFileWrap').hidden = true;
+      $('whoopManual').hidden = false;
+      $('whoopHint').textContent = 'Tu cuenta no puede mandar imágenes aquí, así que los números del WHOOP van a mano.';
+    } else {
+      $('whoopFile').accept = lim.images.mediaTypes?.join(',') || 'image/*';
+    }
+  }
+})();
+
+(async () => {
+  const use = n => (typeof claude === 'undefined' || !claude?.use)
+    ? Promise.resolve(null) : claude.use(n).catch(() => null);
+  DB = await use('db');
+  if (!DB){
+    mostrarOffline('No hay almacén disponible en esta vista, así que lo que marques no se va a guardar. El plan de hoy y las recetas sí funcionan.');
+    return;
+  }
+  // Suscripción a los últimos 21 días: el rango que necesita la media móvil.
+  // 21 días atrás cubren la media móvil; el rango no se corta arriba para que
+  // un día futuro ya registrado (por ejemplo un peso adelantado) también entre.
+  const desde = iso(new Date(Date.now() - 20*864e5));
+  DB.collection('dias').where('fecha', '>=', desde).orderBy('fecha', 'asc').limit(60)
+    .onSnapshot(snap => {
+      const nuevo = {};
+      snap.docs.forEach(d => { const v = d.data(); if (v) nuevo[d.id] = v; });
+      semana = nuevo;
+      dia = semana[VIENDO] ? {...semana[VIENDO]} : {fecha: VIENDO};
+      mostrarOffline('');
+      render();
+    }, e => {
+      mostrarOffline(e.code === 'revoked'
+        ? 'Se retiró el acceso al almacén mientras la página estaba abierta. Recárgala.'
+        : 'Se cortó la conexión con el almacén (' + (e.code||'error') + '). Recarga la página para volver a sincronizar.');
+    });
+})();
+
+// Si la pestaña queda abierta y cambia el día, la página se pone al día sola.
+setInterval(() => {
+  const f = iso(new Date());
+  if (f !== HOY){
+    const seguiaEnHoy = VIENDO === HOY;
+    HOY = f;
+    // Si estaba mirando "hoy", lo mueve al nuevo hoy; si estaba navegando,
+    // lo deja donde estaba y solo recalcula qué cuenta como futuro.
+    if (seguiaEnHoy) irA(HOY); else render();
+  }
+}, 60000);
+</script>
+
+</body></html>

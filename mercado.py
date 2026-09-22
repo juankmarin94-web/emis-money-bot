@@ -7,7 +7,7 @@ compra. La lista no se estima: se calcula.
 
 Uso:  python3 mercado.py
 """
-import json
+import json, os
 from collections import defaultdict
 
 # El yogurt casero no se compra: se hace. Estos son los insumos por kg colado.
@@ -28,9 +28,12 @@ SECCIONES = [
    "Caldo Campbell's", "Wrap Mission wholegrain", "Whole Earth"]),
 ]
 
-def main():
-    D = json.load(open("data/recipes.json", encoding="utf8"))
-    P = json.load(open("data/pantry.json", encoding="utf8"))
+def calcular():
+    """Suma la semana, resta la despensa. Devuelve datos crudos, sin formato."""
+    base = os.path.dirname(os.path.abspath(__file__))
+    carga = lambda n: json.load(open(os.path.join(base, "data", n), encoding="utf8"))
+    alimentos = carga("foods.json")["alimentos"]
+    D, P = carga("recipes.json"), carga("pantry.json")
     recetas, semana = D["recetas"], D["semana"]
     casa = {**P["despensa"], **P["nevera"]}
     unidades = P["_unidades_compra"]
@@ -66,6 +69,16 @@ def main():
             tengo.append((nombre, g, hay)); continue
         comprar[nombre] = falta
 
+    return {"comprar": comprar, "tengo": tengo, "sin_medir": sin_medir,
+            "yogurt": yog, "pide": dict(pide), "casa": casa, "unidades": unidades,
+            "dias": len(semana), "secciones": SECCIONES}
+
+def main():
+    R = calcular()
+    comprar, tengo, sin_medir = R["comprar"], R["tengo"], R["sin_medir"]
+    pide, casa, unidades, yog = R["pide"], R["casa"], R["unidades"], R["yogurt"]
+    dias = R["dias"]
+
     def unidad(nombre, g):
         if nombre not in unidades:
             return f"{g/1000:.1f} kg" if g >= 1000 else f"{round(g)} g"
@@ -74,7 +87,7 @@ def main():
         return f"**{n} × {etiqueta}**"
 
     L = ["# Lista de mercado — semana siguiente", "",
-         f"Calculada sumando los {len(semana)} días del menú de `data/recipes.json` "
+         f"Calculada sumando los {dias} días del menú de `data/recipes.json` "
          "y restando lo de `data/pantry.json`.", "",
          "Corre `python3 mercado.py` para regenerarla cuando cambie la semana o la despensa.", ""]
     total = 0
