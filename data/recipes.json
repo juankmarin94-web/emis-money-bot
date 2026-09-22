@@ -1,0 +1,1065 @@
+{
+ "_nota": "Macros calculados desde foods.json. No editar a mano: cambia los gramos y recalcula.",
+ "perfil": {
+  "peso_kg": 98.0,
+  "altura_cm": 179,
+  "edad": 32,
+  "sexo": "h",
+  "dias_entreno": 4,
+  "peso_meta_kg": 80.0,
+  "bmr": 1944,
+  "tdee": 2818,
+  "kcal_dia": 1985,
+  "deficit_dia": 833,
+  "p": 195,
+  "c": 170,
+  "f": 58,
+  "fib": 38,
+  "actualizado": "2026-09-22"
+ },
+ "recetas": {
+  "b1": {
+   "n": "Huevos rancheros en la olla",
+   "g": "desayuno",
+   "kcal": 473,
+   "p": 45,
+   "c": 41,
+   "f": 12,
+   "fib": 9,
+   "ing": [
+    [
+     "Huevo entero",
+     100
+    ],
+    [
+     "Clara de huevo",
+     200
+    ],
+    [
+     "Tomate",
+     150
+    ],
+    [
+     "Espinaca",
+     100
+    ],
+    [
+     "Frijoles refritos",
+     80
+    ],
+    [
+     "Harina PAN",
+     30
+    ]
+   ]
+  },
+  "b2": {
+   "n": "Bowl de yogurt casero con avena y berries",
+   "g": "desayuno",
+   "kcal": 542,
+   "p": 54,
+   "c": 48,
+   "f": 13,
+   "fib": 10,
+   "ing": [
+    [
+     "Yogurt griego casero",
+     300
+    ],
+    [
+     "Proteína en polvo",
+     20
+    ],
+    [
+     "Avena en hojuelas",
+     30
+    ],
+    [
+     "Berries congelados",
+     120
+    ],
+    [
+     "Almendras",
+     15
+    ]
+   ]
+  },
+  "b3": {
+   "n": "Overnight oats proteicos",
+   "g": "desayuno",
+   "kcal": 571,
+   "p": 50,
+   "c": 51,
+   "f": 17,
+   "fib": 9,
+   "ing": [
+    [
+     "Avena en hojuelas",
+     40
+    ],
+    [
+     "Cottage alto en proteína",
+     200
+    ],
+    [
+     "Yogurt griego casero",
+     150
+    ],
+    [
+     "Berries congelados",
+     100
+    ],
+    [
+     "Mantequilla de maní",
+     15
+    ]
+   ]
+  },
+  "b4": {
+   "n": "Avena de la olla con proteína y banana",
+   "g": "desayuno",
+   "kcal": 547,
+   "p": 43,
+   "c": 65,
+   "f": 13,
+   "fib": 8,
+   "ing": [
+    [
+     "Avena en hojuelas",
+     40
+    ],
+    [
+     "Leche descremada",
+     250
+    ],
+    [
+     "Proteína en polvo",
+     30
+    ],
+    [
+     "Banana",
+     110
+    ],
+    [
+     "Mantequilla de maní",
+     15
+    ]
+   ]
+  },
+  "b5": {
+   "n": "Omelette de espinaca, champiñones y cottage",
+   "g": "desayuno",
+   "kcal": 431,
+   "p": 54,
+   "c": 9,
+   "f": 19,
+   "fib": 4,
+   "ing": [
+    [
+     "Huevo entero",
+     100
+    ],
+    [
+     "Clara de huevo",
+     200
+    ],
+    [
+     "Espinaca",
+     120
+    ],
+    [
+     "Champiñones",
+     100
+    ],
+    [
+     "Cottage alto en proteína",
+     100
+    ],
+    [
+     "Aceite de oliva",
+     5
+    ]
+   ]
+  },
+  "b6": {
+   "n": "Arepas caseras con huevos pericos",
+   "g": "desayuno",
+   "kcal": 537,
+   "p": 45,
+   "c": 56,
+   "f": 13,
+   "fib": 3,
+   "ing": [
+    [
+     "Harina PAN",
+     60
+    ],
+    [
+     "Huevo entero",
+     100
+    ],
+    [
+     "Clara de huevo",
+     150
+    ],
+    [
+     "Tomate",
+     100
+    ],
+    [
+     "Cebolla larga",
+     30
+    ],
+    [
+     "Cottage alto en proteína",
+     80
+    ]
+   ]
+  },
+  "l1": {
+   "n": "Dahl de lentejas rojas (olla, 5 min)",
+   "g": "almuerzo",
+   "kcal": 695,
+   "p": 49,
+   "c": 90,
+   "f": 8,
+   "fib": 17,
+   "ing": [
+    [
+     "Lentejas rojas secas",
+     100
+    ],
+    [
+     "Tomate",
+     150
+    ],
+    [
+     "Espinaca",
+     150
+    ],
+    [
+     "Yogurt griego casero",
+     150
+    ],
+    [
+     "Arroz basmati crudo",
+     40
+    ],
+    [
+     "Aceite de oliva",
+     5
+    ]
+   ]
+  },
+  "l2": {
+   "n": "Bowl de garbanzos al curry con arroz al caldo",
+   "g": "almuerzo",
+   "kcal": 716,
+   "p": 52,
+   "c": 87,
+   "f": 15,
+   "fib": 19,
+   "ing": [
+    [
+     "Garbanzos de lata",
+     240
+    ],
+    [
+     "Tomate",
+     150
+    ],
+    [
+     "Espinaca",
+     120
+    ],
+    [
+     "Yogurt griego casero",
+     150
+    ],
+    [
+     "Arroz basmati crudo",
+     40
+    ],
+    [
+     "Cottage alto en proteína",
+     100
+    ],
+    [
+     "Aceite de oliva",
+     5
+    ]
+   ]
+  },
+  "l3": {
+   "n": "Pasta con Dolmio y tofu desmenuzado",
+   "g": "almuerzo",
+   "kcal": 672,
+   "p": 48,
+   "c": 69,
+   "f": 20,
+   "fib": 12,
+   "ing": [
+    [
+     "Pasta cruda",
+     70
+    ],
+    [
+     "Tofu firme",
+     200
+    ],
+    [
+     "Dolmio",
+     150
+    ],
+    [
+     "Espinaca",
+     150
+    ],
+    [
+     "Champiñones",
+     100
+    ]
+   ]
+  },
+  "l4": {
+   "n": "Wrap de tofu al curry",
+   "g": "almuerzo",
+   "kcal": 620,
+   "p": 49,
+   "c": 50,
+   "f": 22,
+   "fib": 10,
+   "ing": [
+    [
+     "Wrap Mission wholegrain",
+     71
+    ],
+    [
+     "Tofu firme",
+     200
+    ],
+    [
+     "Espinaca",
+     80
+    ],
+    [
+     "Zanahoria",
+     80
+    ],
+    [
+     "Yogurt griego casero",
+     100
+    ],
+    [
+     "Limón",
+     10
+    ]
+   ]
+  },
+  "l5": {
+   "n": "Ensalada tibia de papa y huevo (olla, 8 min)",
+   "g": "almuerzo",
+   "kcal": 620,
+   "p": 62,
+   "c": 56,
+   "f": 15,
+   "fib": 9,
+   "ing": [
+    [
+     "Papa",
+     250
+    ],
+    [
+     "Huevo entero",
+     100
+    ],
+    [
+     "Clara de huevo",
+     200
+    ],
+    [
+     "Cottage alto en proteína",
+     150
+    ],
+    [
+     "Espinaca",
+     100
+    ],
+    [
+     "Tomate",
+     100
+    ],
+    [
+     "Limón",
+     15
+    ]
+   ]
+  },
+  "l6": {
+   "n": "Burrito bowl de frijoles refritos y arroz al caldo",
+   "g": "almuerzo",
+   "kcal": 597,
+   "p": 47,
+   "c": 76,
+   "f": 8,
+   "fib": 13,
+   "ing": [
+    [
+     "Arroz basmati crudo",
+     50
+    ],
+    [
+     "Frijoles refritos",
+     180
+    ],
+    [
+     "Salsa mild",
+     60
+    ],
+    [
+     "Cottage alto en proteína",
+     250
+    ],
+    [
+     "Espinaca",
+     80
+    ],
+    [
+     "Limón",
+     15
+    ]
+   ]
+  },
+  "d1": {
+   "n": "Revuelto grande de espinaca y cottage (bajo en carbos)",
+   "g": "cena",
+   "kcal": 541,
+   "p": 70,
+   "c": 14,
+   "f": 20,
+   "fib": 7,
+   "ing": [
+    [
+     "Huevo entero",
+     100
+    ],
+    [
+     "Clara de huevo",
+     250
+    ],
+    [
+     "Espinaca",
+     200
+    ],
+    [
+     "Champiñones",
+     150
+    ],
+    [
+     "Cottage alto en proteína",
+     150
+    ],
+    [
+     "Cebolla larga",
+     30
+    ],
+    [
+     "Aceite de oliva",
+     5
+    ]
+   ]
+  },
+  "d2": {
+   "n": "Curry marroquí de garbanzos y espinaca (olla, 8 min)",
+   "g": "cena",
+   "kcal": 603,
+   "p": 52,
+   "c": 59,
+   "f": 15,
+   "fib": 21,
+   "ing": [
+    [
+     "Garbanzos de lata",
+     240
+    ],
+    [
+     "Tomate",
+     200
+    ],
+    [
+     "Espinaca",
+     200
+    ],
+    [
+     "Yogurt griego casero",
+     150
+    ],
+    [
+     "Cottage alto en proteína",
+     100
+    ],
+    [
+     "Aceite de oliva",
+     5
+    ]
+   ]
+  },
+  "d3": {
+   "n": "Tofu sellado con verduras y arroz al caldo",
+   "g": "cena",
+   "kcal": 631,
+   "p": 49,
+   "c": 49,
+   "f": 24,
+   "fib": 13,
+   "ing": [
+    [
+     "Tofu firme",
+     260
+    ],
+    [
+     "Arroz basmati crudo",
+     35
+    ],
+    [
+     "Brócoli",
+     150
+    ],
+    [
+     "Calabacín",
+     150
+    ],
+    [
+     "Zanahoria",
+     80
+    ],
+    [
+     "Cebolla larga",
+     30
+    ]
+   ]
+  },
+  "d4": {
+   "n": "Sopa de lentejas y verduras (olla, 9 min)",
+   "g": "cena",
+   "kcal": 631,
+   "p": 47,
+   "c": 63,
+   "f": 14,
+   "fib": 18,
+   "ing": [
+    [
+     "Lentejas cafés secas",
+     80
+    ],
+    [
+     "Zanahoria",
+     120
+    ],
+    [
+     "Calabacín",
+     150
+    ],
+    [
+     "Tomate",
+     150
+    ],
+    [
+     "Espinaca",
+     100
+    ],
+    [
+     "Caldo Campbell's",
+     500
+    ],
+    [
+     "Cottage alto en proteína",
+     150
+    ],
+    [
+     "Aceite de oliva",
+     8
+    ]
+   ]
+  },
+  "d5": {
+   "n": "Chili de frijoles negros (olla, 30 min)",
+   "g": "cena",
+   "kcal": 643,
+   "p": 51,
+   "c": 64,
+   "f": 14,
+   "fib": 19,
+   "ing": [
+    [
+     "Frijoles negros secos",
+     80
+    ],
+    [
+     "Tomate",
+     200
+    ],
+    [
+     "Pimentón",
+     100
+    ],
+    [
+     "Espinaca",
+     100
+    ],
+    [
+     "Salsa mild",
+     60
+    ],
+    [
+     "Yogurt griego casero",
+     150
+    ],
+    [
+     "Cottage alto en proteína",
+     100
+    ],
+    [
+     "Aceite de oliva",
+     8
+    ]
+   ]
+  },
+  "d6": {
+   "n": "Salteado de edamame y tofu",
+   "g": "cena",
+   "kcal": 641,
+   "p": 50,
+   "c": 60,
+   "f": 22,
+   "fib": 18,
+   "ing": [
+    [
+     "Edamame congelado",
+     150
+    ],
+    [
+     "Tofu firme",
+     150
+    ],
+    [
+     "Brócoli",
+     150
+    ],
+    [
+     "Habichuela",
+     100
+    ],
+    [
+     "Cebolla larga",
+     40
+    ],
+    [
+     "Arroz basmati crudo",
+     40
+    ]
+   ]
+  },
+  "s1": {
+   "n": "Batido de proteína con berries",
+   "g": "snack",
+   "kcal": 195,
+   "p": 26,
+   "c": 17,
+   "f": 2,
+   "fib": 6,
+   "ing": [
+    [
+     "Proteína en polvo",
+     30
+    ],
+    [
+     "Berries congelados",
+     150
+    ]
+   ]
+  },
+  "s2": {
+   "n": "Cottage con sriracha y tomate",
+   "g": "snack",
+   "kcal": 198,
+   "p": 26,
+   "c": 11,
+   "f": 5,
+   "fib": 1,
+   "ing": [
+    [
+     "Cottage alto en proteína",
+     200
+    ],
+    [
+     "Tomate",
+     100
+    ]
+   ]
+  },
+  "s3": {
+   "n": "Dos huevos duros de la olla",
+   "g": "snack",
+   "kcal": 143,
+   "p": 13,
+   "c": 1,
+   "f": 10,
+   "fib": 0,
+   "ing": [
+    [
+     "Huevo entero",
+     100
+    ]
+   ]
+  },
+  "s4": {
+   "n": "Yogurt casero con Whole Earth y canela",
+   "g": "snack",
+   "kcal": 165,
+   "p": 24,
+   "c": 12,
+   "f": 1,
+   "fib": 0,
+   "ing": [
+    [
+     "Yogurt griego casero",
+     250
+    ],
+    [
+     "Whole Earth",
+     5
+    ]
+   ]
+  },
+  "s5": {
+   "n": "Edamame con sal",
+   "g": "snack",
+   "kcal": 182,
+   "p": 18,
+   "c": 14,
+   "f": 8,
+   "fib": 8,
+   "ing": [
+    [
+     "Edamame congelado",
+     150
+    ]
+   ]
+  },
+  "s6": {
+   "n": "Tajada grande de sandia",
+   "g": "snack",
+   "kcal": 150,
+   "p": 3,
+   "c": 38,
+   "f": 1,
+   "fib": 2,
+   "ing": [
+    [
+     "Sandía",
+     500
+    ]
+   ]
+  },
+  "s7": {
+   "n": "Batido pre-gym de banana y avena",
+   "g": "snack",
+   "kcal": 406,
+   "p": 43,
+   "c": 49,
+   "f": 4,
+   "fib": 5,
+   "ing": [
+    [
+     "Yogurt griego casero",
+     200
+    ],
+    [
+     "Banana",
+     110
+    ],
+    [
+     "Avena en hojuelas",
+     20
+    ],
+    [
+     "Proteína en polvo",
+     25
+    ]
+   ]
+  },
+  "s8": {
+   "n": "Manzana con yogurt",
+   "g": "snack",
+   "kcal": 193,
+   "p": 15,
+   "c": 33,
+   "f": 1,
+   "fib": 4,
+   "ing": [
+    [
+     "Manzana",
+     180
+    ],
+    [
+     "Yogurt griego casero",
+     150
+    ]
+   ]
+  },
+  "s9": {
+   "n": "Manzana con mantequilla de maní",
+   "g": "snack",
+   "ing": [
+    [
+     "Manzana",
+     180
+    ],
+    [
+     "Mantequilla de maní",
+     20
+    ]
+   ],
+   "kcal": 214,
+   "p": 6,
+   "c": 28,
+   "f": 10,
+   "fib": 6
+  },
+  "s10": {
+   "n": "Puñado de almendras (pesado)",
+   "g": "snack",
+   "ing": [
+    [
+     "Almendras",
+     25
+    ]
+   ],
+   "kcal": 150,
+   "p": 5,
+   "c": 2,
+   "f": 12,
+   "fib": 3
+  },
+  "b7": {
+   "n": "Bowl de yogurt y proteína (sin avena)",
+   "g": "desayuno",
+   "ing": [
+    [
+     "Yogurt griego casero",
+     300
+    ],
+    [
+     "Proteína en polvo",
+     30
+    ],
+    [
+     "Berries congelados",
+     100
+    ],
+    [
+     "Almendras",
+     15
+    ]
+   ],
+   "kcal": 458,
+   "p": 58,
+   "c": 28,
+   "f": 11,
+   "fib": 6
+  },
+  "l7": {
+   "n": "Ensalada grande de tofu y edamame",
+   "g": "almuerzo",
+   "ing": [
+    [
+     "Tofu firme",
+     200
+    ],
+    [
+     "Edamame congelado",
+     120
+    ],
+    [
+     "Espinaca",
+     150
+    ],
+    [
+     "Tomate",
+     150
+    ],
+    [
+     "Zanahoria",
+     80
+    ],
+    [
+     "Limón",
+     15
+    ],
+    [
+     "Aceite de oliva",
+     8
+    ]
+   ],
+   "kcal": 615,
+   "p": 51,
+   "c": 29,
+   "f": 32,
+   "fib": 17
+  },
+  "d7": {
+   "n": "Tofu y verduras al wok (sin arroz)",
+   "g": "cena",
+   "ing": [
+    [
+     "Tofu firme",
+     250
+    ],
+    [
+     "Brócoli",
+     200
+    ],
+    [
+     "Champiñones",
+     150
+    ],
+    [
+     "Habichuela",
+     100
+    ],
+    [
+     "Cebolla larga",
+     40
+    ],
+    [
+     "Aceite de oliva",
+     8
+    ]
+   ],
+   "kcal": 591,
+   "p": 50,
+   "c": 22,
+   "f": 31,
+   "fib": 14
+  }
+ },
+ "semana": {
+  "Lunes": {
+   "tipo": "entreno",
+   "ids": [
+    "b5",
+    "l5",
+    "s3",
+    "s8",
+    "d2"
+   ],
+   "total": [
+    1990,
+    196,
+    158,
+    60,
+    38
+   ]
+  },
+  "Martes": {
+   "tipo": "entreno",
+   "ids": [
+    "b7",
+    "l6",
+    "s4",
+    "s5",
+    "d7"
+   ],
+   "total": [
+    1993,
+    197,
+    152,
+    59,
+    41
+   ]
+  },
+  "Miércoles": {
+   "tipo": "descanso",
+   "ids": [
+    "b3",
+    "l7",
+    "s1",
+    "d1"
+   ],
+   "total": [
+    1922,
+    197,
+    111,
+    71,
+    39
+   ]
+  },
+  "Jueves": {
+   "tipo": "entreno",
+   "ids": [
+    "b5",
+    "l4",
+    "s1",
+    "s8",
+    "d2"
+   ],
+   "total": [
+    2042,
+    196,
+    168,
+    59,
+    45
+   ]
+  },
+  "Viernes": {
+   "tipo": "entreno",
+   "ids": [
+    "b7",
+    "l5",
+    "s3",
+    "s5",
+    "d4"
+   ],
+   "total": [
+    2034,
+    198,
+    162,
+    58,
+    41
+   ]
+  },
+  "Sábado": {
+   "tipo": "descanso",
+   "ids": [
+    "b2",
+    "l2",
+    "s5",
+    "d1"
+   ],
+   "total": [
+    1981,
+    194,
+    163,
+    56,
+    44
+   ]
+  },
+  "Domingo": {
+   "tipo": "descanso",
+   "ids": [
+    "b3",
+    "l7",
+    "s1",
+    "d5"
+   ],
+   "total": [
+    2024,
+    178,
+    161,
+    65,
+    51
+   ]
+  }
+ }
+}

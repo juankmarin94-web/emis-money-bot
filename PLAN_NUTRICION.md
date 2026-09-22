@@ -1,553 +1,520 @@
-# De 96 a 80 — Plan de Camilo
+# De 98 a 80 — Plan de Camilo
 
-> Recuperado del artifact original (2 sep 2026, Adelaide).
+> Actualizado 22 sep 2026 · peso confirmado **98,0 kg** · olla Philips All-in-One 6L
 > Vegetariano · gym en el garage · construido alrededor de los labs de Clinpath.
 >
-> - Plan completo: https://claude.ai/artifact/Gj6bStnrucSrR4L1VhqXWV
-> - Diario diario/semanal: https://claude.ai/artifact/TevEF1WPJj4D8Mg3vAD4Eh
+> Artifacts originales: [plan](https://claude.ai/artifact/Gj6bStnrucSrR4L1VhqXWV) ·
+> [diario](https://claude.ai/artifact/TevEF1WPJj4D8Mg3vAD4Eh)
+>
+> **Los macros de este documento se calculan desde `data/foods.json` y `data/recipes.json`.**
+> No los edites a mano: cambia los gramos y recalcula, así nunca se desincronizan.
 
 | | |
 |---|---|
-| Peso inicial | 96,0 kg |
-| Altura | 1,79 m |
-| Edad | 32 |
-| IMC inicial | 30,0 |
+| Peso | **98,0 kg** |
+| Altura | 1,79 m · 32 años |
+| IMC | 30,6 |
 | Meta | 80 kg (IMC 25,0) |
-| Ritmo | 0,7 kg/semana |
 | Entrenos | 4 días/semana |
 
 ---
 
 ## 01 · Lo primero, porque no es negociable
 
-**ALT 68 U/L** (rango 5–40). En mayo de 2025 estaba en 28 — se más que duplicó en 14 meses.
-El GGT lo acompañó: de 32 a 47. Clinpath no lo dejó como número suelto, escribió una instrucción:
+**ALT 68 U/L** (rango 5–40), venía de 28 hace 14 meses. El GGT lo acompañó: 32 → 47.
+Clinpath escribió la instrucción, no la dejó como número suelto:
 
 > "non-specific hepatic impairment. Possible causes … alcohol effect and viral infections.
 > Repeat LFTs in one [month] to assess chronicity of abnormality."
 > — Clinpath Laboratories · Lab ref 476325447 · 09-Jul-2026
 
-1. **Pide la cita para repetir las pruebas hepáticas.** Ya está escrito en tu papel.
-2. **Alcohol en cero hasta el reexamen.** Si sigues bebiendo y el ALT sigue alto, no vas a saber por qué.
-3. **Perder 7–10% del peso** es la intervención con más evidencia para hígado graso. De 96 kg son 7–10 kg: exactamente lo que este plan hace en 10–14 semanas.
+1. **Repite las pruebas hepáticas.** Las pidieron para agosto. Ya vamos por el 22 de septiembre.
+2. **Alcohol en cero hasta el reexamen.** Si sigues bebiendo y sigue alto, no vas a saber por qué.
+3. **Perder 7–10%** es la intervención con más evidencia para hígado graso. De 98 kg son 7–10 kg.
 
-### Tus banderas
-
-| Marcador | 13-May-25 | 09-Jul-26 | Referencia | Lectura |
+| Marcador | May-25 | Jul-26 | Referencia | Lectura |
 |---|---|---|---|---|
-| ALT | 28 | **68 (H)** | 5–40 U/L | Prioridad 1. Repetir con el médico. |
-| LDL colesterol | 3,5 | **3,4 (H)** | <2,5 mmol/L | Alto y estancado 14 meses. La fibra soluble es la palanca. |
-| Creatinina | 79 | **56 (L)** | 60–110 µmol/L | eGFR >90: riñón perfecto. Típico en vegetarianos. |
-| Ferritina | 17 | **50** | 30–400 µg/L | Subió, pero el hierro sérico bajó de 17,7 a 11,7. Vigilar. |
-| Glucosa ayunas | — | **4,7 (OK)** | 3,6–5,4 mmol/L | Cero señal de resistencia a la insulina. |
-| Triglicéridos | 0,7 | **0,8 (OK)** | 0,0–1,5 mmol/L | TG/HDL = 0,57. |
-| TSH | 2,0 | **1,2 (OK)** | 0,40–3,50 mU/L | Tiroides normal. |
-| Vitamina D | 93 | **88 (OK)** | 50–160 nmol/L | Sin deficiencia. |
-| Vitamina B12 | 265 | **319 (OK)** | 130–855 pmol/L | Homocisteína 6,6 → reservas repletas. |
-| Hemograma | — | **OK** | — | "Results normal." |
+| ALT | 28 | **68 (H)** | 5–40 U/L | Prioridad 1 |
+| LDL | 3,5 | **3,4 (H)** | <2,5 mmol/L | Estancado 14 meses. La fibra soluble es la palanca |
+| Creatinina | 79 | **56 (L)** | 60–110 µmol/L | eGFR >90. Típico en vegetarianos |
+| Ferritina | 17 | **50** | 30–400 µg/L | Hierro sérico bajó de 17,7 a 11,7. Vigilar |
+| Glucosa | — | **4,7** | 3,6–5,4 mmol/L | Sin resistencia a la insulina |
+| Triglicéridos | 0,7 | **0,8** | <1,5 mmol/L | TG/HDL 0,57 |
+| TSH | 2,0 | **1,2** | 0,40–3,50 mU/L | Normal |
+| Vit. D / B12 | 93 / 265 | **88 / 319** | — | Sin deficiencia |
 
-**En una frase:** tu metabolismo está sano — glucosa 4,7, triglicéridos 0,8, TSH 1,2 — así que no
-hay ninguna excusa fisiológica y el déficit va a funcionar. Pero el hígado levantó la mano y el LDL
-sigue alto, y las dos cosas responden a lo mismo: perder grasa, comer fibra, parar el alcohol.
+**Tu metabolismo está sano.** Glucosa 4,7, triglicéridos 0,8 y TSH 1,2 significan que no hay
+excusa fisiológica: el déficit va a funcionar. El hígado y el LDL responden a lo mismo —
+perder grasa, comer fibra, parar el alcohol.
 
 *Esto no es consejo médico. Los análisis los interpreta Dr Brenton Martin.*
 
 ---
 
-## 02 · Tus números de energía
+## 02 · Tus números
 
 ```
-BMR  = 10(96) + 6,25(179) − 5(32) + 5      = 1.924 kcal
-TDEE = 1.924 × 1,45  (4 entrenos + 9k pasos) = 2.789 kcal
-Meta = TDEE − 28%                            = 2.008 kcal
-Déficit                                      = −781 kcal/día
+BMR  = 10(98) + 6,25(179) − 5(32) + 5        = 1.944 kcal
+TDEE = 1.944 × 1,45  (4 entrenos + 9k pasos) = 2.818 kcal
+Meta = TDEE − 30%                            = 1.985 kcal
+Déficit                                      = −833 kcal/día
 ```
 
-### Carbohidratos ciclados
-
-Proteína y grasa fijas todos los días. Solo se mueven los carbos: suben el día que entrenas,
-bajan el día que descansas.
-
-| | **Día de entreno** (L·Ma·J·V) | **Día de descanso** (Mi·S·D) |
+| Macro | Objetivo | Por qué |
 |---|---|---|
-| Calorías | **2.150** | **1.822** |
-| Proteína | 182 g | 182 g |
-| Carbohidratos | 225 g | 143 g |
-| Grasa | 58 g | 58 g |
-| Fibra | 35 g + | 35 g + |
+| **Proteína** | **195 g** (2,0 g/kg) | Sube de los 182 g del plan viejo. Cuanto más agresivo el déficit, más decide la proteína si lo que pierdes es grasa o músculo. Siendo vegetariano apuntas más alto: menos leucina por gramo. |
+| **Grasa** | **58 g** (0,6 g/kg) — piso | Protege la producción hormonal. No bajes de aquí por querer más carbos. |
+| **Carbos** | **~170 g** | Lo que queda. |
+| **Fibra** | **38 g +** | El doble del promedio australiano. Con LDL en 3,4 esto es tratamiento, no adorno. |
 
-Promedio semanal: 2.008 kcal.
+### El ciclado de carbos se muere aquí, y es mejor así
 
-- **Proteína 182 g (1,9 g/kg)** — en déficit decide si pierdes grasa o músculo. Siendo vegetariano apuntas más alto: la proteína vegetal trae menos leucina por gramo.
-- **Grasa 58 g (0,6 g/kg)** — es el piso que protege la producción hormonal. No bajes de aquí por querer más carbos.
-- **Fibra 35–40 g** — el doble del promedio australiano. Con el LDL en 3,4 esto es tratamiento, no adorno.
-- **Carbos al resto** — van donde generan rendimiento: los días que hay barra de por medio.
+El plan viejo ciclaba carbos: 225 g los días de entreno, 143 g los de descanso.
+Con 195 g de proteína y el piso de 58 g de grasa, eso son 1.302 kcal fijas de 1.985 —
+**quedan 683 kcal de carbos, y no hay suficiente presupuesto para ciclar nada.**
+Lo intenté y los días de descanso no cerraban: se pasaban 120–190 kcal todos.
 
-### La línea de tiempo
+Así que: **un solo número todos los días, 1.985 kcal.** Los carbos se mueven *dentro* del día,
+no entre días — la mayoría en la comida antes y después de entrenar. Es más fácil de seguir
+y el resultado es el mismo.
+
+### El techo de velocidad
+
+Pediste lo más rápido posible. El techo útil es **−30%**, que es exactamente donde está este
+plan. Más abajo no compras velocidad: compras músculo perdido, fuerza perdida y rebote. Y con
+ALT en 68 hay una razón extra — bajar rápido es el tratamiento, pero bajar a lo bruto (dietas de
+1.200 kcal, más de 1,5 kg/semana sostenido) puede empeorar las enzimas hepáticas de forma
+transitoria y sube el riesgo de cálculos biliares. **Rápido sí, crash no.**
 
 | Cuándo | Peso | Nota |
 |---|---|---|
-| Semanas 1–2 | 96 → 92–93 kg | Agua y glucógeno, no grasa. No te emociones — ni te asustes cuando se frene en la semana 3. |
-| Semana 8 (fin oct) | 90 kg | 6% perdido. El ALT ya debería estar respondiendo. |
-| **Semana 12 (fin nov)** | **88 kg** | **8% perdido: el umbral de evidencia para hígado graso. El hito que de verdad importa.** |
-| Semana 20 (fin ene 27) | 84 kg | IMC 26,2. |
-| **Semana 25 (mar 27)** | **80 kg** | IMC 25,0. Meta. |
+| Semanas 1–2 | 98 → 94–95 kg | Agua y glucógeno, no grasa. Se frena en la 3: es normal, no falló nada |
+| Semana 6 | 94 kg | |
+| **Semana 10** | **90 kg** | **8% perdido: el umbral de evidencia para hígado graso. El hito que de verdad importa** |
+| Semana 14 | 88 kg | |
+| Semana 20 | 85 kg | El TDEE baja con el peso: aquí el ritmo ya es ~0,65 kg/sem |
+| Semana 26 | **80 kg** | Marzo 2027 |
 
-Si bajas más de 1,2 kg/semana sostenido estás perdiendo músculo y hay que subir calorías.
+**Recalcula cada 4 kg perdidos.** A 90 kg tu TDEE es 2.702, no 2.818, y comer 1.985 deja de ser
+un déficit de 833 para ser uno de 717. El plan no se estanca: tú te vuelves más liviano.
 
----
-
-## 03 · La comida
-
-30 recetas construidas con lo que ya está en tu nevera, tu congelador y tu despensa.
-
-### Proteínas ordenadas por eficiencia (g por 100 kcal)
-
-| Alimento | P/100 kcal | Nota |
-|---|---|---|
-| Claras de huevo | 21,0 g | El rey absoluto. |
-| Tiras vegetales Nature's Kitchen | 14,5 g | |
-| YoPRO pouch | 14,5 g | Snack de emergencia, cero azúcar añadido. |
-| Quorn chicken pieces | 13,8 g | |
-| Cottage cheese Bulla | 12,8 g | Tu caballo de batalla. |
-| Tofu firme | 11,1 g | |
-| Yogurt griego Lyttos | 10,8 g | Base de desayunos y de salsas que reemplazan la crema. |
-| Huevo entero | 8,8 g | Mézclalos con claras para subir proteína sin subir grasa. |
-
-### Recetas
-
-**Desayunos** (solo huevos, avena o cereal — tu regla)
-
-| ID | Receta | kcal | P | C | G | Fib |
-|---|---|---|---|---|---|---|
-| b1 | Huevos rancheros de sartén con Tajín | 441 | 41 | 33 | 12 | 11 |
-| b2 | Bowl de yogurt griego con avena y fresas | 410 | 34 | 50 | 7 | 6 |
-| b3 | Overnight oats proteicos | 439 | 37 | 45 | 11 | 6 |
-| b5 | Overnight oats con leche de almendra y berries | 475 | 39 | 45 | 13 | 10 |
-| b7 | Omelette de espinaca, tomate y cottage | 359 | 44 | 11 | 14 | 4 |
-| b8 | Huevos revueltos sobre Thins | 386 | 34 | 22 | 16 | 5 |
-| b9 | Avena caliente con proteína y banana | 449 | 29 | 60 | 9 | 9 |
-| b10 | Muesli GF con yogurt griego y berries | 432 | 29 | 54 | 9 | 8 |
-| b11 | Nutri-Grain con huevos duros al lado | 360 | 18 | 35 | 14 | 3 |
-
-**Almuerzos**
-
-| ID | Receta | kcal | P | C | G | Fib |
-|---|---|---|---|---|---|---|
-| l1 | Quorn al curry con basmati y espinaca | 493 | 34 | 62 | 12 | 13 |
-| l2 | Pasta GF con tiras vegetales y tomate | 548 | 38 | 72 | 12 | 8 |
-| l3 | Bowl mexicano de frijol y maíz con Tajín | 536 | 37 | 60 | 10 | 20 |
-| l4 | Ensalada tibia de papa, huevo y lemon pepper | 583 | 52 | 57 | 14 | 9 |
-| l5 | Wrap de tofu al curry con espinaca | 557 | 43 | 49 | 20 | 17 |
-| l6 | Burrito bowl de frijol refrito y arroz | 599 | 34 | 91 | 7 | 15 |
-
-**Cenas**
-
-| ID | Receta | kcal | P | C | G | Fib |
-|---|---|---|---|---|---|---|
-| d1 | Pizza proteica en base delgada (media base) | 477 | 33 | 46 | 17 | 9 |
-| d2 | Curry marroquí de garbanzos y espinaca | 522 | 33 | 60 | 13 | 24 |
-| d3 | Revuelto de espinaca, maíz y cottage (bajo en carbos) | 503 | 58 | 26 | 17 | 7 |
-| d4 | Salteado asiático de tiras vegetales | 545 | 45 | 67 | 10 | 12 |
-| d5 | Tofu a la plancha con arroz al caldo | 666 | 44 | 62 | 24 | 15 |
-| d6 | Pasta GF con Dolmio y tofu desmenuzado | 708 | 48 | 75 | 24 | 16 |
-| d7 | Scramble de tofu con Tajín (cena rápida) | 411 | 39 | 11 | 23 | 16 |
-
-**Snacks**
-
-| ID | Receta | kcal | P | C | G | Fib |
-|---|---|---|---|---|---|---|
-| s1 | Cottage con Tajín y tomate | 165 | 20 | 8 | 5 | 1 |
-| s2 | Vasito de yogurt protein con fresas | 153 | 16 | 16 | 2 | 2 |
-| s3 | Pera con nueces | 219 | 5 | 27 | 11 | 7 |
-| s4 | Dos huevos duros con Tajín | 143 | 13 | 1 | 10 | 0 |
-| s5 | Batido de whey con fresas | 164 | 25 | 11 | 2 | 3 |
-| s6 | Palomitas caseras con Tajín | 94 | 3 | 18 | 1 | 4 |
-| s7 | Pouch de YoPRO | 104 | 15 | 7 | 0 | 0 |
-| s8 | Chocolate 85% con berries | 216 | 4 | 17 | 13 | 10 |
-| s9 | Manzana o pera con mantequilla de maní | 219 | 6 | 26 | 10 | 7 |
-| s10 | Batido pre-gym de banana y avena | 416 | 41 | 56 | 4 | 5 |
-
-### Cinco trucos que hacen la diferencia
-
-1. **Pesa la mantequilla de maní.** La "cucharada" a ojo son 35–40 g: 130 kcal fantasma cada vez. Es el error de conteo más común de tu despensa.
-2. **Arroz con caldo, no con agua.** Campbell's Real Stock: cero calorías extra, el doble de sabor.
-3. **Limón sobre espinaca y frijoles.** La vitamina C triplica la absorción del hierro vegetal. Con ferritina en 50 y siendo vegetariano, no es decoración.
-4. **Aprieta el tofu.** Dos minutos con papel de cocina. Es la diferencia entre dorado y aguado.
-5. **Palomitas sin aceite.** 25 g de granos = 94 kcal = un bowl enorme. Cuando el hambre es de masticar, no de comer.
-6. **Media base de pizza, no una.** La receta d1 ya está calculada así: tu válvula de escape del viernes cabe en el plan.
-
-### Vale la pena comprar
-
-- **Creatina monohidrato** — 5 g/día. Creatinina baja (56) + vegetariano = el perfil que más responde. Avísale a tu médico: sube la creatinina medida sin que nada esté mal.
-- **Proteína en polvo** — llegar a 182 g solo con comida siendo vegetariano es posible pero apretado.
-- **Edamame congelado** — 12 g de proteína por 100 g, 4 minutos.
-- **Lentejas secas** — fibra soluble barata, directo al LDL.
-
-### Al fondo del estante
-
-Nutri-Grain (22 g de azúcar/100 g) · Alcohol (cero hasta el reexamen) · Bases de pizza (media, no entera)
+Si bajas más de 1,2 kg/semana sostenido estás perdiendo músculo y hay que **subir** calorías.
 
 ---
 
-## 04 · El entreno
+## 03 · La olla es la herramienta, no un juguete
 
-Cuatro días, Upper/Lower, solo con lo que hay en el garage.
+Tres cosas que antes eran fricción y ahora son gratis.
 
-**Tienes:** power rack con barra de dominadas, barra olímpica, discos, banco ajustable, mancuernas de rosca, barra Z, bandas, caminadora, foam rollers.
-**No tienes:** poleas, jalón al pecho, prensa, curl femoral, peck deck, dominadas asistidas.
+### Tiempos de presión
 
-Ni un ejercicio del programa depende de una máquina que no tengas.
-
-| Día | Sesión | Series | Foco |
-|---|---|---|---|
-| Lunes | Upper A | 23 | Horizontal, fuerza. Press de banca y remo con barra. |
-| Martes | Lower A | 20 | Sentadilla y RDL. |
-| Miércoles | Caminadora | — | 45 min zona 2, inclinación 5–8%. |
-| Jueves | Upper B | 23 | Vertical, hipertrofia. Press militar y dominadas. |
-| Viernes | Lower B | 18 | Bisagra de cadera. Peso muerto y sentadilla frontal. |
-| Sábado | Caminata | — | 60 min afuera. Sol y cabeza despejada. |
-| Domingo | Descanso | — | Total. El músculo se construye descansando. |
-
-84 series de pesas por semana.
-
-### Upper A — Horizontal (fuerza) · 60 min
-1. Press de banca con barra — 4×5-7, RIR 2. *Pines de seguridad puestos. Sin observador, deja 2 reps en el tanque.*
-2. Remo con barra (pronado, torso 45°) — 4×6-8, RIR 2. *Tu único jalón horizontal pesado.*
-3. Press inclinado con mancuernas — 3×8-10, RIR 2.
-4. Dominadas en la barra del rack — 3×AMRAP, RIR 1. *A 96 kg puede que salgan 0-3. Usa banda por el pie y anota cuál: pasar a una más delgada es el progreso más motivante del programa.*
-5. Elevaciones laterales — 3×12-15, RIR 1. *Los hombros anchos son lo que más cambia cómo te ves cuando bajas de peso.*
-6. Curl con barra Z — 3×10-12, RIR 1.
-7. Extensión de tríceps sobre la cabeza con barra Z — 3×12-15, RIR 1.
-
-### Lower A — Sentadilla (cuádriceps) · 55 min
-1. Sentadilla trasera con barra — 4×5-7, RIR 2. *Pines a la altura del punto más bajo.*
-2. Peso muerto rumano — 3×8-10, RIR 2. *Sin máquina de femoral, el RDL es TU ejercicio de isquios. No lo cambies.*
-3. Sentadilla búlgara con mancuernas — 3×8-10 por pierna, RIR 2.
-4. Hip thrust con barra apoyado en el banco — 3×8-12, RIR 1.
-5. Elevación de talones con barra — 4×12-15, RIR 1. *Punta del pie sobre un disco para ganar rango.*
-6. Plancha frontal — 3×45-60 s.
-
-### Upper B — Vertical (hipertrofia) · 60 min
-1. Press militar de pie — 4×6-8, RIR 2. *Glúteos y abdomen apretados, sin arquear.*
-2. Dominadas (lastradas si ya salen 8+) — 4×6-10, RIR 2.
-3. Press de banca con mancuernas (plano) — 3×8-12, RIR 1.
-4. Remo con mancuerna a una mano — 3×10-12 por lado, RIR 1. *Tira con el codo hacia la cadera.*
-5. Face pull con banda — 3×15-20, RIR 1. *Salud de hombro: barato de hacer, caro de saltarse.*
-6. Curl martillo — 3×10-12, RIR 1.
-7. Press cerrado con barra — 3×10-15, RIR 1.
-
-### Lower B — Bisagra de cadera (posterior) · 55 min
-1. Peso muerto convencional — 3×4-6, RIR 2. *Solo 3 series. Cobra caro en recuperación y en déficit recuperas peor.*
-2. Sentadilla frontal — 3×6-8, RIR 2.
-3. Zancadas caminando con mancuernas — 3×10 por pierna, RIR 2.
-4. Buenos días con barra — 3×10-12, RIR 2. *Peso ligero. Es de isquios, no de ego.*
-5. Elevación de piernas colgado — 3×10-15, RIR 1.
-6. Carga del granjero — 3×40 m. *Agarre, core y hombros de una.*
-
-### La regla que más importa
-
-**En déficit no se busca subir peso en la barra. Se busca mantenerlo.** Si sostienes los mismos
-kilos mientras bajas de peso corporal, tu fuerza relativa sube y no estás perdiendo músculo.
-Estancarte manteniendo el peso mientras bajas grasa no es fallar: es el objetivo.
-
-- **Doble progresión:** +1 rep por serie cada semana. Al tope del rango en todas, +2,5 kg y vuelves al tope bajo.
-- **Deload cada 6 semanas:** mismo peso, mitad de series. No la negocies.
-- **Entrenas solo:** pines siempre en sentadilla y banca. Nunca al fallo en banca.
-- **Discos de rosca:** si el salto mínimo es demasiado, progresa sumando reps o una serie.
-
-### Cardio
-
-El cardio **no** pone el déficit — lo pone la comida. El cardio es para tu corazón, tu hígado y tus pasos.
-
-- **9.000 pasos/día.**
-- **Miércoles:** 45 min caminadora zona 2, inclinación 5–8%. La inclinación sube el gasto sin castigar rodillas ni robarte recuperación.
-- **Sábado:** 60 min caminata afuera.
-- **Todos los días:** 12 min después del almuerzo. Aplana el pico de glucosa. Barato, corto, funciona.
-- **Nada de HIIT** encima de 4 días de pesas en déficit. Si el WHOOP marca rojo dos días seguidos, esto es lo primero que sobra.
-
----
-
-## 05 · El seguimiento (bot de Telegram)
-
-**Registrar comida**
-- `comi 3 huevos, 200g cottage` → busca primero en la base local de 53 alimentos: instantáneo y consistente.
-- `comi una empanada` → si no está en la base lo estima el modelo, y lo marca con `~`.
-- *[foto del plato]* → una sola llamada clasifica: recibo del banco va a gastos, comida va a nutrición.
-- `/borrar` → quita la última comida.
-
-**Ver dónde vas**
-- `/hoy` → barras de calorías, proteína, carbos, grasa y fibra.
-- `/semana` → promedio real, déficit real y tendencia de peso.
-- `/peso 95.4` → registra y calcula la media móvil de 7 días.
-
-**Planificar**
-- `/plan` · `/receta` · `/gym` · `/set sentadilla 80 5,5,4` · `/mercado` · `/prs`
-
-**Contexto**
-- `/perfil` · `/perfil peso=94.2` · `/labs` · `/labs preguntas` · `/whoop`
-
-**Recordatorios automáticos** (hora de Adelaide, se callan cuando no aplican)
-
-| Cuándo | Qué | Se calla si |
-|---|---|---|
-| 07:00 diario | Pesarse | Ya registraste peso hoy |
-| 08:00 L·Ma·J·V | La sesión de hoy | Nunca — es día de barra |
-| 20:30 diario | Cierre del día | El día cerró dentro de target |
-| 10:00 domingo | Preparación en tanda | — |
-| 18:00 domingo | Resumen semanal | — |
-
-**WHOOP:** recovery verde = el día para sumar la rep o el disco. Amarillo = entrena normal sin
-forzar el fallo. Rojo = una serie menos en cada compuesto y RIR 3. Si duermes menos de 6,5 h,
-el hambre de hoy es bioquímica (más grelina, menos leptina), no falta de voluntad.
-Lo que el bot **no** hace es sumar las calorías que WHOOP dice que quemaste: tu TDEE ya las
-incluye, y comer de más por lo que marca el reloj es el error clásico del wearable.
-
-Pésate cada mañana en ayunas, después del baño. El dato diario es ruido; la media de 7 días es
-la señal. El bot compara medias, nunca días sueltos.
-
----
-
-## 06 · Las primeras 72 horas
-
-1. **Pide la cita para repetir las pruebas hepáticas.** Hoy, no el lunes. Es lo único que no puede esperar.
-2. **Pésate mañana en ayunas** y manda `/peso <número>`. Ese es tu punto cero real.
-3. **Compra creatina y proteína en polvo.** Son los dos que hacen realistas los 182 g.
-4. **Cocina en tanda el domingo:** 6 huevos duros, una olla de curry de garbanzos (d2, rinde 3 días) y dos frascos de overnight oats (b3).
-5. **Lunes: Upper A** con pesos conservadores. La primera semana es para calibrar, no para impresionar.
-6. **Registra todo, aunque te pases.** Un día malo registrado sirve; uno escondido no enseña nada.
-
----
-
-*Los macros se calculan desde `data/foods.json` y `data/recipes.json` del bot — los valores de
-etiqueta son aproximados, verifícalos contra tus paquetes y corrígelos en `foods.json`, que es la
-única fuente de verdad. Esto no es consejo médico: tus análisis los interpreta Dr Brenton Martin.*
-
----
-
-# 07 · Fase rápida — olla Philips (22 sep 2026)
-
-> Actualización: peso subió respecto a los 96 kg de base y entró una **Philips All-in-One 6L**
-> (16-en-1: pressure cook, slow cook, sauté/sear, stew, yogurt, bake).
-> **Pendiente:** peso actual real y el resto del inventario. Números provisionales abajo.
-
-## Lo más rápido que sirve
-
-El techo útil es **−30% del TDEE**. Más abajo no compras velocidad, compras músculo perdido,
-fuerza perdida y un rebote. Y en tu caso hay una razón extra: con ALT en 68, bajar rápido es el
-tratamiento, pero bajar *a lo bruto* (dietas de 1.200 kcal, más de 1,5 kg/semana sostenido) puede
-empeorar las enzimas hepáticas de forma transitoria y sube el riesgo de cálculos biliares.
-Rápido sí, crash no.
-
-### Calorías según tu peso real
-
-| Peso | BMR | TDEE (×1,45) | **Meta (−30%)** | Déficit/día | Pérdida real/sem |
-|---|---|---|---|---|---|
-| 96 kg | 1.924 | 2.789 | **1.950** | −840 | ~0,76 kg |
-| 98 kg | 1.944 | 2.818 | **1.975** | −845 | ~0,77 kg |
-| 100 kg | 1.964 | 2.848 | **2.000** | −850 | ~0,78 kg |
-| 102 kg | 1.984 | 2.876 | **2.025** | −850 | ~0,78 kg |
-| 105 kg | 2.014 | 2.920 | **2.050** | −875 | ~0,80 kg |
-
-Las semanas 1–2 la balanza va a mostrar 3–4 kg. Eso es agua y glucógeno, no grasa. Lo real son
-~0,8 kg/semana, y son 12 kg en 15 semanas.
-
-### Macros (trabajando con 100 kg — 2.000 kcal promedio)
-
-| | Entreno (L·Ma·J·V) | Descanso (Mi·S·D) |
-|---|---|---|
-| Calorías | **2.150** | **1.800** |
-| Proteína | **200 g** | **200 g** |
-| Grasa | 60 g | 58 g |
-| Carbos | 200 g | 120 g |
-| Fibra | 40 g | 40 g |
-
-Proteína sube de 182 g a **200 g (2 g/kg)**: cuanto más agresivo el déficit, más proteína decide
-si lo que pierdes es grasa o músculo. Grasa se queda en el piso de 0,6 g/kg. Solo se mueven carbos.
-
-### La única regla que tienes que recordar
-
-**50 g de proteína por comida, cuatro veces al día.** Todo lo demás es detalle.
-
----
-
-## La olla es la herramienta, no un juguete
-
-Tres cosas que antes eran fricción y ahora son gratis:
-
-### 1. Legumbres secas sin remojo → fibra a centavos
-
-La fibra soluble es tu tratamiento para el LDL 3,4, y las legumbres son la fuente más barata que
-existe. La olla las hace sin remojar y sin vigilar.
-
-| Qué | Agua | Presión | Liberación |
+| Qué | Agua/caldo | Presión | Liberación |
 |---|---|---|---|
 | Lentejas rojas | 1 : 2,5 | 5 min | natural |
 | Lentejas cafés/verdes | 1 : 3 | 9 min | natural |
+| Arvejas partidas | 1 : 3 | 12 min | natural |
 | Garbanzos secos (sin remojo) | 1 : 4 | 45 min | natural 15 min |
 | Garbanzos remojados | 1 : 3 | 15 min | natural |
 | Frijoles negros secos (sin remojo) | 1 : 4 | 30 min | natural |
 | Arroz basmati | 1 : 1,25 | 5 min | natural 10 min |
 | Avena steel-cut | 1 : 3 | 4 min | natural |
-| Papa en cubos (en canasta) | 1 taza agua | 8 min | rápida |
+| Papa en cubos (en canasta) | 1 taza | 8 min | rápida |
+| **Huevos duros** | 1 taza | **5 min** | natural 5 min + hielo |
 
-Cocina la legumbre con **caldo Campbell's en vez de agua**: cero calorías extra, el doble de sabor.
+Cocina todo con **caldo Campbell's en vez de agua**: cero calorías extra, el doble de sabor.
+Es la mejora más barata de tu cocina.
 
-### 2. Huevos duros perfectos, 12 de una
+### Huevos duros, 12 de una
 
-1 taza de agua, canasta, **5 min de presión, 5 min de liberación natural**, baño de hielo 3 min.
+1 taza de agua, canasta, 5 min de presión, 5 min de liberación natural, baño de hielo 3 min.
 Pelan sin pelear. Domingo por la noche = snacks de 13 g de proteína toda la semana.
 
-### 3. Función Yogurt → tu proteína más barata
+### Función Yogurt → tu proteína más barata
 
-2 L de leche descremada + **150 g de leche en polvo descremada** batidos en frío.
-Calienta a 85 °C (sauté/sear low, removiendo), enfría a 43 °C, incorpora 3 cucharadas del
-**kéfir** que ya tienes como cultivo, y 9 h en función Yogurt.
+```
+2 L de leche descremada + 150 g de leche en polvo descremada (batidos en frío)
+  → 85 °C en sauté/sear low, removiendo
+  → enfriar a 43 °C
+  → 3 cucharadas de tu kéfir como cultivo
+  → 9 h en función Yogurt
+  → ~2 kg de yogurt, ~120 g de proteína, ~$5
+```
 
-Resultado: ~2 kg de yogurt con **~120 g de proteína total** por unos $5. Si lo cuelas 3 h en un
-colador con tela te queda ~1,2 kg tipo griego a ~8 g/100 g. Comprar el equivalente cuesta el triple.
+Cuélalo 3 h en un colador con tela y te quedan ~1,2 kg tipo griego a ~10 g de proteína/100 g.
+Comprar el equivalente cuesta el triple. **La leche en polvo es el truco real:** 35 g de proteína
+por 100 g, lo más barato del supermercado por gramo de proteína, y espesa sin necesidad de colar.
 
-*La leche en polvo es el truco real: ~35 g de proteína por 100 g y es lo más barato del
-supermercado por gramo de proteína. Sube la proteína y espesa sin colar.*
-
-*Verifica en el manual de tu modelo si la función Yogurt trae el paso de pasteurizado incluido.*
+*Verifica en el manual de tu modelo si la función Yogurt incluye el paso de pasteurizado.*
 
 ### Lo que NO va en presión
 
-Tofu (queda esponja — va en **sauté/sear high**, 4 min por lado, seco y apretado),
-huevos revueltos, avena en hojuelas (se pega), verdura de hoja (va al final, con el calor residual).
+Tofu (queda esponja — **sauté/sear high**, 4 min por lado, seco y bien apretado) ·
+huevos revueltos · avena en hojuelas (se pega) · hoja verde (va al final, con el calor residual).
 
 ---
 
-## Inventario confirmado por foto
+## 04 · Las recetas
 
-**Proteína**
-- Claras congeladas Farm Pride 950 ml — 23,5 g de proteína por serve. **Tu proteína más barata y más eficiente: 21 g por 100 kcal.**
-- Huevos (~14)
-- Tofu Macro Perfectly Firm 450 g (22,2 g por serve, 3 serves, high fibre)
-- 2 tubos de yogurt de 1 kg (uno original fat free)
-- Kéfir natural sin lactosa → **también sirve de cultivo iniciador**
-- Leche de soya (4,1 g proteína/100 ml — la de almendra tiene 1,4 g: no cuenta como proteína)
-- Un bloque pálido en bandeja sin identificar (¿paneer? ¿haloumi? ¿mantequilla?)
+31 recetas. Los macros salen de `data/foods.json`, no están escritos a mano.
 
-**Carbos**
-- Arepas Sary con queso extradelgadas, 600 g / 10 porciones
-- Wraps Mission Wholegrain Super Soft 567 g
+**Desayunos**
 
-**Verdura**
-- Espinaca baby, zanahorias, cebolla larga
+| ID | Receta | kcal | P | C | G | Fibra |
+|---|---|---|---|---|---|---|
+| `b1` | Huevos rancheros en la olla | 473 | **45 g** | 41 g | 12 g | 9 g |
+| `b2` | Bowl de yogurt casero con avena y berries | 542 | **54 g** | 48 g | 13 g | 10 g |
+| `b3` | Overnight oats proteicos | 571 | **50 g** | 51 g | 17 g | 9 g |
+| `b4` | Avena de la olla con proteína y banana | 547 | **43 g** | 65 g | 13 g | 8 g |
+| `b5` | Omelette de espinaca, champiñones y cottage | 431 | **54 g** | 9 g | 19 g | 4 g |
+| `b6` | Arepas caseras con huevos pericos | 537 | **45 g** | 56 g | 13 g | 3 g |
+| `b7` | Bowl de yogurt y proteína (sin avena) | 458 | **58 g** | 28 g | 11 g | 6 g |
 
-**Despensa / nevera**
-- Caldo Campbell's Real Stock + 1 lata de sopa
-- Ajo crushed Stonemill, salsa de tomate/pizza, salsa mild, sriracha
-- Ghee Dokshaa, aceite de oliva, sal y pimienta
-- Jarra Brita
+**Almuerzos**
 
-**A la basura ya:** base de pizza Coles, venció el **13/09/2026**.
+| ID | Receta | kcal | P | C | G | Fibra |
+|---|---|---|---|---|---|---|
+| `l1` | Dahl de lentejas rojas (olla, 5 min) | 695 | **49 g** | 90 g | 8 g | 17 g |
+| `l2` | Bowl de garbanzos al curry con arroz al caldo | 716 | **52 g** | 87 g | 15 g | 19 g |
+| `l3` | Pasta con Dolmio y tofu desmenuzado | 672 | **48 g** | 69 g | 20 g | 12 g |
+| `l4` | Wrap de tofu al curry | 620 | **49 g** | 50 g | 22 g | 10 g |
+| `l5` | Ensalada tibia de papa y huevo (olla, 8 min) | 620 | **62 g** | 56 g | 15 g | 9 g |
+| `l6` | Burrito bowl de frijoles refritos y arroz al caldo | 597 | **47 g** | 76 g | 8 g | 13 g |
+| `l7` | Ensalada grande de tofu y edamame | 615 | **51 g** | 29 g | 32 g | 17 g |
 
-**Al fondo del estante:** el ghee (grasa saturada pura, y tu LDL está en 3,4 — usa el aceite de
-oliva) y las arepas con queso (el paquete trae sello de exceso de grasas: sirven como el carbo de
-una comida, no como la base del día).
+**Cenas**
+
+| ID | Receta | kcal | P | C | G | Fibra |
+|---|---|---|---|---|---|---|
+| `d1` | Revuelto grande de espinaca y cottage (bajo en carbos) | 541 | **70 g** | 14 g | 20 g | 7 g |
+| `d2` | Curry marroquí de garbanzos y espinaca (olla, 8 min) | 603 | **52 g** | 59 g | 15 g | 21 g |
+| `d3` | Tofu sellado con verduras y arroz al caldo | 631 | **49 g** | 49 g | 24 g | 13 g |
+| `d4` | Sopa de lentejas y verduras (olla, 9 min) | 631 | **47 g** | 63 g | 14 g | 18 g |
+| `d5` | Chili de frijoles negros (olla, 30 min) | 643 | **51 g** | 64 g | 14 g | 19 g |
+| `d6` | Salteado de edamame y tofu | 641 | **50 g** | 60 g | 22 g | 18 g |
+| `d7` | Tofu y verduras al wok (sin arroz) | 591 | **50 g** | 22 g | 31 g | 14 g |
+
+**Snacks**
+
+| ID | Receta | kcal | P | C | G | Fibra |
+|---|---|---|---|---|---|---|
+| `s1` | Batido de proteína con berries | 195 | **26 g** | 17 g | 2 g | 6 g |
+| `s10` | Puñado de almendras (pesado) | 150 | **5 g** | 2 g | 12 g | 3 g |
+| `s2` | Cottage con sriracha y tomate | 198 | **26 g** | 11 g | 5 g | 1 g |
+| `s3` | Dos huevos duros de la olla | 143 | **13 g** | 1 g | 10 g | 0 g |
+| `s4` | Yogurt casero con Whole Earth y canela | 165 | **24 g** | 12 g | 1 g | 0 g |
+| `s5` | Edamame con sal | 182 | **18 g** | 14 g | 8 g | 8 g |
+| `s6` | Tajada grande de sandia | 150 | **3 g** | 38 g | 1 g | 2 g |
+| `s7` | Batido pre-gym de banana y avena | 406 | **43 g** | 49 g | 4 g | 5 g |
+| `s8` | Manzana con yogurt | 193 | **15 g** | 33 g | 1 g | 4 g |
+| `s9` | Manzana con mantequilla de maní | 214 | **6 g** | 28 g | 10 g | 6 g |
+
+
+### La regla que resume todo
+
+**~50 g de proteína por comida, cuatro veces al día.** Todo lo demás es detalle.
 
 ---
 
-## Compras — núcleo que no depende del resto de las fotos
+## 05 · La semana verificada
 
-Estas seis van pase lo que pase, porque sin ellas los 200 g de proteína y los 40 g de fibra no salen:
+Cada día está armado y comprobado contra los objetivos, no estimado a ojo.
 
-1. **Lentejas secas** (rojas y cafés), 2 kg — 6 a 9 minutos en la olla, fibra soluble directo al LDL, centavos por porción. Palanca #1.
-2. **Garbanzos y frijoles negros secos**, 1 kg de cada — secos cuestan la cuarta parte de la lata y la olla borra la diferencia de esfuerzo.
-3. **Proteína en polvo** — sin esto, 200 g/día siendo vegetariano no cuadran.
-4. **Leche en polvo descremada** — la proteína más barata del supermercado y el motor del yogurt casero.
-5. **Leche descremada**, 3 L/semana — materia prima del yogurt.
-6. **Creatina monohidrato**, 5 g/día — creatinina 56 + vegetariano = el perfil que más responde. Avísale al médico.
+| Día | | Menú | kcal | P | C | G | Fibra |
+|---|---|---|---|---|---|---|---|
+| **Lunes** | entreno | Omelette de espinaca, champiñones y cottage · Ensalada tibia de papa y huevo (olla, 8 min) · Dos huevos duros de la olla · Manzana con yogurt · Curry marroquí de garbanzos y espinaca (olla, 8 min) | 1990 | **196** | 158 | 60 | 38 |
+| **Martes** | entreno | Bowl de yogurt y proteína (sin avena) · Burrito bowl de frijoles refritos y arroz al caldo · Yogurt casero con Whole Earth y canela · Edamame con sal · Tofu y verduras al wok (sin arroz) | 1993 | **197** | 152 | 59 | 41 |
+| **Miércoles** | descanso | Overnight oats proteicos · Ensalada grande de tofu y edamame · Batido de proteína con berries · Revuelto grande de espinaca y cottage (bajo en carbos) | 1922 | **197** | 111 | 71 | 39 |
+| **Jueves** | entreno | Omelette de espinaca, champiñones y cottage · Wrap de tofu al curry · Batido de proteína con berries · Manzana con yogurt · Curry marroquí de garbanzos y espinaca (olla, 8 min) | 2042 | **196** | 168 | 59 | 45 |
+| **Viernes** | entreno | Bowl de yogurt y proteína (sin avena) · Ensalada tibia de papa y huevo (olla, 8 min) · Dos huevos duros de la olla · Edamame con sal · Sopa de lentejas y verduras (olla, 9 min) | 2034 | **198** | 162 | 58 | 41 |
+| **Sábado** | descanso | Bowl de yogurt casero con avena y berries · Bowl de garbanzos al curry con arroz al caldo · Edamame con sal · Revuelto grande de espinaca y cottage (bajo en carbos) | 1981 | **194** | 163 | 56 | 44 |
+| **Domingo** | descanso | Overnight oats proteicos · Ensalada grande de tofu y edamame · Batido de proteína con berries · Chili de frijoles negros (olla, 30 min) | 2024 | **178** | 161 | 65 | 51 |
+| | | **Promedio diario** | **1998** | **193** | 153 | 61 | 42 |
 
-**Y del resto, lo de mayor impacto:** cottage cheese alto en proteína (12,8 g por 100 kcal),
-avena, edamame congelado (12 g proteína/100 g), espinaca congelada, brócoli, calabacín,
-champiñones, tomate, limones.
+Promedio real: **1.998 kcal · 193 g de proteína · 61 g de grasa · 42 g de fibra.**
+Déficit de 820 kcal/día → **0,75 kg/semana.**
 
-*Lista final pendiente del resto de fotos.*
+### Detalle de cada receta
+
+### Desayunos
+
+**`b1` Huevos rancheros en la olla** — 473 kcal · 45 g P · 41 g C · 12 g G · 9 g fibra  
+Huevo entero 100 g · Clara de huevo 200 g · Tomate 150 g · Espinaca 100 g · Frijoles refritos 80 g · Harina PAN 30 g
+
+**`b2` Bowl de yogurt casero con avena y berries** — 542 kcal · 54 g P · 48 g C · 13 g G · 10 g fibra  
+Yogurt griego casero 300 g · Proteína en polvo 20 g · Avena en hojuelas 30 g · Berries congelados 120 g · Almendras 15 g
+
+**`b3` Overnight oats proteicos** — 571 kcal · 50 g P · 51 g C · 17 g G · 9 g fibra  
+Avena en hojuelas 40 g · Cottage alto en proteína 200 g · Yogurt griego casero 150 g · Berries congelados 100 g · Mantequilla de maní 15 g
+
+**`b4` Avena de la olla con proteína y banana** — 547 kcal · 43 g P · 65 g C · 13 g G · 8 g fibra  
+Avena en hojuelas 40 g · Leche descremada 250 g · Proteína en polvo 30 g · Banana 110 g · Mantequilla de maní 15 g
+
+**`b5` Omelette de espinaca, champiñones y cottage** — 431 kcal · 54 g P · 9 g C · 19 g G · 4 g fibra  
+Huevo entero 100 g · Clara de huevo 200 g · Espinaca 120 g · Champiñones 100 g · Cottage alto en proteína 100 g · Aceite de oliva 5 g
+
+**`b6` Arepas caseras con huevos pericos** — 537 kcal · 45 g P · 56 g C · 13 g G · 3 g fibra  
+Harina PAN 60 g · Huevo entero 100 g · Clara de huevo 150 g · Tomate 100 g · Cebolla larga 30 g · Cottage alto en proteína 80 g
+
+**`b7` Bowl de yogurt y proteína (sin avena)** — 458 kcal · 58 g P · 28 g C · 11 g G · 6 g fibra  
+Yogurt griego casero 300 g · Proteína en polvo 30 g · Berries congelados 100 g · Almendras 15 g
+
+### Almuerzos
+
+**`l1` Dahl de lentejas rojas (olla, 5 min)** — 695 kcal · 49 g P · 90 g C · 8 g G · 17 g fibra  
+Lentejas rojas secas 100 g · Tomate 150 g · Espinaca 150 g · Yogurt griego casero 150 g · Arroz basmati crudo 40 g · Aceite de oliva 5 g
+
+**`l2` Bowl de garbanzos al curry con arroz al caldo** — 716 kcal · 52 g P · 87 g C · 15 g G · 19 g fibra  
+Garbanzos de lata 240 g · Tomate 150 g · Espinaca 120 g · Yogurt griego casero 150 g · Arroz basmati crudo 40 g · Cottage alto en proteína 100 g · Aceite de oliva 5 g
+
+**`l3` Pasta con Dolmio y tofu desmenuzado** — 672 kcal · 48 g P · 69 g C · 20 g G · 12 g fibra  
+Pasta cruda 70 g · Tofu firme 200 g · Dolmio 150 g · Espinaca 150 g · Champiñones 100 g
+
+**`l4` Wrap de tofu al curry** — 620 kcal · 49 g P · 50 g C · 22 g G · 10 g fibra  
+Wrap Mission wholegrain 71 g · Tofu firme 200 g · Espinaca 80 g · Zanahoria 80 g · Yogurt griego casero 100 g · Limón 10 g
+
+**`l5` Ensalada tibia de papa y huevo (olla, 8 min)** — 620 kcal · 62 g P · 56 g C · 15 g G · 9 g fibra  
+Papa 250 g · Huevo entero 100 g · Clara de huevo 200 g · Cottage alto en proteína 150 g · Espinaca 100 g · Tomate 100 g · Limón 15 g
+
+**`l6` Burrito bowl de frijoles refritos y arroz al caldo** — 597 kcal · 47 g P · 76 g C · 8 g G · 13 g fibra  
+Arroz basmati crudo 50 g · Frijoles refritos 180 g · Salsa mild 60 g · Cottage alto en proteína 250 g · Espinaca 80 g · Limón 15 g
+
+**`l7` Ensalada grande de tofu y edamame** — 615 kcal · 51 g P · 29 g C · 32 g G · 17 g fibra  
+Tofu firme 200 g · Edamame congelado 120 g · Espinaca 150 g · Tomate 150 g · Zanahoria 80 g · Limón 15 g · Aceite de oliva 8 g
+
+### Cenas
+
+**`d1` Revuelto grande de espinaca y cottage (bajo en carbos)** — 541 kcal · 70 g P · 14 g C · 20 g G · 7 g fibra  
+Huevo entero 100 g · Clara de huevo 250 g · Espinaca 200 g · Champiñones 150 g · Cottage alto en proteína 150 g · Cebolla larga 30 g · Aceite de oliva 5 g
+
+**`d2` Curry marroquí de garbanzos y espinaca (olla, 8 min)** — 603 kcal · 52 g P · 59 g C · 15 g G · 21 g fibra  
+Garbanzos de lata 240 g · Tomate 200 g · Espinaca 200 g · Yogurt griego casero 150 g · Cottage alto en proteína 100 g · Aceite de oliva 5 g
+
+**`d3` Tofu sellado con verduras y arroz al caldo** — 631 kcal · 49 g P · 49 g C · 24 g G · 13 g fibra  
+Tofu firme 260 g · Arroz basmati crudo 35 g · Brócoli 150 g · Calabacín 150 g · Zanahoria 80 g · Cebolla larga 30 g
+
+**`d4` Sopa de lentejas y verduras (olla, 9 min)** — 631 kcal · 47 g P · 63 g C · 14 g G · 18 g fibra  
+Lentejas cafés secas 80 g · Zanahoria 120 g · Calabacín 150 g · Tomate 150 g · Espinaca 100 g · Caldo Campbell's 500 g · Cottage alto en proteína 150 g · Aceite de oliva 8 g
+
+**`d5` Chili de frijoles negros (olla, 30 min)** — 643 kcal · 51 g P · 64 g C · 14 g G · 19 g fibra  
+Frijoles negros secos 80 g · Tomate 200 g · Pimentón 100 g · Espinaca 100 g · Salsa mild 60 g · Yogurt griego casero 150 g · Cottage alto en proteína 100 g · Aceite de oliva 8 g
+
+**`d6` Salteado de edamame y tofu** — 641 kcal · 50 g P · 60 g C · 22 g G · 18 g fibra  
+Edamame congelado 150 g · Tofu firme 150 g · Brócoli 150 g · Habichuela 100 g · Cebolla larga 40 g · Arroz basmati crudo 40 g
+
+**`d7` Tofu y verduras al wok (sin arroz)** — 591 kcal · 50 g P · 22 g C · 31 g G · 14 g fibra  
+Tofu firme 250 g · Brócoli 200 g · Champiñones 150 g · Habichuela 100 g · Cebolla larga 40 g · Aceite de oliva 8 g
+
+### Snacks
+
+**`s1` Batido de proteína con berries** — 195 kcal · 26 g P · 17 g C · 2 g G · 6 g fibra  
+Proteína en polvo 30 g · Berries congelados 150 g
+
+**`s10` Puñado de almendras (pesado)** — 150 kcal · 5 g P · 2 g C · 12 g G · 3 g fibra  
+Almendras 25 g
+
+**`s2` Cottage con sriracha y tomate** — 198 kcal · 26 g P · 11 g C · 5 g G · 1 g fibra  
+Cottage alto en proteína 200 g · Tomate 100 g
+
+**`s3` Dos huevos duros de la olla** — 143 kcal · 13 g P · 1 g C · 10 g G · 0 g fibra  
+Huevo entero 100 g
+
+**`s4` Yogurt casero con Whole Earth y canela** — 165 kcal · 24 g P · 12 g C · 1 g G · 0 g fibra  
+Yogurt griego casero 250 g · Whole Earth 5 g
+
+**`s5` Edamame con sal** — 182 kcal · 18 g P · 14 g C · 8 g G · 8 g fibra  
+Edamame congelado 150 g
+
+**`s6` Tajada grande de sandia** — 150 kcal · 3 g P · 38 g C · 1 g G · 2 g fibra  
+Sandía 500 g
+
+**`s7` Batido pre-gym de banana y avena** — 406 kcal · 43 g P · 49 g C · 4 g G · 5 g fibra  
+Yogurt griego casero 200 g · Banana 110 g · Avena en hojuelas 20 g · Proteína en polvo 25 g
+
+**`s8` Manzana con yogurt** — 193 kcal · 15 g P · 33 g C · 1 g G · 4 g fibra  
+Manzana 180 g · Yogurt griego casero 150 g
+
+**`s9` Manzana con mantequilla de maní** — 214 kcal · 6 g P · 28 g C · 10 g G · 6 g fibra  
+Manzana 180 g · Mantequilla de maní 20 g
 
 ---
 
-## Pendiente de Camilo
+## 06 · El entreno
 
-1. **Peso actual** en ayunas → fija los números de arriba.
-2. **¿Repetiste las pruebas hepáticas?** Clinpath las pidió para un mes después del 9 de julio. Ya van dos meses y medio. Es lo único de todo este plan que no es negociable.
-3. **¿Sigue el entreno de 4 días?** Si no, el TDEE baja y las calorías con él.
+Cuatro días, Upper/Lower, solo con lo que hay en el garage. 84 series semanales.
+
+| Día | Sesión | Series | Foco |
+|---|---|---|---|
+| Lunes | Upper A | 23 | Horizontal, fuerza. Press de banca y remo con barra |
+| Martes | Lower A | 20 | Sentadilla y RDL |
+| Miércoles | Caminadora | — | 45 min zona 2, inclinación 5–8% |
+| Jueves | Upper B | 23 | Vertical, hipertrofia. Press militar y dominadas |
+| Viernes | Lower B | 18 | Bisagra de cadera. Peso muerto y sentadilla frontal |
+| Sábado | Caminata | — | 60 min afuera |
+| Domingo | Descanso | — | Total |
+
+### Upper A — Horizontal (fuerza) · 60 min
+1. Press de banca con barra — 4×5-7, RIR 2. *Pines puestos. Sin observador, nunca al fallo.*
+2. Remo con barra (pronado, torso 45°) — 4×6-8, RIR 2. *Tu único jalón horizontal pesado.*
+3. Press inclinado con mancuernas — 3×8-10, RIR 2
+4. Dominadas en la barra del rack — 3×AMRAP, RIR 1. *A 98 kg salen 0-3. Usa banda por el pie y anota cuál: pasar a una más delgada es el progreso más motivante del programa.*
+5. Elevaciones laterales — 3×12-15, RIR 1. *Los hombros anchos son lo que más cambia cómo te ves cuando bajas de peso.*
+6. Curl con barra Z — 3×10-12, RIR 1
+7. Extensión de tríceps sobre la cabeza con barra Z — 3×12-15, RIR 1
+
+### Lower A — Sentadilla (cuádriceps) · 55 min
+1. Sentadilla trasera — 4×5-7, RIR 2. *Pines a la altura de tu punto más bajo.*
+2. Peso muerto rumano — 3×8-10, RIR 2. *Sin máquina de femoral, el RDL es TU ejercicio de isquios. No lo cambies.*
+3. Sentadilla búlgara con mancuernas — 3×8-10 por pierna, RIR 2
+4. Hip thrust con barra apoyado en el banco — 3×8-12, RIR 1
+5. Elevación de talones con barra — 4×12-15, RIR 1. *Punta del pie sobre un disco.*
+6. Plancha frontal — 3×45-60 s
+
+### Upper B — Vertical (hipertrofia) · 60 min
+1. Press militar de pie — 4×6-8, RIR 2. *Glúteos y abdomen apretados, sin arquear.*
+2. Dominadas (lastradas si ya salen 8+) — 4×6-10, RIR 2
+3. Press de banca con mancuernas — 3×8-12, RIR 1
+4. Remo con mancuerna a una mano — 3×10-12 por lado, RIR 1. *Codo hacia la cadera.*
+5. Face pull con banda — 3×15-20, RIR 1. *Barato de hacer, caro de saltarse.*
+6. Curl martillo — 3×10-12, RIR 1
+7. Press cerrado con barra — 3×10-15, RIR 1
+
+### Lower B — Bisagra de cadera (posterior) · 55 min
+1. Peso muerto convencional — 3×4-6, RIR 2. *Solo 3 series: cobra caro en recuperación y en déficit recuperas peor.*
+2. Sentadilla frontal — 3×6-8, RIR 2
+3. Zancadas caminando con mancuernas — 3×10 por pierna, RIR 2
+4. Buenos días con barra — 3×10-12, RIR 2. *Peso ligero. Es de isquios, no de ego.*
+5. Elevación de piernas colgado — 3×10-15, RIR 1
+6. Carga del granjero — 3×40 m
+
+### La regla que más importa
+
+**En déficit no se busca subir peso en la barra. Se busca mantenerlo.** Si sostienes los mismos
+kilos mientras bajas de peso corporal, tu fuerza relativa sube y no estás perdiendo músculo.
+Estancarte manteniendo el peso mientras bajas grasa no es fallar: es el objetivo del programa.
+
+- **Doble progresión:** +1 rep por serie cada semana. Al tope del rango en todas, +2,5 kg y vuelves al tope bajo.
+- **Deload cada 6 semanas:** mismo peso, mitad de series. No la negocies.
+- **Entrenas solo:** pines siempre en sentadilla y banca.
+- **Discos de rosca:** si el salto mínimo es demasiado, progresa sumando reps antes de subir el disco.
+
+### Cardio
+
+El cardio **no** pone el déficit — lo pone la comida. El cardio es para tu corazón, tu hígado y tus pasos.
+
+- **9.000 pasos/día**
+- **Miércoles:** 45 min caminadora zona 2, inclinación 5–8%. Sube el gasto sin castigar rodillas ni robarte recuperación
+- **Sábado:** 60 min afuera
+- **Todos los días:** 12 min después del almuerzo. Aplana el pico de glucosa. Barato, corto, funciona
+- **Nada de HIIT** encima de 4 días de pesas en déficit
 
 ---
 
-## 08 · Despensa e inventario final
+## 07 · Lo que ya tienes
 
-### Ya lo tienes (y cancela media lista de compras)
+**Proteína** — claras congeladas Farm Pride (**21 g de proteína por 100 kcal: lo más eficiente de
+tu cocina**) · huevos · tofu Macro Perfectly Firm · 2 kg de yogurt · kéfir (también sirve de
+cultivo) · leche de soya (4,1 g/100 ml — la de almendra tiene 1,4 g: esa no cuenta como proteína)
 
-**Legumbres** — latas de garbanzos (×3), lata de lentejas, frijoles refritos Old El Paso,
-y en los contenedores: lentejas secas, arvejas partidas, garbanzos o frijoles secos.
-*Esto ya era mi compra #1 y #2. Canceladas.*
+**Legumbres** — 3 latas de garbanzos · lata de lentejas · frijoles refritos Old El Paso ·
+lentejas, arvejas partidas y garbanzos secos en los contenedores
 
-**Granos y almidones** — arroz blanco (2 contenedores), pasta en espiral, penne, avena,
-cuscús o burghul, harina, **Harina P.A.N.**
+**Granos** — arroz (×2) · pasta en espiral · penne · avena · cuscús · harina · **Harina P.A.N.**
 
-**Salsas y grasas** — Dolmio, salsa mild Old El Paso, mostaza French's, aceite de oliva,
-aceite de canola, aceite en espray, balsámico, sal Saxa, pimienta.
+**Salsas y grasas** — Dolmio · salsa mild · mostaza · aceite de oliva · canola · espray ·
+balsámico · sal Saxa · pimienta · ajo crushed · sriracha
 
-**Herramientas que no sabías que tenías**
-- **Whole Earth (eritritol/monk fruit)** — endulza el yogurt casero y la avena a cero calorías. En un déficit agresivo, poder endulzar sin costo es adherencia pura.
-- **Sandía** — ~30 kcal/100 g. Una tajada enorme por lo que cuesta medio puñado de nueces. Herramienta de volumen: para cuando el hambre es de cantidad.
-- **Harina P.A.N.** — arepas del tamaño que tú decidas, no del que trae el paquete. 30 g de harina = una arepa de ~110 kcal contra los ~60 g por porción de las Sary con queso.
-- **Aceite en espray** — 1 segundo = ~5 kcal contra los ~120 de un chorro a ojo. Úsalo en todo lo que va a la sartén.
+**Verdura** — espinaca · zanahoria · cebolla larga
 
-### Sale de la despensa hoy
+### Cuatro herramientas que no sabías que tenías
 
-- Papas fritas y paquetes (estante de arriba)
-- Tartas de chocolate Cadbury
-- La bolsita de dulces
-- Los panecillos
-- **El segundo pote de ghee** (Moksha, además del Dokshaa de la nevera) — casi toda grasa saturada, y tu LDL está en 3,4. No es prohibición: es que tienes aceite de oliva y aceite en espray al lado. Dos potes de ghee en la casa es una decisión que ya tomaste sin darte cuenta.
+- **Whole Earth (eritritol)** — endulza el yogurt casero y la avena a cero calorías. En un déficit agresivo, poder endulzar sin costo es adherencia pura.
+- **Sandía** — 30 kcal/100 g. Para cuando el hambre es de cantidad, no de comida. Una tajada de 500 g son 150 kcal.
+- **Harina P.A.N.** — arepas del tamaño que **tú** decidas. 30 g de harina = arepa de ~110 kcal, contra los 60 g por porción de las Sary con queso.
+- **Aceite en espray** — 1 segundo son ~5 kcal; un chorro a ojo son ~120. Úsalo en todo lo que va a la sartén.
+
+### Sale de la casa hoy
+
+Papas fritas y paquetes · tartas Cadbury · los dulces · los panecillos ·
+**la base de pizza Coles (venció el 13/09)** ·
+**el segundo pote de ghee** — tienes el Moksha en la despensa *y* el Dokshaa en la nevera, casi
+toda grasa saturada, y tu LDL está en 3,4. Tienes aceite de oliva y espray al lado.
 
 Lo que no compras, no te lo comes. Es la regla más barata del plan.
 
-### No pude identificar (dime qué son)
-
-Frasco crema pálida junto a los garbanzos (¿tahini? ¿mantequilla de maní?) · lata pequeña de
-etiqueta rosada · tarrito con algo naranja (¿duraznos en lata?) · el tetra pak del estante de
-arriba · el bloque pálido de la nevera junto al tofu.
-
 ---
 
-## 09 · Lista de compras final (una semana)
+## 08 · Lista de compras (una semana)
 
 ### Proteína — lo que de verdad falta
 | Qué | Cuánto | Por qué |
 |---|---|---|
-| **Proteína en polvo** | 1 kg | Sin esto los 200 g/día no cuadran siendo vegetariano. No es opcional. |
-| **Leche en polvo descremada** | 1 kg | ~35 g proteína/100 g: lo más barato del supermercado por gramo. Motor del yogurt casero. |
-| **Leche descremada** | 4 L | 3 L para el yogurt de la olla, 1 L para cocinar. |
-| **Cottage cheese alto en proteína** (Bulla) | 2 × 500 g | 12,8 g de proteína por 100 kcal. Tu caballo de batalla. |
-| **Tofu firme** | 3 × 450 g | 22 g por serve. Sauté/sear high, nunca presión. |
-| **Claras congeladas** (Farm Pride) | 2 pouches | 21 g por 100 kcal. Lo más eficiente de tu cocina. |
-| **Huevos** | 2 docenas | 12 duros en la olla el domingo. |
-| **Yogurt griego natural** | 1 kg | Hasta que el tuyo esté listo. |
-| **Creatina monohidrato** | 500 g | 5 g/día. Avísale al médico. |
+| **Proteína en polvo** | 1 kg | Sin esto los 195 g/día no cuadran. No es opcional |
+| **Leche en polvo descremada** | 1 kg | 35 g P/100 g. Motor del yogurt de la olla |
+| **Leche descremada** | 4 L | 3 para el yogurt, 1 para cocinar |
+| **Cottage cheese alto en proteína** (Bulla) | 3 × 500 g | 12,5 g de proteína por 100 kcal. Aparece en 9 recetas |
+| **Tofu firme** | 4 × 450 g | 22 g por serve. Sauté/sear high, nunca presión |
+| **Claras congeladas** (Farm Pride) | 2 pouches | Tu proteína más eficiente |
+| **Huevos** | 2 docenas | 12 duros en la olla el domingo |
+| **Yogurt griego natural** | 1 kg | Hasta que el tuyo esté listo |
+| **Creatina monohidrato** | 500 g | 5 g/día. Creatinina 56 + vegetariano = el perfil que más responde. Avísale al médico |
+
+### Grasas — el piso de 58 g no se alcanza sin esto
+| Qué | Cuánto | Por qué |
+|---|---|---|
+| **Mantequilla de maní natural** (Mayver's) | 1 frasco | **Pésala.** La cucharada a ojo son 35–40 g: 130 kcal fantasma cada vez |
+| **Almendras** | 500 g | 25 g pesados = 150 kcal y 13 g de grasa |
+
+*Al calcular el plan sin estas dos, la grasa caía a 44 g — por debajo del piso hormonal. Son necesarias, no un antojo.*
 
 ### Verdura de volumen — tu punto más débil
 Solo tienes espinaca, zanahoria y cebolla larga. En un déficit agresivo la verdura es lo que
 llena el plato sin costo calórico.
 
-Brócoli (2) · calabacín (4) · champiñones (500 g) · tomates (1 kg) · pimentón (3) ·
-coliflor (1) · habichuela (500 g) · **limones (6)**
+Brócoli (3) · calabacín (5) · champiñones (750 g) · tomates (2 kg) · pimentón (3) ·
+habichuela (500 g) · coliflor (1) · **limones (6)**
 
 *Los limones no son decoración: la vitamina C triplica la absorción del hierro vegetal, y con
-ferritina en 50 siendo vegetariano eso importa.*
+ferritina en 50 siendo vegetariano eso importa. Y no tomes café ni té con las comidas de hierro.*
 
 ### Congelados — comida de emergencia que no se echa a perder
-Edamame (1 kg, 12 g proteína/100 g) · espinaca (1 kg) · berries (1 kg) · maíz (500 g)
+Edamame (1 kg — 12 g de proteína/100 g) · espinaca (1 kg) · berries (1 kg) · maíz (500 g)
 
 ### Fruta
-Bananas (6) · manzanas o peras (6)
+Bananas (6) · manzanas (8)
+
+**Total: 11 líneas de proteína y grasa, una bandeja de verdura, cuatro bolsas del congelador.**
+El resto ya está en tu casa.
 
 ---
 
-**Total: ~10 líneas de proteína, una bandeja de verdura y cuatro bolsas del congelador.**
-El resto ya está en tu casa.
+## 09 · Seguimiento
+
+- **Peso:** cada mañana en ayunas, después del baño. El dato diario es ruido; **la media de 7 días es la señal.** Compara medias, nunca días sueltos.
+- **Medidas:** cintura y pecho cada 2 semanas.
+- **Fotos:** cada 4 semanas, misma luz y misma hora.
+
+**Ajustes cada 2 semanas, sobre la media de 7 días:**
+- No bajas en 2 semanas → −150 kcal (de carbos)
+- Bajas más de 1,2 kg/semana → +150 kcal. Estás perdiendo músculo
+- Vas a 0,7–1,0 kg/semana → no cambies nada
+- Perdiste 4 kg → recalcula el TDEE completo
+
+**Si duermes menos de 6,5 h:** el hambre de ese día es bioquímica — más grelina, menos leptina —
+no falta de voluntad. Come la proteína primero y no improvises.
+
+---
+
+## 10 · Las primeras 72 horas
+
+1. **Pide la cita para repetir las pruebas hepáticas.** Hoy. Es lo único de todo esto que no espera.
+2. **Ve al supermercado con la lista de la sección 08.**
+3. **Domingo en la olla:** 12 huevos duros (5 min), una olla de lentejas cafés (9 min), 2 L de yogurt (9 h), arroz con caldo.
+4. **Tira lo de la sección 07** antes de guardar las compras nuevas.
+5. **Pésate mañana en ayunas** y anótalo. Ese es tu punto cero real, no los 98 de memoria.
+6. **Registra todo, aunque te pases.** Un día malo registrado sirve; uno escondido no enseña nada.
+
+---
+
+*Esto no es consejo médico. Tus análisis los interpreta Dr Brenton Martin. Los valores de
+etiqueta en `foods.json` son aproximados: verifícalos contra tus paquetes y corrígelos ahí,
+que es la única fuente de verdad.*

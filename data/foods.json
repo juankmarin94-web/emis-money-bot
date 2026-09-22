@@ -1,0 +1,334 @@
+{
+ "_nota": "Fuente de verdad de los macros. kcal,P,C,G,fibra por 100 g o 100 ml.",
+ "alimentos": {
+  "Huevo entero": {
+   "kcal": 143,
+   "p": 12.6,
+   "c": 0.7,
+   "f": 9.9,
+   "fib": 0
+  },
+  "Clara de huevo": {
+   "kcal": 52,
+   "p": 11.0,
+   "c": 0.7,
+   "f": 0.2,
+   "fib": 0
+  },
+  "Tofu firme": {
+   "kcal": 150,
+   "p": 14.8,
+   "c": 2.5,
+   "f": 8.5,
+   "fib": 1.5
+  },
+  "Yogurt griego casero": {
+   "kcal": 66,
+   "p": 9.8,
+   "c": 5.0,
+   "f": 0.4,
+   "fib": 0
+  },
+  "Cottage alto en proteína": {
+   "kcal": 90,
+   "p": 12.5,
+   "c": 4.0,
+   "f": 2.5,
+   "fib": 0
+  },
+  "Proteína en polvo": {
+   "kcal": 400,
+   "p": 80.0,
+   "c": 6.0,
+   "f": 5.0,
+   "fib": 0
+  },
+  "Leche en polvo descremada": {
+   "kcal": 355,
+   "p": 35.0,
+   "c": 52.0,
+   "f": 1.0,
+   "fib": 0
+  },
+  "Leche descremada": {
+   "kcal": 35,
+   "p": 3.5,
+   "c": 5.0,
+   "f": 0.15,
+   "fib": 0
+  },
+  "Leche de soya": {
+   "kcal": 58,
+   "p": 4.1,
+   "c": 5.4,
+   "f": 1.2,
+   "fib": 0.5
+  },
+  "Lentejas rojas secas": {
+   "kcal": 350,
+   "p": 25.0,
+   "c": 45.0,
+   "f": 1.0,
+   "fib": 11.0
+  },
+  "Lentejas cafés secas": {
+   "kcal": 345,
+   "p": 24.0,
+   "c": 45.0,
+   "f": 1.2,
+   "fib": 11.0
+  },
+  "Arvejas partidas secas": {
+   "kcal": 340,
+   "p": 24.0,
+   "c": 48.0,
+   "f": 1.2,
+   "fib": 10.0
+  },
+  "Garbanzos de lata": {
+   "kcal": 120,
+   "p": 7.0,
+   "c": 16.0,
+   "f": 2.5,
+   "fib": 6.0
+  },
+  "Lentejas de lata": {
+   "kcal": 100,
+   "p": 7.5,
+   "c": 13.0,
+   "f": 0.5,
+   "fib": 4.0
+  },
+  "Frijoles refritos": {
+   "kcal": 85,
+   "p": 5.0,
+   "c": 12.0,
+   "f": 0.5,
+   "fib": 5.0
+  },
+  "Frijoles negros secos": {
+   "kcal": 340,
+   "p": 22.0,
+   "c": 45.0,
+   "f": 1.5,
+   "fib": 15.0
+  },
+  "Arroz basmati crudo": {
+   "kcal": 350,
+   "p": 8.0,
+   "c": 77.0,
+   "f": 1.0,
+   "fib": 1.5
+  },
+  "Pasta cruda": {
+   "kcal": 355,
+   "p": 12.0,
+   "c": 70.0,
+   "f": 1.5,
+   "fib": 3.0
+  },
+  "Avena en hojuelas": {
+   "kcal": 380,
+   "p": 13.0,
+   "c": 60.0,
+   "f": 8.0,
+   "fib": 10.0
+  },
+  "Harina PAN": {
+   "kcal": 360,
+   "p": 7.0,
+   "c": 78.0,
+   "f": 1.0,
+   "fib": 2.0
+  },
+  "Arepa Sary con queso": {
+   "kcal": 250,
+   "p": 6.5,
+   "c": 33.0,
+   "f": 10.0,
+   "fib": 2.0
+  },
+  "Wrap Mission wholegrain": {
+   "kcal": 282,
+   "p": 8.5,
+   "c": 46.0,
+   "f": 5.6,
+   "fib": 4.0
+  },
+  "Espinaca": {
+   "kcal": 23,
+   "p": 2.9,
+   "c": 1.4,
+   "f": 0.4,
+   "fib": 2.2
+  },
+  "Champiñones": {
+   "kcal": 22,
+   "p": 3.1,
+   "c": 1.0,
+   "f": 0.3,
+   "fib": 1.0
+  },
+  "Brócoli": {
+   "kcal": 34,
+   "p": 2.8,
+   "c": 4.0,
+   "f": 0.4,
+   "fib": 2.6
+  },
+  "Calabacín": {
+   "kcal": 17,
+   "p": 1.2,
+   "c": 2.0,
+   "f": 0.3,
+   "fib": 1.0
+  },
+  "Tomate": {
+   "kcal": 18,
+   "p": 0.9,
+   "c": 3.0,
+   "f": 0.2,
+   "fib": 1.2
+  },
+  "Zanahoria": {
+   "kcal": 41,
+   "p": 0.9,
+   "c": 7.0,
+   "f": 0.2,
+   "fib": 2.8
+  },
+  "Cebolla larga": {
+   "kcal": 32,
+   "p": 1.8,
+   "c": 4.4,
+   "f": 0.2,
+   "fib": 2.6
+  },
+  "Pimentón": {
+   "kcal": 31,
+   "p": 1.0,
+   "c": 6.0,
+   "f": 0.3,
+   "fib": 2.1
+  },
+  "Habichuela": {
+   "kcal": 31,
+   "p": 1.8,
+   "c": 4.0,
+   "f": 0.2,
+   "fib": 2.7
+  },
+  "Coliflor": {
+   "kcal": 25,
+   "p": 1.9,
+   "c": 3.0,
+   "f": 0.3,
+   "fib": 2.0
+  },
+  "Edamame congelado": {
+   "kcal": 121,
+   "p": 12.0,
+   "c": 9.0,
+   "f": 5.0,
+   "fib": 5.0
+  },
+  "Papa": {
+   "kcal": 77,
+   "p": 2.0,
+   "c": 17.0,
+   "f": 0.1,
+   "fib": 2.2
+  },
+  "Sandía": {
+   "kcal": 30,
+   "p": 0.6,
+   "c": 7.5,
+   "f": 0.2,
+   "fib": 0.4
+  },
+  "Banana": {
+   "kcal": 89,
+   "p": 1.1,
+   "c": 23.0,
+   "f": 0.3,
+   "fib": 2.6
+  },
+  "Berries congelados": {
+   "kcal": 50,
+   "p": 1.0,
+   "c": 10.0,
+   "f": 0.4,
+   "fib": 4.0
+  },
+  "Manzana": {
+   "kcal": 52,
+   "p": 0.3,
+   "c": 14.0,
+   "f": 0.2,
+   "fib": 2.4
+  },
+  "Dolmio": {
+   "kcal": 45,
+   "p": 1.5,
+   "c": 8.0,
+   "f": 0.5,
+   "fib": 1.5
+  },
+  "Salsa mild": {
+   "kcal": 35,
+   "p": 1.0,
+   "c": 6.0,
+   "f": 0.3,
+   "fib": 1.0
+  },
+  "Caldo Campbell's": {
+   "kcal": 5,
+   "p": 0.3,
+   "c": 0.7,
+   "f": 0.0,
+   "fib": 0
+  },
+  "Aceite de oliva": {
+   "kcal": 884,
+   "p": 0.0,
+   "c": 0.0,
+   "f": 100.0,
+   "fib": 0
+  },
+  "Aceite en espray (1 s)": {
+   "kcal": 0,
+   "p": 0,
+   "c": 0,
+   "f": 0,
+   "fib": 0
+  },
+  "Limón": {
+   "kcal": 29,
+   "p": 1.1,
+   "c": 9.0,
+   "f": 0.3,
+   "fib": 2.8
+  },
+  "Whole Earth": {
+   "kcal": 0,
+   "p": 0,
+   "c": 0,
+   "f": 0,
+   "fib": 0
+  },
+  "Mantequilla de maní": {
+   "kcal": 600,
+   "p": 25.0,
+   "c": 12.0,
+   "f": 50.0,
+   "fib": 6.0
+  },
+  "Almendras": {
+   "kcal": 600,
+   "p": 21.0,
+   "c": 9.0,
+   "f": 50.0,
+   "fib": 12.0
+  }
+ }
+}
