@@ -63,7 +63,7 @@ Déficit                                      = −833 kcal/día
 
 | Macro | Objetivo | Por qué |
 |---|---|---|
-| **Proteína** | **195 g** (2,0 g/kg) | Sube de los 182 g del plan viejo. Cuanto más agresivo el déficit, más decide la proteína si lo que pierdes es grasa o músculo. Siendo vegetariano apuntas más alto: menos leucina por gramo. |
+| **Proteína** | **178 g** (1,8 g/kg) | En déficit la proteína decide si pierdes grasa o músculo. Estaba en 2,0 g/kg, y bajó por una razón concreta: a 1.985 kcal, 196 g de proteína son el 39% de las calorías, y eso obliga a meterle cottage a todos los platos. 1,8 g/kg sigue de lleno en el rango que conserva masa magra (1,6–2,2) y le devuelve libertad a la comida. |
 | **Grasa** | **58 g** (0,6 g/kg) — piso | Protege la producción hormonal. No bajes de aquí por querer más carbos. |
 | **Carbos** | **~170 g** | Lo que queda. |
 | **Fibra** | **38 g +** | El doble del promedio australiano. Con LDL en 3,4 esto es tratamiento, no adorno. |
@@ -71,9 +71,9 @@ Déficit                                      = −833 kcal/día
 ### El ciclado de carbos se muere aquí, y es mejor así
 
 El plan viejo ciclaba carbos: 225 g los días de entreno, 143 g los de descanso.
-Con 195 g de proteína y el piso de 58 g de grasa, eso son 1.302 kcal fijas de 1.985 —
-**quedan 683 kcal de carbos, y no hay suficiente presupuesto para ciclar nada.**
-Lo intenté y los días de descanso no cerraban: se pasaban 120–190 kcal todos.
+Con la proteína y el piso de grasa fijos quedan unas 760 kcal de carbos —
+**no hay presupuesto para ciclar nada.** Lo intenté y los días de descanso no cerraban:
+se pasaban 120–190 kcal todos.
 
 Así que: **un solo número todos los días, 1.985 kcal.** Los carbos se mueven *dentro* del día,
 no entre días — la mayoría en la comida antes y después de entrenar. Es más fácil de seguir
@@ -177,15 +177,15 @@ Cocinas al tamaño máximo que aguanta la olla, no la porción del día.
 
 ### El domingo — cuatro tandas, en orden
 
-La olla queda ocupada **~2 h 50 min**, casi todo desatendido.
+La olla queda ocupada **~3 h**, casi todo desatendido.
 
 | | Qué | Olla | Rinde |
 |---|---|---|---|
 | 1 | **12 huevos duros** | 5 min presión + 5 natural + hielo | toda la semana |
-| 2 | **Chili de frijoles negros** `d5` | Pressure cook 30 min, natural | ×4 · nevera 5 días · congela |
-| 3 | **Curry marroquí de garbanzos** `d2` | Pressure cook 8 min, natural | ×4 · nevera 4 días · congela |
-| 4 | **Dahl de lentejas rojas** `l1` | Pressure cook 5 min, natural | ×4 · nevera 4 días · congela |
-| 5 | **Overnight oats** `b3` | sin olla, 5 min | ×4 frascos · nevera 4 días |
+| 2 | **Dal makhani** `d1` | Pressure cook 25 min, natural | ×4 · nevera 4 días · congela |
+| 3 | **Chili de tres frijoles** `d2` | Pressure cook 30 min, natural | ×4 · nevera 5 días · congela |
+| 4 | **Chana masala** `l1` | Pressure cook 8 min, natural | ×4 · nevera 4 días · congela |
+| 5 | **Avena cremosa** `b3` | Slow cook 20 min | ×4 frascos · nevera 4 días |
 | 6 | **Arroz al caldo** | Pressure cook 5 min, natural 10 | 6 porciones |
 | — | **2 L de yogurt** *(de noche)* | Yogurt, 9 h | ~120 g de proteína |
 
@@ -211,8 +211,9 @@ El bot ya separa las tres columnas: `/receta l1 x4` te da las cantidades de cada
 
 | | Por qué |
 |---|---|
-| `b1` `b5` `d1` — huevo revuelto y omelette | Recalentado es horrible. 10 min al momento |
-| `d3` `d6` `d7` — tofu sellado | Pierde la costra. Y el edamame recalentado se arruga |
+| `b2` — huevos pericos | Recalentados no son lo mismo. 15 min al momento |
+| `d7` — tofu al ajillo | Pierde la costra si lo recalientas. 15 min |
+| `l2` — risotto | Recalentado pierde la textura. Máximo 2 porciones |
 
 Son los platos de 10 minutos. No todo tiene que salir del congelador.
 
@@ -220,58 +221,61 @@ Son los platos de 10 minutos. No todo tiene que salir del congelador.
 
 ## 05 · Las recetas
 
-31 recetas. Los macros salen de `data/foods.json`, no están escritos a mano.
+29 recetas, elegidas por sabor y construidas alrededor de la olla: chana masala, dal makhani,
+risotto de champiñones, ajiaco, feijoada, frijoles paisas con chicharrón de tofu, chili con
+chocolate amargo, bolognesa de carne de soya. Los macros salen de `data/foods.json`, no están
+escritos a mano.
+
+**Todo sigue siendo vegetariano, sin pescado y sin tahini.**
 
 **Desayunos**
 
 | ID | Receta | kcal | P | C | G | Fibra |
 |---|---|---|---|---|---|---|
-| `b1` | Huevos rancheros en la olla | 473 | **45 g** | 41 g | 12 g | 9 g |
-| `b2` | Bowl de yogurt casero con avena y berries | 542 | **54 g** | 48 g | 13 g | 9 g |
-| `b3` | Overnight oats proteicos | 571 | **50 g** | 51 g | 17 g | 9 g |
-| `b4` | Avena de la olla con proteína y banana | 547 | **43 g** | 65 g | 13 g | 8 g |
-| `b5` | Omelette de espinaca, champiñones y cottage | 431 | **54 g** | 9 g | 19 g | 4 g |
-| `b6` | Arepas caseras con huevos pericos | 537 | **45 g** | 56 g | 13 g | 3 g |
-| `b7` | Bowl de yogurt y proteína (sin avena) | 458 | **58 g** | 29 g | 11 g | 5 g |
+| `b1` | Shakshuka | 525 | **52 g** | 33 g | 20 g | 6 g |
+| `b2` | Huevos pericos con arepa y aguacate | 475 | **47 g** | 32 g | 17 g | 4 g |
+| `b3` | Avena cremosa de la olla con banana y canela | 455 | **35 g** | 56 g | 10 g | 7 g |
+| `b4` | Bowl de yogurt con granola, mango y berries | 437 | **46 g** | 48 g | 6 g | 6 g |
+| `b5` | Tortilla española de papa y cebolla | 525 | **50 g** | 39 g | 18 g | 4 g |
+| `b6` | Pancakes proteicos de avena y banana | 468 | **51 g** | 51 g | 5 g | 8 g |
 
 **Almuerzos**
 
 | ID | Receta | kcal | P | C | G | Fibra |
 |---|---|---|---|---|---|---|
-| `l1` | Dahl de lentejas rojas (olla, 5 min) | 695 | **49 g** | 90 g | 8 g | 17 g |
-| `l2` | Bowl de garbanzos al curry con arroz al caldo | 716 | **52 g** | 87 g | 15 g | 19 g |
-| `l3` | Pasta con Dolmio y tofu desmenuzado | 672 | **48 g** | 69 g | 20 g | 12 g |
-| `l4` | Wrap de tofu al curry | 620 | **49 g** | 50 g | 22 g | 10 g |
-| `l5` | Ensalada tibia de papa y huevo (olla, 8 min) | 620 | **62 g** | 56 g | 15 g | 9 g |
-| `l6` | Burrito bowl de frijoles refritos y arroz al caldo | 597 | **47 g** | 76 g | 8 g | 13 g |
-| `l7` | Ensalada grande de tofu y edamame | 615 | **51 g** | 29 g | 32 g | 17 g |
+| `l1` | Chana masala | 576 | **39 g** | 72 g | 13 g | 14 g |
+| `l2` | Risotto de champiñones | 587 | **43 g** | 57 g | 20 g | 4 g |
+| `l3` | Ajiaco vegetariano | 551 | **35 g** | 74 g | 14 g | 10 g |
+| `l4` | Burrito bowl de carne de soya | 590 | **43 g** | 72 g | 15 g | 18 g |
+| `l5` | Frijoles paisas con chicharrón de tofu | 597 | **36 g** | 67 g | 18 g | 13 g |
+| `l6` | Curry rojo tailandés de tofu y garbanzos | 579 | **38 g** | 54 g | 22 g | 15 g |
 
 **Cenas**
 
 | ID | Receta | kcal | P | C | G | Fibra |
 |---|---|---|---|---|---|---|
-| `d1` | Revuelto grande de espinaca y cottage (bajo en carbos) | 541 | **70 g** | 14 g | 20 g | 7 g |
-| `d2` | Curry marroquí de garbanzos y espinaca (olla, 8 min) | 603 | **52 g** | 59 g | 15 g | 21 g |
-| `d3` | Tofu sellado con verduras y arroz al caldo | 631 | **49 g** | 49 g | 24 g | 13 g |
-| `d4` | Sopa de lentejas y verduras (olla, 9 min) | 631 | **47 g** | 63 g | 14 g | 18 g |
-| `d5` | Chili de frijoles negros (olla, 30 min) | 643 | **51 g** | 64 g | 14 g | 19 g |
-| `d6` | Salteado de edamame y tofu | 641 | **50 g** | 60 g | 22 g | 18 g |
-| `d7` | Tofu y verduras al wok (sin arroz) | 591 | **50 g** | 22 g | 31 g | 14 g |
+| `d1` | Dal makhani | 572 | **49 g** | 56 g | 12 g | 16 g |
+| `d2` | Chili de tres frijoles con chocolate amargo | 576 | **38 g** | 59 g | 18 g | 19 g |
+| `d3` | Bolognesa de carne de soya | 529 | **37 g** | 68 g | 12 g | 14 g |
+| `d4` | Feijoada vegetariana | 578 | **36 g** | 70 g | 16 g | 20 g |
+| `d5` | Lentejas guisadas con plátano maduro | 550 | **36 g** | 70 g | 10 g | 13 g |
+| `d6` | Sopa cremosa de tomate rostizado y lenteja roja | 560 | **42 g** | 57 g | 14 g | 12 g |
+| `d7` | Tofu al ajillo con brócoli | 562 | **45 g** | 36 g | 24 g | 11 g |
 
 **Snacks**
 
 | ID | Receta | kcal | P | C | G | Fibra |
 |---|---|---|---|---|---|---|
-| `s1` | Batido de proteína con berries | 195 | **26 g** | 17 g | 2 g | 6 g |
-| `s10` | Puñado de almendras (pesado) | 150 | **5 g** | 2 g | 12 g | 3 g |
-| `s2` | Cottage con sriracha y tomate | 198 | **26 g** | 11 g | 5 g | 1 g |
-| `s3` | Dos huevos duros de la olla | 143 | **13 g** | 1 g | 10 g | 0 g |
-| `s4` | Yogurt casero con Whole Earth y canela | 165 | **24 g** | 12 g | 1 g | 0 g |
-| `s5` | Edamame con sal | 182 | **18 g** | 14 g | 8 g | 8 g |
-| `s6` | Tajada grande de sandia | 150 | **3 g** | 38 g | 1 g | 2 g |
-| `s7` | Batido pre-gym de banana y avena | 406 | **43 g** | 49 g | 4 g | 5 g |
-| `s8` | Manzana con yogurt | 193 | **15 g** | 33 g | 1 g | 4 g |
-| `s9` | Manzana con mantequilla de maní | 214 | **6 g** | 28 g | 10 g | 6 g |
+| `s1` | Garbanzos crocantes especiados | 188 | **8 g** | 19 g | 8 g | 7 g |
+| `s10` | Cottage con tomate y sriracha | 198 | **26 g** | 11 g | 5 g | 1 g |
+| `s2` | Batido de mango con yogurt y proteína | 289 | **36 g** | 32 g | 2 g | 2 g |
+| `s3` | Dos huevos duros | 143 | **13 g** | 1 g | 10 g | 0 g |
+| `s4` | Yogurt con berries y canela | 205 | **25 g** | 20 g | 1 g | 3 g |
+| `s5` | Edamame con sal y chili | 182 | **18 g** | 14 g | 8 g | 8 g |
+| `s6` | Hummus con bastones de verdura | 192 | **8 g** | 21 g | 8 g | 8 g |
+| `s7` | Tostada de aguacate con huevo | 242 | **17 g** | 17 g | 12 g | 5 g |
+| `s8` | Manzana con mantequilla de maní | 214 | **6 g** | 28 g | 10 g | 6 g |
+| `s9` | Batido pre-gym de banana y avena | 406 | **43 g** | 49 g | 4 g | 5 g |
 
 ### La regla que resume todo
 
@@ -285,120 +289,118 @@ Cada día está armado y comprobado contra los objetivos, no estimado a ojo.
 
 | Día | | Menú | kcal | P | C | G | Fibra |
 |---|---|---|---|---|---|---|---|
-| **Lunes** | entreno | Omelette de espinaca, champiñones y cottage · Ensalada tibia de papa y huevo (olla, 8 min) · Dos huevos duros de la olla · Manzana con yogurt · Curry marroquí de garbanzos y espinaca (olla, 8 min) | 1990 | **196** | 158 | 60 | 38 |
-| **Martes** | entreno | Bowl de yogurt y proteína (sin avena) · Burrito bowl de frijoles refritos y arroz al caldo · Yogurt casero con Whole Earth y canela · Edamame con sal · Tofu y verduras al wok (sin arroz) | 1993 | **197** | 153 | 59 | 40 |
-| **Miércoles** | descanso | Overnight oats proteicos · Ensalada grande de tofu y edamame · Batido de proteína con berries · Revuelto grande de espinaca y cottage (bajo en carbos) | 1922 | **197** | 111 | 71 | 39 |
-| **Jueves** | entreno | Omelette de espinaca, champiñones y cottage · Wrap de tofu al curry · Batido de proteína con berries · Manzana con yogurt · Curry marroquí de garbanzos y espinaca (olla, 8 min) | 2042 | **196** | 168 | 59 | 45 |
-| **Viernes** | entreno | Bowl de yogurt y proteína (sin avena) · Ensalada tibia de papa y huevo (olla, 8 min) · Dos huevos duros de la olla · Edamame con sal · Sopa de lentejas y verduras (olla, 9 min) | 2034 | **198** | 163 | 58 | 40 |
-| **Sábado** | descanso | Bowl de yogurt casero con avena y berries · Bowl de garbanzos al curry con arroz al caldo · Edamame con sal · Revuelto grande de espinaca y cottage (bajo en carbos) | 1981 | **194** | 163 | 56 | 43 |
-| **Domingo** | descanso | Overnight oats proteicos · Ensalada grande de tofu y edamame · Batido de proteína con berries · Chili de frijoles negros (olla, 30 min) | 2024 | **178** | 161 | 65 | 51 |
-| | | **Promedio diario** | **1998** | **193** | 153 | 61 | 42 |
+| **Lunes** | entreno | Bowl de yogurt con granola, mango y berries · Burrito bowl de carne de soya · Edamame con sal y chili · Cottage con tomate y sriracha · Tofu al ajillo con brócoli | 1969 | **178** | 181 | 58 | 44 |
+| **Martes** | entreno | Shakshuka · Curry rojo tailandés de tofu y garbanzos · Yogurt con berries y canela · Cottage con tomate y sriracha · Bolognesa de carne de soya | 2036 | **178** | 186 | 60 | 39 |
+| **Miércoles** | descanso | Tortilla española de papa y cebolla · Ajiaco vegetariano · Edamame con sal y chili · Cottage con tomate y sriracha · Dal makhani | 2028 | **178** | 194 | 57 | 39 |
+| **Jueves** | entreno | Huevos pericos con arepa y aguacate · Burrito bowl de carne de soya · Yogurt con berries y canela · Edamame con sal y chili · Tofu al ajillo con brócoli | 2014 | **178** | 174 | 65 | 44 |
+| **Viernes** | entreno | Shakshuka · Curry rojo tailandés de tofu y garbanzos · Yogurt con berries y canela · Cottage con tomate y sriracha · Chili de tres frijoles con chocolate amargo | 2083 | **179** | 177 | 66 | 44 |
+| **Sábado** | descanso | Tortilla española de papa y cebolla · Frijoles paisas con chicharrón de tofu · Yogurt con berries y canela · Edamame con sal y chili · Dal makhani | 2081 | **178** | 196 | 57 | 44 |
+| **Domingo** | descanso | Huevos pericos con arepa y aguacate · Chana masala · Batido de mango con yogurt y proteína · Dos huevos duros · Sopa cremosa de tomate rostizado y lenteja roja | 2043 | **177** | 194 | 56 | 32 |
+| | | **Promedio diario** | **2036** | **178** | 186 | 59 | 40 |
 
-Promedio real: **1.998 kcal · 193 g de proteína · 61 g de grasa · 42 g de fibra.**
-Déficit de 820 kcal/día → **0,75 kg/semana.**
+Promedio real: **2.036 kcal · 178 g de proteína · 59 g de grasa · 40 g de fibra.**
+Déficit de 782 kcal/día → **0,71 kg/semana.**
+
+*Las recetas nuevas cuestan 0,04 kg por semana contra las anteriores. Es el precio de comer
+dal makhani y ajiaco en vez de cottage con tomate, y vale la pena: el plan que no sigues no
+adelgaza nada.*
 
 ### Detalle de cada receta
 
 ### Desayunos
 
-**`b1` Huevos rancheros en la olla** — 473 kcal · 45 g P · 41 g C · 12 g G · 9 g fibra  
-Huevo entero 100 g · Clara de huevo 200 g · Tomate 150 g · Espinaca 100 g · Frijoles refritos 80 g · Harina PAN 30 g
+**`b1` Shakshuka** — 525 kcal · 52 g P · 33 g C · 20 g G · 6 g fibra  
+Huevo entero 100 g · Clara de huevo 180 g · Tomate 180 g · Pimentón 90 g · Cebolla 55 g · Cottage alto en proteína 110 g · Pan integral 25 g · Aceite de oliva 5 g
 
-**`b2` Bowl de yogurt casero con avena y berries** — 542 kcal · 54 g P · 48 g C · 13 g G · 9 g fibra  
-Yogurt griego casero 300 g · Proteína en polvo 20 g · Avena en hojuelas 30 g · Berries congelados 120 g · Mantequilla de maní 15 g
+**`b2` Huevos pericos con arepa y aguacate** — 475 kcal · 47 g P · 32 g C · 17 g G · 4 g fibra  
+Huevo entero 100 g · Clara de huevo 180 g · Tomate 90 g · Cebolla larga 35 g · Harina PAN 25 g · Aguacate 25 g · Cottage alto en proteína 90 g
 
-**`b3` Overnight oats proteicos** — 571 kcal · 50 g P · 51 g C · 17 g G · 9 g fibra  
-Avena en hojuelas 40 g · Cottage alto en proteína 200 g · Yogurt griego casero 150 g · Berries congelados 100 g · Mantequilla de maní 15 g
+**`b3` Avena cremosa de la olla con banana y canela** — 455 kcal · 35 g P · 56 g C · 10 g G · 7 g fibra  
+Avena en hojuelas 40 g · Leche descremada 180 g · Proteína en polvo 25 g · Banana 90 g · Mantequilla de maní 10 g
 
-**`b4` Avena de la olla con proteína y banana** — 547 kcal · 43 g P · 65 g C · 13 g G · 8 g fibra  
-Avena en hojuelas 40 g · Leche descremada 250 g · Proteína en polvo 30 g · Banana 110 g · Mantequilla de maní 15 g
+**`b4` Bowl de yogurt con granola, mango y berries** — 437 kcal · 46 g P · 48 g C · 6 g G · 6 g fibra  
+Yogurt griego casero 270 g · Proteína en polvo 20 g · Granola 20 g · Mango 90 g · Berries congelados 70 g
 
-**`b5` Omelette de espinaca, champiñones y cottage** — 431 kcal · 54 g P · 9 g C · 19 g G · 4 g fibra  
-Huevo entero 100 g · Clara de huevo 200 g · Espinaca 120 g · Champiñones 100 g · Cottage alto en proteína 100 g · Aceite de oliva 5 g
+**`b5` Tortilla española de papa y cebolla** — 525 kcal · 50 g P · 39 g C · 18 g G · 4 g fibra  
+Papa 160 g · Cebolla 55 g · Huevo entero 100 g · Clara de huevo 180 g · Cottage alto en proteína 110 g · Aceite de oliva 5 g
 
-**`b6` Arepas caseras con huevos pericos** — 537 kcal · 45 g P · 56 g C · 13 g G · 3 g fibra  
-Harina PAN 60 g · Huevo entero 100 g · Clara de huevo 150 g · Tomate 100 g · Cebolla larga 30 g · Cottage alto en proteína 80 g
-
-**`b7` Bowl de yogurt y proteína (sin avena)** — 458 kcal · 58 g P · 29 g C · 11 g G · 5 g fibra  
-Yogurt griego casero 300 g · Proteína en polvo 30 g · Berries congelados 100 g · Mantequilla de maní 15 g
+**`b6` Pancakes proteicos de avena y banana** — 468 kcal · 51 g P · 51 g C · 5 g G · 8 g fibra  
+Avena en hojuelas 35 g · Clara de huevo 150 g · Banana 70 g · Proteína en polvo 25 g · Yogurt griego casero 90 g · Berries congelados 70 g
 
 ### Almuerzos
 
-**`l1` Dahl de lentejas rojas (olla, 5 min)** — 695 kcal · 49 g P · 90 g C · 8 g G · 17 g fibra  
-Lentejas rojas secas 100 g · Tomate 150 g · Espinaca 150 g · Yogurt griego casero 150 g · Arroz basmati crudo 40 g · Aceite de oliva 5 g
+**`l1` Chana masala** — 576 kcal · 39 g P · 72 g C · 13 g G · 14 g fibra  
+Garbanzos de lata 180 g · Tomate 160 g · Cebolla 70 g · Yogurt griego casero 110 g · Arroz basmati crudo 30 g · Cottage alto en proteína 90 g · Aceite de oliva 5 g
 
-**`l2` Bowl de garbanzos al curry con arroz al caldo** — 716 kcal · 52 g P · 87 g C · 15 g G · 19 g fibra  
-Garbanzos de lata 240 g · Tomate 150 g · Espinaca 120 g · Yogurt griego casero 150 g · Arroz basmati crudo 40 g · Cottage alto en proteína 100 g · Aceite de oliva 5 g
+**`l2` Risotto de champiñones** — 587 kcal · 43 g P · 57 g C · 20 g G · 4 g fibra  
+Arroz arborio crudo 50 g · Champiñones 220 g · Cebolla 45 g · Caldo Campbell's 360 g · Parmesano 20 g · Ricotta light 55 g · Cottage alto en proteína 140 g · Aceite de oliva 5 g
 
-**`l3` Pasta con Dolmio y tofu desmenuzado** — 672 kcal · 48 g P · 69 g C · 20 g G · 12 g fibra  
-Pasta cruda 70 g · Tofu firme 200 g · Dolmio 150 g · Espinaca 150 g · Champiñones 100 g
+**`l3` Ajiaco vegetariano** — 551 kcal · 35 g P · 74 g C · 14 g G · 10 g fibra  
+Papa criolla 140 g · Papa 90 g · Maíz tierno 80 g · Caldo Campbell's 450 g · Crema light 20 g · Alcaparras 15 g · Aguacate 35 g · Cottage alto en proteína 200 g
 
-**`l4` Wrap de tofu al curry** — 620 kcal · 49 g P · 50 g C · 22 g G · 10 g fibra  
-Wrap Mission wholegrain 71 g · Tofu firme 200 g · Espinaca 80 g · Zanahoria 80 g · Yogurt griego casero 100 g · Limón 10 g
+**`l4` Burrito bowl de carne de soya** — 590 kcal · 43 g P · 72 g C · 15 g G · 18 g fibra  
+Carne de soya seca (TVP) 35 g · Arroz basmati crudo 30 g · Frijoles refritos 110 g · Tomate 110 g · Maíz tierno 55 g · Aguacate 35 g · Cottage alto en proteína 110 g · Limón 15 g · Aceite de oliva 5 g
 
-**`l5` Ensalada tibia de papa y huevo (olla, 8 min)** — 620 kcal · 62 g P · 56 g C · 15 g G · 9 g fibra  
-Papa 250 g · Huevo entero 100 g · Clara de huevo 200 g · Cottage alto en proteína 150 g · Espinaca 100 g · Tomate 100 g · Limón 15 g
+**`l5` Frijoles paisas con chicharrón de tofu** — 597 kcal · 36 g P · 67 g C · 18 g G · 13 g fibra  
+Frijol rojo seco 50 g · Plátano maduro 55 g · Tofu firme 140 g · Tomate 90 g · Cebolla 55 g · Arroz basmati crudo 20 g · Aceite de oliva 5 g
 
-**`l6` Burrito bowl de frijoles refritos y arroz al caldo** — 597 kcal · 47 g P · 76 g C · 8 g G · 13 g fibra  
-Arroz basmati crudo 50 g · Frijoles refritos 180 g · Salsa mild 60 g · Cottage alto en proteína 250 g · Espinaca 80 g · Limón 15 g
-
-**`l7` Ensalada grande de tofu y edamame** — 615 kcal · 51 g P · 29 g C · 32 g G · 17 g fibra  
-Tofu firme 200 g · Edamame congelado 120 g · Espinaca 150 g · Tomate 150 g · Zanahoria 80 g · Limón 15 g · Aceite de oliva 8 g
+**`l6` Curry rojo tailandés de tofu y garbanzos** — 579 kcal · 38 g P · 54 g C · 22 g G · 15 g fibra  
+Tofu firme 160 g · Garbanzos de lata 90 g · Leche de coco light 65 g · Pasta de curry rojo 20 g · Pimentón 90 g · Habichuela 90 g · Espinaca 70 g · Arroz jazmín crudo 25 g · Limón 15 g
 
 ### Cenas
 
-**`d1` Revuelto grande de espinaca y cottage (bajo en carbos)** — 541 kcal · 70 g P · 14 g C · 20 g G · 7 g fibra  
-Huevo entero 100 g · Clara de huevo 250 g · Espinaca 200 g · Champiñones 150 g · Cottage alto en proteína 150 g · Cebolla larga 30 g · Aceite de oliva 5 g
+**`d1` Dal makhani** — 572 kcal · 49 g P · 56 g C · 12 g G · 16 g fibra  
+Lentejas negras secas 55 g · Frijol rojo seco 20 g · Tomate 140 g · Cebolla 65 g · Yogurt griego casero 110 g · Crema light 20 g · Cottage alto en proteína 140 g · Aceite de oliva 5 g
 
-**`d2` Curry marroquí de garbanzos y espinaca (olla, 8 min)** — 603 kcal · 52 g P · 59 g C · 15 g G · 21 g fibra  
-Garbanzos de lata 240 g · Tomate 200 g · Espinaca 200 g · Yogurt griego casero 150 g · Cottage alto en proteína 100 g · Aceite de oliva 5 g
+**`d2` Chili de tres frijoles con chocolate amargo** — 576 kcal · 38 g P · 59 g C · 18 g G · 19 g fibra  
+Frijoles negros secos 30 g · Frijol rojo seco 20 g · Garbanzos de lata 70 g · Tomate 160 g · Pimentón 90 g · Cebolla 65 g · Chocolate 85% 5 g · Cottage alto en proteína 140 g · Aguacate 25 g · Aceite de oliva 5 g
 
-**`d3` Tofu sellado con verduras y arroz al caldo** — 631 kcal · 49 g P · 49 g C · 24 g G · 13 g fibra  
-Tofu firme 260 g · Arroz basmati crudo 35 g · Brócoli 150 g · Calabacín 150 g · Zanahoria 80 g · Cebolla larga 30 g
+**`d3` Bolognesa de carne de soya** — 529 kcal · 37 g P · 68 g C · 12 g G · 14 g fibra  
+Carne de soya seca (TVP) 40 g · Pasta cruda 50 g · Pasta de tomate 25 g · Tomate 160 g · Cebolla 55 g · Zanahoria 45 g · Apio 35 g · Parmesano 20 g · Aceite de oliva 5 g
 
-**`d4` Sopa de lentejas y verduras (olla, 9 min)** — 631 kcal · 47 g P · 63 g C · 14 g G · 18 g fibra  
-Lentejas cafés secas 80 g · Zanahoria 120 g · Calabacín 150 g · Tomate 150 g · Espinaca 100 g · Caldo Campbell's 500 g · Cottage alto en proteína 150 g · Aceite de oliva 8 g
+**`d4` Feijoada vegetariana** — 578 kcal · 36 g P · 70 g C · 16 g G · 20 g fibra  
+Frijoles negros secos 55 g · Tempeh 80 g · Naranja 70 g · Cebolla 65 g · Tomate 90 g · Arroz basmati crudo 25 g · Espinaca 140 g · Aceite de oliva 5 g
 
-**`d5` Chili de frijoles negros (olla, 30 min)** — 643 kcal · 51 g P · 64 g C · 14 g G · 19 g fibra  
-Frijoles negros secos 80 g · Tomate 200 g · Pimentón 100 g · Espinaca 100 g · Salsa mild 60 g · Yogurt griego casero 150 g · Cottage alto en proteína 100 g · Aceite de oliva 8 g
+**`d5` Lentejas guisadas con plátano maduro** — 550 kcal · 36 g P · 70 g C · 10 g G · 13 g fibra  
+Lentejas cafés secas 65 g · Plátano maduro 70 g · Tomate 120 g · Cebolla 55 g · Zanahoria 65 g · Cottage alto en proteína 140 g · Aceite de oliva 5 g
 
-**`d6` Salteado de edamame y tofu** — 641 kcal · 50 g P · 60 g C · 22 g G · 18 g fibra  
-Edamame congelado 150 g · Tofu firme 150 g · Brócoli 150 g · Habichuela 100 g · Cebolla larga 40 g · Arroz basmati crudo 40 g
+**`d6` Sopa cremosa de tomate rostizado y lenteja roja** — 560 kcal · 42 g P · 57 g C · 14 g G · 12 g fibra  
+Tomate 320 g · Lentejas rojas secas 50 g · Cebolla 65 g · Caldo Campbell's 360 g · Ricotta light 45 g · Cottage alto en proteína 140 g · Pan integral 20 g · Aceite de oliva 5 g
 
-**`d7` Tofu y verduras al wok (sin arroz)** — 591 kcal · 50 g P · 22 g C · 31 g G · 14 g fibra  
-Tofu firme 250 g · Brócoli 200 g · Champiñones 150 g · Habichuela 100 g · Cebolla larga 40 g · Aceite de oliva 8 g
+**`d7` Tofu al ajillo con brócoli** — 562 kcal · 45 g P · 36 g C · 24 g G · 11 g fibra  
+Tofu firme 210 g · Brócoli 180 g · Champiñones 140 g · Cebolla larga 35 g · Salsa de soya 20 g · Arroz basmati crudo 25 g · Aceite de oliva 5 g
 
 ### Snacks
 
-**`s1` Batido de proteína con berries** — 195 kcal · 26 g P · 17 g C · 2 g G · 6 g fibra  
-Proteína en polvo 30 g · Berries congelados 150 g
+**`s1` Garbanzos crocantes especiados** — 188 kcal · 8 g P · 19 g C · 8 g G · 7 g fibra  
+Garbanzos de lata 120 g · Aceite de oliva 5 g
 
-**`s10` Puñado de almendras (pesado)** — 150 kcal · 5 g P · 2 g C · 12 g G · 3 g fibra  
-Almendras 25 g
-
-**`s2` Cottage con sriracha y tomate** — 198 kcal · 26 g P · 11 g C · 5 g G · 1 g fibra  
+**`s10` Cottage con tomate y sriracha** — 198 kcal · 26 g P · 11 g C · 5 g G · 1 g fibra  
 Cottage alto en proteína 200 g · Tomate 100 g
 
-**`s3` Dos huevos duros de la olla** — 143 kcal · 13 g P · 1 g C · 10 g G · 0 g fibra  
+**`s2` Batido de mango con yogurt y proteína** — 289 kcal · 36 g P · 32 g C · 2 g G · 2 g fibra  
+Mango 150 g · Yogurt griego casero 150 g · Proteína en polvo 25 g
+
+**`s3` Dos huevos duros** — 143 kcal · 13 g P · 1 g C · 10 g G · 0 g fibra  
 Huevo entero 100 g
 
-**`s4` Yogurt casero con Whole Earth y canela** — 165 kcal · 24 g P · 12 g C · 1 g G · 0 g fibra  
-Yogurt griego casero 250 g · Whole Earth 5 g
+**`s4` Yogurt con berries y canela** — 205 kcal · 25 g P · 20 g C · 1 g G · 3 g fibra  
+Yogurt griego casero 250 g · Berries congelados 80 g · Whole Earth 5 g
 
-**`s5` Edamame con sal** — 182 kcal · 18 g P · 14 g C · 8 g G · 8 g fibra  
+**`s5` Edamame con sal y chili** — 182 kcal · 18 g P · 14 g C · 8 g G · 8 g fibra  
 Edamame congelado 150 g
 
-**`s6` Tajada grande de sandia** — 150 kcal · 3 g P · 38 g C · 1 g G · 2 g fibra  
-Sandía 500 g
+**`s6` Hummus con bastones de verdura** — 192 kcal · 8 g P · 21 g C · 8 g G · 8 g fibra  
+Hummus 80 g · Zanahoria 100 g · Pepino 100 g
 
-**`s7` Batido pre-gym de banana y avena** — 406 kcal · 43 g P · 49 g C · 4 g G · 5 g fibra  
-Yogurt griego casero 200 g · Banana 110 g · Avena en hojuelas 20 g · Proteína en polvo 25 g
+**`s7` Tostada de aguacate con huevo** — 242 kcal · 17 g P · 17 g C · 12 g G · 5 g fibra  
+Pan integral 30 g · Aguacate 40 g · Huevo entero 50 g · Clara de huevo 60 g
 
-**`s8` Manzana con yogurt** — 193 kcal · 15 g P · 33 g C · 1 g G · 4 g fibra  
-Manzana 180 g · Yogurt griego casero 150 g
-
-**`s9` Manzana con mantequilla de maní** — 214 kcal · 6 g P · 28 g C · 10 g G · 6 g fibra  
+**`s8` Manzana con mantequilla de maní** — 214 kcal · 6 g P · 28 g C · 10 g G · 6 g fibra  
 Manzana 180 g · Mantequilla de maní 20 g
+
+**`s9` Batido pre-gym de banana y avena** — 406 kcal · 43 g P · 49 g C · 4 g G · 5 g fibra  
+Yogurt griego casero 200 g · Banana 110 g · Avena en hojuelas 20 g · Proteína en polvo 25 g
 
 ---
 
@@ -526,53 +528,16 @@ Lo que no compras, no te lo comes. Es la regla más barata del plan.
 
 ---
 
-## 09 · Lista de compras (una semana)
+## 09 · Lista de compras
 
-### Proteína — lo que de verdad falta
-| Qué | Cuánto | Por qué |
-|---|---|---|
-| **Proteína en polvo** | 1 kg | Sin esto los 195 g/día no cuadran. No es opcional |
-| **Leche en polvo descremada** | 1 kg | 35 g P/100 g. Motor del yogurt de la olla |
-| **Leche descremada** | 4 L | 3 para el yogurt, 1 para cocinar |
-| **Cottage cheese alto en proteína** (Bulla) | 3 × 500 g | 12,5 g de proteína por 100 kcal. Aparece en 9 recetas |
-| **Tofu firme** | 4 × 450 g | 22 g por serve. Sauté/sear high, nunca presión |
-| **Claras congeladas** (Farm Pride) | 2 pouches | Tu proteína más eficiente |
-| **Huevos** | 2 docenas | 12 duros en la olla el domingo |
-| **Yogurt griego natural** | 1 kg | Hasta que el tuyo esté listo |
-| **Creatina monohidrato** | 500 g | 5 g/día. Creatinina 56 + vegetariano = el perfil que más responde. Avísale al médico |
+**Se genera sola: `python3 mercado.py` escribe `LISTA_MERCADO.md`.**
 
-### Grasas — ya resuelto
-**La mantequilla de maní ya está en tu casa**, así que esta sección no cuesta nada. Es la que
-sostiene el piso de 58 g de grasa: sin ella el plan calculado caía a 44 g, por debajo del piso
-hormonal. Aparece en `b2`, `b3`, `b4`, `b7` y `s9`.
+Suma los ingredientes de los 7 días del menú, resta lo que hay en `data/pantry.json` y convierte
+el resto a unidades de compra. Cambias el menú o la despensa, corres el comando, y la lista queda
+al día. La de esta semana son **37 líneas**, porque las recetas nuevas traen despensa nueva:
+carne de soya, arroz arborio, pasta de curry rojo, leche de coco light, lentejas negras, guascas.
 
-**Pésala siempre.** La cucharada a ojo son 35–40 g: 130 kcal fantasma cada vez. Es el error de
-conteo más común de cualquier despensa.
-
-*Opcional:* almendras (500 g). Solo aparecen en `s10` y la mantequilla de maní ya cubre la grasa,
-así que no son necesarias — pero traen el doble de fibra (12 g/100 g contra 6 g) y un puñado
-pesado es más difícil de sobrepasar que un frasco abierto.
-
-### Verdura de volumen — tu punto más débil
-Solo tienes espinaca, zanahoria y cebolla larga. En un déficit agresivo la verdura es lo que
-llena el plato sin costo calórico.
-
-Brócoli (3) · calabacín (5) · champiñones (750 g) · tomates (2 kg) · pimentón (3) ·
-habichuela (500 g) · coliflor (1) · **limones (6)**
-
-*Los limones no son decoración: la vitamina C triplica la absorción del hierro vegetal, y con
-ferritina en 50 siendo vegetariano eso importa. Y no tomes café ni té con las comidas de hierro.*
-
-### Congelados — comida de emergencia que no se echa a perder
-Edamame (1 kg — 12 g de proteína/100 g) · espinaca (1 kg) · berries (1 kg) · maíz (500 g)
-
-### Fruta
-Bananas (6) · manzanas (8)
-
-**Total: 9 líneas de proteína, una bandeja de verdura, cuatro bolsas del congelador.**
-El resto ya está en tu casa: las legumbres, el arroz, la pasta, la avena y la mantequilla de maní.
-
----
+Esa despensa se compra una vez y rinde meses. La compra de la semana siguiente vuelve a ser corta.
 
 ## 10 · El bot
 

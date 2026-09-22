@@ -11,21 +11,17 @@
   "tdee": 2818,
   "kcal_dia": 1985,
   "deficit_dia": 833,
-  "p": 195,
-  "c": 170,
+  "p": 178,
+  "c": 190,
   "f": 58,
   "fib": 38,
-  "actualizado": "2026-09-22"
+  "actualizado": "2026-09-22",
+  "nota_p": "1,8 g/kg. Bajó de 2,0 para que la comida pudiera ser rica: 2,0 g/kg a 1.985 kcal obliga a meter cottage en todo."
  },
  "recetas": {
   "b1": {
-   "n": "Huevos rancheros en la olla",
+   "n": "Shakshuka",
    "g": "desayuno",
-   "kcal": 473,
-   "p": 45,
-   "c": 41,
-   "f": 12,
-   "fib": 9,
    "ing": [
     [
      "Huevo entero",
@@ -33,119 +29,118 @@
     ],
     [
      "Clara de huevo",
-     200
+     180
     ],
     [
      "Tomate",
-     150
+     180
     ],
     [
-     "Espinaca",
+     "Pimentón",
+     90
+    ],
+    [
+     "Cebolla",
+     55
+    ],
+    [
+     "Cottage alto en proteína",
+     110
+    ],
+    [
+     "Pan integral",
+     25
+    ],
+    [
+     "Aceite de oliva",
+     5
+    ]
+   ],
+   "kcal": 525,
+   "p": 52,
+   "c": 33,
+   "f": 20,
+   "fib": 6,
+   "tanda": {
+    "max_porciones": 2,
+    "nevera_dias": 2,
+    "congela": false,
+    "nota": "La salsa sí se hace por tandas y se guarda; los huevos van al momento, encima."
+   },
+   "olla": {
+    "modo": "Sauté/sear",
+    "min": 18,
+    "liberacion": "—",
+    "pasos": [
+     "**Sauté/sear high** con el aceite: cebolla y pimentón en tiras, 6 min hasta que ablanden.",
+     "Comino, pimentón ahumado y una pizca de chili, 30 s. Ese tostado de las especias es toda la receta.",
+     "Tomate picado, 8 min a **Sauté/sear low** hasta que sea salsa espesa, no aguada.",
+     "Haz cuatro huecos con la cuchara. Casca los huevos y vierte las claras alrededor.",
+     "**Tapa sin presión** 5 min: la clara cuaja y la yema queda cremosa.",
+     "Cottage en cucharadas encima, fuera del fuego. Pan tostado para mojar."
+    ]
+   }
+  },
+  "b2": {
+   "n": "Huevos pericos con arepa y aguacate",
+   "g": "desayuno",
+   "ing": [
+    [
+     "Huevo entero",
      100
     ],
     [
-     "Frijoles refritos",
-     80
+     "Clara de huevo",
+     180
+    ],
+    [
+     "Tomate",
+     90
+    ],
+    [
+     "Cebolla larga",
+     35
     ],
     [
      "Harina PAN",
-     30
+     25
+    ],
+    [
+     "Aguacate",
+     25
+    ],
+    [
+     "Cottage alto en proteína",
+     90
     ]
    ],
-   "olla": {
-    "modo": "Sauté/sear low",
-    "min": 10,
-    "liberacion": "—",
-    "pasos": [
-     "**Sauté/sear high**: tomate con comino y chili, 3 min. Frijoles y espinaca, tapa 2 min.",
-     "Baja a **Sauté/sear low**. Huevos y claras batidos, revuelve constante 3 min.",
-     "**Apaga cuando todavía se vean húmedos**: se terminan con el calor residual.",
-     "Arepa de Harina PAN al lado (30 g de harina = arepa de ~110 kcal)."
-    ]
-   },
+   "kcal": 475,
+   "p": 47,
+   "c": 32,
+   "f": 17,
+   "fib": 4,
    "tanda": {
     "max_porciones": 1,
     "nevera_dias": 0,
     "congela": false,
-    "nota": "El huevo revuelto recalentado es horrible. 10 min al momento."
-   }
-  },
-  "b2": {
-   "n": "Bowl de yogurt casero con avena y berries",
-   "g": "desayuno",
-   "kcal": 542,
-   "p": 54,
-   "c": 48,
-   "f": 13,
-   "fib": 9,
-   "ing": [
-    [
-     "Yogurt griego casero",
-     300
-    ],
-    [
-     "Proteína en polvo",
-     20
-    ],
-    [
-     "Avena en hojuelas",
-     30
-    ],
-    [
-     "Berries congelados",
-     120
-    ],
-    [
-     "Mantequilla de maní",
-     15
+    "nota": "Los pericos recalentados no son lo mismo. 15 minutos al momento."
+   },
+   "olla": {
+    "modo": "Sauté/sear",
+    "min": 15,
+    "liberacion": "—",
+    "pasos": [
+     "Masa: 40 g de Harina PAN por 60 ml de agua tibia con sal. Amasa y reposa 5 min.",
+     "**Sauté/sear high**: asa la arepa 4 min por lado. Suena hueca cuando está.",
+     "Saca la arepa. Baja a **Sauté/sear low**: tomate y cebolla larga picados, 4 min.",
+     "Huevos y claras batidos, revuelve constante 3 min. **Apaga cuando todavía se vean húmedos.**",
+     "Aguacate en tajadas y cottage al lado. La arepa la haces del tamaño que tú decidas."
     ]
-   ]
+   }
   },
   "b3": {
-   "n": "Overnight oats proteicos",
+   "n": "Avena cremosa de la olla con banana y canela",
    "g": "desayuno",
-   "kcal": 571,
-   "p": 50,
-   "c": 51,
-   "f": 17,
-   "fib": 9,
-   "ing": [
-    [
-     "Avena en hojuelas",
-     40
-    ],
-    [
-     "Cottage alto en proteína",
-     200
-    ],
-    [
-     "Yogurt griego casero",
-     150
-    ],
-    [
-     "Berries congelados",
-     100
-    ],
-    [
-     "Mantequilla de maní",
-     15
-    ]
-   ],
-   "tanda": {
-    "max_porciones": 4,
-    "nevera_dias": 4,
-    "congela": false,
-    "nota": "4 frascos el domingo. Se come frío, cero cocina entre semana."
-   }
-  },
-  "b4": {
-   "n": "Avena de la olla con proteína y banana",
-   "g": "desayuno",
-   "kcal": 547,
-   "p": 43,
-   "c": 65,
-   "f": 13,
-   "fib": 8,
    "ing": [
     [
      "Avena en hojuelas",
@@ -153,885 +148,1198 @@
     ],
     [
      "Leche descremada",
-     250
-    ],
-    [
-     "Proteína en polvo",
-     30
-    ],
-    [
-     "Banana",
-     110
-    ],
-    [
-     "Mantequilla de maní",
-     15
-    ]
-   ]
-  },
-  "b5": {
-   "n": "Omelette de espinaca, champiñones y cottage",
-   "g": "desayuno",
-   "kcal": 431,
-   "p": 54,
-   "c": 9,
-   "f": 19,
-   "fib": 4,
-   "ing": [
-    [
-     "Huevo entero",
-     100
-    ],
-    [
-     "Clara de huevo",
-     200
-    ],
-    [
-     "Espinaca",
-     120
-    ],
-    [
-     "Champiñones",
-     100
-    ],
-    [
-     "Cottage alto en proteína",
-     100
-    ],
-    [
-     "Aceite de oliva",
-     5
-    ]
-   ],
-   "olla": {
-    "modo": "Sauté/sear low",
-    "min": 10,
-    "liberacion": "—",
-    "pasos": [
-     "**Sauté/sear high**: champiñones 3 min hasta que suelten y reabsorban el agua. Espinaca 1 min. Escurre.",
-     "Baja a **Sauté/sear low**. Huevos + claras batidos, 2 min sin tocar hasta que cuaje el fondo.",
-     "Dobla, 1 min más. Cottage encima **fuera del fuego**."
-    ]
-   },
-   "tanda": {
-    "max_porciones": 1,
-    "nevera_dias": 0,
-    "congela": false,
-    "nota": "Al momento. 10 minutos."
-   }
-  },
-  "b6": {
-   "n": "Arepas caseras con huevos pericos",
-   "g": "desayuno",
-   "kcal": 537,
-   "p": 45,
-   "c": 56,
-   "f": 13,
-   "fib": 3,
-   "ing": [
-    [
-     "Harina PAN",
-     60
-    ],
-    [
-     "Huevo entero",
-     100
-    ],
-    [
-     "Clara de huevo",
-     150
-    ],
-    [
-     "Tomate",
-     100
-    ],
-    [
-     "Cebolla larga",
-     30
-    ],
-    [
-     "Cottage alto en proteína",
-     80
-    ]
-   ]
-  },
-  "l1": {
-   "n": "Dahl de lentejas rojas (olla, 5 min)",
-   "g": "almuerzo",
-   "kcal": 695,
-   "p": 49,
-   "c": 90,
-   "f": 8,
-   "fib": 17,
-   "ing": [
-    [
-     "Lentejas rojas secas",
-     100
-    ],
-    [
-     "Tomate",
-     150
-    ],
-    [
-     "Espinaca",
-     150
-    ],
-    [
-     "Yogurt griego casero",
-     150
-    ],
-    [
-     "Arroz basmati crudo",
-     40
-    ],
-    [
-     "Aceite de oliva",
-     5
-    ]
-   ],
-   "olla": {
-    "modo": "Pressure cook",
-    "min": 5,
-    "liberacion": "natural",
-    "pasos": [
-     "**Sauté/sear high**, destapada: espray + curry, comino y jengibre, 30 s hasta que huelan.",
-     "Tomate picado, 3 min, hasta que suelte el agua.",
-     "Lentejas rojas + caldo (1 : 2,5). Rasca el fondo: lo pegado hace que la olla marque quemado.",
-     "Tapa. **Pressure cook 5 min.** Liberación **natural** — la rápida salpica espuma por la válvula.",
-     "**Cancel.** Espinaca con el calor residual, 2 min con la tapa puesta.",
-     "El yogurt SIEMPRE al servir, fuera del fuego. Si hierve se corta."
-    ]
-   },
-   "tanda": {
-    "max_porciones": 4,
-    "nevera_dias": 4,
-    "congela": true,
-    "nota": "Congela en porciones. Espesa en la nevera: afloja con caldo al recalentar. El arroz y el yogurt van aparte, nunca dentro de lo que guardas."
-   }
-  },
-  "l2": {
-   "n": "Bowl de garbanzos al curry con arroz al caldo",
-   "g": "almuerzo",
-   "kcal": 716,
-   "p": 52,
-   "c": 87,
-   "f": 15,
-   "fib": 19,
-   "ing": [
-    [
-     "Garbanzos de lata",
-     240
-    ],
-    [
-     "Tomate",
-     150
-    ],
-    [
-     "Espinaca",
-     120
-    ],
-    [
-     "Yogurt griego casero",
-     150
-    ],
-    [
-     "Arroz basmati crudo",
-     40
-    ],
-    [
-     "Cottage alto en proteína",
-     100
-    ],
-    [
-     "Aceite de oliva",
-     5
-    ]
-   ],
-   "olla": {
-    "modo": "Pressure cook",
-    "min": 8,
-    "liberacion": "natural",
-    "pasos": [
-     "**Sauté/sear high**: espray + curry y garam masala, 30 s.",
-     "Tomate, 5 min hasta que se deshaga.",
-     "Garbanzos escurridos + 200 ml de caldo. **Machaca un tercio con el tenedor**: espesa sin harina.",
-     "**Pressure cook 8 min**, liberación natural.",
-     "Espinaca al final con la olla apagada. Yogurt y cottage al servir."
-    ]
-   },
-   "tanda": {
-    "max_porciones": 4,
-    "nevera_dias": 4,
-    "congela": true,
-    "nota": "El yogurt y el cottage se agregan al plato, nunca a la olla que guardas."
-   }
-  },
-  "l3": {
-   "n": "Pasta con Dolmio y tofu desmenuzado",
-   "g": "almuerzo",
-   "kcal": 672,
-   "p": 48,
-   "c": 69,
-   "f": 20,
-   "fib": 12,
-   "ing": [
-    [
-     "Pasta cruda",
-     70
-    ],
-    [
-     "Tofu firme",
-     200
-    ],
-    [
-     "Dolmio",
-     150
-    ],
-    [
-     "Espinaca",
-     150
-    ],
-    [
-     "Champiñones",
-     100
-    ]
-   ]
-  },
-  "l4": {
-   "n": "Wrap de tofu al curry",
-   "g": "almuerzo",
-   "kcal": 620,
-   "p": 49,
-   "c": 50,
-   "f": 22,
-   "fib": 10,
-   "ing": [
-    [
-     "Wrap Mission wholegrain",
-     71
-    ],
-    [
-     "Tofu firme",
-     200
-    ],
-    [
-     "Espinaca",
-     80
-    ],
-    [
-     "Zanahoria",
-     80
-    ],
-    [
-     "Yogurt griego casero",
-     100
-    ],
-    [
-     "Limón",
-     10
-    ]
-   ]
-  },
-  "l5": {
-   "n": "Ensalada tibia de papa y huevo (olla, 8 min)",
-   "g": "almuerzo",
-   "kcal": 620,
-   "p": 62,
-   "c": 56,
-   "f": 15,
-   "fib": 9,
-   "ing": [
-    [
-     "Papa",
-     250
-    ],
-    [
-     "Huevo entero",
-     100
-    ],
-    [
-     "Clara de huevo",
-     200
-    ],
-    [
-     "Cottage alto en proteína",
-     150
-    ],
-    [
-     "Espinaca",
-     100
-    ],
-    [
-     "Tomate",
-     100
-    ],
-    [
-     "Limón",
-     15
-    ]
-   ],
-   "olla": {
-    "modo": "Pressure cook",
-    "min": 8,
-    "liberacion": "rápida",
-    "pasos": [
-     "Primero los huevos: 1 taza de agua, canasta, **5 min de presión + 5 de natural**, al hielo.",
-     "Saca los huevos. Papa en cubos en la canasta, misma agua, **8 min**, liberación **rápida** — con natural se deshace.",
-     "Aderezo aparte: yogurt + limón + lemon pepper + paprika. Nunca lo calientes.",
-     "Mezcla tibio con espinaca y tomate. Cottage al final.",
-     "**Truco:** enfría la papa en la nevera y cómela al día siguiente — gana almidón resistente y sacia más."
-    ]
-   },
-   "tanda": {
-    "max_porciones": 4,
-    "nevera_dias": 3,
-    "congela": false,
-    "nota": "No congela: la papa se vuelve harinosa. La papa fría gana almidón resistente."
-   }
-  },
-  "l6": {
-   "n": "Burrito bowl de frijoles refritos y arroz al caldo",
-   "g": "almuerzo",
-   "kcal": 597,
-   "p": 47,
-   "c": 76,
-   "f": 8,
-   "fib": 13,
-   "ing": [
-    [
-     "Arroz basmati crudo",
-     50
-    ],
-    [
-     "Frijoles refritos",
      180
     ],
     [
-     "Salsa mild",
-     60
+     "Proteína en polvo",
+     25
     ],
     [
-     "Cottage alto en proteína",
-     250
+     "Banana",
+     90
     ],
     [
-     "Espinaca",
-     80
-    ],
-    [
-     "Limón",
-     15
+     "Mantequilla de maní",
+     10
     ]
    ],
-   "olla": {
-    "modo": "Pressure cook",
-    "min": 5,
-    "liberacion": "natural 10 min",
-    "pasos": [
-     "Arroz + caldo de verdura (1 : 1,25), **Pressure cook 5 min**, natural 10 min. Cero calorías extra, el doble de sabor.",
-     "Frijoles refritos aparte con comino y un chorro de agua, en **Sauté/sear low**, hasta que queden cremosos.",
-     "Monta el bowl frío: arroz, frijol, salsa, espinaca cruda, cottage encima.",
-     "Limón y sal al final. **El limón sobre el frijol triplica la absorción del hierro.**"
-    ]
-   },
+   "kcal": 455,
+   "p": 35,
+   "c": 56,
+   "f": 10,
+   "fib": 7,
    "tanda": {
     "max_porciones": 4,
     "nevera_dias": 4,
     "congela": false,
-    "nota": "Guarda el arroz y el frijol aparte. Arma el bowl al momento."
+    "nota": "Haz 4 porciones y guárdalas en frascos. Se come fría o 40 s al microondas."
+   },
+   "olla": {
+    "modo": "Slow cook",
+    "min": 20,
+    "liberacion": "—",
+    "pasos": [
+     "**Slow cook high**: avena + leche + canela + una pizca de sal, 20 min removiendo un par de veces.",
+     "La avena en hojuelas **no va a presión**: se pega al fondo y la olla marca quemado.",
+     "Apaga y **deja que baje del hervor un minuto antes de meter la proteína**, o se corta y queda grumosa.",
+     "Banana en rodajas y la mantequilla de maní encima. Se derrite sola."
+    ]
    }
   },
-  "d1": {
-   "n": "Revuelto grande de espinaca y cottage (bajo en carbos)",
-   "g": "cena",
-   "kcal": 541,
-   "p": 70,
-   "c": 14,
-   "f": 20,
-   "fib": 7,
+  "b4": {
+   "n": "Bowl de yogurt con granola, mango y berries",
+   "g": "desayuno",
    "ing": [
+    [
+     "Yogurt griego casero",
+     270
+    ],
+    [
+     "Proteína en polvo",
+     20
+    ],
+    [
+     "Granola",
+     20
+    ],
+    [
+     "Mango",
+     90
+    ],
+    [
+     "Berries congelados",
+     70
+    ]
+   ],
+   "kcal": 437,
+   "p": 46,
+   "c": 48,
+   "f": 6,
+   "fib": 6,
+   "tanda": {
+    "max_porciones": 1,
+    "nevera_dias": 0,
+    "congela": false,
+    "nota": "La granola va justo antes de comer o se ablanda. Dos minutos."
+   }
+  },
+  "b5": {
+   "n": "Tortilla española de papa y cebolla",
+   "g": "desayuno",
+   "ing": [
+    [
+     "Papa",
+     160
+    ],
+    [
+     "Cebolla",
+     55
+    ],
     [
      "Huevo entero",
      100
     ],
     [
      "Clara de huevo",
-     250
-    ],
-    [
-     "Espinaca",
-     200
-    ],
-    [
-     "Champiñones",
-     150
+     180
     ],
     [
      "Cottage alto en proteína",
-     150
-    ],
-    [
-     "Cebolla larga",
-     30
+     110
     ],
     [
      "Aceite de oliva",
      5
     ]
    ],
+   "kcal": 525,
+   "p": 50,
+   "c": 39,
+   "f": 18,
+   "fib": 4,
+   "tanda": {
+    "max_porciones": 4,
+    "nevera_dias": 4,
+    "congela": false,
+    "nota": "Rinde 4 porciones de una. Fría del día siguiente está incluso mejor."
+   },
    "olla": {
-    "modo": "Sauté/sear low",
-    "min": 10,
+    "modo": "Bake",
+    "min": 30,
     "liberacion": "—",
     "pasos": [
-     "**Sauté/sear high**: champiñones y cebolla larga 3 min. Espinaca, tapa 2 min, **escurre el agua** o queda aguado.",
-     "Baja a **Sauté/sear low**. Huevos + claras, revuelve constante 3 min.",
-     "Apaga antes de que se vea seco. Cottage encima fuera del fuego.",
-     "70 g de proteína. Esta es tu cena cuando el día viene pasado de carbos."
+     "Papa en rodajas finas y cebolla en pluma. **Sauté/sear low** con el aceite, tapado, 12 min: se confitan, no se doran.",
+     "Bate huevos y claras con sal. Mezcla la papa tibia y **deja reposar 5 min** — ese reposo es lo que la hace jugosa.",
+     "Vuelca todo en la olla limpia y untada. **Bake 25-30 min** hasta que el centro cuaje.",
+     "Deja templar 10 min antes de desmoldar o se parte.",
+     "Cottage batido con limón al lado."
     ]
-   },
-   "tanda": {
-    "max_porciones": 1,
-    "nevera_dias": 0,
-    "congela": false,
-    "nota": "Al momento. 10 minutos."
    }
   },
-  "d2": {
-   "n": "Curry marroquí de garbanzos y espinaca (olla, 8 min)",
-   "g": "cena",
-   "kcal": 603,
-   "p": 52,
-   "c": 59,
-   "f": 15,
-   "fib": 21,
+  "b6": {
+   "n": "Pancakes proteicos de avena y banana",
+   "g": "desayuno",
    "ing": [
     [
-     "Garbanzos de lata",
-     240
+     "Avena en hojuelas",
+     35
     ],
     [
-     "Tomate",
-     200
+     "Clara de huevo",
+     150
     ],
     [
-     "Espinaca",
-     200
+     "Banana",
+     70
+    ],
+    [
+     "Proteína en polvo",
+     25
     ],
     [
      "Yogurt griego casero",
-     150
+     90
+    ],
+    [
+     "Berries congelados",
+     70
+    ]
+   ],
+   "kcal": 468,
+   "p": 51,
+   "c": 51,
+   "f": 5,
+   "fib": 8,
+   "tanda": {
+    "max_porciones": 2,
+    "nevera_dias": 2,
+    "congela": true,
+    "nota": "Congelan bien separados con papel. Al tostador directo desde el congelador."
+   },
+   "olla": {
+    "modo": "Sauté/sear",
+    "min": 15,
+    "liberacion": "—",
+    "pasos": [
+     "Licúa avena, claras, banana, proteína, polvo de hornear y canela hasta que quede una masa lisa.",
+     "**Deja reposar 5 min**: la avena absorbe y los pancakes suben en vez de quedar planos.",
+     "**Sauté/sear low** con espray. Porciones pequeñas, 2 min por lado. Voltea cuando salgan burbujas.",
+     "Fuego bajo, no alto: con la olla caliente se queman por fuera y quedan crudos por dentro.",
+     "Yogurt y berries encima en vez de miel."
+    ]
+   }
+  },
+  "l1": {
+   "n": "Chana masala",
+   "g": "almuerzo",
+   "ing": [
+    [
+     "Garbanzos de lata",
+     180
+    ],
+    [
+     "Tomate",
+     160
+    ],
+    [
+     "Cebolla",
+     70
+    ],
+    [
+     "Yogurt griego casero",
+     110
+    ],
+    [
+     "Arroz basmati crudo",
+     30
     ],
     [
      "Cottage alto en proteína",
-     100
+     90
     ],
     [
      "Aceite de oliva",
      5
     ]
    ],
-   "olla": {
-    "modo": "Pressure cook",
-    "min": 8,
-    "liberacion": "natural",
-    "pasos": [
-     "**Sauté/sear high**: espray + Moroccan seasoning, comino y jengibre, 30 s.",
-     "Tomate, 8 min hasta que se deshaga del todo.",
-     "Garbanzos + 200 ml de caldo. Machaca un tercio.",
-     "**Pressure cook 8 min**, natural.",
-     "Espinaca con la olla apagada. Yogurt y cottage fuera del fuego."
-    ]
-   },
+   "kcal": 576,
+   "p": 39,
+   "c": 72,
+   "f": 13,
+   "fib": 14,
    "tanda": {
     "max_porciones": 4,
     "nevera_dias": 4,
     "congela": true,
-    "nota": "Rinde el doble si duplicas. Aguanta 4 días y congela perfecto."
-   }
-  },
-  "d3": {
-   "n": "Tofu sellado con verduras y arroz al caldo",
-   "g": "cena",
-   "kcal": 631,
-   "p": 49,
-   "c": 49,
-   "f": 24,
-   "fib": 13,
-   "ing": [
-    [
-     "Tofu firme",
-     260
-    ],
-    [
-     "Arroz basmati crudo",
-     35
-    ],
-    [
-     "Brócoli",
-     150
-    ],
-    [
-     "Calabacín",
-     150
-    ],
-    [
-     "Zanahoria",
-     80
-    ],
-    [
-     "Cebolla larga",
-     30
-    ]
-   ],
-   "olla": {
-    "modo": "Sauté/sear high",
-    "min": 8,
-    "liberacion": "—",
-    "pasos": [
-     "**Nunca a presión: el tofu queda esponja.**",
-     "Tofu en lonjas de 1,5 cm. **Aprieta con papel de cocina 2 min** — el agua es la diferencia entre dorado y aguado.",
-     "**Sauté/sear high**, destapada, espray. 4 min por lado **sin tocarlo**. Costra de verdad.",
-     "Saca el tofu. Brócoli, calabacín y zanahoria 5 min en la misma olla.",
-     "Arroz aparte al caldo (Pressure cook 5 min)."
-    ]
+    "nota": "Mejora al día siguiente. El arroz y el yogurt aparte, nunca dentro de lo que guardas."
    },
-   "tanda": {
-    "max_porciones": 1,
-    "nevera_dias": 0,
-    "congela": false,
-    "nota": "NO se hace por tandas: el tofu recalentado pierde la costra. 10 min al momento."
+   "olla": {
+    "modo": "Pressure cook",
+    "min": 8,
+    "liberacion": "natural",
+    "pasos": [
+     "**Sauté/sear high** con el aceite: cebolla picada 6 min hasta que dore de verdad. Ahí está el fondo del plato.",
+     "Jengibre, ajo, comino, cilantro molido, cúrcuma y garam masala, 45 s. Si huele, va bien.",
+     "Tomate, 6 min, hasta que el aceite se separe en los bordes.",
+     "Garbanzos escurridos + 150 ml de agua. **Machaca un tercio**: espesa sin harina.",
+     "**Pressure cook 8 min**, liberación natural.",
+     "Fuera del fuego: yogurt, amchur o un chorro de limón, y cilantro. **El yogurt hirviendo se corta.**"
+    ]
    }
   },
-  "d4": {
-   "n": "Sopa de lentejas y verduras (olla, 9 min)",
-   "g": "cena",
-   "kcal": 631,
-   "p": 47,
-   "c": 63,
-   "f": 14,
-   "fib": 18,
+  "l2": {
+   "n": "Risotto de champiñones",
+   "g": "almuerzo",
    "ing": [
     [
-     "Lentejas cafés secas",
-     80
+     "Arroz arborio crudo",
+     50
     ],
     [
-     "Zanahoria",
-     120
+     "Champiñones",
+     220
     ],
     [
-     "Calabacín",
-     150
-    ],
-    [
-     "Tomate",
-     150
-    ],
-    [
-     "Espinaca",
-     100
+     "Cebolla",
+     45
     ],
     [
      "Caldo Campbell's",
-     500
+     360
+    ],
+    [
+     "Parmesano",
+     20
+    ],
+    [
+     "Ricotta light",
+     55
     ],
     [
      "Cottage alto en proteína",
-     150
+     140
     ],
     [
      "Aceite de oliva",
-     8
+     5
     ]
    ],
+   "kcal": 587,
+   "p": 43,
+   "c": 57,
+   "f": 20,
+   "fib": 4,
+   "tanda": {
+    "max_porciones": 2,
+    "nevera_dias": 2,
+    "congela": false,
+    "nota": "El risotto recalentado pierde textura. Máximo 2 porciones y cómelas al día siguiente."
+   },
    "olla": {
     "modo": "Pressure cook",
-    "min": 9,
-    "liberacion": "natural",
+    "min": 6,
+    "liberacion": "rápida",
     "pasos": [
-     "**Sauté/sear high**: zanahoria, calabacín y cebolla larga, 5 min.",
-     "Lentejas cafés + tomate + caldo (1 : 3).",
-     "**Pressure cook 9 min**, liberación natural.",
-     "Espinaca al final. Cottage al servir, nunca dentro.",
-     "Es sopa: ocupa mucho volumen. **Máximo 3 porciones por tanda en la olla de 6 L.**"
+     "**Sauté/sear high**: champiñones en cuartos, 6 min **sin sal y sin moverlos** hasta que doren. Salar antes = champiñón hervido.",
+     "Sácalos. Cebolla 4 min, luego el arroz 2 min hasta que los granos se vean vidriosos.",
+     "Caldo caliente, tomillo. **Pressure cook 6 min**, liberación **rápida** — con natural se pasa.",
+     "**Cancel.** Devuelve los champiñones, el parmesano y la ricotta. Bate 1 min: ahí aparece la cremosidad.",
+     "Cottage y pimienta negra al servir. Sin una gota de crema."
     ]
-   },
-   "tanda": {
-    "max_porciones": 3,
-    "nevera_dias": 4,
-    "congela": true,
-    "nota": "Es sopa: ocupa volumen. Máximo 3 porciones por tanda en la olla de 6 L."
    }
   },
-  "d5": {
-   "n": "Chili de frijoles negros (olla, 30 min)",
-   "g": "cena",
-   "kcal": 643,
-   "p": 51,
-   "c": 64,
-   "f": 14,
-   "fib": 19,
+  "l3": {
+   "n": "Ajiaco vegetariano",
+   "g": "almuerzo",
    "ing": [
     [
-     "Frijoles negros secos",
+     "Papa criolla",
+     140
+    ],
+    [
+     "Papa",
+     90
+    ],
+    [
+     "Maíz tierno",
      80
     ],
     [
-     "Tomate",
-     200
+     "Caldo Campbell's",
+     450
     ],
     [
-     "Pimentón",
-     100
+     "Crema light",
+     20
     ],
     [
-     "Espinaca",
-     100
+     "Alcaparras",
+     15
     ],
     [
-     "Salsa mild",
-     60
-    ],
-    [
-     "Yogurt griego casero",
-     150
+     "Aguacate",
+     35
     ],
     [
      "Cottage alto en proteína",
-     100
+     200
+    ]
+   ],
+   "kcal": 551,
+   "p": 35,
+   "c": 74,
+   "f": 14,
+   "fib": 10,
+   "tanda": {
+    "max_porciones": 4,
+    "nevera_dias": 3,
+    "congela": true,
+    "nota": "Congela sin la crema ni el aguacate. Esos van al plato, siempre."
+   },
+   "olla": {
+    "modo": "Pressure cook",
+    "min": 12,
+    "liberacion": "natural",
+    "pasos": [
+     "**Sauté/sear high**: cebolla larga y ajo 3 min.",
+     "Papa criolla, papa en trozos, mazorca en rodajas, caldo y **guascas**. Sin guascas no es ajiaco.",
+     "**Pressure cook 12 min**, liberación natural. La criolla se deshace sola y espesa la sopa.",
+     "Machaca un poco contra la pared de la olla si la quieres más espesa.",
+     "Al plato: crema, alcaparras y aguacate. El cottage batido reemplaza media crema y te sube 18 g de proteína."
+    ]
+   }
+  },
+  "l4": {
+   "n": "Burrito bowl de carne de soya",
+   "g": "almuerzo",
+   "ing": [
+    [
+     "Carne de soya seca (TVP)",
+     35
+    ],
+    [
+     "Arroz basmati crudo",
+     30
+    ],
+    [
+     "Frijoles refritos",
+     110
+    ],
+    [
+     "Tomate",
+     110
+    ],
+    [
+     "Maíz tierno",
+     55
+    ],
+    [
+     "Aguacate",
+     35
+    ],
+    [
+     "Cottage alto en proteína",
+     110
+    ],
+    [
+     "Limón",
+     15
     ],
     [
      "Aceite de oliva",
-     8
+     5
     ]
    ],
+   "kcal": 590,
+   "p": 43,
+   "c": 72,
+   "f": 15,
+   "fib": 18,
+   "tanda": {
+    "max_porciones": 4,
+    "nevera_dias": 4,
+    "congela": false,
+    "nota": "Guarda la soya y el arroz aparte. El bowl se arma al momento o el aguacate se oxida."
+   },
+   "olla": {
+    "modo": "Sauté/sear",
+    "min": 15,
+    "liberacion": "—",
+    "pasos": [
+     "Hidrata la soya 10 min en caldo caliente, no en agua. **Exprímela bien**: si queda mojada no dora.",
+     "**Sauté/sear high** con el aceite: la soya 6 min sin moverla mucho, con comino, ajo, orégano y chipotle.",
+     "Cuando empiece a tostarse, un chorro de salsa de soya. Queda con textura de carne molida, no de esponja.",
+     "Arroz aparte cocido al caldo (Pressure cook 5 min).",
+     "Monta frío: arroz, frijol, soya, pico de gallo, maíz, aguacate y cottage.",
+     "Limón al final: triplica la absorción del hierro del frijol."
+    ]
+   }
+  },
+  "l5": {
+   "n": "Frijoles paisas con chicharrón de tofu",
+   "g": "almuerzo",
+   "ing": [
+    [
+     "Frijol rojo seco",
+     50
+    ],
+    [
+     "Plátano maduro",
+     55
+    ],
+    [
+     "Tofu firme",
+     140
+    ],
+    [
+     "Tomate",
+     90
+    ],
+    [
+     "Cebolla",
+     55
+    ],
+    [
+     "Arroz basmati crudo",
+     20
+    ],
+    [
+     "Aceite de oliva",
+     5
+    ]
+   ],
+   "kcal": 597,
+   "p": 36,
+   "c": 67,
+   "f": 18,
+   "fib": 13,
+   "tanda": {
+    "max_porciones": 4,
+    "nevera_dias": 4,
+    "congela": true,
+    "nota": "El frijol congela perfecto. El tofu se hace al momento: recalentado pierde el crujido."
+   },
    "olla": {
     "modo": "Pressure cook",
     "min": 30,
     "liberacion": "natural",
     "pasos": [
-     "Frijoles negros **secos, sin remojar** + 4 partes de agua. **Pressure cook 30 min**, natural 15 min. Escurre.",
-     "**Sauté/sear high**: pimentón y tomate, 5 min.",
-     "Devuelve los frijoles + salsa + comino + chili. **Sauté/sear low** 5 min para que espese.",
-     "Yogurt y cottage al servir.",
-     "Los secos cuestan la cuarta parte de la lata y la olla borra la diferencia de esfuerzo."
+     "Frijol rojo **seco, sin remojar** + 4 partes de agua + un trozo de plátano maduro. **Pressure cook 30 min**, natural 15.",
+     "El plátano se deshace y le da el dulce que el frijol paisa necesita.",
+     "Aparte, el hogao: **Sauté/sear high** con cebolla y tomate 8 min. Va al frijol al final, no al principio.",
+     "**El chicharrón de tofu:** tofu apretado y muy seco, en tiras gruesas, congelado y descongelado si puedes — queda esponjoso y agarra el dorado.",
+     "**Sauté/sear high** con el aceite, 5 min por lado sin tocarlo, hasta que cruja de verdad. Sal al final.",
+     "Arroz al lado. Esto no sabe a dieta."
     ]
+   }
+  },
+  "l6": {
+   "n": "Curry rojo tailandés de tofu y garbanzos",
+   "g": "almuerzo",
+   "ing": [
+    [
+     "Tofu firme",
+     160
+    ],
+    [
+     "Garbanzos de lata",
+     90
+    ],
+    [
+     "Leche de coco light",
+     65
+    ],
+    [
+     "Pasta de curry rojo",
+     20
+    ],
+    [
+     "Pimentón",
+     90
+    ],
+    [
+     "Habichuela",
+     90
+    ],
+    [
+     "Espinaca",
+     70
+    ],
+    [
+     "Arroz jazmín crudo",
+     25
+    ],
+    [
+     "Limón",
+     15
+    ]
+   ],
+   "kcal": 579,
+   "p": 38,
+   "c": 54,
+   "f": 22,
+   "fib": 15,
+   "tanda": {
+    "max_porciones": 3,
+    "nevera_dias": 3,
+    "congela": true,
+    "nota": "Congela bien. El tofu y el limón van al momento."
    },
+   "olla": {
+    "modo": "Pressure cook",
+    "min": 5,
+    "liberacion": "rápida",
+    "pasos": [
+     "Tofu seco y apretado, en cubos. **Sauté/sear high** 5 min hasta dorar. Sácalo.",
+     "**Fríe la pasta de curry 1 min en la olla caliente** antes de mojarla. Saltarse este paso es la diferencia entre curry y agua con color.",
+     "Leche de coco, garbanzos, pimentón y habichuela. **Pressure cook 5 min**, liberación rápida.",
+     "Devuelve el tofu, espinaca con el calor residual, limón y albahaca al final.",
+     "Arroz jazmín aparte."
+    ]
+   }
+  },
+  "d1": {
+   "n": "Dal makhani",
+   "g": "cena",
+   "ing": [
+    [
+     "Lentejas negras secas",
+     55
+    ],
+    [
+     "Frijol rojo seco",
+     20
+    ],
+    [
+     "Tomate",
+     140
+    ],
+    [
+     "Cebolla",
+     65
+    ],
+    [
+     "Yogurt griego casero",
+     110
+    ],
+    [
+     "Crema light",
+     20
+    ],
+    [
+     "Cottage alto en proteína",
+     140
+    ],
+    [
+     "Aceite de oliva",
+     5
+    ]
+   ],
+   "kcal": 572,
+   "p": 49,
+   "c": 56,
+   "f": 12,
+   "fib": 16,
+   "tanda": {
+    "max_porciones": 4,
+    "nevera_dias": 4,
+    "congela": true,
+    "nota": "Mejora dos días seguidos. Espesa en la nevera: afloja con caldo, no con agua."
+   },
+   "olla": {
+    "modo": "Pressure cook",
+    "min": 25,
+    "liberacion": "natural",
+    "pasos": [
+     "Lenteja negra y frijol rojo **secos, sin remojar** + 4 partes de agua. **Pressure cook 25 min**, natural 15.",
+     "Aparte: **Sauté/sear high** con el aceite, cebolla 6 min, luego jengibre, ajo, comino y garam masala 45 s.",
+     "Tomate, 8 min hasta que se deshaga.",
+     "Junta todo y **Sauté/sear low 10 min machacando contra la pared** de la olla. Ese machacado es lo que lo vuelve cremoso.",
+     "Fuera del fuego: yogurt y un toque de crema. Hojas de cilantro.",
+     "Es el plato de lentejas más rico que existe y son 20 g de fibra."
+    ]
+   }
+  },
+  "d2": {
+   "n": "Chili de tres frijoles con chocolate amargo",
+   "g": "cena",
+   "ing": [
+    [
+     "Frijoles negros secos",
+     30
+    ],
+    [
+     "Frijol rojo seco",
+     20
+    ],
+    [
+     "Garbanzos de lata",
+     70
+    ],
+    [
+     "Tomate",
+     160
+    ],
+    [
+     "Pimentón",
+     90
+    ],
+    [
+     "Cebolla",
+     65
+    ],
+    [
+     "Chocolate 85%",
+     5
+    ],
+    [
+     "Cottage alto en proteína",
+     140
+    ],
+    [
+     "Aguacate",
+     25
+    ],
+    [
+     "Aceite de oliva",
+     5
+    ]
+   ],
+   "kcal": 576,
+   "p": 38,
+   "c": 59,
+   "f": 18,
+   "fib": 19,
    "tanda": {
     "max_porciones": 4,
     "nevera_dias": 5,
     "congela": true,
-    "nota": "El que mejor congela de todos. Haz 4 y guarda 2."
+    "nota": "El que mejor congela de todos. Haz 4 y guarda 2 porciones."
+   },
+   "olla": {
+    "modo": "Pressure cook",
+    "min": 30,
+    "liberacion": "natural",
+    "pasos": [
+     "Frijol negro y rojo **secos** + 4 partes de agua. **Pressure cook 30 min**, natural 15. Escurre.",
+     "**Sauté/sear high**: cebolla y pimentón 6 min. Comino, orégano, paprika ahumada y chili en polvo, 45 s.",
+     "Tomate 8 min, frijoles cocidos, garbanzos y **8 g de chocolate 85%**.",
+     "**Sauté/sear low 10 min.** El chocolate no lo vuelve dulce: le da el fondo oscuro que un chili casero nunca tiene.",
+     "Cottage y aguacate encima al servir. Cilantro y limón."
+    ]
    }
   },
-  "d6": {
-   "n": "Salteado de edamame y tofu",
+  "d3": {
+   "n": "Bolognesa de carne de soya",
    "g": "cena",
-   "kcal": 641,
-   "p": 50,
-   "c": 60,
-   "f": 22,
-   "fib": 18,
    "ing": [
     [
-     "Edamame congelado",
-     150
-    ],
-    [
-     "Tofu firme",
-     150
-    ],
-    [
-     "Brócoli",
-     150
-    ],
-    [
-     "Habichuela",
-     100
-    ],
-    [
-     "Cebolla larga",
+     "Carne de soya seca (TVP)",
      40
+    ],
+    [
+     "Pasta cruda",
+     50
+    ],
+    [
+     "Pasta de tomate",
+     25
+    ],
+    [
+     "Tomate",
+     160
+    ],
+    [
+     "Cebolla",
+     55
+    ],
+    [
+     "Zanahoria",
+     45
+    ],
+    [
+     "Apio",
+     35
+    ],
+    [
+     "Parmesano",
+     20
+    ],
+    [
+     "Aceite de oliva",
+     5
+    ]
+   ],
+   "kcal": 529,
+   "p": 37,
+   "c": 68,
+   "f": 12,
+   "fib": 14,
+   "tanda": {
+    "max_porciones": 4,
+    "nevera_dias": 4,
+    "congela": true,
+    "nota": "La salsa congela perfecto. La pasta siempre al momento."
+   },
+   "olla": {
+    "modo": "Pressure cook",
+    "min": 10,
+    "liberacion": "natural",
+    "pasos": [
+     "Hidrata la soya 10 min en caldo. Exprímela.",
+     "**Sauté/sear high**: sofrito de cebolla, zanahoria y apio picados finos, 8 min. Sin ese sofrito no hay bolognesa.",
+     "La soya 6 min hasta que tueste, luego la **pasta de tomate 2 min** — tostarla es lo que le da el color oscuro.",
+     "Tomate, laurel, orégano y 150 ml de caldo. **Pressure cook 10 min**, natural.",
+     "Pasta al dente aparte. Parmesano al final.",
+     "Hidratas 50 g de soya seca y salen 25 g de proteína por menos de un dólar."
+    ]
+   }
+  },
+  "d4": {
+   "n": "Feijoada vegetariana",
+   "g": "cena",
+   "ing": [
+    [
+     "Frijoles negros secos",
+     55
+    ],
+    [
+     "Tempeh",
+     80
+    ],
+    [
+     "Naranja",
+     70
+    ],
+    [
+     "Cebolla",
+     65
+    ],
+    [
+     "Tomate",
+     90
     ],
     [
      "Arroz basmati crudo",
-     40
+     25
+    ],
+    [
+     "Espinaca",
+     140
+    ],
+    [
+     "Aceite de oliva",
+     5
     ]
    ],
-   "olla": {
-    "modo": "Sauté/sear high",
-    "min": 10,
-    "liberacion": "—",
-    "pasos": [
-     "Tofu seco y apretado, **Sauté/sear high** 4 min por lado. Sácalo.",
-     "Edamame del congelador directo + brócoli + habichuela, 5 min.",
-     "Jengibre, ajo y chili al final, 1 min. Devuelve el tofu.",
-     "Arroz aparte al caldo."
-    ]
+   "kcal": 578,
+   "p": 36,
+   "c": 70,
+   "f": 16,
+   "fib": 20,
+   "tanda": {
+    "max_porciones": 4,
+    "nevera_dias": 4,
+    "congela": true,
+    "nota": "Congela muy bien. La naranja fresca al plato, siempre."
    },
+   "olla": {
+    "modo": "Pressure cook",
+    "min": 30,
+    "liberacion": "natural",
+    "pasos": [
+     "Frijol negro **seco** + 4 partes de agua + laurel. **Pressure cook 30 min**, natural 15.",
+     "**Sauté/sear high**: tempeh en cubos 6 min con paprika ahumada hasta que tueste. Esa paprika es la que hace el ahumado.",
+     "Cebolla y tomate 6 min, ajo al final.",
+     "Junta con el frijol, **la cáscara y el jugo de media naranja**, y Sauté/sear low 10 min. La naranja corta la pesadez del frijol: es lo que hace la feijoada.",
+     "Arroz y espinaca salteada al lado. Gajos de naranja al plato."
+    ]
+   }
+  },
+  "d5": {
+   "n": "Lentejas guisadas con plátano maduro",
+   "g": "cena",
+   "ing": [
+    [
+     "Lentejas cafés secas",
+     65
+    ],
+    [
+     "Plátano maduro",
+     70
+    ],
+    [
+     "Tomate",
+     120
+    ],
+    [
+     "Cebolla",
+     55
+    ],
+    [
+     "Zanahoria",
+     65
+    ],
+    [
+     "Cottage alto en proteína",
+     140
+    ],
+    [
+     "Aceite de oliva",
+     5
+    ]
+   ],
+   "kcal": 550,
+   "p": 36,
+   "c": 70,
+   "f": 10,
+   "fib": 13,
+   "tanda": {
+    "max_porciones": 4,
+    "nevera_dias": 4,
+    "congela": true,
+    "nota": "El clásico. Congela bien y espesa en la nevera."
+   },
+   "olla": {
+    "modo": "Pressure cook",
+    "min": 9,
+    "liberacion": "natural",
+    "pasos": [
+     "**Sauté/sear high** con el aceite: hogao de cebolla y tomate, 8 min. Comino y color al final.",
+     "Lentejas, zanahoria en cubos, plátano maduro en rodajas gruesas y caldo (1 : 3).",
+     "**Pressure cook 9 min**, liberación natural.",
+     "El plátano se deshace un poco y le da el dulce que hace que esto sepa a casa, no a dieta.",
+     "Cottage batido al servir."
+    ]
+   }
+  },
+  "d6": {
+   "n": "Sopa cremosa de tomate rostizado y lenteja roja",
+   "g": "cena",
+   "ing": [
+    [
+     "Tomate",
+     320
+    ],
+    [
+     "Lentejas rojas secas",
+     50
+    ],
+    [
+     "Cebolla",
+     65
+    ],
+    [
+     "Caldo Campbell's",
+     360
+    ],
+    [
+     "Ricotta light",
+     45
+    ],
+    [
+     "Cottage alto en proteína",
+     140
+    ],
+    [
+     "Pan integral",
+     20
+    ],
+    [
+     "Aceite de oliva",
+     5
+    ]
+   ],
+   "kcal": 560,
+   "p": 42,
+   "c": 57,
+   "f": 14,
+   "fib": 12,
+   "tanda": {
+    "max_porciones": 4,
+    "nevera_dias": 4,
+    "congela": true,
+    "nota": "Congela perfecto. El cottage y el pan al momento."
+   },
+   "olla": {
+    "modo": "Pressure cook",
+    "min": 6,
+    "liberacion": "natural",
+    "pasos": [
+     "**Sauté/sear high** con el aceite: tomate en mitades boca abajo 8 min **sin moverlos**, hasta que se chamusquen. Ese tostado es toda la sopa.",
+     "Cebolla y ajo 4 min. Lentejas rojas y caldo.",
+     "**Pressure cook 6 min**, liberación natural.",
+     "Licúa con la ricotta y un puñado de albahaca. Queda cremosa sin una gota de crema.",
+     "Cottage y albahaca encima. Pan tostado al lado.",
+     "La lenteja roja desaparece: no la ves, solo sientes que la sopa tiene cuerpo."
+    ]
+   }
+  },
+  "d7": {
+   "n": "Tofu al ajillo con brócoli",
+   "g": "cena",
+   "ing": [
+    [
+     "Tofu firme",
+     210
+    ],
+    [
+     "Brócoli",
+     180
+    ],
+    [
+     "Champiñones",
+     140
+    ],
+    [
+     "Cebolla larga",
+     35
+    ],
+    [
+     "Salsa de soya",
+     20
+    ],
+    [
+     "Arroz basmati crudo",
+     25
+    ],
+    [
+     "Aceite de oliva",
+     5
+    ]
+   ],
+   "kcal": 562,
+   "p": 45,
+   "c": 36,
+   "f": 24,
+   "fib": 11,
    "tanda": {
     "max_porciones": 1,
     "nevera_dias": 0,
     "congela": false,
-    "nota": "Al momento. El edamame recalentado se arruga."
+    "nota": "Al momento. 15 minutos y el tofu pierde la costra si lo recalientas."
+   },
+   "olla": {
+    "modo": "Sauté/sear",
+    "min": 15,
+    "liberacion": "—",
+    "pasos": [
+     "**Nunca a presión: el tofu queda esponja.**",
+     "Tofu en lonjas, apretado con papel 2 min. **Sauté/sear high** con el aceite, 4 min por lado **sin tocarlo**.",
+     "Sácalo. Champiñones 5 min sin sal hasta que doren, brócoli 4 min.",
+     "**Mucho ajo laminado al final, 1 min** — si lo pones al principio se quema y amarga.",
+     "Devuelve el tofu, salsa de soya, chili en hojuelas y cebolla larga. Arroz al caldo aparte."
+    ]
    }
   },
   "s1": {
-   "n": "Batido de proteína con berries",
+   "n": "Garbanzos crocantes especiados",
    "g": "snack",
-   "kcal": 195,
-   "p": 26,
-   "c": 17,
-   "f": 2,
-   "fib": 6,
    "ing": [
     [
-     "Proteína en polvo",
-     30
+     "Garbanzos de lata",
+     120
     ],
     [
-     "Berries congelados",
-     150
+     "Aceite de oliva",
+     5
     ]
-   ]
+   ],
+   "kcal": 188,
+   "p": 8,
+   "c": 19,
+   "f": 8,
+   "fib": 7,
+   "tanda": {
+    "max_porciones": 4,
+    "nevera_dias": 3,
+    "congela": false,
+    "nota": "Haz 4 porciones el domingo. Es el snack que reemplaza los paquetes."
+   },
+   "olla": {
+    "modo": "Bake",
+    "min": 30,
+    "liberacion": "—",
+    "pasos": [
+     "Garbanzos escurridos y **muy secos** con papel. El agua es lo único que impide que crujan.",
+     "Aceite, paprika ahumada, comino, ajo en polvo y sal.",
+     "**Bake 30 min**, sacudiendo a la mitad. Sal al final.",
+     "Aguantan 3 días en un frasco abierto. Cerrado se ablandan."
+    ]
+   }
   },
   "s2": {
-   "n": "Cottage con sriracha y tomate",
+   "n": "Batido de mango con yogurt y proteína",
    "g": "snack",
-   "kcal": 198,
-   "p": 26,
-   "c": 11,
-   "f": 5,
-   "fib": 1,
    "ing": [
     [
-     "Cottage alto en proteína",
-     200
+     "Mango",
+     150
     ],
     [
-     "Tomate",
-     100
+     "Yogurt griego casero",
+     150
+    ],
+    [
+     "Proteína en polvo",
+     25
     ]
-   ]
+   ],
+   "kcal": 289,
+   "p": 36,
+   "c": 32,
+   "f": 2,
+   "fib": 2,
+   "tanda": {
+    "max_porciones": 1,
+    "nevera_dias": 0,
+    "congela": false,
+    "nota": "Mango congelado y queda tipo helado."
+   }
   },
   "s3": {
-   "n": "Dos huevos duros de la olla",
+   "n": "Dos huevos duros",
    "g": "snack",
-   "kcal": 143,
-   "p": 13,
-   "c": 1,
-   "f": 10,
-   "fib": 0,
    "ing": [
     [
      "Huevo entero",
      100
     ]
    ],
+   "kcal": 143,
+   "p": 13,
+   "c": 1,
+   "f": 10,
+   "fib": 0,
    "tanda": {
     "max_porciones": 12,
     "nevera_dias": 7,
     "congela": false,
-    "nota": "12 huevos de una: 1 taza de agua, canasta, 5 min presión + 5 natural + hielo 3 min."
+    "nota": "12 de una el domingo."
+   },
+   "olla": {
+    "modo": "Pressure cook",
+    "min": 5,
+    "liberacion": "natural 5 min + hielo",
+    "pasos": [
+     "1 taza de agua, canasta, hasta 12 huevos. **5 min de presión + 5 de liberación natural.**",
+     "Baño de hielo 3 min. Pelan sin pelear."
+    ]
    }
   },
   "s4": {
-   "n": "Yogurt casero con Whole Earth y canela",
+   "n": "Yogurt con berries y canela",
    "g": "snack",
-   "kcal": 165,
-   "p": 24,
-   "c": 12,
-   "f": 1,
-   "fib": 0,
    "ing": [
     [
      "Yogurt griego casero",
      250
     ],
     [
+     "Berries congelados",
+     80
+    ],
+    [
      "Whole Earth",
      5
     ]
-   ]
+   ],
+   "kcal": 205,
+   "p": 25,
+   "c": 20,
+   "f": 1,
+   "fib": 3,
+   "tanda": {
+    "max_porciones": 1,
+    "nevera_dias": 0,
+    "congela": false,
+    "nota": "Endulzar a cero calorías es adherencia pura."
+   }
   },
   "s5": {
-   "n": "Edamame con sal",
+   "n": "Edamame con sal y chili",
    "g": "snack",
-   "kcal": 182,
-   "p": 18,
-   "c": 14,
-   "f": 8,
-   "fib": 8,
    "ing": [
     [
      "Edamame congelado",
      150
     ]
-   ]
+   ],
+   "kcal": 182,
+   "p": 18,
+   "c": 14,
+   "f": 8,
+   "fib": 8,
+   "tanda": {
+    "max_porciones": 1,
+    "nevera_dias": 0,
+    "congela": false,
+    "nota": "4 min en agua hirviendo. Sal gruesa y chili."
+   }
   },
   "s6": {
-   "n": "Tajada grande de sandia",
+   "n": "Hummus con bastones de verdura",
    "g": "snack",
-   "kcal": 150,
-   "p": 3,
-   "c": 38,
-   "f": 1,
-   "fib": 2,
    "ing": [
     [
-     "Sandía",
-     500
+     "Hummus",
+     80
+    ],
+    [
+     "Zanahoria",
+     100
+    ],
+    [
+     "Pepino",
+     100
     ]
-   ]
+   ],
+   "kcal": 192,
+   "p": 8,
+   "c": 21,
+   "f": 8,
+   "fib": 8,
+   "tanda": {
+    "max_porciones": 1,
+    "nevera_dias": 0,
+    "congela": false,
+    "nota": "Corta la verdura el domingo y ya está resuelto."
+   }
   },
   "s7": {
-   "n": "Batido pre-gym de banana y avena",
+   "n": "Tostada de aguacate con huevo",
    "g": "snack",
-   "kcal": 406,
-   "p": 43,
-   "c": 49,
-   "f": 4,
-   "fib": 5,
    "ing": [
     [
-     "Yogurt griego casero",
-     200
+     "Pan integral",
+     30
     ],
     [
-     "Banana",
-     110
+     "Aguacate",
+     40
     ],
     [
-     "Avena en hojuelas",
-     20
+     "Huevo entero",
+     50
     ],
     [
-     "Proteína en polvo",
-     25
+     "Clara de huevo",
+     60
     ]
-   ]
+   ],
+   "kcal": 242,
+   "p": 17,
+   "c": 17,
+   "f": 12,
+   "fib": 5,
+   "tanda": {
+    "max_porciones": 1,
+    "nevera_dias": 0,
+    "congela": false,
+    "nota": "El snack grande de los días de entreno."
+   }
   },
   "s8": {
-   "n": "Manzana con yogurt",
-   "g": "snack",
-   "kcal": 193,
-   "p": 15,
-   "c": 33,
-   "f": 1,
-   "fib": 4,
-   "ing": [
-    [
-     "Manzana",
-     180
-    ],
-    [
-     "Yogurt griego casero",
-     150
-    ]
-   ]
-  },
-  "s9": {
    "n": "Manzana con mantequilla de maní",
    "g": "snack",
    "ing": [
@@ -1048,138 +1356,70 @@
    "p": 6,
    "c": 28,
    "f": 10,
-   "fib": 6
-  },
-  "s10": {
-   "n": "Puñado de almendras (pesado)",
-   "g": "snack",
-   "ing": [
-    [
-     "Almendras",
-     25
-    ]
-   ],
-   "kcal": 150,
-   "p": 5,
-   "c": 2,
-   "f": 12,
-   "fib": 3
-  },
-  "b7": {
-   "n": "Bowl de yogurt y proteína (sin avena)",
-   "g": "desayuno",
-   "ing": [
-    [
-     "Yogurt griego casero",
-     300
-    ],
-    [
-     "Proteína en polvo",
-     30
-    ],
-    [
-     "Berries congelados",
-     100
-    ],
-    [
-     "Mantequilla de maní",
-     15
-    ]
-   ],
-   "kcal": 458,
-   "p": 58,
-   "c": 29,
-   "f": 11,
-   "fib": 5
-  },
-  "l7": {
-   "n": "Ensalada grande de tofu y edamame",
-   "g": "almuerzo",
-   "ing": [
-    [
-     "Tofu firme",
-     200
-    ],
-    [
-     "Edamame congelado",
-     120
-    ],
-    [
-     "Espinaca",
-     150
-    ],
-    [
-     "Tomate",
-     150
-    ],
-    [
-     "Zanahoria",
-     80
-    ],
-    [
-     "Limón",
-     15
-    ],
-    [
-     "Aceite de oliva",
-     8
-    ]
-   ],
-   "kcal": 615,
-   "p": 51,
-   "c": 29,
-   "f": 32,
-   "fib": 17
-  },
-  "d7": {
-   "n": "Tofu y verduras al wok (sin arroz)",
-   "g": "cena",
-   "ing": [
-    [
-     "Tofu firme",
-     250
-    ],
-    [
-     "Brócoli",
-     200
-    ],
-    [
-     "Champiñones",
-     150
-    ],
-    [
-     "Habichuela",
-     100
-    ],
-    [
-     "Cebolla larga",
-     40
-    ],
-    [
-     "Aceite de oliva",
-     8
-    ]
-   ],
-   "kcal": 591,
-   "p": 50,
-   "c": 22,
-   "f": 31,
-   "fib": 14,
-   "olla": {
-    "modo": "Sauté/sear high",
-    "min": 10,
-    "liberacion": "—",
-    "pasos": [
-     "Tofu apretado y seco, **Sauté/sear high** 4 min por lado, destapada.",
-     "Brócoli, champiñones y habichuela 5 min. Cebolla larga al final.",
-     "Sin arroz: esta es la cena de los días que el presupuesto de carbos ya se gastó."
-    ]
-   },
+   "fib": 6,
    "tanda": {
     "max_porciones": 1,
     "nevera_dias": 0,
     "congela": false,
-    "nota": "Al momento."
+    "nota": "PÉSALOS. La cucharada a ojo son 35-40 g: 130 kcal fantasma."
+   }
+  },
+  "s9": {
+   "n": "Batido pre-gym de banana y avena",
+   "g": "snack",
+   "ing": [
+    [
+     "Yogurt griego casero",
+     200
+    ],
+    [
+     "Banana",
+     110
+    ],
+    [
+     "Avena en hojuelas",
+     20
+    ],
+    [
+     "Proteína en polvo",
+     25
+    ]
+   ],
+   "kcal": 406,
+   "p": 43,
+   "c": 49,
+   "f": 4,
+   "fib": 5,
+   "tanda": {
+    "max_porciones": 1,
+    "nevera_dias": 0,
+    "congela": false,
+    "nota": "60-90 min antes de entrenar."
+   }
+  },
+  "s10": {
+   "n": "Cottage con tomate y sriracha",
+   "g": "snack",
+   "ing": [
+    [
+     "Cottage alto en proteína",
+     200
+    ],
+    [
+     "Tomate",
+     100
+    ]
+   ],
+   "kcal": 198,
+   "p": 26,
+   "c": 11,
+   "f": 5,
+   "fib": 1,
+   "tanda": {
+    "max_porciones": 1,
+    "nevera_dias": 0,
+    "congela": false,
+    "nota": "26 g de proteína en dos minutos."
    }
   }
  },
@@ -1187,117 +1427,120 @@
   "Lunes": {
    "tipo": "entreno",
    "ids": [
-    "b5",
-    "l5",
-    "s3",
-    "s8",
-    "d2"
+    "b4",
+    "l4",
+    "s5",
+    "s10",
+    "d7"
    ],
    "total": [
-    1990,
-    196,
-    158,
-    60,
-    38
+    1969,
+    178,
+    181,
+    58,
+    44
    ]
   },
   "Martes": {
    "tipo": "entreno",
    "ids": [
-    "b7",
+    "b1",
     "l6",
     "s4",
-    "s5",
-    "d7"
+    "s10",
+    "d3"
    ],
    "total": [
-    1993,
-    197,
-    153,
-    59,
-    40
+    2036,
+    178,
+    186,
+    60,
+    39
    ]
   },
   "Miércoles": {
    "tipo": "descanso",
    "ids": [
-    "b3",
-    "l7",
-    "s1",
+    "b5",
+    "l3",
+    "s5",
+    "s10",
     "d1"
    ],
    "total": [
-    1922,
-    197,
-    111,
-    71,
+    2028,
+    178,
+    194,
+    57,
     39
    ]
   },
   "Jueves": {
    "tipo": "entreno",
    "ids": [
-    "b5",
+    "b2",
     "l4",
-    "s1",
-    "s8",
-    "d2"
+    "s4",
+    "s5",
+    "d7"
    ],
    "total": [
-    2042,
-    196,
-    168,
-    59,
-    45
+    2014,
+    178,
+    174,
+    65,
+    44
    ]
   },
   "Viernes": {
    "tipo": "entreno",
    "ids": [
-    "b7",
-    "l5",
-    "s3",
-    "s5",
-    "d4"
+    "b1",
+    "l6",
+    "s4",
+    "s10",
+    "d2"
    ],
    "total": [
-    2034,
-    198,
-    163,
-    58,
-    40
+    2083,
+    179,
+    177,
+    66,
+    44
    ]
   },
   "Sábado": {
    "tipo": "descanso",
    "ids": [
-    "b2",
-    "l2",
+    "b5",
+    "l5",
+    "s4",
     "s5",
     "d1"
    ],
    "total": [
-    1981,
-    194,
-    163,
-    56,
-    43
+    2081,
+    178,
+    196,
+    57,
+    44
    ]
   },
   "Domingo": {
    "tipo": "descanso",
    "ids": [
-    "b3",
-    "l7",
-    "s1",
-    "d5"
+    "b2",
+    "l1",
+    "s2",
+    "s3",
+    "d6"
    ],
    "total": [
-    2024,
-    178,
-    161,
-    65,
-    51
+    2043,
+    177,
+    194,
+    56,
+    32
    ]
   }
  },

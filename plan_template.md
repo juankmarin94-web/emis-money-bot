@@ -63,7 +63,7 @@ Déficit                                      = −833 kcal/día
 
 | Macro | Objetivo | Por qué |
 |---|---|---|
-| **Proteína** | **195 g** (2,0 g/kg) | Sube de los 182 g del plan viejo. Cuanto más agresivo el déficit, más decide la proteína si lo que pierdes es grasa o músculo. Siendo vegetariano apuntas más alto: menos leucina por gramo. |
+| **Proteína** | **178 g** (1,8 g/kg) | En déficit la proteína decide si pierdes grasa o músculo. Estaba en 2,0 g/kg, y bajó por una razón concreta: a 1.985 kcal, 196 g de proteína son el 39% de las calorías, y eso obliga a meterle cottage a todos los platos. 1,8 g/kg sigue de lleno en el rango que conserva masa magra (1,6–2,2) y le devuelve libertad a la comida. |
 | **Grasa** | **58 g** (0,6 g/kg) — piso | Protege la producción hormonal. No bajes de aquí por querer más carbos. |
 | **Carbos** | **~170 g** | Lo que queda. |
 | **Fibra** | **38 g +** | El doble del promedio australiano. Con LDL en 3,4 esto es tratamiento, no adorno. |
@@ -71,9 +71,9 @@ Déficit                                      = −833 kcal/día
 ### El ciclado de carbos se muere aquí, y es mejor así
 
 El plan viejo ciclaba carbos: 225 g los días de entreno, 143 g los de descanso.
-Con 195 g de proteína y el piso de 58 g de grasa, eso son 1.302 kcal fijas de 1.985 —
-**quedan 683 kcal de carbos, y no hay suficiente presupuesto para ciclar nada.**
-Lo intenté y los días de descanso no cerraban: se pasaban 120–190 kcal todos.
+Con la proteína y el piso de grasa fijos quedan unas 760 kcal de carbos —
+**no hay presupuesto para ciclar nada.** Lo intenté y los días de descanso no cerraban:
+se pasaban 120–190 kcal todos.
 
 Así que: **un solo número todos los días, 1.985 kcal.** Los carbos se mueven *dentro* del día,
 no entre días — la mayoría en la comida antes y después de entrenar. Es más fácil de seguir
@@ -177,15 +177,15 @@ Cocinas al tamaño máximo que aguanta la olla, no la porción del día.
 
 ### El domingo — cuatro tandas, en orden
 
-La olla queda ocupada **~2 h 50 min**, casi todo desatendido.
+La olla queda ocupada **~3 h**, casi todo desatendido.
 
 | | Qué | Olla | Rinde |
 |---|---|---|---|
 | 1 | **12 huevos duros** | 5 min presión + 5 natural + hielo | toda la semana |
-| 2 | **Chili de frijoles negros** `d5` | Pressure cook 30 min, natural | ×4 · nevera 5 días · congela |
-| 3 | **Curry marroquí de garbanzos** `d2` | Pressure cook 8 min, natural | ×4 · nevera 4 días · congela |
-| 4 | **Dahl de lentejas rojas** `l1` | Pressure cook 5 min, natural | ×4 · nevera 4 días · congela |
-| 5 | **Overnight oats** `b3` | sin olla, 5 min | ×4 frascos · nevera 4 días |
+| 2 | **Dal makhani** `d1` | Pressure cook 25 min, natural | ×4 · nevera 4 días · congela |
+| 3 | **Chili de tres frijoles** `d2` | Pressure cook 30 min, natural | ×4 · nevera 5 días · congela |
+| 4 | **Chana masala** `l1` | Pressure cook 8 min, natural | ×4 · nevera 4 días · congela |
+| 5 | **Avena cremosa** `b3` | Slow cook 20 min | ×4 frascos · nevera 4 días |
 | 6 | **Arroz al caldo** | Pressure cook 5 min, natural 10 | 6 porciones |
 | — | **2 L de yogurt** *(de noche)* | Yogurt, 9 h | ~120 g de proteína |
 
@@ -211,8 +211,9 @@ El bot ya separa las tres columnas: `/receta l1 x4` te da las cantidades de cada
 
 | | Por qué |
 |---|---|
-| `b1` `b5` `d1` — huevo revuelto y omelette | Recalentado es horrible. 10 min al momento |
-| `d3` `d6` `d7` — tofu sellado | Pierde la costra. Y el edamame recalentado se arruga |
+| `b2` — huevos pericos | Recalentados no son lo mismo. 15 min al momento |
+| `d7` — tofu al ajillo | Pierde la costra si lo recalientas. 15 min |
+| `l2` — risotto | Recalentado pierde la textura. Máximo 2 porciones |
 
 Son los platos de 10 minutos. No todo tiene que salir del congelador.
 
@@ -220,7 +221,12 @@ Son los platos de 10 minutos. No todo tiene que salir del congelador.
 
 ## 05 · Las recetas
 
-31 recetas. Los macros salen de `data/foods.json`, no están escritos a mano.
+29 recetas, elegidas por sabor y construidas alrededor de la olla: chana masala, dal makhani,
+risotto de champiñones, ajiaco, feijoada, frijoles paisas con chicharrón de tofu, chili con
+chocolate amargo, bolognesa de carne de soya. Los macros salen de `data/foods.json`, no están
+escritos a mano.
+
+**Todo sigue siendo vegetariano, sin pescado y sin tahini.**
 
 {{TABLAS}}
 
@@ -236,8 +242,12 @@ Cada día está armado y comprobado contra los objetivos, no estimado a ojo.
 
 {{SEMANA}}
 
-Promedio real: **1.998 kcal · 193 g de proteína · 61 g de grasa · 42 g de fibra.**
-Déficit de 820 kcal/día → **0,75 kg/semana.**
+Promedio real: **2.036 kcal · 178 g de proteína · 59 g de grasa · 40 g de fibra.**
+Déficit de 782 kcal/día → **0,71 kg/semana.**
+
+*Las recetas nuevas cuestan 0,04 kg por semana contra las anteriores. Es el precio de comer
+dal makhani y ajiaco en vez de cottage con tomate, y vale la pena: el plan que no sigues no
+adelgaza nada.*
 
 ### Detalle de cada receta
 
@@ -369,53 +379,16 @@ Lo que no compras, no te lo comes. Es la regla más barata del plan.
 
 ---
 
-## 09 · Lista de compras (una semana)
+## 09 · Lista de compras
 
-### Proteína — lo que de verdad falta
-| Qué | Cuánto | Por qué |
-|---|---|---|
-| **Proteína en polvo** | 1 kg | Sin esto los 195 g/día no cuadran. No es opcional |
-| **Leche en polvo descremada** | 1 kg | 35 g P/100 g. Motor del yogurt de la olla |
-| **Leche descremada** | 4 L | 3 para el yogurt, 1 para cocinar |
-| **Cottage cheese alto en proteína** (Bulla) | 3 × 500 g | 12,5 g de proteína por 100 kcal. Aparece en 9 recetas |
-| **Tofu firme** | 4 × 450 g | 22 g por serve. Sauté/sear high, nunca presión |
-| **Claras congeladas** (Farm Pride) | 2 pouches | Tu proteína más eficiente |
-| **Huevos** | 2 docenas | 12 duros en la olla el domingo |
-| **Yogurt griego natural** | 1 kg | Hasta que el tuyo esté listo |
-| **Creatina monohidrato** | 500 g | 5 g/día. Creatinina 56 + vegetariano = el perfil que más responde. Avísale al médico |
+**Se genera sola: `python3 mercado.py` escribe `LISTA_MERCADO.md`.**
 
-### Grasas — ya resuelto
-**La mantequilla de maní ya está en tu casa**, así que esta sección no cuesta nada. Es la que
-sostiene el piso de 58 g de grasa: sin ella el plan calculado caía a 44 g, por debajo del piso
-hormonal. Aparece en `b2`, `b3`, `b4`, `b7` y `s9`.
+Suma los ingredientes de los 7 días del menú, resta lo que hay en `data/pantry.json` y convierte
+el resto a unidades de compra. Cambias el menú o la despensa, corres el comando, y la lista queda
+al día. La de esta semana son **37 líneas**, porque las recetas nuevas traen despensa nueva:
+carne de soya, arroz arborio, pasta de curry rojo, leche de coco light, lentejas negras, guascas.
 
-**Pésala siempre.** La cucharada a ojo son 35–40 g: 130 kcal fantasma cada vez. Es el error de
-conteo más común de cualquier despensa.
-
-*Opcional:* almendras (500 g). Solo aparecen en `s10` y la mantequilla de maní ya cubre la grasa,
-así que no son necesarias — pero traen el doble de fibra (12 g/100 g contra 6 g) y un puñado
-pesado es más difícil de sobrepasar que un frasco abierto.
-
-### Verdura de volumen — tu punto más débil
-Solo tienes espinaca, zanahoria y cebolla larga. En un déficit agresivo la verdura es lo que
-llena el plato sin costo calórico.
-
-Brócoli (3) · calabacín (5) · champiñones (750 g) · tomates (2 kg) · pimentón (3) ·
-habichuela (500 g) · coliflor (1) · **limones (6)**
-
-*Los limones no son decoración: la vitamina C triplica la absorción del hierro vegetal, y con
-ferritina en 50 siendo vegetariano eso importa. Y no tomes café ni té con las comidas de hierro.*
-
-### Congelados — comida de emergencia que no se echa a perder
-Edamame (1 kg — 12 g de proteína/100 g) · espinaca (1 kg) · berries (1 kg) · maíz (500 g)
-
-### Fruta
-Bananas (6) · manzanas (8)
-
-**Total: 9 líneas de proteína, una bandeja de verdura, cuatro bolsas del congelador.**
-El resto ya está en tu casa: las legumbres, el arroz, la pasta, la avena y la mantequilla de maní.
-
----
+Esa despensa se compra una vez y rinde meses. La compra de la semana siguiente vuelve a ser corta.
 
 ## 10 · El bot
 

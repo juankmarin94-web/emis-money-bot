@@ -136,6 +136,118 @@
   "Espinaca congelada": [
    500,
    "bolsa de 500 g"
+  ],
+  "Carne de soya seca (TVP)": [
+   250,
+   "bolsa de 250 g"
+  ],
+  "Tempeh": [
+   300,
+   "bloque de 300 g"
+  ],
+  "Arroz arborio crudo": [
+   500,
+   "bolsa de 500 g"
+  ],
+  "Arroz jazmín crudo": [
+   1000,
+   "bolsa de 1 kg"
+  ],
+  "Parmesano": [
+   200,
+   "cuña de 200 g"
+  ],
+  "Ricotta light": [
+   250,
+   "tarro de 250 g"
+  ],
+  "Crema light": [
+   300,
+   "tarro de 300 ml"
+  ],
+  "Leche de coco light": [
+   400,
+   "lata de 400 ml"
+  ],
+  "Lentejas negras secas": [
+   500,
+   "bolsa de 500 g"
+  ],
+  "Frijol rojo seco": [
+   500,
+   "bolsa de 500 g"
+  ],
+  "Papa criolla": [
+   500,
+   "bolsa de 500 g"
+  ],
+  "Plátano maduro": [
+   200,
+   "unidad (~200 g)"
+  ],
+  "Chocolate 85%": [
+   100,
+   "barra de 100 g"
+  ],
+  "Pasta de tomate": [
+   140,
+   "lata de 140 g"
+  ],
+  "Mango": [
+   350,
+   "unidad (~350 g)"
+  ],
+  "Granola": [
+   500,
+   "bolsa de 500 g"
+  ],
+  "Hummus": [
+   200,
+   "tarro de 200 g"
+  ],
+  "Pan integral": [
+   700,
+   "bolsa de 700 g"
+  ],
+  "Aguacate": [
+   200,
+   "unidad (~200 g)"
+  ],
+  "Cebolla": [
+   150,
+   "unidad (~150 g)"
+  ],
+  "Apio": [
+   400,
+   "manojo"
+  ],
+  "Maíz tierno": [
+   400,
+   "2 mazorcas"
+  ],
+  "Pepino": [
+   300,
+   "unidad"
+  ],
+  "Salsa de soya": [
+   250,
+   "botella de 250 ml"
+  ],
+  "Pasta de curry rojo": [
+   110,
+   "tarro de 110 g"
+  ],
+  "Naranja": [
+   180,
+   "unidad"
+  ],
+  "Alcaparras": [
+   100,
+   "frasco de 100 g"
+  ],
+  "Guascas": [
+   20,
+   "sobre"
   ]
  }
 }
