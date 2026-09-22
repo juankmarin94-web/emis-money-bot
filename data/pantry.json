@@ -1,0 +1,141 @@
+{
+ "_nota": "Lo que hay en casa, confirmado por foto el 22 sep 2026. Cantidad en gramos o ml; null = hay pero sin medir. mercado.py resta esto de lo que pide la semana.",
+ "despensa": {
+  "Arroz basmati crudo": null,
+  "Pasta cruda": null,
+  "Avena en hojuelas": null,
+  "Harina PAN": null,
+  "Garbanzos de lata": 1200,
+  "Lentejas de lata": 400,
+  "Frijoles refritos": 400,
+  "Lentejas cafés secas": null,
+  "Lentejas rojas secas": null,
+  "Arvejas partidas secas": null,
+  "Frijoles negros secos": null,
+  "Dolmio": 500,
+  "Salsa mild": null,
+  "Caldo Campbell's": null,
+  "Aceite de oliva": null,
+  "Mantequilla de maní": null,
+  "Whole Earth": null,
+  "Wrap Mission wholegrain": 567,
+  "Arepa Sary con queso": 600,
+  "Sandía": null
+ },
+ "nevera": {
+  "Huevo entero": 700,
+  "Clara de huevo": 950,
+  "Tofu firme": 450,
+  "Espinaca": 200,
+  "Zanahoria": 400,
+  "Cebolla larga": 150,
+  "Leche de soya": 1000,
+  "Yogurt griego casero": 2000
+ },
+ "_al_fondo": [
+  "Aceite de coco",
+  "Ghee (x2)"
+ ],
+ "_unidades_compra": {
+  "Cottage alto en proteína": [
+   500,
+   "tarro de 500 g"
+  ],
+  "Tofu firme": [
+   450,
+   "paquete de 450 g"
+  ],
+  "Clara de huevo": [
+   950,
+   "pouch de 950 ml"
+  ],
+  "Huevo entero": [
+   700,
+   "docena (~700 g)"
+  ],
+  "Proteína en polvo": [
+   1000,
+   "bolsa de 1 kg"
+  ],
+  "Leche en polvo descremada": [
+   1000,
+   "bolsa de 1 kg"
+  ],
+  "Leche descremada": [
+   2000,
+   "botella de 2 L"
+  ],
+  "Berries congelados": [
+   1000,
+   "bolsa de 1 kg"
+  ],
+  "Edamame congelado": [
+   500,
+   "bolsa de 500 g"
+  ],
+  "Espinaca": [
+   280,
+   "bolsa de 280 g"
+  ],
+  "Champiñones": [
+   250,
+   "bandeja de 250 g"
+  ],
+  "Brócoli": [
+   350,
+   "cabeza (~350 g)"
+  ],
+  "Calabacín": [
+   200,
+   "unidad (~200 g)"
+  ],
+  "Tomate": [
+   150,
+   "unidad (~150 g)"
+  ],
+  "Zanahoria": [
+   500,
+   "bolsa de 500 g"
+  ],
+  "Habichuela": [
+   250,
+   "bolsa de 250 g"
+  ],
+  "Papa": [
+   1000,
+   "bolsa de 1 kg"
+  ],
+  "Banana": [
+   120,
+   "unidad (~120 g)"
+  ],
+  "Manzana": [
+   180,
+   "unidad (~180 g)"
+  ],
+  "Limón": [
+   60,
+   "unidad"
+  ],
+  "Cebolla larga": [
+   150,
+   "manojo"
+  ],
+  "Almendras": [
+   500,
+   "bolsa de 500 g"
+  ],
+  "Pimentón": [
+   150,
+   "unidad (~150 g)"
+  ],
+  "Coliflor": [
+   600,
+   "unidad (~600 g)"
+  ],
+  "Espinaca congelada": [
+   500,
+   "bolsa de 500 g"
+  ]
+ }
+}
