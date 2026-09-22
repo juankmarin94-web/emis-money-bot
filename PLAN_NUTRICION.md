@@ -322,3 +322,156 @@ la señal. El bot compara medias, nunca días sueltos.
 *Los macros se calculan desde `data/foods.json` y `data/recipes.json` del bot — los valores de
 etiqueta son aproximados, verifícalos contra tus paquetes y corrígelos en `foods.json`, que es la
 única fuente de verdad. Esto no es consejo médico: tus análisis los interpreta Dr Brenton Martin.*
+
+---
+
+# 07 · Fase rápida — olla Philips (22 sep 2026)
+
+> Actualización: peso subió respecto a los 96 kg de base y entró una **Philips All-in-One 6L**
+> (16-en-1: pressure cook, slow cook, sauté/sear, stew, yogurt, bake).
+> **Pendiente:** peso actual real y el resto del inventario. Números provisionales abajo.
+
+## Lo más rápido que sirve
+
+El techo útil es **−30% del TDEE**. Más abajo no compras velocidad, compras músculo perdido,
+fuerza perdida y un rebote. Y en tu caso hay una razón extra: con ALT en 68, bajar rápido es el
+tratamiento, pero bajar *a lo bruto* (dietas de 1.200 kcal, más de 1,5 kg/semana sostenido) puede
+empeorar las enzimas hepáticas de forma transitoria y sube el riesgo de cálculos biliares.
+Rápido sí, crash no.
+
+### Calorías según tu peso real
+
+| Peso | BMR | TDEE (×1,45) | **Meta (−30%)** | Déficit/día | Pérdida real/sem |
+|---|---|---|---|---|---|
+| 96 kg | 1.924 | 2.789 | **1.950** | −840 | ~0,76 kg |
+| 98 kg | 1.944 | 2.818 | **1.975** | −845 | ~0,77 kg |
+| 100 kg | 1.964 | 2.848 | **2.000** | −850 | ~0,78 kg |
+| 102 kg | 1.984 | 2.876 | **2.025** | −850 | ~0,78 kg |
+| 105 kg | 2.014 | 2.920 | **2.050** | −875 | ~0,80 kg |
+
+Las semanas 1–2 la balanza va a mostrar 3–4 kg. Eso es agua y glucógeno, no grasa. Lo real son
+~0,8 kg/semana, y son 12 kg en 15 semanas.
+
+### Macros (trabajando con 100 kg — 2.000 kcal promedio)
+
+| | Entreno (L·Ma·J·V) | Descanso (Mi·S·D) |
+|---|---|---|
+| Calorías | **2.150** | **1.800** |
+| Proteína | **200 g** | **200 g** |
+| Grasa | 60 g | 58 g |
+| Carbos | 200 g | 120 g |
+| Fibra | 40 g | 40 g |
+
+Proteína sube de 182 g a **200 g (2 g/kg)**: cuanto más agresivo el déficit, más proteína decide
+si lo que pierdes es grasa o músculo. Grasa se queda en el piso de 0,6 g/kg. Solo se mueven carbos.
+
+### La única regla que tienes que recordar
+
+**50 g de proteína por comida, cuatro veces al día.** Todo lo demás es detalle.
+
+---
+
+## La olla es la herramienta, no un juguete
+
+Tres cosas que antes eran fricción y ahora son gratis:
+
+### 1. Legumbres secas sin remojo → fibra a centavos
+
+La fibra soluble es tu tratamiento para el LDL 3,4, y las legumbres son la fuente más barata que
+existe. La olla las hace sin remojar y sin vigilar.
+
+| Qué | Agua | Presión | Liberación |
+|---|---|---|---|
+| Lentejas rojas | 1 : 2,5 | 5 min | natural |
+| Lentejas cafés/verdes | 1 : 3 | 9 min | natural |
+| Garbanzos secos (sin remojo) | 1 : 4 | 45 min | natural 15 min |
+| Garbanzos remojados | 1 : 3 | 15 min | natural |
+| Frijoles negros secos (sin remojo) | 1 : 4 | 30 min | natural |
+| Arroz basmati | 1 : 1,25 | 5 min | natural 10 min |
+| Avena steel-cut | 1 : 3 | 4 min | natural |
+| Papa en cubos (en canasta) | 1 taza agua | 8 min | rápida |
+
+Cocina la legumbre con **caldo Campbell's en vez de agua**: cero calorías extra, el doble de sabor.
+
+### 2. Huevos duros perfectos, 12 de una
+
+1 taza de agua, canasta, **5 min de presión, 5 min de liberación natural**, baño de hielo 3 min.
+Pelan sin pelear. Domingo por la noche = snacks de 13 g de proteína toda la semana.
+
+### 3. Función Yogurt → tu proteína más barata
+
+2 L de leche descremada + **150 g de leche en polvo descremada** batidos en frío.
+Calienta a 85 °C (sauté/sear low, removiendo), enfría a 43 °C, incorpora 3 cucharadas del
+**kéfir** que ya tienes como cultivo, y 9 h en función Yogurt.
+
+Resultado: ~2 kg de yogurt con **~120 g de proteína total** por unos $5. Si lo cuelas 3 h en un
+colador con tela te queda ~1,2 kg tipo griego a ~8 g/100 g. Comprar el equivalente cuesta el triple.
+
+*La leche en polvo es el truco real: ~35 g de proteína por 100 g y es lo más barato del
+supermercado por gramo de proteína. Sube la proteína y espesa sin colar.*
+
+*Verifica en el manual de tu modelo si la función Yogurt trae el paso de pasteurizado incluido.*
+
+### Lo que NO va en presión
+
+Tofu (queda esponja — va en **sauté/sear high**, 4 min por lado, seco y apretado),
+huevos revueltos, avena en hojuelas (se pega), verdura de hoja (va al final, con el calor residual).
+
+---
+
+## Inventario confirmado por foto
+
+**Proteína**
+- Claras congeladas Farm Pride 950 ml — 23,5 g de proteína por serve. **Tu proteína más barata y más eficiente: 21 g por 100 kcal.**
+- Huevos (~14)
+- Tofu Macro Perfectly Firm 450 g (22,2 g por serve, 3 serves, high fibre)
+- 2 tubos de yogurt de 1 kg (uno original fat free)
+- Kéfir natural sin lactosa → **también sirve de cultivo iniciador**
+- Leche de soya (4,1 g proteína/100 ml — la de almendra tiene 1,4 g: no cuenta como proteína)
+- Un bloque pálido en bandeja sin identificar (¿paneer? ¿haloumi? ¿mantequilla?)
+
+**Carbos**
+- Arepas Sary con queso extradelgadas, 600 g / 10 porciones
+- Wraps Mission Wholegrain Super Soft 567 g
+
+**Verdura**
+- Espinaca baby, zanahorias, cebolla larga
+
+**Despensa / nevera**
+- Caldo Campbell's Real Stock + 1 lata de sopa
+- Ajo crushed Stonemill, salsa de tomate/pizza, salsa mild, sriracha
+- Ghee Dokshaa, aceite de oliva, sal y pimienta
+- Jarra Brita
+
+**A la basura ya:** base de pizza Coles, venció el **13/09/2026**.
+
+**Al fondo del estante:** el ghee (grasa saturada pura, y tu LDL está en 3,4 — usa el aceite de
+oliva) y las arepas con queso (el paquete trae sello de exceso de grasas: sirven como el carbo de
+una comida, no como la base del día).
+
+---
+
+## Compras — núcleo que no depende del resto de las fotos
+
+Estas seis van pase lo que pase, porque sin ellas los 200 g de proteína y los 40 g de fibra no salen:
+
+1. **Lentejas secas** (rojas y cafés), 2 kg — 6 a 9 minutos en la olla, fibra soluble directo al LDL, centavos por porción. Palanca #1.
+2. **Garbanzos y frijoles negros secos**, 1 kg de cada — secos cuestan la cuarta parte de la lata y la olla borra la diferencia de esfuerzo.
+3. **Proteína en polvo** — sin esto, 200 g/día siendo vegetariano no cuadran.
+4. **Leche en polvo descremada** — la proteína más barata del supermercado y el motor del yogurt casero.
+5. **Leche descremada**, 3 L/semana — materia prima del yogurt.
+6. **Creatina monohidrato**, 5 g/día — creatinina 56 + vegetariano = el perfil que más responde. Avísale al médico.
+
+**Y del resto, lo de mayor impacto:** cottage cheese alto en proteína (12,8 g por 100 kcal),
+avena, edamame congelado (12 g proteína/100 g), espinaca congelada, brócoli, calabacín,
+champiñones, tomate, limones.
+
+*Lista final pendiente del resto de fotos.*
+
+---
+
+## Pendiente de Camilo
+
+1. **Peso actual** en ayunas → fija los números de arriba.
+2. **¿Repetiste las pruebas hepáticas?** Clinpath las pidió para un mes después del 9 de julio. Ya van dos meses y medio. Es lo único de todo este plan que no es negociable.
+3. **¿Sigue el entreno de 4 días?** Si no, el TDEE baja y las calorías con él.
