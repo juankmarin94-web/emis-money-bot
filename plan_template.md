@@ -147,14 +147,78 @@ por 100 g, lo más barato del supermercado por gramo de proteína, y espesa sin 
 
 *Verifica en el manual de tu modelo si la función Yogurt incluye el paso de pasteurizado.*
 
+### Las seis reglas de la olla
+
+1. **Los lácteos NUNCA entran a presión.** Yogurt, cottage, leche y kéfir se cortan. Van fuera del fuego, al servir.
+2. **Lo espeso va arriba, sin revolver.** Dolmio, tomate concentrado, salsa. Si se pega al fondo la olla marca error de quemado y no sube presión.
+3. **Legumbres y granos: liberación natural siempre.** La rápida hace que la espuma salte por la válvula.
+4. **La hoja verde entra con la olla ya apagada.** Dos minutos de calor residual bastan.
+5. **El tofu va en Sauté/sear high, destapado.** A presión queda esponja.
+6. **Mínimo 250 ml de líquido** o nunca alcanza presión.
+
+### Cuánto se puede llenar
+
+| | Límite |
+|---|---|
+| Guisos y sopas | **2/3 = 4 L** |
+| Legumbres, granos, pasta y avena | **1/2 = 3 L** — espuman y pueden tapar la válvula |
+
+Ese límite es el que fija el tamaño máximo de cada tanda. No es una sugerencia.
+
 ### Lo que NO va en presión
 
-Tofu (queda esponja — **sauté/sear high**, 4 min por lado, seco y bien apretado) ·
-huevos revueltos · avena en hojuelas (se pega) · hoja verde (va al final, con el calor residual).
+Tofu · huevos revueltos · avena en hojuelas (se pega) · hoja verde · cualquier lácteo.
 
 ---
 
-## 04 · Las recetas
+## 04 · Cocinar para varios días
+
+Cocinas al tamaño máximo que aguanta la olla, no la porción del día.
+
+### El domingo — cuatro tandas, en orden
+
+La olla queda ocupada **~2 h 50 min**, casi todo desatendido.
+
+| | Qué | Olla | Rinde |
+|---|---|---|---|
+| 1 | **12 huevos duros** | 5 min presión + 5 natural + hielo | toda la semana |
+| 2 | **Chili de frijoles negros** `d5` | Pressure cook 30 min, natural | ×4 · nevera 5 días · congela |
+| 3 | **Curry marroquí de garbanzos** `d2` | Pressure cook 8 min, natural | ×4 · nevera 4 días · congela |
+| 4 | **Dahl de lentejas rojas** `l1` | Pressure cook 5 min, natural | ×4 · nevera 4 días · congela |
+| 5 | **Overnight oats** `b3` | sin olla, 5 min | ×4 frascos · nevera 4 días |
+| 6 | **Arroz al caldo** | Pressure cook 5 min, natural 10 | 6 porciones |
+| — | **2 L de yogurt** *(de noche)* | Yogurt, 9 h | ~120 g de proteína |
+
+**12 porciones principales** listas de los 21 platos de la semana, más desayunos, huevos,
+arroz y yogurt. El resto de la semana es calentar.
+
+**El costo:** una tanda de 4 significa comer ese plato 4 veces. Si quieres variedad, haz 2 de
+cada una y vuelve a cocinar el miércoles.
+
+### La regla de las tandas
+
+Lo que guardas no lleva todo lo de la receta. Tres destinos:
+
+| | Qué va ahí | Por qué |
+|---|---|---|
+| **A la olla** | Legumbres, verdura, especias, aceite | Es lo que se cocina y se guarda |
+| **Aparte** | Arroz, pasta, wraps, arepas, avena | Tanda propia. Guardados juntos se pasan |
+| **Al servir** | Yogurt, cottage, limón, fruta, mantequilla de maní | Dentro se cortan o se aguan |
+
+El bot ya separa las tres columnas: `/receta l1 x4` te da las cantidades de cada grupo.
+
+### Qué NO se hace por tandas
+
+| | Por qué |
+|---|---|
+| `b1` `b5` `d1` — huevo revuelto y omelette | Recalentado es horrible. 10 min al momento |
+| `d3` `d6` `d7` — tofu sellado | Pierde la costra. Y el edamame recalentado se arruga |
+
+Son los platos de 10 minutos. No todo tiene que salir del congelador.
+
+---
+
+## 05 · Las recetas
 
 31 recetas. Los macros salen de `data/foods.json`, no están escritos a mano.
 
@@ -166,7 +230,7 @@ huevos revueltos · avena en hojuelas (se pega) · hoja verde (va al final, con 
 
 ---
 
-## 05 · La semana verificada
+## 06 · La semana verificada
 
 Cada día está armado y comprobado contra los objetivos, no estimado a ojo.
 
@@ -181,7 +245,7 @@ Déficit de 820 kcal/día → **0,75 kg/semana.**
 
 ---
 
-## 06 · El entreno
+## 07 · El entreno
 
 Cuatro días, Upper/Lower, solo con lo que hay en el garage. 84 series semanales.
 
@@ -252,7 +316,7 @@ El cardio **no** pone el déficit — lo pone la comida. El cardio es para tu co
 
 ---
 
-## 07 · Lo que ya tienes
+## 08 · Lo que ya tienes
 
 **Proteína** — claras congeladas Farm Pride (**21 g de proteína por 100 kcal: lo más eficiente de
 tu cocina**) · huevos · tofu Macro Perfectly Firm · 2 kg de yogurt · kéfir (también sirve de
@@ -305,7 +369,7 @@ Lo que no compras, no te lo comes. Es la regla más barata del plan.
 
 ---
 
-## 08 · Lista de compras (una semana)
+## 09 · Lista de compras (una semana)
 
 ### Proteína — lo que de verdad falta
 | Qué | Cuánto | Por qué |
@@ -353,7 +417,41 @@ El resto ya está en tu casa: las legumbres, el arroz, la pasta, la avena y la m
 
 ---
 
-## 09 · Seguimiento
+## 10 · El bot
+
+Todo esto vive en el bot de Telegram. Los gastos siguen funcionando igual.
+
+| Comando | Qué hace |
+|---|---|
+| `/hoy` | El menú de hoy con sus macros y el total contra el objetivo |
+| `/plan` | La semana completa |
+| `/receta l1` | Ingredientes y los pasos exactos de la olla |
+| **`/receta l1 x4`** | **Las cantidades para una tanda de 4**, separadas en *a la olla*, *aparte* y *al servir* |
+| `/tanda` | El domingo completo: qué cocinar, en qué orden, cuánto rinde y cuántos días dura |
+| `/olla` | Llenado, las seis reglas y la tabla de tiempos |
+| `/mercado` | La lista de compras de la semana, como checklist |
+
+Si pides una tanda más grande de lo que cabe, el bot te lo dice en vez de dejarte tapar la
+válvula: `/receta d4 x6` responde que el máximo seguro son 3 porciones y que lo hagas en dos.
+
+### Cómo se mantiene
+
+```
+data/foods.json      47 alimentos · kcal, P, C, G y fibra por 100 g
+data/recipes.json    31 recetas, el perfil, la semana, los métodos de olla y las tandas
+data/pantry.json     lo que hay en casa y los tamaños de empaque
+build_plan.py        regenera PLAN_NUTRICION.md
+mercado.py           regenera LISTA_MERCADO.md sumando la semana y restando la despensa
+nutricion.py         los comandos del bot (pruébalos con `python3 nutricion.py`)
+```
+
+Corriges un valor de etiqueta en `foods.json` contra tu paquete, corres los dos scripts, y el
+plan, la lista y el bot quedan con el número nuevo. No hay nada escrito a mano que se pueda
+desincronizar.
+
+---
+
+## 11 · Seguimiento
 
 - **Peso:** cada mañana en ayunas, después del baño. El dato diario es ruido; **la media de 7 días es la señal.** Compara medias, nunca días sueltos.
 - **Medidas:** cintura y pecho cada 2 semanas.
@@ -370,7 +468,7 @@ no falta de voluntad. Come la proteína primero y no improvises.
 
 ---
 
-## 10 · Las primeras 72 horas
+## 12 · Las primeras 72 horas
 
 1. **Pide la cita para repetir las pruebas hepáticas.** Hoy. Es lo único de todo esto que no espera.
 2. **Ve al supermercado con la lista de la sección 08.**

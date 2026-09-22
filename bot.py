@@ -1,4 +1,5 @@
 import os, json, re, requests, base64
+import nutricion
 from datetime import datetime
 import telebot
 from telebot import types
@@ -91,7 +92,8 @@ def cmd_start(msg):
             "• *balance 1500* — update your card balance\n"
             "• Or send a photo of a receipt 📸\n\n"
             "/summary — this month's totals\n"
-            "/undo — delete your last entry")
+            "/undo — delete your last entry\n\n"
+            "🥗 *Nutrición* — /hoy  /plan  /receta  /tanda  /olla  /mercado")
     else:
         mk = types.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
         mk.add('Juli', 'Camilo')
@@ -192,6 +194,55 @@ def handle_cb(call):
     bot.edit_message_text(
         f"✅ *{desc}* — A${amt:.2f} → {person.title()}{extra}",
         cid, call.message.message_id)
+
+# ── Nutrición ─────────────────────────────────────────────────────────────────
+# Van antes del handler de texto libre: telebot evalúa en orden de registro.
+def _responder(cid, texto):
+    """Telegram corta en 4096 caracteres: parte por líneas, no a la mitad."""
+    trozo = ""
+    for linea in texto.split("\n"):
+        if len(trozo) + len(linea) + 1 > 3900:
+            bot.send_message(cid, trozo); trozo = ""
+        trozo += linea + "\n"
+    if trozo.strip():
+        bot.send_message(cid, trozo)
+
+@bot.message_handler(commands=['nutricion', 'nutrition'])
+def cmd_nutricion(msg):
+    bot.send_message(msg.chat.id, nutricion.AYUDA)
+
+@bot.message_handler(commands=['hoy'])
+def cmd_hoy(msg):
+    _responder(msg.chat.id, nutricion.hoy(datetime.now().weekday()))
+
+@bot.message_handler(commands=['plan'])
+def cmd_plan(msg):
+    _responder(msg.chat.id, nutricion.plan())
+
+@bot.message_handler(commands=['mercado'])
+def cmd_mercado(msg):
+    _responder(msg.chat.id, nutricion.mercado())
+
+@bot.message_handler(commands=['tanda'])
+def cmd_tanda(msg):
+    _responder(msg.chat.id, nutricion.tanda())
+
+@bot.message_handler(commands=['olla'])
+def cmd_olla(msg):
+    _responder(msg.chat.id, nutricion.olla())
+
+@bot.message_handler(commands=['receta'])
+def cmd_receta(msg):
+    partes = msg.text.split()[1:]
+    if not partes:
+        bot.send_message(msg.chat.id,
+            "Dime cuál: `/receta l1`\nY para una tanda: `/receta l1 x4`\n\n"
+            "/plan trae los ids · /tanda dice cuáles rinden varios días")
+        return
+    n = 1
+    if len(partes) > 1 and partes[-1].lstrip('x').isdigit():
+        n = int(partes[-1].lstrip('x'))
+    _responder(msg.chat.id, nutricion.receta(partes[0], n))
 
 # ── Text messages ─────────────────────────────────────────────────────────────
 @bot.message_handler(func=lambda m: True)
