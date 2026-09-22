@@ -4,7 +4,6 @@
   "Arroz basmati crudo": null,
   "Pasta cruda": null,
   "Avena en hojuelas": null,
-  "Harina PAN": null,
   "Garbanzos de lata": 1200,
   "Lentejas de lata": 400,
   "Frijoles refritos": 400,
@@ -18,8 +17,6 @@
   "Aceite de oliva": null,
   "Mantequilla de maní": null,
   "Whole Earth": null,
-  "Wrap Mission wholegrain": 567,
-  "Arepa Sary con queso": 600,
   "Sandía": null
  },
  "nevera": {
@@ -137,10 +134,6 @@
    500,
    "bolsa de 500 g"
   ],
-  "Carne de soya seca (TVP)": [
-   250,
-   "bolsa de 250 g"
-  ],
   "Tempeh": [
    300,
    "bloque de 300 g"
@@ -169,21 +162,9 @@
    400,
    "lata de 400 ml"
   ],
-  "Lentejas negras secas": [
-   500,
-   "bolsa de 500 g"
-  ],
   "Frijol rojo seco": [
    500,
    "bolsa de 500 g"
-  ],
-  "Papa criolla": [
-   500,
-   "bolsa de 500 g"
-  ],
-  "Plátano maduro": [
-   200,
-   "unidad (~200 g)"
   ],
   "Chocolate 85%": [
    100,
@@ -245,9 +226,37 @@
    100,
    "frasco de 100 g"
   ],
-  "Guascas": [
-   20,
-   "sobre"
+  "Carne vegetal molida": [
+   400,
+   "paquete de 400 g"
+  ],
+  "Frijol rojo de lata": [
+   400,
+   "lata de 400 g"
+  ],
+  "Frijoles negros de lata": [
+   400,
+   "lata de 400 g"
+  ],
+  "Passata de tomate": [
+   700,
+   "botella de 700 g"
+  ],
+  "Camote": [
+   500,
+   "unidad (~500 g)"
+  ],
+  "Weet-Bix": [
+   575,
+   "caja de 575 g"
+  ],
+  "Queso cheddar light": [
+   250,
+   "bloque de 250 g"
+  ],
+  "Tostada integral": [
+   700,
+   "bolsa de 700 g"
   ]
  }
 }

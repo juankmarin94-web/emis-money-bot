@@ -63,7 +63,7 @@ Déficit                                      = −833 kcal/día
 
 | Macro | Objetivo | Por qué |
 |---|---|---|
-| **Proteína** | **178 g** (1,8 g/kg) | En déficit la proteína decide si pierdes grasa o músculo. Estaba en 2,0 g/kg, y bajó por una razón concreta: a 1.985 kcal, 196 g de proteína son el 39% de las calorías, y eso obliga a meterle cottage a todos los platos. 1,8 g/kg sigue de lleno en el rango que conserva masa magra (1,6–2,2) y le devuelve libertad a la comida. |
+| **Proteína** | **172 g** (1,76 g/kg) | En déficit la proteína decide si pierdes grasa o músculo. Estaba en 2,0 g/kg y bajó por una razón concreta: a 1.985 kcal, 196 g son el 39% de las calorías, y eso obliga a meterle cottage a todos los platos. El rango que conserva masa magra es 1,6–2,2 g/kg; 1,76 está de lleno adentro y le devuelve libertad a la comida. |
 | **Grasa** | **58 g** (0,6 g/kg) — piso | Protege la producción hormonal. No bajes de aquí por querer más carbos. |
 | **Carbos** | **~170 g** | Lo que queda. |
 | **Fibra** | **38 g +** | El doble del promedio australiano. Con LDL en 3,4 esto es tratamiento, no adorno. |
@@ -182,10 +182,10 @@ La olla queda ocupada **~3 h**, casi todo desatendido.
 | | Qué | Olla | Rinde |
 |---|---|---|---|
 | 1 | **12 huevos duros** | 5 min presión + 5 natural + hielo | toda la semana |
-| 2 | **Dal makhani** `d1` | Pressure cook 25 min, natural | ×4 · nevera 4 días · congela |
-| 3 | **Chili de tres frijoles** `d2` | Pressure cook 30 min, natural | ×4 · nevera 5 días · congela |
-| 4 | **Chana masala** `l1` | Pressure cook 8 min, natural | ×4 · nevera 4 días · congela |
-| 5 | **Avena cremosa** `b3` | Slow cook 20 min | ×4 frascos · nevera 4 días |
+| 2 | **Dal cremoso** `d1` | Pressure cook 12 min, natural | ×4 · nevera 4 días · congela |
+| 3 | **Chili con chocolate** `d2` | Pressure cook 10 min, natural | ×4 · nevera 5 días · congela |
+| 4 | **Frijoles a la colombiana** `l2` | Pressure cook 30 min, natural | ×4 · nevera 4 días · congela |
+| 5 | **Overnight oats** `b2` | sin olla, 5 min | ×4 frascos · nevera 4 días |
 | 6 | **Arroz al caldo** | Pressure cook 5 min, natural 10 | 6 porciones |
 | — | **2 L de yogurt** *(de noche)* | Yogurt, 9 h | ~120 g de proteína |
 
@@ -211,9 +211,10 @@ El bot ya separa las tres columnas: `/receta l1 x4` te da las cantidades de cada
 
 | | Por qué |
 |---|---|
-| `b2` — huevos pericos | Recalentados no son lo mismo. 15 min al momento |
-| `d7` — tofu al ajillo | Pierde la costra si lo recalientas. 15 min |
-| `l2` — risotto | Recalentado pierde la textura. Máximo 2 porciones |
+| `b1` `b8` — pericos y omelette | Recalentados no son lo mismo. 8 min al momento |
+| `b7` — calentado paisa | Al momento, pero solo existe si el domingo dejaste arroz y frijol |
+| `d6` — tofu al ajillo | Pierde la costra si lo recalientas. 15 min |
+| `l6` — risotto | Recalentado pierde la textura. Máximo 2 porciones |
 
 Son los platos de 10 minutos. No todo tiene que salir del congelador.
 
@@ -221,12 +222,28 @@ Son los platos de 10 minutos. No todo tiene que salir del congelador.
 
 ## 05 · Las recetas
 
-29 recetas, elegidas por sabor y construidas alrededor de la olla: chana masala, dal makhani,
-risotto de champiñones, ajiaco, feijoada, frijoles paisas con chicharrón de tofu, chili con
-chocolate amargo, bolognesa de carne de soya. Los macros salen de `data/foods.json`, no están
-escritos a mano.
+31 recetas con tres reglas encima:
 
-**Todo sigue siendo vegetariano, sin pescado y sin tahini.**
+1. **Los desayunos son de 8 minutos o menos** — huevos, avena o cereal. Nada de hornear entre semana.
+2. **Los almuerzos van en la olla** — chana masala, frijoles a la colombiana, sancocho, arroz con carne vegetal, curry rojo, risotto.
+3. **Todo se consigue en Coles o Woolworths.** Salieron del plan la Harina PAN, las guascas, la papa criolla y el plátano maduro: sabrosos, pero no son "paso por el súper de la esquina".
+
+Vegetariano, sin pescado y sin tahini. Los macros salen de `data/foods.json`, no están escritos a mano.
+
+### La proteína del bote
+
+Tu proteína es de arveja germinada y arroz integral: **69,7 g por 100 g, no 80**, así que una
+medida de 30 g son 20,9 g de proteína. Ya está corregida en `foods.json` — las recetas la
+calculan con la etiqueta real.
+
+Y trae algo que a ti te sirve más que a la mayoría: **11,9 mg de hierro por medida, el 99% del
+RDI.** Con ferritina en 50, hierro sérico cayendo de 17,7 a 11,7 y una dieta vegetariana, ese
+bote es una fuente de hierro, no solo de proteína. Tómalo con fruta o limón, y **no con café ni
+té**, que bloquean la absorción.
+
+*Un detalle si quieres afinar:* la síntesis de proteína muscular responde a la leucina, y el
+umbral está alrededor de 2,5 g. Tu medida de 30 g trae 1,64 g; la de 45 g trae 2,46 g. En los
+días de entreno, el batido de después vale la pena hacerlo de 45 g.
 
 {{TABLAS}}
 
@@ -242,8 +259,8 @@ Cada día está armado y comprobado contra los objetivos, no estimado a ojo.
 
 {{SEMANA}}
 
-Promedio real: **2.036 kcal · 178 g de proteína · 59 g de grasa · 40 g de fibra.**
-Déficit de 782 kcal/día → **0,71 kg/semana.**
+Promedio real: **2.030 kcal · 172 g de proteína · 61 g de grasa · 41 g de fibra.**
+Déficit de 788 kcal/día → **0,72 kg/semana.**
 
 *Las recetas nuevas cuestan 0,04 kg por semana contra las anteriores. Es el precio de comer
 dal makhani y ajiaco en vez de cottage con tomate, y vale la pena: el plan que no sigues no
@@ -385,8 +402,9 @@ Lo que no compras, no te lo comes. Es la regla más barata del plan.
 
 Suma los ingredientes de los 7 días del menú, resta lo que hay en `data/pantry.json` y convierte
 el resto a unidades de compra. Cambias el menú o la despensa, corres el comando, y la lista queda
-al día. La de esta semana son **37 líneas**, porque las recetas nuevas traen despensa nueva:
-carne de soya, arroz arborio, pasta de curry rojo, leche de coco light, lentejas negras, guascas.
+al día. La de esta semana son **33 líneas**, porque las recetas traen despensa nueva: carne vegetal
+molida, arroz arborio, pasta de curry rojo, leche de coco light, passata, tempeh. Todo de Coles
+o Woolworths — nada de tienda latina.
 
 Esa despensa se compra una vez y rinde meses. La compra de la semana siguiente vuelve a ser corta.
 
