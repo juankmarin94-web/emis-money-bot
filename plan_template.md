@@ -211,7 +211,7 @@ El bot ya separa las tres columnas: `/receta l1 x4` te da las cantidades de cada
 
 | | Por qué |
 |---|---|
-| `b1` `b8` — pericos y omelette | Recalentados no son lo mismo. 8 min al momento |
+| `b1` `b8` `b9` `b10` — pericos, omelette y arepas | Recalentados no son lo mismo. 5 a 10 min al momento |
 | `b7` — calentado paisa | Al momento, pero solo existe si el domingo dejaste arroz y frijol |
 | `d6` — tofu al ajillo | Pierde la costra si lo recalientas. 15 min |
 | `l6` — risotto | Recalentado pierde la textura. Máximo 2 porciones |
@@ -226,7 +226,7 @@ Son los platos de 10 minutos. No todo tiene que salir del congelador.
 
 1. **Los desayunos son de 8 minutos o menos** — huevos, avena o cereal. Nada de hornear entre semana.
 2. **Los almuerzos van en la olla** — chana masala, frijoles a la colombiana, sancocho, arroz con carne vegetal, curry rojo, risotto.
-3. **Todo se consigue en Coles o Woolworths.** Salieron del plan la Harina PAN, las guascas, la papa criolla y el plátano maduro: sabrosos, pero no son "paso por el súper de la esquina".
+3. **Todo se consigue donde tú compras en Adelaide.** La Harina PAN, las arepas de paquete y el plátano maduro sí los encuentras, así que están dentro. Las guascas y la papa criolla no, y sin guascas no hay ajiaco — por eso el sancocho de papa, camote y mazorca ocupa ese lugar en vez de una versión triste del ajiaco.
 
 Vegetariano, sin pescado y sin tahini. Los macros salen de `data/foods.json`, no están escritos a mano.
 
@@ -259,8 +259,12 @@ Cada día está armado y comprobado contra los objetivos, no estimado a ojo.
 
 {{SEMANA}}
 
-Promedio real: **2.030 kcal · 172 g de proteína · 61 g de grasa · 41 g de fibra.**
-Déficit de 788 kcal/día → **0,72 kg/semana.**
+Promedio real: **2.053 kcal · 172 g de proteína · 58 g de grasa · 41 g de fibra.**
+Déficit de 765 kcal/día → **0,70 kg/semana.**
+
+*El sábado y el domingo corren unas 150–200 kcal por encima: los frijoles paisas y el calentado
+son platos grandes y no tiene sentido encogerlos hasta que dejen de ser ellos. La semana
+aguanta, y el costo son 10 gramos por semana.*
 
 *Las recetas nuevas cuestan 0,04 kg por semana contra las anteriores. Es el precio de comer
 dal makhani y ajiaco en vez de cottage con tomate, y vale la pena: el plan que no sigues no
@@ -402,9 +406,8 @@ Lo que no compras, no te lo comes. Es la regla más barata del plan.
 
 Suma los ingredientes de los 7 días del menú, resta lo que hay en `data/pantry.json` y convierte
 el resto a unidades de compra. Cambias el menú o la despensa, corres el comando, y la lista queda
-al día. La de esta semana son **33 líneas**, porque las recetas traen despensa nueva: carne vegetal
-molida, arroz arborio, pasta de curry rojo, leche de coco light, passata, tempeh. Todo de Coles
-o Woolworths — nada de tienda latina.
+al día. La de esta semana son **35 líneas**, porque las recetas traen despensa nueva: carne vegetal
+molida, arroz arborio, pasta de curry rojo, leche de coco light, passata, tempeh.
 
 Esa despensa se compra una vez y rinde meses. La compra de la semana siguiente vuelve a ser corta.
 

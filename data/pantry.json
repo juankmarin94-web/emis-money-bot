@@ -17,7 +17,9 @@
   "Aceite de oliva": null,
   "Mantequilla de maní": null,
   "Whole Earth": null,
-  "Sandía": null
+  "Sandía": null,
+  "Harina PAN": null,
+  "Arepa Sary con queso": 600
  },
  "nevera": {
   "Huevo entero": 700,
@@ -257,6 +259,18 @@
   "Tostada integral": [
    700,
    "bolsa de 700 g"
+  ],
+  "Harina PAN": [
+   1000,
+   "bolsa de 1 kg"
+  ],
+  "Plátano maduro": [
+   200,
+   "unidad (~200 g)"
+  ],
+  "Arepa Sary con queso": [
+   600,
+   "paquete de 600 g"
   ]
  }
 }

@@ -287,26 +287,26 @@
     ],
     [
      "Frijol rojo de lata",
-     100
+     80
+    ],
+    [
+     "Plátano maduro",
+     45
     ],
     [
      "Cebolla larga",
-     25
-    ],
-    [
-     "Tomate",
-     70
+     30
     ],
     [
      "Aguacate",
-     35
+     20
     ]
    ],
-   "kcal": 518,
-   "p": 39,
-   "c": 39,
-   "f": 21,
-   "fib": 10,
+   "kcal": 516,
+   "p": 38,
+   "c": 47,
+   "f": 19,
+   "fib": 8,
    "tanda": {
     "max_porciones": 1,
     "nevera_dias": 0,
@@ -438,13 +438,17 @@
    }
   },
   "l2": {
-   "n": "Frijoles a la colombiana con arroz",
+   "n": "Frijoles paisas con plátano y huevo",
    "g": "almuerzo",
    "min": 45,
    "ing": [
     [
      "Frijol rojo seco",
-     60
+     50
+    ],
+    [
+     "Plátano maduro",
+     50
     ],
     [
      "Tomate",
@@ -456,15 +460,15 @@
     ],
     [
      "Zanahoria",
-     50
+     40
     ],
     [
      "Arroz basmati crudo",
-     25
+     20
     ],
     [
      "Aguacate",
-     35
+     25
     ],
     [
      "Huevo entero",
@@ -476,14 +480,14 @@
     ],
     [
      "Aceite de oliva",
-     5
+     4
     ]
    ],
-   "kcal": 684,
-   "p": 44,
-   "c": 66,
-   "f": 24,
-   "fib": 15,
+   "kcal": 665,
+   "p": 42,
+   "c": 72,
+   "f": 21,
+   "fib": 14,
    "tanda": {
     "max_porciones": 4,
     "nevera_dias": 4,
@@ -495,11 +499,11 @@
     "min": 30,
     "liberacion": "natural",
     "pasos": [
-     "Frijol rojo **seco, sin remojar** + 4 partes de agua + zanahoria rallada. **Pressure cook 30 min**, natural 15.",
-     "La zanahoria rallada se deshace y da el dulce que el frijol necesita, sin plátano ni azúcar.",
+     "Frijol rojo **seco, sin remojar** + 4 partes de agua + **un trozo de plátano maduro**. **Pressure cook 30 min**, natural 15.",
+     "El plátano se deshace y da el dulce que el frijol paisa necesita. Eso no lo reemplaza la zanahoria.",
      "El hogao aparte: **Sauté/sear high** con cebolla y tomate 8 min, comino y color. Va al frijol **al final**, no al principio.",
      "Machaca un cucharón contra la pared de la olla para espesar.",
-     "Arroz al caldo y aguacate. Esto no sabe a dieta."
+     "Huevo frito encima, arroz y aguacate al lado. Tajadas de plátano (`s11`) si quieres el plato completo."
     ]
    }
   },
@@ -1479,6 +1483,146 @@
     "congela": false,
     "nota": "Corta la verdura el domingo y ya está resuelto."
    }
+  },
+  "b9": {
+   "n": "Arepa con huevos pericos",
+   "g": "desayuno",
+   "min": 10,
+   "ing": [
+    [
+     "Harina PAN",
+     40
+    ],
+    [
+     "Huevo entero",
+     100
+    ],
+    [
+     "Clara de huevo",
+     150
+    ],
+    [
+     "Tomate",
+     90
+    ],
+    [
+     "Cebolla larga",
+     30
+    ],
+    [
+     "Cottage alto en proteína",
+     100
+    ],
+    [
+     "Aguacate",
+     30
+    ]
+   ],
+   "kcal": 529,
+   "p": 46,
+   "c": 44,
+   "f": 18,
+   "fib": 5,
+   "tanda": {
+    "max_porciones": 1,
+    "nevera_dias": 0,
+    "congela": false,
+    "nota": "Al momento. La masa sí la puedes dejar hecha del día anterior, tapada en la nevera."
+   },
+   "olla": {
+    "modo": "Sauté/sear",
+    "min": 10,
+    "liberacion": "—",
+    "pasos": [
+     "Masa: **40 g de Harina PAN por 60 ml de agua tibia con sal.** Amasa 1 min y **deja reposar 5 min** — sin reposo la arepa se agrieta al asarla.",
+     "**Sauté/sear high**: la arepa 4 min por lado. Está lista cuando suena hueca al golpearla.",
+     "Sácala. Baja a **Sauté/sear low**: tomate y cebolla larga picados, 3 min.",
+     "Huevos y claras batidos, revuelve constante 2 min. **Apaga cuando todavía se vean húmedos.**",
+     "Cottage y aguacate al lado. La arepa la haces del tamaño que tú decidas: 40 g de harina son ~145 kcal, contra los 60 g por porción de las de paquete."
+    ]
+   }
+  },
+  "b10": {
+   "n": "Arepa rápida con huevo y queso",
+   "g": "desayuno",
+   "min": 5,
+   "ing": [
+    [
+     "Arepa Sary con queso",
+     60
+    ],
+    [
+     "Huevo entero",
+     100
+    ],
+    [
+     "Clara de huevo",
+     120
+    ],
+    [
+     "Tomate",
+     80
+    ],
+    [
+     "Cottage alto en proteína",
+     120
+    ]
+   ],
+   "kcal": 478,
+   "p": 45,
+   "c": 29,
+   "f": 19,
+   "fib": 2,
+   "tanda": {
+    "max_porciones": 1,
+    "nevera_dias": 0,
+    "congela": false,
+    "nota": "Cinco minutos de reloj."
+   },
+   "olla": {
+    "modo": "Sauté/sear",
+    "min": 5,
+    "liberacion": "—",
+    "pasos": [
+     "La arepa de paquete directo a **Sauté/sear high**, 2 min por lado. Cero preparación.",
+     "**Sauté/sear low**: huevos y claras batidos con el tomate, 2 min.",
+     "Cottage encima fuera del fuego.",
+     "Cinco minutos. Este es el desayuno de los días que te levantaste tarde."
+    ]
+   }
+  },
+  "s11": {
+   "n": "Tajadas de plátano maduro al horno",
+   "g": "snack",
+   "min": 25,
+   "ing": [
+    [
+     "Plátano maduro",
+     150
+    ]
+   ],
+   "kcal": 183,
+   "p": 2,
+   "c": 48,
+   "f": 1,
+   "fib": 3,
+   "tanda": {
+    "max_porciones": 4,
+    "nevera_dias": 3,
+    "congela": false,
+    "nota": "Al horno son 183 kcal; fritas serían más de 400. Es el mismo plátano, cambia el aceite."
+   },
+   "olla": {
+    "modo": "Bake",
+    "min": 25,
+    "liberacion": "—",
+    "pasos": [
+     "Plátano bien maduro (con manchas negras: ahí está el dulce) en tajadas diagonales de 1 cm.",
+     "**Espray de aceite, nada más.** Fritas son 3 veces las calorías por el aceite que absorben.",
+     "**Bake 25 min**, voltea a los 15. Quedan doradas por fuera y cremosas por dentro.",
+     "Una pizca de sal al final: es lo que hace que sepan a tajada y no a postre."
+    ]
+   }
   }
  },
  "semana": {
@@ -1536,18 +1680,18 @@
   "Jueves": {
    "tipo": "entreno",
    "ids": [
-    "b1",
+    "b9",
     "l5",
-    "s2",
+    "s4",
     "s5",
     "d1"
    ],
    "total": [
-    2092,
-    174,
-    190,
-    66,
-    47
+    2028,
+    172,
+    187,
+    59,
+    43
    ]
   },
   "Viernes": {
@@ -1570,35 +1714,35 @@
   "Sábado": {
    "tipo": "descanso",
    "ids": [
-    "b6",
-    "l1",
+    "b3",
+    "l2",
     "s2",
-    "s3",
+    "s4",
     "d6"
    ],
    "total": [
-    2036,
-    172,
-    197,
-    58,
-    37
+    2194,
+    177,
+    223,
+    60,
+    41
    ]
   },
   "Domingo": {
    "tipo": "descanso",
    "ids": [
-    "b8",
-    "l2",
-    "s4",
-    "s10",
+    "b7",
+    "l1",
+    "s2",
+    "s3",
     "d1"
    ],
    "total": [
-    2079,
-    170,
-    181,
-    63,
-    43
+    2104,
+    172,
+    213,
+    56,
+    41
    ]
   }
  },
@@ -1623,12 +1767,10 @@
   "desayunos": "Huevos, avena o cereal. Máximo 8 minutos. Nada de hornear entre semana.",
   "mercado": "Todo se consigue en Coles o Woolworths. Vive en Australia, es colombiano.",
   "fuera": [
-   "Harina PAN",
    "guascas",
-   "papa criolla",
-   "plátano maduro",
-   "arepas de paquete"
-  ]
+   "papa criolla"
+  ],
+  "consigue": "Harina PAN, arepas de paquete y plátano maduro sí los consigue en Adelaide."
  },
  "olla": {
   "modelo": "Philips All-in-One 6 L",
