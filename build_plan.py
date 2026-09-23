@@ -13,6 +13,7 @@ def main():
     alimentos = json.load(open("data/foods.json", encoding="utf8"))["alimentos"]
     datos = json.load(open("data/recipes.json", encoding="utf8"))
     recetas, semana, perfil = datos["recetas"], datos["semana"], datos["perfil"]
+    aparatos = datos.get("aparatos", {})
 
     # recalcular cada receta desde foods.json, para que no puedan desincronizarse
     for r in recetas.values():
@@ -33,7 +34,9 @@ def main():
             if r["g"] != grupo:
                 continue
             c = r.get("coccion", {})
-            como = ("**Olla** · " if c.get("donde") == "olla" else "") + c.get("texto", "—")
+            como = c.get("texto", "—")
+            if c.get("donde") == "olla":
+                como = "**" + como + "**"
             tablas.append(f"| `{k}` | {r['n']} | {como} | {r['kcal']} | **{r['p']} g** "
                           f"| {r['c']} g | {r['f']} g | {r['fib']} g |")
         tablas.append("")
@@ -58,11 +61,20 @@ def main():
             if r["g"] != grupo:
                 continue
             ings = " · ".join(f"{n} {int(g)} g" for n, g in r["ing"])
-            c = r.get("coccion", {})
-            como = ("Olla · " if c.get("donde") == "olla" else "") + c.get("texto", "")
-            detalle.append(f"**`{k}` {r['n']}** — {r['kcal']} kcal · {r['p']} g P · "
-                           f"{r['c']} g C · {r['f']} g G · {r['fib']} g fibra  \n"
-                           f"*{como}*  \n{ings}\n")
+            como = r.get("coccion", {}).get("texto", "")
+            detalle.append(f"**`{k}` {r['n']}** — {como}  \n"
+                           f"{r['kcal']} kcal · {r['p']} g P · {r['c']} g C · "
+                           f"{r['f']} g G · {r['fib']} g fibra\n")
+            detalle.append(f"{ings}\n")
+            pasos = []
+            for n_p, paso in enumerate(r.get("pasos", []), 1):
+                if isinstance(paso, str):
+                    pasos.append(f"{n_p}. {paso}")
+                else:
+                    ap = aparatos.get(paso["d"], paso["d"])
+                    pasos.append(f"{n_p}. **{ap}** — {paso['t']}")
+            if pasos:
+                detalle.append("\n".join(pasos) + "\n")
 
     doc = (open("plan_template.md", encoding="utf8").read()
            .replace("{{TABLAS}}", "\n".join(tablas).rstrip())

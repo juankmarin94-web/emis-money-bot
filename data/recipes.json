@@ -72,9 +72,31 @@
     ]
    },
    "coccion": {
-    "donde": "olla",
-    "texto": "Sofrito 8 min"
-   }
+    "donde": "otro",
+    "texto": "Sartén + Tostadora",
+    "aparatos": [
+     "sarten",
+     "tostadora"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "sarten",
+     "t": "Sartén a fuego medio con espray: tomate y cebolla larga picados, 3 min hasta que suelten el agua."
+    },
+    {
+     "d": "sarten",
+     "t": "Baja a fuego bajo. Huevos y claras batidos con sal y comino, revuelve constante 3 min."
+    },
+    {
+     "d": "sarten",
+     "t": "Apaga cuando todavía se vean húmedos: se terminan de cuajar con el calor de la sartén."
+    },
+    {
+     "d": "tostadora",
+     "t": "El pan mientras tanto. Aguacate machacado encima con sal y limón."
+    }
+   ]
   },
   "b2": {
    "n": "Overnight oats de la nevera",
@@ -115,8 +137,25 @@
    },
    "coccion": {
     "donde": "nada",
-    "texto": "Sin cocina · sale de la nevera"
-   }
+    "texto": "Sin fuego",
+    "aparatos": [
+     "sinfuego"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "nevera",
+     "t": "En un frasco la noche antes: avena + yogurt + proteína + mantequilla de maní + canela. Revuelve bien."
+    },
+    {
+     "d": "nevera",
+     "t": "Tapa y a la nevera. Mínimo 6 horas."
+    },
+    {
+     "d": "sinfuego",
+     "t": "En la mañana los berries encima. Cero cocina."
+    }
+   ]
   },
   "b3": {
    "n": "Avena caliente con proteína y banana",
@@ -167,8 +206,25 @@
    },
    "coccion": {
     "donde": "otro",
-    "texto": "Microondas 5 min"
-   }
+    "texto": "Microondas",
+    "aparatos": [
+     "micro"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "micro",
+     "t": "Avena + leche + canela en un bowl hondo, 2 min. Revuelve y 1 min más."
+    },
+    {
+     "d": "sinfuego",
+     "t": "Deja que baje del hervor un minuto ANTES de meter la proteína. Hirviendo se corta y queda grumosa."
+    },
+    {
+     "d": "sinfuego",
+     "t": "Banana en rodajas y la mantequilla de maní encima. Se derrite sola."
+    }
+   ]
   },
   "b4": {
    "n": "Weet-Bix con leche y batido",
@@ -205,8 +261,25 @@
    },
    "coccion": {
     "donde": "nada",
-    "texto": "Sin cocina · cereal y batido"
-   }
+    "texto": "Sin fuego",
+    "aparatos": [
+     "sinfuego"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "sinfuego",
+     "t": "Weet-Bix con la leche fría."
+    },
+    {
+     "d": "sinfuego",
+     "t": "El batido aparte: proteína en 300 ml de agua, agitado. La banana al lado."
+    },
+    {
+     "d": "sinfuego",
+     "t": "El cereal solo te deja en 12 g de proteína. El batido no es opcional."
+    }
+   ]
   },
   "b5": {
    "n": "Huevos duros con tostada de aguacate",
@@ -247,8 +320,25 @@
    },
    "coccion": {
     "donde": "otro",
-    "texto": "Tostadora · los huevos son del domingo"
-   }
+    "texto": "Tostadora",
+    "aparatos": [
+     "tostadora"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "nevera",
+     "t": "Los huevos ya están: salieron de la olla el domingo. Pélalos."
+    },
+    {
+     "d": "tostadora",
+     "t": "El pan al tostador."
+    },
+    {
+     "d": "sinfuego",
+     "t": "Aguacate machacado con sal, limón y pimienta sobre la tostada. Tomate en rodajas y el cottage al lado."
+    }
+   ]
   },
   "b6": {
    "n": "Bowl de yogurt con granola y mango",
@@ -289,8 +379,25 @@
    },
    "coccion": {
     "donde": "nada",
-    "texto": "Sin cocina · se arma en el bowl"
-   }
+    "texto": "Sin fuego",
+    "aparatos": [
+     "sinfuego"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "sinfuego",
+     "t": "Yogurt y proteína en el bowl, revuelve hasta que quede liso."
+    },
+    {
+     "d": "sinfuego",
+     "t": "Mango y berries encima."
+    },
+    {
+     "d": "sinfuego",
+     "t": "La granola de última, justo antes de comer, o se ablanda."
+    }
+   ]
   },
   "b7": {
    "n": "Calentado paisa",
@@ -350,9 +457,34 @@
     ]
    },
    "coccion": {
-    "donde": "olla",
-    "texto": "Sofrito 8 min"
-   }
+    "donde": "otro",
+    "texto": "Sartén",
+    "aparatos": [
+     "sarten"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "sarten",
+     "t": "Sartén bien caliente con espray: el arroz y el frijol del domingo, juntos, 4 min SIN moverlos mucho hasta que el arroz tome color."
+    },
+    {
+     "d": "sarten",
+     "t": "Cebolla larga y tomate picados, 2 min más."
+    },
+    {
+     "d": "sarten",
+     "t": "Sácalo al plato. En la misma sartén, el huevo frito con la yema blanda."
+    },
+    {
+     "d": "sarten",
+     "t": "Las tajadas de plátano, 2 min por lado, si no las horneaste antes."
+    },
+    {
+     "d": "sinfuego",
+     "t": "Aguacate al lado. Ocho minutos y es el desayuno de tu casa."
+    }
+   ]
   },
   "b8": {
    "n": "Omelette de champiñones y cheddar",
@@ -407,9 +539,35 @@
     ]
    },
    "coccion": {
-    "donde": "olla",
-    "texto": "Sofrito 8 min"
-   }
+    "donde": "otro",
+    "texto": "Sartén + Tostadora",
+    "aparatos": [
+     "sarten",
+     "tostadora"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "sarten",
+     "t": "Sartén a fuego alto con espray: champiñones en láminas 4 min SIN SAL hasta que doren. Si los salas antes sueltan agua y se hierven."
+    },
+    {
+     "d": "sarten",
+     "t": "Espinaca 1 min. Escurre el agua que suelte o el omelette queda aguado. Saca todo."
+    },
+    {
+     "d": "sarten",
+     "t": "Baja a fuego bajo. Huevos y claras batidos, 2 min sin tocar hasta que cuaje el fondo."
+    },
+    {
+     "d": "sarten",
+     "t": "El relleno y el cheddar sobre una mitad, dobla, 1 min más."
+    },
+    {
+     "d": "tostadora",
+     "t": "La tostada al lado."
+    }
+   ]
   },
   "l1": {
    "n": "Chana masala",
@@ -470,8 +628,37 @@
    },
    "coccion": {
     "donde": "olla",
-    "texto": "Presión 8 min · liberación natural"
-   }
+    "texto": "Olla",
+    "aparatos": [
+     "olla"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "olla",
+     "t": "OLLA en Sauté/sear high (el botón de sofreír) con el aceite: cebolla picada 6 min hasta que dore de verdad. Ahí está el fondo del plato."
+    },
+    {
+     "d": "olla",
+     "t": "Jengibre, ajo, comino, cúrcuma y garam masala, 45 segundos. Si empieza a oler, va bien."
+    },
+    {
+     "d": "olla",
+     "t": "Passata 5 min. Garbanzos escurridos y 100 ml de agua. Machaca un tercio con el tenedor: espesa sin harina."
+    },
+    {
+     "d": "olla",
+     "t": "Tapa. Botón Pressure cook, 8 min. Cuando termine NO sueltes la presión: espera a que baje sola (liberación natural, ~10 min)."
+    },
+    {
+     "d": "sinfuego",
+     "t": "Yogurt y limón al servir, fuera del fuego. El yogurt hirviendo se corta. Cilantro encima."
+    },
+    {
+     "d": "olla",
+     "t": "El arroz aparte: 1 taza de arroz por 1¼ de caldo, Pressure cook 5 min, natural 10."
+    }
+   ]
   },
   "l2": {
    "n": "Frijoles paisas con plátano y huevo",
@@ -544,8 +731,38 @@
    },
    "coccion": {
     "donde": "olla",
-    "texto": "Presión 30 min · liberación natural"
-   }
+    "texto": "Olla + Sartén",
+    "aparatos": [
+     "olla",
+     "sarten"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "olla",
+     "t": "OLLA: frijol rojo SECO sin remojar, 4 partes de agua y un trozo de plátano maduro. Pressure cook 30 min, liberación natural 15."
+    },
+    {
+     "d": "olla",
+     "t": "El plátano se deshace y da el dulce que el frijol paisa necesita."
+    },
+    {
+     "d": "sarten",
+     "t": "El hogao en sartén: cebolla y tomate 8 min con comino y color. Va al frijol AL FINAL, no al principio."
+    },
+    {
+     "d": "olla",
+     "t": "Machaca un cucharón de frijol contra la pared de la olla para espesar."
+    },
+    {
+     "d": "sarten",
+     "t": "El huevo frito en la misma sartén del hogao."
+    },
+    {
+     "d": "sinfuego",
+     "t": "Arroz, aguacate y las tajadas al lado."
+    }
+   ]
   },
   "l3": {
    "n": "Sancocho de tres tubérculos",
@@ -606,8 +823,33 @@
    },
    "coccion": {
     "donde": "olla",
-    "texto": "Presión 12 min · liberación natural"
-   }
+    "texto": "Olla",
+    "aparatos": [
+     "olla"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "olla",
+     "t": "OLLA en Sauté/sear high: cebolla larga y ajo 3 min con comino y color."
+    },
+    {
+     "d": "olla",
+     "t": "Papa y camote en trozos grandes, mazorca en rodajas, el caldo y cilantro con tallo."
+    },
+    {
+     "d": "olla",
+     "t": "Pressure cook 12 min, liberación natural."
+    },
+    {
+     "d": "olla",
+     "t": "Machaca un par de papas contra la pared: eso espesa el caldo y lo vuelve sancocho, no sopa."
+    },
+    {
+     "d": "sinfuego",
+     "t": "Al plato: cottage batido en vez de crema, aguacate y cilantro fresco."
+    }
+   ]
   },
   "l4": {
    "n": "Arroz con carne vegetal y verduras",
@@ -672,8 +914,29 @@
    },
    "coccion": {
     "donde": "olla",
-    "texto": "Presión 5 min · liberación natural 10 min"
-   }
+    "texto": "Olla",
+    "aparatos": [
+     "olla"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "olla",
+     "t": "OLLA en Sauté/sear high con el aceite: la carne vegetal 6 min SIN moverla mucho, hasta que tueste. Si la revuelves todo el tiempo se hace papilla."
+    },
+    {
+     "d": "olla",
+     "t": "Comino, paprika, ajo y color. Pimentón y habichuela 3 min."
+    },
+    {
+     "d": "olla",
+     "t": "Arroz y caldo (1 taza de arroz por 1¼ de caldo). El maíz encima SIN revolver."
+    },
+    {
+     "d": "olla",
+     "t": "Pressure cook 5 min, liberación natural 10 min. Suelta con tenedor, no con cuchara."
+    }
+   ]
   },
   "l5": {
    "n": "Curry rojo tailandés de tofu",
@@ -741,8 +1004,34 @@
    },
    "coccion": {
     "donde": "olla",
-    "texto": "Presión 5 min · liberación rápida"
-   }
+    "texto": "Sartén + Olla",
+    "aparatos": [
+     "sarten",
+     "olla"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "sarten",
+     "t": "El tofu primero: seco y apretado con papel, en cubos, sartén caliente 5 min hasta dorar. Resérvalo."
+    },
+    {
+     "d": "olla",
+     "t": "OLLA en Sauté/sear high: fríe la pasta de curry 1 min ANTES de mojarla. Saltarse esto es la diferencia entre curry y agua con color."
+    },
+    {
+     "d": "olla",
+     "t": "Leche de coco, garbanzos, pimentón y habichuela. Pressure cook 5 min, liberación RÁPIDA (suelta la válvula apenas termine)."
+    },
+    {
+     "d": "sinfuego",
+     "t": "El tofu de vuelta, espinaca con el calor que queda, limón y albahaca."
+    },
+    {
+     "d": "olla",
+     "t": "Arroz jazmín aparte, Pressure cook 5 min."
+    }
+   ]
   },
   "l6": {
    "n": "Risotto de champiñones",
@@ -807,8 +1096,33 @@
    },
    "coccion": {
     "donde": "olla",
-    "texto": "Presión 6 min · liberación rápida"
-   }
+    "texto": "Olla",
+    "aparatos": [
+     "olla"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "olla",
+     "t": "OLLA en Sauté/sear high: champiñones en cuartos 6 min SIN SAL y sin moverlos, hasta que doren. Sácalos."
+    },
+    {
+     "d": "olla",
+     "t": "Cebolla 4 min, luego el arroz 2 min hasta que los granos se vean vidriosos por fuera."
+    },
+    {
+     "d": "olla",
+     "t": "Caldo caliente y tomillo. Pressure cook 6 min, liberación RÁPIDA. Con natural se pasa de cocción."
+    },
+    {
+     "d": "olla",
+     "t": "Cancel. Devuelve los champiñones, el parmesano y la ricotta. Bate fuerte 1 min: ahí aparece la cremosidad."
+    },
+    {
+     "d": "sinfuego",
+     "t": "Cottage y pimienta al servir."
+    }
+   ]
   },
   "d1": {
    "n": "Dal cremoso de lentejas y frijol rojo",
@@ -870,8 +1184,33 @@
    },
    "coccion": {
     "donde": "olla",
-    "texto": "Presión 12 min · liberación natural"
-   }
+    "texto": "Olla",
+    "aparatos": [
+     "olla"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "olla",
+     "t": "OLLA en Sauté/sear high con el aceite: cebolla 6 min, luego jengibre, ajo, comino y garam masala 45 segundos."
+    },
+    {
+     "d": "olla",
+     "t": "Passata 5 min. Lentejas cafés, frijol rojo escurrido y 400 ml de agua."
+    },
+    {
+     "d": "olla",
+     "t": "Pressure cook 12 min, liberación natural."
+    },
+    {
+     "d": "olla",
+     "t": "Vuelve a Sauté/sear low y machaca 10 min contra la pared de la olla. Ese machacado es lo que lo vuelve cremoso, no la crema."
+    },
+    {
+     "d": "sinfuego",
+     "t": "Yogurt y cottage al servir, fuera del fuego. Cilantro."
+    }
+   ]
   },
   "d2": {
    "n": "Chili con chocolate amargo",
@@ -944,8 +1283,33 @@
    },
    "coccion": {
     "donde": "olla",
-    "texto": "Presión 10 min · liberación natural"
-   }
+    "texto": "Olla",
+    "aparatos": [
+     "olla"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "olla",
+     "t": "OLLA en Sauté/sear high: la carne vegetal 6 min sin moverla hasta que tueste. Sácala."
+    },
+    {
+     "d": "olla",
+     "t": "Cebolla y pimentón 6 min. Comino, orégano, paprika ahumada y chili, 45 segundos."
+    },
+    {
+     "d": "olla",
+     "t": "Passata, los frijoles escurridos, la carne de vuelta y los 8 g de chocolate 85%."
+    },
+    {
+     "d": "olla",
+     "t": "Pressure cook 10 min, liberación natural. El chocolate no lo vuelve dulce: le da el fondo oscuro que un chili casero nunca tiene."
+    },
+    {
+     "d": "sinfuego",
+     "t": "Cottage y aguacate encima. Cilantro y limón."
+    }
+   ]
   },
   "d3": {
    "n": "Bolognesa de carne vegetal",
@@ -1013,8 +1377,34 @@
    },
    "coccion": {
     "donde": "olla",
-    "texto": "Presión 10 min · liberación natural"
-   }
+    "texto": "Olla + Estufa",
+    "aparatos": [
+     "olla",
+     "estufa"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "olla",
+     "t": "OLLA en Sauté/sear high: sofrito de cebolla, zanahoria y apio picados finos, 8 min. Sin ese sofrito no hay bolognesa."
+    },
+    {
+     "d": "olla",
+     "t": "La carne vegetal 6 min hasta que tueste. Luego la pasta de tomate 2 min: tostarla es lo que da el color oscuro."
+    },
+    {
+     "d": "olla",
+     "t": "Passata, laurel y orégano. Pressure cook 10 min, liberación natural."
+    },
+    {
+     "d": "estufa",
+     "t": "La pasta aparte en una olla con agua hirviendo y sal, al dente. Pruébala 1 min antes de lo que dice la caja."
+    },
+    {
+     "d": "sinfuego",
+     "t": "Parmesano rallado al final."
+    }
+   ]
   },
   "d4": {
    "n": "Feijoada vegetariana",
@@ -1079,8 +1469,38 @@
    },
    "coccion": {
     "donde": "olla",
-    "texto": "Presión 30 min · liberación natural"
-   }
+    "texto": "Olla + Sartén",
+    "aparatos": [
+     "olla",
+     "sarten"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "olla",
+     "t": "OLLA: frijol negro SECO sin remojar, 4 partes de agua y laurel. Pressure cook 30 min, liberación natural 15. Escurre y reserva."
+    },
+    {
+     "d": "olla",
+     "t": "Sauté/sear high: tempeh en cubos 6 min con paprika ahumada. Esa paprika es la que hace el ahumado."
+    },
+    {
+     "d": "olla",
+     "t": "Cebolla y passata 6 min, ajo al final."
+    },
+    {
+     "d": "olla",
+     "t": "Junta con el frijol, la cáscara y el jugo de media naranja. Sauté/sear low 10 min. La naranja corta la pesadez del frijol: eso es lo que hace la feijoada."
+    },
+    {
+     "d": "sarten",
+     "t": "La espinaca salteada aparte, 2 min con ajo."
+    },
+    {
+     "d": "sinfuego",
+     "t": "Arroz al lado y gajos de naranja al plato."
+    }
+   ]
   },
   "d5": {
    "n": "Sopa cremosa de tomate rostizado y lenteja roja",
@@ -1145,8 +1565,35 @@
    },
    "coccion": {
     "donde": "olla",
-    "texto": "Presión 6 min · liberación natural"
-   }
+    "texto": "Olla + Licuadora + Tostadora",
+    "aparatos": [
+     "olla",
+     "licuadora",
+     "tostadora"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "olla",
+     "t": "OLLA en Sauté/sear high con el aceite: tomate en mitades, boca abajo, 8 min SIN moverlos hasta que se chamusquen. Ese tostado es toda la sopa."
+    },
+    {
+     "d": "olla",
+     "t": "Cebolla y ajo 4 min. Lentejas rojas y el caldo."
+    },
+    {
+     "d": "olla",
+     "t": "Pressure cook 6 min, liberación natural."
+    },
+    {
+     "d": "licuadora",
+     "t": "Licúa con la ricotta y un puñado de albahaca hasta que quede cremosa. Sin una gota de crema."
+    },
+    {
+     "d": "tostadora",
+     "t": "La tostada mientras tanto. Cottage y albahaca encima de la sopa."
+    }
+   ]
   },
   "d6": {
    "n": "Tofu al ajillo con brócoli",
@@ -1207,8 +1654,34 @@
    },
    "coccion": {
     "donde": "olla",
-    "texto": "Sofrito 15 min"
-   }
+    "texto": "Sartén + Olla",
+    "aparatos": [
+     "sarten",
+     "olla"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "sarten",
+     "t": "Tofu en lonjas de 1,5 cm, apretado con papel 2 min. Sartén MUY caliente, 4 min por lado SIN tocarlo. Ahí se forma la costra."
+    },
+    {
+     "d": "sarten",
+     "t": "Sácalo. Champiñones 5 min sin sal, luego el brócoli 4 min."
+    },
+    {
+     "d": "sarten",
+     "t": "Mucho ajo laminado AL FINAL, 1 min. Si lo pones al principio se quema y amarga."
+    },
+    {
+     "d": "sarten",
+     "t": "Devuelve el tofu, salsa de soya y chili en hojuelas. Cebolla larga encima."
+    },
+    {
+     "d": "olla",
+     "t": "El arroz aparte en la olla, Pressure cook 5 min."
+    }
+   ]
   },
   "d7": {
    "n": "Shakshuka",
@@ -1273,9 +1746,39 @@
     ]
    },
    "coccion": {
-    "donde": "olla",
-    "texto": "Sofrito 18 min"
-   }
+    "donde": "otro",
+    "texto": "Sartén + Tostadora",
+    "aparatos": [
+     "sarten",
+     "tostadora"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "sarten",
+     "t": "Sartén amplia a fuego medio con el aceite: cebolla y pimentón en tiras, 6 min."
+    },
+    {
+     "d": "sarten",
+     "t": "Comino, paprika ahumada y chili, 30 segundos. Ese tostado de las especias es toda la receta."
+    },
+    {
+     "d": "sarten",
+     "t": "Passata, 8 min a fuego bajo hasta que espese de verdad. Aguada no sirve."
+    },
+    {
+     "d": "sarten",
+     "t": "Haz huecos con la cuchara, casca los huevos dentro y vierte las claras alrededor."
+    },
+    {
+     "d": "sarten",
+     "t": "TAPA la sartén 5 min: la clara cuaja y la yema queda cremosa."
+    },
+    {
+     "d": "tostadora",
+     "t": "La tostada para mojar. Cottage en cucharadas encima, fuera del fuego."
+    }
+   ]
   },
   "s1": {
    "n": "Batido de proteína con berries",
@@ -1304,8 +1807,21 @@
    },
    "coccion": {
     "donde": "otro",
-    "texto": "Licuadora"
-   }
+    "texto": "Licuadora",
+    "aparatos": [
+     "licuadora"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "licuadora",
+     "t": "Proteína en 300 ml de agua fría con los berries congelados. Agita o licúa."
+    },
+    {
+     "d": "sinfuego",
+     "t": "21 g de proteína y el 99% del hierro del día. No lo tomes con café ni té: bloquean el hierro."
+    }
+   ]
   },
   "s2": {
    "n": "Batido de mango con yogurt",
@@ -1338,8 +1854,17 @@
    },
    "coccion": {
     "donde": "otro",
-    "texto": "Licuadora"
-   }
+    "texto": "Licuadora",
+    "aparatos": [
+     "licuadora"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "licuadora",
+     "t": "Mango congelado, yogurt y proteína. Licúa hasta que quede tipo helado."
+    }
+   ]
   },
   "s3": {
    "n": "Dos huevos duros",
@@ -1373,8 +1898,21 @@
    },
    "coccion": {
     "donde": "olla",
-    "texto": "Del domingo · presión 5 min"
-   }
+    "texto": "Olla",
+    "aparatos": [
+     "olla"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "olla",
+     "t": "Del domingo: 1 taza de agua en la OLLA, la canasta, hasta 12 huevos. Pressure cook 5 min, liberación natural 5 min."
+    },
+    {
+     "d": "sinfuego",
+     "t": "Baño de hielo 3 min. Pelan sin pelear. Aguantan 7 días en la nevera."
+    }
+   ]
   },
   "s4": {
    "n": "Yogurt con berries y canela",
@@ -1407,8 +1945,17 @@
    },
    "coccion": {
     "donde": "nada",
-    "texto": "Sin cocina"
-   }
+    "texto": "Sin fuego",
+    "aparatos": [
+     "sinfuego"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "sinfuego",
+     "t": "Yogurt, berries y canela. Whole Earth si lo quieres dulce: endulza a cero calorías."
+    }
+   ]
   },
   "s5": {
    "n": "Edamame con sal y chili",
@@ -1433,8 +1980,21 @@
    },
    "coccion": {
     "donde": "otro",
-    "texto": "Agua hirviendo 4 min"
-   }
+    "texto": "Estufa",
+    "aparatos": [
+     "estufa"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "estufa",
+     "t": "Edamame congelado directo a agua hirviendo, 4 min. Escurre."
+    },
+    {
+     "d": "sinfuego",
+     "t": "Sal gruesa y chili en hojuelas. Se comen exprimiendo la vaina con los dientes."
+    }
+   ]
   },
   "s6": {
    "n": "Cottage con tomate y sriracha",
@@ -1463,8 +2023,17 @@
    },
    "coccion": {
     "donde": "nada",
-    "texto": "Sin cocina"
-   }
+    "texto": "Sin fuego",
+    "aparatos": [
+     "sinfuego"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "sinfuego",
+     "t": "Cottage en un bowl, tomate picado, sriracha generosa. 26 g de proteína en dos minutos."
+    }
+   ]
   },
   "s7": {
    "n": "Garbanzos crocantes especiados",
@@ -1503,8 +2072,25 @@
    },
    "coccion": {
     "donde": "olla",
-    "texto": "Horno 30 min"
-   }
+    "texto": "Olla",
+    "aparatos": [
+     "olla"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "sinfuego",
+     "t": "Garbanzos escurridos y MUY secos con papel. El agua es lo único que impide que crujan."
+    },
+    {
+     "d": "horno",
+     "t": "Aceite, paprika ahumada, comino y ajo en polvo. OLLA en Bake 30 min, sacudiendo a la mitad."
+    },
+    {
+     "d": "sinfuego",
+     "t": "Sal al final. En frasco abierto duran 3 días; cerrado se ablandan."
+    }
+   ]
   },
   "s8": {
    "n": "Manzana con mantequilla de maní",
@@ -1533,8 +2119,17 @@
    },
    "coccion": {
     "donde": "nada",
-    "texto": "Sin cocina"
-   }
+    "texto": "Sin fuego",
+    "aparatos": [
+     "sinfuego"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "sinfuego",
+     "t": "Manzana en gajos y 20 g de mantequilla de maní. PÉSALOS: la cucharada a ojo son 35-40 g y ahí se van 130 kcal fantasma."
+    }
+   ]
   },
   "s9": {
    "n": "Batido pre-gym de banana y avena",
@@ -1571,8 +2166,17 @@
    },
    "coccion": {
     "donde": "otro",
-    "texto": "Licuadora"
-   }
+    "texto": "Licuadora",
+    "aparatos": [
+     "licuadora"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "licuadora",
+     "t": "Yogurt, banana, avena y proteína con 150 ml de agua y hielo. Tómalo 60-90 min antes de entrenar."
+    }
+   ]
   },
   "s10": {
    "n": "Hummus con bastones de verdura",
@@ -1605,8 +2209,17 @@
    },
    "coccion": {
     "donde": "nada",
-    "texto": "Sin cocina · corta y sirve"
-   }
+    "texto": "Sin fuego",
+    "aparatos": [
+     "sinfuego"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "sinfuego",
+     "t": "Zanahoria y pepino en bastones, cortados el domingo. Hummus al lado."
+    }
+   ]
   },
   "b9": {
    "n": "Arepa con huevos pericos",
@@ -1666,9 +2279,30 @@
     ]
    },
    "coccion": {
-    "donde": "olla",
-    "texto": "Sofrito 10 min"
-   }
+    "donde": "otro",
+    "texto": "Sartén",
+    "aparatos": [
+     "sarten"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "sinfuego",
+     "t": "La masa: 40 g de Harina PAN por 60 ml de agua tibia con sal. Amasa 1 min y DEJA REPOSAR 5 MIN. Sin reposo se agrieta al asarla."
+    },
+    {
+     "d": "sarten",
+     "t": "Sartén a fuego medio, seca: la arepa 4 min por lado. Está lista cuando suena hueca al golpearla."
+    },
+    {
+     "d": "sarten",
+     "t": "Sácala. Fuego bajo: tomate y cebolla larga 3 min, luego huevos y claras batidos, 2 min revolviendo."
+    },
+    {
+     "d": "sinfuego",
+     "t": "Cottage y aguacate al lado."
+    }
+   ]
   },
   "b10": {
    "n": "Arepa rápida con huevo y queso",
@@ -1719,9 +2353,26 @@
     ]
    },
    "coccion": {
-    "donde": "olla",
-    "texto": "Sofrito 5 min"
-   }
+    "donde": "otro",
+    "texto": "Sartén",
+    "aparatos": [
+     "sarten"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "sarten",
+     "t": "La arepa de paquete directo a la sartén seca, 2 min por lado."
+    },
+    {
+     "d": "sarten",
+     "t": "Fuego bajo: huevos y claras batidos con el tomate, 2 min."
+    },
+    {
+     "d": "sinfuego",
+     "t": "Cottage encima fuera del fuego. Cinco minutos de reloj."
+    }
+   ]
   },
   "s11": {
    "n": "Tajadas de plátano maduro al horno",
@@ -1757,8 +2408,25 @@
    },
    "coccion": {
     "donde": "olla",
-    "texto": "Horno 25 min"
-   }
+    "texto": "Olla",
+    "aparatos": [
+     "olla"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "sinfuego",
+     "t": "Plátano BIEN maduro, con manchas negras: ahí está el dulce. Tajadas diagonales de 1 cm."
+    },
+    {
+     "d": "horno",
+     "t": "Espray de aceite y nada más. OLLA en Bake 25 min, voltea a los 15."
+    },
+    {
+     "d": "sinfuego",
+     "t": "Una pizca de sal al final: es lo que hace que sepan a tajada y no a postre. Fritas serían más de 400 kcal; al horno son 183."
+    }
+   ]
   }
  },
  "semana": {
@@ -2012,5 +2680,16 @@
    "l2",
    "b2"
   ]
+ },
+ "aparatos": {
+  "olla": "Olla",
+  "sarten": "Sartén",
+  "estufa": "Estufa",
+  "micro": "Microondas",
+  "tostadora": "Tostadora",
+  "licuadora": "Licuadora",
+  "nevera": "Nevera",
+  "horno": "Olla · Bake",
+  "sinfuego": "Sin fuego"
  }
 }
