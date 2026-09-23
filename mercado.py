@@ -45,6 +45,7 @@ def calcular():
     recetas, semana = D["recetas"], D["semana"]
     casa = {**P["despensa"], **P["nevera"]}
     unidades = P["_unidades_compra"]
+    marcas = P.get("_marcas_coles", {})
 
     # 1. sumar la semana
     pide = defaultdict(float)
@@ -79,13 +80,15 @@ def calcular():
 
     return {"comprar": comprar, "tengo": tengo, "sin_medir": sin_medir,
             "yogurt": yog, "pide": dict(pide), "casa": casa, "unidades": unidades,
-            "dias": len(semana), "secciones": SECCIONES, "recetas": recetas}
+            "dias": len(semana), "secciones": SECCIONES, "recetas": recetas,
+            "marcas": marcas, "nota_marcas": P.get("_nota_marcas", "")}
 
 def main():
     R = calcular()
     comprar, tengo, sin_medir = R["comprar"], R["tengo"], R["sin_medir"]
     pide, casa, unidades, yog = R["pide"], R["casa"], R["unidades"], R["yogurt"]
     dias, recetas = R["dias"], R["recetas"]
+    marcas, nota_marcas = R["marcas"], R["nota_marcas"]
 
     def unidad(nombre, g):
         if nombre not in unidades:
@@ -103,12 +106,14 @@ def main():
         filas = [(n, comprar[n]) for n in items if n in comprar]
         if not filas: continue
         total += len(filas)
-        L += [f"## {titulo}", "", "| | Compra | Usa la semana | Ya tienes |",
+        L += [f"## {titulo}", "", "| | En Coles | Compra | Usa la semana |",
               "|---|---|---|---|"]
         for n, g in filas:
+            marca, nota = (marcas.get(n) or ["—", ""])[:2]
+            producto = marca + (f" — *{nota}*" if nota else "")
             hay = casa.get(n) or 0
-            L.append(f"| {n} | {unidad(n, g)} | {round(pide[n])} g | "
-                     f"{str(round(hay)) + ' g' if hay else '—'} |")
+            usa = f"{round(pide[n])} g" + (f" · tienes {round(hay)} g" if hay else "")
+            L.append(f"| **{n}** | {producto} | {unidad(n, g)} | {usa} |")
         L.append("")
     otros = [n for n in comprar if not any(n in it for _, it in SECCIONES)]
     if otros:
@@ -123,12 +128,16 @@ def main():
     faltan = sorted(n for n in especiero if n not in YA)
     if faltan:
         L += ["---", "", "## El especiero", "",
-              "Se compra una vez y rinde meses. Sin esto las recetas saben a nada.", "",
+              "Se compra una vez y rinde meses. Sin esto las recetas saben a nada.",
+              "**Masterfoods** los tiene todos, frascos de 25–50 g, pasillo de especias.", "",
               "| Condimento | Aparece en |", "|---|---|"]
         for n in faltan:
             n_rec = len(especiero[n])
             L.append(f"| **{n}** | {n_rec} receta{'s' if n_rec != 1 else ''} |")
         L += ["", "*Ya tienes: sal, pimienta, ajo, sriracha y aceite en espray.*", ""]
+
+    if nota_marcas:
+        L += ["---", "", f"*{nota_marcas}*", ""]
 
     L += ["---", "", "## Ya está en casa — no lo compres", ""]
     for n, g in sin_medir:

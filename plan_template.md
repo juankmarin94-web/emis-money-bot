@@ -405,9 +405,15 @@ Lo que no compras, no te lo comes. Es la regla más barata del plan.
 
 **Se genera sola: `python3 mercado.py` escribe `LISTA_MERCADO.md`.**
 
+Cada línea trae **el producto de Coles**: marca, tamaño de empaque y en qué pasillo buscarlo.
+Donde no hay una marca que valga la pena, va la propia de Coles, que es la más barata y sirve
+igual. Dos advertencias: los nombres y tamaños cambian cada temporada, así que guíate por la
+descripción; y el tofu Macro que ya tienes es marca de **Woolworths**, no de Coles — el
+equivalente allá es el Coles Firm Tofu.
+
 Suma los ingredientes de los 7 días del menú, resta lo que hay en `data/pantry.json` y convierte
 el resto a unidades de compra. Cambias el menú o la despensa, corres el comando, y la lista queda
-al día. La de esta semana son **41 líneas**, porque las recetas traen despensa nueva: carne vegetal
+al día. La de esta semana son **40 líneas**, porque las recetas traen despensa nueva: carne vegetal
 molida, arroz arborio, pasta de curry rojo, leche de coco light, passata, tempeh.
 
 Esa despensa se compra una vez y rinde meses. La compra de la semana siguiente vuelve a ser corta.

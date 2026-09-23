@@ -19,7 +19,8 @@
   "Whole Earth": null,
   "Sandía": null,
   "Harina PAN": null,
-  "Arepa Sary con queso": 600
+  "Arepa Sary con queso": 600,
+  "Proteína en polvo": 990
  },
  "nevera": {
   "Huevo entero": 700,
@@ -229,8 +230,8 @@
    "frasco de 100 g"
   ],
   "Carne vegetal molida": [
-   400,
-   "paquete de 400 g"
+   300,
+   "paquete de 300 g"
   ],
   "Frijol rojo de lata": [
    400,
@@ -280,5 +281,304 @@
    250,
    "tarro de 250 g"
   ]
- }
+ },
+ "_marcas_coles": {
+  "Cottage alto en proteína": [
+   "Bulla High Protein Cottage Cheese 500 g",
+   "el que ya usas"
+  ],
+  "Leche descremada": [
+   "Coles Skim Milk 2 L",
+   ""
+  ],
+  "Leche en polvo descremada": [
+   "Devondale Skim Milk Powder 1 kg",
+   "pasillo de leche larga vida"
+  ],
+  "Yogurt griego casero": [
+   "— lo haces tú",
+   "2 L de leche + leche en polvo + kéfir"
+  ],
+  "Huevo entero": [
+   "Coles Free Range Eggs, docena 700 g",
+   ""
+  ],
+  "Clara de huevo": [
+   "Farm Pride Frozen Egg Whites 950 ml",
+   "congelador, el que ya tienes"
+  ],
+  "Tofu firme": [
+   "Coles Firm Tofu 450 g",
+   "o el Macro de Woolies que ya compraste"
+  ],
+  "Tempeh": [
+   "Nutrisoy Tempeh 300 g",
+   "nevera, al lado del tofu"
+  ],
+  "Carne vegetal molida": [
+   "v2food Plant Based Mince 300 g",
+   "o Coles Plant Based Mince"
+  ],
+  "Queso cheddar light": [
+   "Coles Light Tasty Cheese Block 250 g",
+   ""
+  ],
+  "Parmesano": [
+   "Perfect Italiano Parmesan 200 g",
+   ""
+  ],
+  "Ricotta light": [
+   "Coles Smooth Ricotta 250 g",
+   ""
+  ],
+  "Crema light": [
+   "Coles Light Thickened Cream 300 ml",
+   ""
+  ],
+  "Proteína en polvo": [
+   "— la tuya, bote de 33 medidas",
+   "no la compres, ya está"
+  ],
+  "Champiñones": [
+   "Coles Cup Mushrooms, bandeja 250 g",
+   ""
+  ],
+  "Espinaca": [
+   "Coles Baby Spinach 280 g",
+   "bolsa, sección de ensaladas"
+  ],
+  "Espinaca congelada": [
+   "Coles Frozen Chopped Spinach 500 g",
+   "para lo cocido: mitad de precio"
+  ],
+  "Brócoli": [
+   "suelto, por kilo",
+   ""
+  ],
+  "Calabacín": [
+   "Zucchini suelto",
+   ""
+  ],
+  "Tomate": [
+   "Tomatoes suelto, por kilo",
+   ""
+  ],
+  "Cebolla": [
+   "Brown Onions, malla de 1 kg",
+   ""
+  ],
+  "Cebolla larga": [
+   "Spring Onions, manojo",
+   ""
+  ],
+  "Apio": [
+   "Celery, manojo",
+   ""
+  ],
+  "Pimentón": [
+   "Red Capsicum suelto",
+   ""
+  ],
+  "Habichuela": [
+   "Coles Green Beans 250 g",
+   ""
+  ],
+  "Zanahoria": [
+   "Coles Carrots 1 kg",
+   ""
+  ],
+  "Papa": [
+   "Brushed Potatoes 1 kg",
+   ""
+  ],
+  "Camote": [
+   "Sweet Potato (Gold) suelto",
+   ""
+  ],
+  "Pepino": [
+   "Continental Cucumber",
+   ""
+  ],
+  "Maíz tierno": [
+   "Corn Cobs, pack de 2",
+   ""
+  ],
+  "Limón": [
+   "Lemons sueltos",
+   ""
+  ],
+  "Aguacate": [
+   "Avocado Hass suelto",
+   ""
+  ],
+  "Manzana": [
+   "Pink Lady Apples",
+   ""
+  ],
+  "Banana": [
+   "Cavendish Bananas",
+   ""
+  ],
+  "Mango": [
+   "Mango suelto, en temporada",
+   ""
+  ],
+  "Naranja": [
+   "Navel Oranges",
+   ""
+  ],
+  "Plátano maduro": [
+   "Plantain",
+   "frutería latina o Coles grande"
+  ],
+  "Berries congelados": [
+   "Coles Frozen Mixed Berries 1 kg",
+   ""
+  ],
+  "Edamame congelado": [
+   "Coles Frozen Edamame 500 g",
+   ""
+  ],
+  "Frijol rojo seco": [
+   "McKenzie's Red Kidney Beans 375 g",
+   "secos, no de lata"
+  ],
+  "Frijoles negros secos": [
+   "McKenzie's Black Turtle Beans 375 g",
+   ""
+  ],
+  "Frijol rojo de lata": [
+   "Coles Red Kidney Beans 400 g",
+   ""
+  ],
+  "Frijoles negros de lata": [
+   "Coles Black Beans 400 g",
+   ""
+  ],
+  "Garbanzos de lata": [
+   "Coles Chickpeas 400 g",
+   ""
+  ],
+  "Lentejas cafés secas": [
+   "McKenzie's Brown Lentils 375 g",
+   ""
+  ],
+  "Lentejas rojas secas": [
+   "McKenzie's Red Split Lentils 375 g",
+   ""
+  ],
+  "Frijoles refritos": [
+   "Old El Paso Refried Beans 435 g",
+   ""
+  ],
+  "Arroz basmati crudo": [
+   "SunRice Basmati 1 kg",
+   ""
+  ],
+  "Arroz jazmín crudo": [
+   "SunRice Jasmine 1 kg",
+   ""
+  ],
+  "Arroz arborio crudo": [
+   "Riviana Arborio Rice 500 g",
+   "pasillo italiano"
+  ],
+  "Pasta cruda": [
+   "San Remo Penne 500 g",
+   ""
+  ],
+  "Avena en hojuelas": [
+   "Coles Rolled Oats 1 kg",
+   ""
+  ],
+  "Granola": [
+   "Coles Simply Granola 500 g",
+   "mira el azúcar, hay de 25 g/100 g"
+  ],
+  "Weet-Bix": [
+   "Sanitarium Weet-Bix 575 g",
+   ""
+  ],
+  "Tostada integral": [
+   "Helga's Wholemeal Bread 700 g",
+   ""
+  ],
+  "Pan integral": [
+   "Helga's Wholemeal Bread 700 g",
+   ""
+  ],
+  "Harina PAN": [
+   "Harina P.A.N. 1 kg",
+   "tienda latina, no Coles"
+  ],
+  "Arepa Sary con queso": [
+   "Sary arepas 600 g",
+   "tienda latina"
+  ],
+  "Passata de tomate": [
+   "Mutti Passata 700 g",
+   "o Coles Tomato Passata"
+  ],
+  "Pasta de tomate": [
+   "Leggo's Tomato Paste 140 g",
+   ""
+  ],
+  "Leche de coco light": [
+   "Ayam Coconut Milk Light 400 ml",
+   ""
+  ],
+  "Pasta de curry rojo": [
+   "Valcom Red Curry Paste 110 g",
+   "o Ayam"
+  ],
+  "Salsa de soya": [
+   "Kikkoman Soy Sauce 250 ml",
+   "la de menos sodio si la ves"
+  ],
+  "Mantequilla de maní": [
+   "Mayver's Smooth Peanut Butter 375 g",
+   "la que ya tienes"
+  ],
+  "Semillas de chía": [
+   "Coles Chia Seeds 500 g",
+   "pasillo de salud"
+  ],
+  "Cacao en polvo": [
+   "Coles Cocoa Powder 250 g",
+   "sin azúcar"
+  ],
+  "Chocolate 85%": [
+   "Lindt Excellence 85% 100 g",
+   ""
+  ],
+  "Almendras": [
+   "Coles Natural Almonds 500 g",
+   ""
+  ],
+  "Hummus": [
+   "Coles Classic Hummus 200 g",
+   ""
+  ],
+  "Aceite de oliva": [
+   "Coles Extra Virgin Olive Oil 1 L",
+   ""
+  ],
+  "Caldo Campbell's": [
+   "Campbell's Real Stock Vegetable 1 L",
+   "el que ya tienes"
+  ],
+  "Whole Earth": [
+   "Whole Earth Sweetener",
+   "el que ya tienes"
+  ],
+  "Alcaparras": [
+   "Always Fresh Capers 100 g",
+   ""
+  ],
+  "_especias": [
+   "Masterfoods",
+   "toda la línea está en Coles, frascos de 25-50 g"
+  ]
+ },
+ "_nota_marcas": "Nombres y tamaños cambian cada temporada: guíate por la descripción, no por el nombre exacto. La marca propia de Coles suele ser la más barata y sirve igual en todo lo básico."
 }
