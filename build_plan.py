@@ -66,6 +66,10 @@ def main():
                            f"{r['kcal']} kcal · {r['p']} g P · {r['c']} g C · "
                            f"{r['f']} g G · {r['fib']} g fibra\n")
             detalle.append(f"{ings}\n")
+            cond = r.get("condimentos", [])
+            if cond:
+                detalle.append("*Condimentos:* "
+                    + " · ".join(f"{c['n']} {c['g']} g ({c['m']})" for c in cond) + "\n")
             pasos = []
             for n_p, paso in enumerate(r.get("pasos", []), 1):
                 if isinstance(paso, str):

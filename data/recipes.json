@@ -96,6 +96,33 @@
      "d": "tostadora",
      "t": "El pan mientras tanto. Aguacate machacado encima con sal y limón."
     }
+   ],
+   "condimentos": [
+    {
+     "n": "Sal",
+     "g": 1,
+     "m": "1 pizca"
+    },
+    {
+     "n": "Comino molido",
+     "g": 1,
+     "m": "½ cdta"
+    },
+    {
+     "n": "Pimienta negra",
+     "g": 0.5,
+     "m": "al gusto"
+    },
+    {
+     "n": "Espray de aceite",
+     "g": 1,
+     "m": "2 segundos"
+    },
+    {
+     "n": "Limón",
+     "g": 5,
+     "m": "unas gotas sobre el aguacate"
+    }
    ]
   },
   "b2": {
@@ -154,6 +181,13 @@
     {
      "d": "sinfuego",
      "t": "En la mañana los berries encima. Cero cocina."
+    }
+   ],
+   "condimentos": [
+    {
+     "n": "Canela",
+     "g": 1,
+     "m": "½ cdta"
     }
    ]
   },
@@ -224,6 +258,18 @@
      "d": "sinfuego",
      "t": "Banana en rodajas y la mantequilla de maní encima. Se derrite sola."
     }
+   ],
+   "condimentos": [
+    {
+     "n": "Canela",
+     "g": 1,
+     "m": "½ cdta"
+    },
+    {
+     "n": "Sal",
+     "g": 0.5,
+     "m": "1 pizca"
+    }
    ]
   },
   "b4": {
@@ -279,7 +325,8 @@
      "d": "sinfuego",
      "t": "El cereal solo te deja en 12 g de proteína. El batido no es opcional."
     }
-   ]
+   ],
+   "condimentos": []
   },
   "b5": {
    "n": "Huevos duros con tostada de aguacate",
@@ -337,6 +384,23 @@
     {
      "d": "sinfuego",
      "t": "Aguacate machacado con sal, limón y pimienta sobre la tostada. Tomate en rodajas y el cottage al lado."
+    }
+   ],
+   "condimentos": [
+    {
+     "n": "Sal",
+     "g": 1,
+     "m": "1 pizca"
+    },
+    {
+     "n": "Pimienta negra",
+     "g": 0.5,
+     "m": "al gusto"
+    },
+    {
+     "n": "Limón",
+     "g": 5,
+     "m": "unas gotas"
     }
    ]
   },
@@ -396,6 +460,13 @@
     {
      "d": "sinfuego",
      "t": "La granola de última, justo antes de comer, o se ablanda."
+    }
+   ],
+   "condimentos": [
+    {
+     "n": "Canela",
+     "g": 1,
+     "m": "½ cdta"
     }
    ]
   },
@@ -470,11 +541,11 @@
     },
     {
      "d": "sarten",
-     "t": "Cebolla larga y tomate picados, 2 min más."
+     "t": "Cebolla larga y tomate picados, 2 min más. Comino, color y sal."
     },
     {
      "d": "sarten",
-     "t": "Sácalo al plato. En la misma sartén, el huevo frito con la yema blanda."
+     "t": "Sácalo al plato. En la misma sartén, el huevo frito con la yema blanda, y las claras vertidas alrededor para que cuajen con él."
     },
     {
      "d": "sarten",
@@ -483,6 +554,28 @@
     {
      "d": "sinfuego",
      "t": "Aguacate al lado. Ocho minutos y es el desayuno de tu casa."
+    }
+   ],
+   "condimentos": [
+    {
+     "n": "Sal",
+     "g": 1,
+     "m": "1 pizca"
+    },
+    {
+     "n": "Comino molido",
+     "g": 1,
+     "m": "½ cdta"
+    },
+    {
+     "n": "Color / achiote",
+     "g": 1,
+     "m": "½ cdta"
+    },
+    {
+     "n": "Espray de aceite",
+     "g": 1,
+     "m": "2 segundos"
     }
    ]
   },
@@ -567,6 +660,23 @@
      "d": "tostadora",
      "t": "La tostada al lado."
     }
+   ],
+   "condimentos": [
+    {
+     "n": "Sal",
+     "g": 1,
+     "m": "1 pizca"
+    },
+    {
+     "n": "Pimienta negra",
+     "g": 0.5,
+     "m": "al gusto"
+    },
+    {
+     "n": "Espray de aceite",
+     "g": 1,
+     "m": "2 segundos"
+    }
    ]
   },
   "l1": {
@@ -601,13 +711,21 @@
     [
      "Aceite de oliva",
      5
+    ],
+    [
+     "Limón",
+     15
+    ],
+    [
+     "Caldo Campbell's",
+     31
     ]
    ],
-   "kcal": 613,
+   "kcal": 619,
    "p": 42,
-   "c": 76,
+   "c": 78,
    "f": 14,
-   "fib": 16,
+   "fib": 17,
    "tanda": {
     "max_porciones": 4,
     "nevera_dias": 4,
@@ -652,11 +770,53 @@
     },
     {
      "d": "sinfuego",
-     "t": "Yogurt y limón al servir, fuera del fuego. El yogurt hirviendo se corta. Cilantro encima."
+     "t": "Yogurt, cottage y el limón al servir, fuera del fuego. El yogurt hirviendo se corta. Cilantro encima."
     },
     {
      "d": "olla",
      "t": "El arroz aparte: 1 taza de arroz por 1¼ de caldo, Pressure cook 5 min, natural 10."
+    }
+   ],
+   "condimentos": [
+    {
+     "n": "Ajo",
+     "g": 6,
+     "m": "2 dientes"
+    },
+    {
+     "n": "Jengibre fresco",
+     "g": 5,
+     "m": "1 cm rallado"
+    },
+    {
+     "n": "Comino molido",
+     "g": 2,
+     "m": "1 cdta"
+    },
+    {
+     "n": "Cilantro molido",
+     "g": 2,
+     "m": "1 cdta"
+    },
+    {
+     "n": "Cúrcuma",
+     "g": 1,
+     "m": "½ cdta"
+    },
+    {
+     "n": "Garam masala",
+     "g": 3,
+     "m": "1½ cdta"
+    },
+    {
+     "n": "Sal",
+     "g": 2,
+     "m": "1 cdta"
+    },
+    {
+     "n": "Cilantro fresco",
+     "g": 5,
+     "m": "1 puñado"
     }
    ]
   },
@@ -740,15 +900,15 @@
    "pasos": [
     {
      "d": "olla",
-     "t": "OLLA: frijol rojo SECO sin remojar, 4 partes de agua y un trozo de plátano maduro. Pressure cook 30 min, liberación natural 15."
+     "t": "OLLA: frijol rojo SECO sin remojar, 4 partes de agua, la zanahoria rallada y un trozo de plátano maduro. Pressure cook 30 min, liberación natural 15."
     },
     {
      "d": "olla",
-     "t": "El plátano se deshace y da el dulce que el frijol paisa necesita."
+     "t": "El plátano y la zanahoria se deshacen y dan el dulce que el frijol paisa necesita."
     },
     {
      "d": "sarten",
-     "t": "El hogao en sartén: cebolla y tomate 8 min con comino y color. Va al frijol AL FINAL, no al principio."
+     "t": "El hogao en sartén con el aceite de oliva: cebolla y tomate 8 min con comino, color y sal. Va al frijol AL FINAL, no al principio."
     },
     {
      "d": "olla",
@@ -760,7 +920,34 @@
     },
     {
      "d": "sinfuego",
-     "t": "Arroz, aguacate y las tajadas al lado."
+     "t": "Al plato: arroz, aguacate, el cottage batido al lado y cilantro. Las tajadas si las tienes."
+    }
+   ],
+   "condimentos": [
+    {
+     "n": "Ajo",
+     "g": 3,
+     "m": "1 diente"
+    },
+    {
+     "n": "Comino molido",
+     "g": 2,
+     "m": "1 cdta"
+    },
+    {
+     "n": "Color / achiote",
+     "g": 2,
+     "m": "1 cdta"
+    },
+    {
+     "n": "Sal",
+     "g": 2,
+     "m": "1 cdta"
+    },
+    {
+     "n": "Cilantro fresco",
+     "g": 5,
+     "m": "1 puñado"
     }
    ]
   },
@@ -849,6 +1036,33 @@
      "d": "sinfuego",
      "t": "Al plato: cottage batido en vez de crema, aguacate y cilantro fresco."
     }
+   ],
+   "condimentos": [
+    {
+     "n": "Ajo",
+     "g": 6,
+     "m": "2 dientes"
+    },
+    {
+     "n": "Comino molido",
+     "g": 2,
+     "m": "1 cdta"
+    },
+    {
+     "n": "Color / achiote",
+     "g": 2,
+     "m": "1 cdta"
+    },
+    {
+     "n": "Sal",
+     "g": 3,
+     "m": "1½ cdta (es una sopa grande)"
+    },
+    {
+     "n": "Cilantro fresco",
+     "g": 10,
+     "m": "con tallo, 2 puñados"
+    }
    ]
   },
   "l4": {
@@ -933,8 +1147,35 @@
      "t": "Arroz y caldo (1 taza de arroz por 1¼ de caldo). El maíz encima SIN revolver."
     },
     {
-     "d": "olla",
-     "t": "Pressure cook 5 min, liberación natural 10 min. Suelta con tenedor, no con cuchara."
+     "d": "sinfuego",
+     "t": "El cottage batido al servir, encima del arroz. Sube 10 g de proteína sin tocar el sabor."
+    }
+   ],
+   "condimentos": [
+    {
+     "n": "Ajo",
+     "g": 6,
+     "m": "2 dientes"
+    },
+    {
+     "n": "Comino molido",
+     "g": 2,
+     "m": "1 cdta"
+    },
+    {
+     "n": "Paprika",
+     "g": 2,
+     "m": "1 cdta"
+    },
+    {
+     "n": "Color / achiote",
+     "g": 2,
+     "m": "1 cdta"
+    },
+    {
+     "n": "Sal",
+     "g": 2,
+     "m": "1 cdta"
     }
    ]
   },
@@ -1031,6 +1272,18 @@
      "d": "olla",
      "t": "Arroz jazmín aparte, Pressure cook 5 min."
     }
+   ],
+   "condimentos": [
+    {
+     "n": "Albahaca fresca",
+     "g": 5,
+     "m": "1 puñado"
+    },
+    {
+     "n": "Sal",
+     "g": 1,
+     "m": "½ cdta (la pasta de curry ya trae)"
+    }
    ]
   },
   "l6": {
@@ -1104,7 +1357,7 @@
    "pasos": [
     {
      "d": "olla",
-     "t": "OLLA en Sauté/sear high: champiñones en cuartos 6 min SIN SAL y sin moverlos, hasta que doren. Sácalos."
+     "t": "OLLA en Sauté/sear high con el aceite de oliva: champiñones en cuartos 6 min SIN SAL y sin moverlos, hasta que doren. Sácalos."
     },
     {
      "d": "olla",
@@ -1121,6 +1374,23 @@
     {
      "d": "sinfuego",
      "t": "Cottage y pimienta al servir."
+    }
+   ],
+   "condimentos": [
+    {
+     "n": "Tomillo seco",
+     "g": 1,
+     "m": "½ cdta"
+    },
+    {
+     "n": "Sal",
+     "g": 2,
+     "m": "1 cdta"
+    },
+    {
+     "n": "Pimienta negra",
+     "g": 1,
+     "m": "generosa"
     }
    ]
   },
@@ -1210,6 +1480,38 @@
      "d": "sinfuego",
      "t": "Yogurt y cottage al servir, fuera del fuego. Cilantro."
     }
+   ],
+   "condimentos": [
+    {
+     "n": "Ajo",
+     "g": 6,
+     "m": "2 dientes"
+    },
+    {
+     "n": "Jengibre fresco",
+     "g": 5,
+     "m": "1 cm rallado"
+    },
+    {
+     "n": "Comino molido",
+     "g": 2,
+     "m": "1 cdta"
+    },
+    {
+     "n": "Garam masala",
+     "g": 3,
+     "m": "1½ cdta"
+    },
+    {
+     "n": "Sal",
+     "g": 2,
+     "m": "1 cdta"
+    },
+    {
+     "n": "Cilantro fresco",
+     "g": 5,
+     "m": "1 puñado"
+    }
    ]
   },
   "d2": {
@@ -1291,7 +1593,7 @@
    "pasos": [
     {
      "d": "olla",
-     "t": "OLLA en Sauté/sear high: la carne vegetal 6 min sin moverla hasta que tueste. Sácala."
+     "t": "OLLA en Sauté/sear high con el aceite de oliva: la carne vegetal 6 min sin moverla hasta que tueste. Sácala."
     },
     {
      "d": "olla",
@@ -1308,6 +1610,48 @@
     {
      "d": "sinfuego",
      "t": "Cottage y aguacate encima. Cilantro y limón."
+    }
+   ],
+   "condimentos": [
+    {
+     "n": "Ajo",
+     "g": 6,
+     "m": "2 dientes"
+    },
+    {
+     "n": "Comino molido",
+     "g": 3,
+     "m": "1½ cdta"
+    },
+    {
+     "n": "Orégano seco",
+     "g": 1,
+     "m": "½ cdta"
+    },
+    {
+     "n": "Paprika ahumada",
+     "g": 3,
+     "m": "1½ cdta"
+    },
+    {
+     "n": "Chili en polvo",
+     "g": 2,
+     "m": "1 cdta"
+    },
+    {
+     "n": "Sal",
+     "g": 2,
+     "m": "1 cdta"
+    },
+    {
+     "n": "Cilantro fresco",
+     "g": 5,
+     "m": "1 puñado"
+    },
+    {
+     "n": "Limón",
+     "g": 10,
+     "m": "½ limón"
     }
    ]
   },
@@ -1386,7 +1730,7 @@
    "pasos": [
     {
      "d": "olla",
-     "t": "OLLA en Sauté/sear high: sofrito de cebolla, zanahoria y apio picados finos, 8 min. Sin ese sofrito no hay bolognesa."
+     "t": "OLLA en Sauté/sear high con el aceite de oliva: sofrito de cebolla, zanahoria y apio picados finos, 8 min. Sin ese sofrito no hay bolognesa."
     },
     {
      "d": "olla",
@@ -1403,6 +1747,33 @@
     {
      "d": "sinfuego",
      "t": "Parmesano rallado al final."
+    }
+   ],
+   "condimentos": [
+    {
+     "n": "Ajo",
+     "g": 3,
+     "m": "1 diente"
+    },
+    {
+     "n": "Laurel",
+     "g": 0.2,
+     "m": "1 hoja"
+    },
+    {
+     "n": "Orégano seco",
+     "g": 1,
+     "m": "½ cdta"
+    },
+    {
+     "n": "Sal",
+     "g": 3,
+     "m": "1½ cdta (la pasta también se sala)"
+    },
+    {
+     "n": "Pimienta negra",
+     "g": 0.5,
+     "m": "al gusto"
     }
    ]
   },
@@ -1482,7 +1853,7 @@
     },
     {
      "d": "olla",
-     "t": "Sauté/sear high: tempeh en cubos 6 min con paprika ahumada. Esa paprika es la que hace el ahumado."
+     "t": "Sauté/sear high con el aceite de oliva: tempeh en cubos 6 min con paprika ahumada. Esa paprika es la que hace el ahumado."
     },
     {
      "d": "olla",
@@ -1499,6 +1870,28 @@
     {
      "d": "sinfuego",
      "t": "Arroz al lado y gajos de naranja al plato."
+    }
+   ],
+   "condimentos": [
+    {
+     "n": "Ajo",
+     "g": 6,
+     "m": "2 dientes"
+    },
+    {
+     "n": "Laurel",
+     "g": 0.4,
+     "m": "2 hojas"
+    },
+    {
+     "n": "Paprika ahumada",
+     "g": 3,
+     "m": "1½ cdta"
+    },
+    {
+     "n": "Sal",
+     "g": 2,
+     "m": "1 cdta"
     }
    ]
   },
@@ -1593,6 +1986,28 @@
      "d": "tostadora",
      "t": "La tostada mientras tanto. Cottage y albahaca encima de la sopa."
     }
+   ],
+   "condimentos": [
+    {
+     "n": "Ajo",
+     "g": 6,
+     "m": "2 dientes"
+    },
+    {
+     "n": "Albahaca fresca",
+     "g": 8,
+     "m": "1 puñado grande"
+    },
+    {
+     "n": "Sal",
+     "g": 2,
+     "m": "1 cdta"
+    },
+    {
+     "n": "Pimienta negra",
+     "g": 0.5,
+     "m": "al gusto"
+    }
    ]
   },
   "d6": {
@@ -1663,7 +2078,7 @@
    "pasos": [
     {
      "d": "sarten",
-     "t": "Tofu en lonjas de 1,5 cm, apretado con papel 2 min. Sartén MUY caliente, 4 min por lado SIN tocarlo. Ahí se forma la costra."
+     "t": "Tofu en lonjas de 1,5 cm, apretado con papel 2 min. Sartén MUY caliente con el aceite de oliva, 4 min por lado SIN tocarlo. Ahí se forma la costra."
     },
     {
      "d": "sarten",
@@ -1680,6 +2095,23 @@
     {
      "d": "olla",
      "t": "El arroz aparte en la olla, Pressure cook 5 min."
+    }
+   ],
+   "condimentos": [
+    {
+     "n": "Ajo",
+     "g": 12,
+     "m": "4 dientes laminados"
+    },
+    {
+     "n": "Chili en hojuelas",
+     "g": 1,
+     "m": "½ cdta"
+    },
+    {
+     "n": "Sal",
+     "g": 1,
+     "m": "1 pizca"
     }
    ]
   },
@@ -1778,6 +2210,33 @@
      "d": "tostadora",
      "t": "La tostada para mojar. Cottage en cucharadas encima, fuera del fuego."
     }
+   ],
+   "condimentos": [
+    {
+     "n": "Comino molido",
+     "g": 2,
+     "m": "1 cdta"
+    },
+    {
+     "n": "Paprika ahumada",
+     "g": 2,
+     "m": "1 cdta"
+    },
+    {
+     "n": "Chili en polvo",
+     "g": 1,
+     "m": "½ cdta"
+    },
+    {
+     "n": "Sal",
+     "g": 2,
+     "m": "1 cdta"
+    },
+    {
+     "n": "Pimienta negra",
+     "g": 0.5,
+     "m": "al gusto"
+    }
    ]
   },
   "s1": {
@@ -1821,7 +2280,8 @@
      "d": "sinfuego",
      "t": "21 g de proteína y el 99% del hierro del día. No lo tomes con café ni té: bloquean el hierro."
     }
-   ]
+   ],
+   "condimentos": []
   },
   "s2": {
    "n": "Batido de mango con yogurt",
@@ -1864,7 +2324,8 @@
      "d": "licuadora",
      "t": "Mango congelado, yogurt y proteína. Licúa hasta que quede tipo helado."
     }
-   ]
+   ],
+   "condimentos": []
   },
   "s3": {
    "n": "Dos huevos duros",
@@ -1912,6 +2373,18 @@
      "d": "sinfuego",
      "t": "Baño de hielo 3 min. Pelan sin pelear. Aguantan 7 días en la nevera."
     }
+   ],
+   "condimentos": [
+    {
+     "n": "Sal",
+     "g": 1,
+     "m": "1 pizca"
+    },
+    {
+     "n": "Pimienta negra",
+     "g": 0.5,
+     "m": "al gusto"
+    }
    ]
   },
   "s4": {
@@ -1955,6 +2428,13 @@
      "d": "sinfuego",
      "t": "Yogurt, berries y canela. Whole Earth si lo quieres dulce: endulza a cero calorías."
     }
+   ],
+   "condimentos": [
+    {
+     "n": "Canela",
+     "g": 1,
+     "m": "½ cdta"
+    }
    ]
   },
   "s5": {
@@ -1994,6 +2474,18 @@
      "d": "sinfuego",
      "t": "Sal gruesa y chili en hojuelas. Se comen exprimiendo la vaina con los dientes."
     }
+   ],
+   "condimentos": [
+    {
+     "n": "Sal gruesa",
+     "g": 2,
+     "m": "1 cdta"
+    },
+    {
+     "n": "Chili en hojuelas",
+     "g": 1,
+     "m": "½ cdta"
+    }
    ]
   },
   "s6": {
@@ -2032,6 +2524,18 @@
     {
      "d": "sinfuego",
      "t": "Cottage en un bowl, tomate picado, sriracha generosa. 26 g de proteína en dos minutos."
+    }
+   ],
+   "condimentos": [
+    {
+     "n": "Sriracha",
+     "g": 8,
+     "m": "2 cdtas"
+    },
+    {
+     "n": "Sal",
+     "g": 0.5,
+     "m": "1 pizca"
     }
    ]
   },
@@ -2090,6 +2594,28 @@
      "d": "sinfuego",
      "t": "Sal al final. En frasco abierto duran 3 días; cerrado se ablandan."
     }
+   ],
+   "condimentos": [
+    {
+     "n": "Paprika ahumada",
+     "g": 2,
+     "m": "1 cdta"
+    },
+    {
+     "n": "Comino molido",
+     "g": 1,
+     "m": "½ cdta"
+    },
+    {
+     "n": "Ajo en polvo",
+     "g": 2,
+     "m": "1 cdta"
+    },
+    {
+     "n": "Sal",
+     "g": 2,
+     "m": "1 cdta, al final"
+    }
    ]
   },
   "s8": {
@@ -2128,6 +2654,13 @@
     {
      "d": "sinfuego",
      "t": "Manzana en gajos y 20 g de mantequilla de maní. PÉSALOS: la cucharada a ojo son 35-40 g y ahí se van 130 kcal fantasma."
+    }
+   ],
+   "condimentos": [
+    {
+     "n": "Canela",
+     "g": 1,
+     "m": "½ cdta"
     }
    ]
   },
@@ -2176,6 +2709,13 @@
      "d": "licuadora",
      "t": "Yogurt, banana, avena y proteína con 150 ml de agua y hielo. Tómalo 60-90 min antes de entrenar."
     }
+   ],
+   "condimentos": [
+    {
+     "n": "Canela",
+     "g": 1,
+     "m": "½ cdta"
+    }
    ]
   },
   "s10": {
@@ -2218,6 +2758,13 @@
     {
      "d": "sinfuego",
      "t": "Zanahoria y pepino en bastones, cortados el domingo. Hummus al lado."
+    }
+   ],
+   "condimentos": [
+    {
+     "n": "Sal",
+     "g": 0.5,
+     "m": "1 pizca"
     }
    ]
   },
@@ -2302,6 +2849,18 @@
      "d": "sinfuego",
      "t": "Cottage y aguacate al lado."
     }
+   ],
+   "condimentos": [
+    {
+     "n": "Sal",
+     "g": 2,
+     "m": "1 cdta (la masa la necesita)"
+    },
+    {
+     "n": "Espray de aceite",
+     "g": 1,
+     "m": "2 segundos"
+    }
    ]
   },
   "b10": {
@@ -2372,6 +2931,13 @@
      "d": "sinfuego",
      "t": "Cottage encima fuera del fuego. Cinco minutos de reloj."
     }
+   ],
+   "condimentos": [
+    {
+     "n": "Sal",
+     "g": 1,
+     "m": "1 pizca"
+    }
    ]
   },
   "s11": {
@@ -2426,6 +2992,18 @@
      "d": "sinfuego",
      "t": "Una pizca de sal al final: es lo que hace que sepan a tajada y no a postre. Fritas serían más de 400 kcal; al horno son 183."
     }
+   ],
+   "condimentos": [
+    {
+     "n": "Sal",
+     "g": 1,
+     "m": "1 pizca, al final"
+    },
+    {
+     "n": "Espray de aceite",
+     "g": 1,
+     "m": "2 segundos"
+    }
    ]
   }
  },
@@ -2474,11 +3052,11 @@
     "d5"
    ],
    "total": [
-    2022,
+    2028,
     173,
-    186,
+    188,
     57,
-    43
+    44
    ]
   },
   "Jueves": {
@@ -2542,11 +3120,11 @@
     "d1"
    ],
    "total": [
-    2104,
+    2110,
     172,
-    213,
+    215,
     56,
-    41
+    42
    ]
   }
  },

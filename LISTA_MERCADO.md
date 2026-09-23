@@ -31,7 +31,7 @@ Corre `python3 mercado.py` para regenerarla cuando cambie la semana o la despens
 | Cebolla | **4 × unidad (~150 g)** | 500 g | — |
 | Pepino | **1 × unidad** | 100 g | — |
 | Maíz tierno | **1 × 2 mazorcas** | 100 g | — |
-| Limón | **1 × unidad** | 30 g | — |
+| Limón | **1 × unidad** | 60 g | — |
 | Aguacate | **1 × unidad (~200 g)** | 75 g | — |
 
 ## Fruta
@@ -71,12 +71,40 @@ Corre `python3 mercado.py` para regenerarla cuando cambie la semana o la despens
 
 ---
 
+## El especiero
+
+Se compra una vez y rinde meses. Sin esto las recetas saben a nada.
+
+| Condimento | Aparece en |
+|---|---|
+| **Ajo en polvo** | 1 receta |
+| **Albahaca fresca** | 2 recetas |
+| **Canela** | 6 recetas |
+| **Chili en hojuelas** | 2 recetas |
+| **Chili en polvo** | 2 recetas |
+| **Cilantro fresco** | 5 recetas |
+| **Cilantro molido** | 1 receta |
+| **Color / achiote** | 4 recetas |
+| **Comino molido** | 10 recetas |
+| **Cúrcuma** | 1 receta |
+| **Garam masala** | 2 recetas |
+| **Jengibre fresco** | 2 recetas |
+| **Laurel** | 2 recetas |
+| **Orégano seco** | 2 recetas |
+| **Paprika** | 1 receta |
+| **Paprika ahumada** | 4 recetas |
+| **Tomillo seco** | 1 receta |
+
+*Ya tienes: sal, pimienta, ajo, sriracha y aceite en espray.*
+
+---
+
 ## Ya está en casa — no lo compres
 
 - **Aceite de oliva** — la semana usa 59 g. Revisa que alcance
 - **Arroz basmati crudo** — la semana usa 210 g. Revisa que alcance
 - **Avena en hojuelas** — la semana usa 140 g. Revisa que alcance
-- **Caldo Campbell's** — la semana usa 690 g. Revisa que alcance
+- **Caldo Campbell's** — la semana usa 752 g. Revisa que alcance
 - **Harina PAN** — la semana usa 40 g. Revisa que alcance
 - **Lentejas cafés secas** — la semana usa 100 g. Revisa que alcance
 - **Lentejas rojas secas** — la semana usa 50 g. Revisa que alcance

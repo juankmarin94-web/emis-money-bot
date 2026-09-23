@@ -78,13 +78,13 @@ def calcular():
 
     return {"comprar": comprar, "tengo": tengo, "sin_medir": sin_medir,
             "yogurt": yog, "pide": dict(pide), "casa": casa, "unidades": unidades,
-            "dias": len(semana), "secciones": SECCIONES}
+            "dias": len(semana), "secciones": SECCIONES, "recetas": recetas}
 
 def main():
     R = calcular()
     comprar, tengo, sin_medir = R["comprar"], R["tengo"], R["sin_medir"]
     pide, casa, unidades, yog = R["pide"], R["casa"], R["unidades"], R["yogurt"]
-    dias = R["dias"]
+    dias, recetas = R["dias"], R["recetas"]
 
     def unidad(nombre, g):
         if nombre not in unidades:
@@ -112,6 +112,22 @@ def main():
     otros = [n for n in comprar if not any(n in it for _, it in SECCIONES)]
     if otros:
         L += ["## Sin clasificar", ""] + [f"- {n}: {round(comprar[n])} g" for n in otros] + [""]
+
+    # Los condimentos no se compran por gramo: se compra el frasco y dura meses.
+    especiero = {}
+    for r in recetas.values():
+        for c in r.get("condimentos", []):
+            especiero.setdefault(c["n"], set()).add(r["n"])
+    YA = {"Sal", "Sal gruesa", "Pimienta negra", "Ajo", "Sriracha", "Espray de aceite", "Limón"}
+    faltan = sorted(n for n in especiero if n not in YA)
+    if faltan:
+        L += ["---", "", "## El especiero", "",
+              "Se compra una vez y rinde meses. Sin esto las recetas saben a nada.", "",
+              "| Condimento | Aparece en |", "|---|---|"]
+        for n in faltan:
+            n_rec = len(especiero[n])
+            L.append(f"| **{n}** | {n_rec} receta{'s' if n_rec != 1 else ''} |")
+        L += ["", "*Ya tienes: sal, pimienta, ajo, sriracha y aceite en espray.*", ""]
 
     L += ["---", "", "## Ya está en casa — no lo compres", ""]
     for n, g in sin_medir:
