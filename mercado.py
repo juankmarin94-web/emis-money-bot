@@ -32,6 +32,7 @@ SECCIONES = [
  ("Despensa", ["Mantequilla de maní", "Almendras", "Marañones", "Aceite de oliva",
    "Pasta de tomate", "Pasta de curry rojo", "Leche de coco light", "Salsa de soya",
    "Passata de tomate", "Dolmio", "Salsa mild", "Hummus", "Chocolate 85%",
+   "Semillas de chía", "Cacao en polvo",
    "Caldo Campbell's", "Whole Earth"]),
 ]
 

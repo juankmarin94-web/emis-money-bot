@@ -2328,64 +2328,76 @@
    "condimentos": []
   },
   "s3": {
-   "n": "Dos huevos duros",
+   "n": "Mousse de chocolate proteico",
    "g": "snack",
    "min": 5,
    "ing": [
     [
-     "Huevo entero",
-     100
+     "Yogurt griego casero",
+     150
+    ],
+    [
+     "Proteína en polvo",
+     20
+    ],
+    [
+     "Cacao en polvo",
+     4
+    ],
+    [
+     "Berries congelados",
+     50
     ]
    ],
-   "kcal": 143,
-   "p": 13,
-   "c": 1,
-   "f": 10,
-   "fib": 0,
+   "kcal": 211,
+   "p": 30,
+   "c": 17,
+   "f": 3,
+   "fib": 5,
    "tanda": {
-    "max_porciones": 12,
-    "nevera_dias": 7,
+    "max_porciones": 2,
+    "nevera_dias": 2,
     "congela": false,
-    "nota": "12 de una el domingo."
+    "nota": "Aguanta 2 días tapado. Mejor del día."
    },
-   "olla": {
-    "modo": "Pressure cook",
-    "min": 5,
-    "liberacion": "natural 5 min + hielo",
-    "pasos": [
-     "1 taza de agua, canasta, hasta 12 huevos. **5 min de presión + 5 de natural.**",
-     "Baño de hielo 3 min. Pelan sin pelear."
-    ]
-   },
-   "coccion": {
-    "donde": "olla",
-    "texto": "Olla",
-    "aparatos": [
-     "olla"
-    ]
-   },
+   "condimentos": [
+    {
+     "n": "Cacao en polvo",
+     "g": 0,
+     "m": "ya contado arriba"
+    },
+    {
+     "n": "Canela",
+     "g": 1,
+     "m": "½ cdta"
+    },
+    {
+     "n": "Whole Earth",
+     "g": 3,
+     "m": "al gusto"
+    }
+   ],
    "pasos": [
     {
-     "d": "olla",
-     "t": "Del domingo: 1 taza de agua en la OLLA, la canasta, hasta 12 huevos. Pressure cook 5 min, liberación natural 5 min."
+     "d": "sinfuego",
+     "t": "Yogurt, proteína y cacao en un bowl. Bate FUERTE con tenedor 1 min: el aire es lo que lo vuelve mousse y no papilla."
+    },
+    {
+     "d": "nevera",
+     "t": "20 min en la nevera si aguantas. Queda más firme."
     },
     {
      "d": "sinfuego",
-     "t": "Baño de hielo 3 min. Pelan sin pelear. Aguantan 7 días en la nevera."
+     "t": "Berries encima. Tu proteína ya viene con cacao, así que la cucharadita extra solo le sube el amargo. Si la quieres más dulce, Whole Earth."
     }
    ],
-   "condimentos": [
-    {
-     "n": "Sal",
-     "g": 1,
-     "m": "1 pizca"
-    },
-    {
-     "n": "Pimienta negra",
-     "g": 0.5,
-     "m": "al gusto"
-    }
-   ]
+   "coccion": {
+    "donde": "nada",
+    "texto": "Sin fuego",
+    "aparatos": [
+     "sinfuego"
+    ]
+   }
   },
   "s4": {
    "n": "Yogurt con berries y canela",
@@ -2438,140 +2450,220 @@
    ]
   },
   "s5": {
-   "n": "Edamame con sal y chili",
+   "n": "Cottage batido con berries y vainilla",
    "g": "snack",
-   "min": 5,
-   "ing": [
-    [
-     "Edamame congelado",
-     150
-    ]
-   ],
-   "kcal": 182,
-   "p": 18,
-   "c": 14,
-   "f": 8,
-   "fib": 8,
-   "tanda": {
-    "max_porciones": 1,
-    "nevera_dias": 0,
-    "congela": false,
-    "nota": "4 min en agua hirviendo. Sal gruesa y chili."
-   },
-   "coccion": {
-    "donde": "otro",
-    "texto": "Estufa",
-    "aparatos": [
-     "estufa"
-    ]
-   },
-   "pasos": [
-    {
-     "d": "estufa",
-     "t": "Edamame congelado directo a agua hirviendo, 4 min. Escurre."
-    },
-    {
-     "d": "sinfuego",
-     "t": "Sal gruesa y chili en hojuelas. Se comen exprimiendo la vaina con los dientes."
-    }
-   ],
-   "condimentos": [
-    {
-     "n": "Sal gruesa",
-     "g": 2,
-     "m": "1 cdta"
-    },
-    {
-     "n": "Chili en hojuelas",
-     "g": 1,
-     "m": "½ cdta"
-    }
-   ]
-  },
-  "s6": {
-   "n": "Cottage con tomate y sriracha",
-   "g": "snack",
-   "min": 2,
+   "min": 3,
    "ing": [
     [
      "Cottage alto en proteína",
-     200
+     170
     ],
     [
-     "Tomate",
-     100
+     "Berries congelados",
+     80
     ]
    ],
-   "kcal": 198,
-   "p": 26,
-   "c": 11,
+   "kcal": 193,
+   "p": 22,
+   "c": 15,
    "f": 5,
-   "fib": 1,
+   "fib": 3,
    "tanda": {
     "max_porciones": 1,
     "nevera_dias": 0,
     "congela": false,
-    "nota": "26 g de proteína en dos minutos."
+    "nota": "El truco es licuarlo. Cottage sin batir sabe a cottage; batido sabe a crema."
    },
-   "coccion": {
-    "donde": "nada",
-    "texto": "Sin fuego",
-    "aparatos": [
-     "sinfuego"
-    ]
-   },
-   "pasos": [
-    {
-     "d": "sinfuego",
-     "t": "Cottage en un bowl, tomate picado, sriracha generosa. 26 g de proteína en dos minutos."
-    }
-   ],
    "condimentos": [
     {
-     "n": "Sriracha",
-     "g": 8,
-     "m": "2 cdtas"
+     "n": "Vainilla",
+     "g": 2,
+     "m": "unas gotas"
+    },
+    {
+     "n": "Canela",
+     "g": 1,
+     "m": "½ cdta"
+    },
+    {
+     "n": "Whole Earth",
+     "g": 3,
+     "m": "al gusto"
+    }
+   ],
+   "pasos": [
+    {
+     "d": "licuadora",
+     "t": "Licúa el cottage SOLO, con la vainilla, 30 segundos. Ese batido es lo que le quita los grumos y lo deja como postre."
+    },
+    {
+     "d": "sinfuego",
+     "t": "Berries encima, semi-descongelados, y canela. 26 g de proteína que saben a postre."
+    }
+   ],
+   "coccion": {
+    "donde": "otro",
+    "texto": "Licuadora",
+    "aparatos": [
+     "licuadora"
+    ]
+   }
+  },
+  "s6": {
+   "n": "Arroz con leche proteico",
+   "g": "snack",
+   "min": 8,
+   "ing": [
+    [
+     "Arroz basmati crudo",
+     20
+    ],
+    [
+     "Leche descremada",
+     150
+    ],
+    [
+     "Proteína en polvo",
+     18
+    ],
+    [
+     "Banana",
+     50
+    ]
+   ],
+   "kcal": 237,
+   "p": 20,
+   "c": 36,
+   "f": 2,
+   "fib": 3,
+   "tanda": {
+    "max_porciones": 4,
+    "nevera_dias": 3,
+    "congela": false,
+    "nota": "Cuatro porciones el domingo con el arroz que ya hiciste. Se come frío o caliente."
+   },
+   "condimentos": [
+    {
+     "n": "Canela",
+     "g": 2,
+     "m": "1 cdta, y una astilla si tienes"
+    },
+    {
+     "n": "Whole Earth",
+     "g": 4,
+     "m": "al gusto"
     },
     {
      "n": "Sal",
      "g": 0.5,
      "m": "1 pizca"
     }
-   ]
+   ],
+   "pasos": [
+    {
+     "d": "sinfuego",
+     "t": "El arroz sale cocido de la tanda del domingo. Este snack existe por eso."
+    },
+    {
+     "d": "micro",
+     "t": "Arroz + leche + canela + la pizca de sal, 3 min. Revuelve y 2 min más hasta que espese."
+    },
+    {
+     "d": "sinfuego",
+     "t": "Deja bajar el hervor un minuto ANTES de meter la proteína, o se corta."
+    },
+    {
+     "d": "sinfuego",
+     "t": "Banana en rodajas encima. Frío del día siguiente también sirve."
+    }
+   ],
+   "olla": {
+    "modo": "Microondas",
+    "min": 8,
+    "liberacion": "—",
+    "pasos": [
+     "El arroz sale cocido de la tanda del domingo. Este snack existe por eso.",
+     "Arroz + leche + canela + la pizca de sal, 3 min. Revuelve y 2 min más hasta que espese.",
+     "Deja bajar el hervor un minuto ANTES de meter la proteína, o se corta.",
+     "Banana en rodajas encima. Frío del día siguiente también sirve."
+    ]
+   },
+   "coccion": {
+    "donde": "otro",
+    "texto": "Microondas",
+    "aparatos": [
+     "micro"
+    ]
+   }
   },
   "s7": {
-   "n": "Garbanzos crocantes especiados",
+   "n": "Manzana asada con canela",
    "g": "snack",
    "min": 30,
    "ing": [
     [
-     "Garbanzos de lata",
+     "Manzana",
+     160
+    ],
+    [
+     "Yogurt griego casero",
      120
     ],
     [
-     "Aceite de oliva",
-     5
+     "Proteína en polvo",
+     12
     ]
    ],
-   "kcal": 188,
-   "p": 8,
-   "c": 19,
-   "f": 8,
-   "fib": 7,
+   "kcal": 209,
+   "p": 21,
+   "c": 29,
+   "f": 2,
+   "fib": 5,
    "tanda": {
     "max_porciones": 4,
     "nevera_dias": 3,
     "congela": false,
-    "nota": "Cuatro porciones el domingo. Reemplaza los paquetes."
+    "nota": "Cuatro porciones de una. Frías con el yogurt también están buenas."
    },
+   "condimentos": [
+    {
+     "n": "Canela",
+     "g": 2,
+     "m": "1 cdta"
+    },
+    {
+     "n": "Whole Earth",
+     "g": 3,
+     "m": "al gusto"
+    },
+    {
+     "n": "Espray de aceite",
+     "g": 1,
+     "m": "2 segundos"
+    }
+   ],
+   "pasos": [
+    {
+     "d": "sinfuego",
+     "t": "Manzana en gajos gruesos, sin pelar: la cáscara es la fibra."
+    },
+    {
+     "d": "horno",
+     "t": "Espray, canela y Whole Earth encima. OLLA en Bake 30 min. Quedan blandas y caramelizadas por su propia azúcar."
+    },
+    {
+     "d": "sinfuego",
+     "t": "Yogurt batido con la proteína al lado, frío. El contraste frío-caliente es medio postre de restaurante."
+    }
+   ],
    "olla": {
     "modo": "Bake",
     "min": 30,
     "liberacion": "—",
     "pasos": [
-     "Garbanzos escurridos y **muy secos** con papel. El agua es lo único que impide que crujan.",
-     "Aceite, paprika ahumada, comino y ajo en polvo. **Bake 30 min**, sacudiendo a la mitad.",
-     "Sal al final. En frasco abierto duran 3 días; cerrado se ablandan."
+     "Manzana en gajos gruesos, sin pelar: la cáscara es la fibra.",
+     "Espray, canela y Whole Earth encima. OLLA en Bake 30 min. Quedan blandas y caramelizadas por su propia azúcar.",
+     "Yogurt batido con la proteína al lado, frío. El contraste frío-caliente es medio postre de restaurante."
     ]
    },
    "coccion": {
@@ -2580,43 +2672,7 @@
     "aparatos": [
      "olla"
     ]
-   },
-   "pasos": [
-    {
-     "d": "sinfuego",
-     "t": "Garbanzos escurridos y MUY secos con papel. El agua es lo único que impide que crujan."
-    },
-    {
-     "d": "horno",
-     "t": "Aceite, paprika ahumada, comino y ajo en polvo. OLLA en Bake 30 min, sacudiendo a la mitad."
-    },
-    {
-     "d": "sinfuego",
-     "t": "Sal al final. En frasco abierto duran 3 días; cerrado se ablandan."
-    }
-   ],
-   "condimentos": [
-    {
-     "n": "Paprika ahumada",
-     "g": 2,
-     "m": "1 cdta"
-    },
-    {
-     "n": "Comino molido",
-     "g": 1,
-     "m": "½ cdta"
-    },
-    {
-     "n": "Ajo en polvo",
-     "g": 2,
-     "m": "1 cdta"
-    },
-    {
-     "n": "Sal",
-     "g": 2,
-     "m": "1 cdta, al final"
-    }
-   ]
+   }
   },
   "s8": {
    "n": "Manzana con mantequilla de maní",
@@ -2719,54 +2775,76 @@
    ]
   },
   "s10": {
-   "n": "Hummus con bastones de verdura",
+   "n": "Pudding de chía con berries",
    "g": "snack",
-   "min": 3,
+   "min": 5,
    "ing": [
     [
-     "Hummus",
+     "Semillas de chía",
+     15
+    ],
+    [
+     "Leche descremada",
+     150
+    ],
+    [
+     "Proteína en polvo",
+     18
+    ],
+    [
+     "Berries congelados",
      80
-    ],
-    [
-     "Zanahoria",
-     100
-    ],
-    [
-     "Pepino",
-     100
     ]
    ],
-   "kcal": 192,
-   "p": 8,
-   "c": 21,
-   "f": 8,
-   "fib": 8,
+   "kcal": 236,
+   "p": 21,
+   "c": 23,
+   "f": 7,
+   "fib": 10,
    "tanda": {
-    "max_porciones": 1,
-    "nevera_dias": 0,
+    "max_porciones": 4,
+    "nevera_dias": 4,
     "congela": false,
-    "nota": "Corta la verdura el domingo y ya está resuelto."
+    "nota": "Cuatro frascos el domingo, junto con los overnight oats. Cero cocina."
    },
+   "condimentos": [
+    {
+     "n": "Canela",
+     "g": 1,
+     "m": "½ cdta"
+    },
+    {
+     "n": "Vainilla",
+     "g": 2,
+     "m": "unas gotas"
+    },
+    {
+     "n": "Whole Earth",
+     "g": 3,
+     "m": "al gusto"
+    }
+   ],
+   "pasos": [
+    {
+     "d": "sinfuego",
+     "t": "Chía + leche + proteína + vainilla en un frasco. Revuelve BIEN y vuelve a revolver a los 5 min: si no, la chía se apelmaza en el fondo."
+    },
+    {
+     "d": "nevera",
+     "t": "Mínimo 4 horas, mejor toda la noche."
+    },
+    {
+     "d": "sinfuego",
+     "t": "Berries encima al servir. 7 g de fibra de la chía sola."
+    }
+   ],
    "coccion": {
     "donde": "nada",
     "texto": "Sin fuego",
     "aparatos": [
      "sinfuego"
     ]
-   },
-   "pasos": [
-    {
-     "d": "sinfuego",
-     "t": "Zanahoria y pepino en bastones, cortados el domingo. Hummus al lado."
-    }
-   ],
-   "condimentos": [
-    {
-     "n": "Sal",
-     "g": 0.5,
-     "m": "1 pizca"
-    }
-   ]
+   }
   },
   "b9": {
    "n": "Arepa con huevos pericos",
@@ -3013,118 +3091,118 @@
    "ids": [
     "b6",
     "l5",
-    "s2",
-    "s5",
+    "s3",
+    "s10",
     "d7"
    ],
    "total": [
-    2004,
+    1983,
     172,
-    191,
-    60,
-    40
+    185,
+    59,
+    43
    ]
   },
   "Martes": {
    "tipo": "entreno",
    "ids": [
-    "b2",
+    "b8",
     "l4",
     "s4",
     "s5",
-    "d6"
+    "d4"
    ],
    "total": [
-    1976,
-    173,
-    176,
-    60,
-    42
+    1986,
+    174,
+    179,
+    58,
+    41
    ]
   },
   "Miércoles": {
    "tipo": "descanso",
    "ids": [
-    "b8",
-    "l1",
+    "b7",
+    "l3",
+    "s3",
     "s4",
-    "s5",
-    "d5"
+    "d6"
    ],
    "total": [
-    2028,
-    173,
-    188,
-    57,
-    44
+    2033,
+    172,
+    197,
+    58,
+    37
    ]
   },
   "Jueves": {
    "tipo": "entreno",
    "ids": [
-    "b9",
+    "b2",
     "l5",
-    "s4",
-    "s5",
-    "d1"
+    "s3",
+    "s10",
+    "d7"
    ],
    "total": [
-    2028,
-    172,
-    187,
-    59,
-    43
+    2010,
+    173,
+    179,
+    63,
+    46
    ]
   },
   "Viernes": {
    "tipo": "entreno",
    "ids": [
-    "b2",
+    "b1",
     "l4",
-    "s2",
-    "s10",
-    "d7"
+    "s3",
+    "s5",
+    "d4"
    ],
    "total": [
-    2043,
-    171,
-    200,
-    58,
-    40
+    2052,
+    172,
+    194,
+    63,
+    47
    ]
   },
   "Sábado": {
    "tipo": "descanso",
    "ids": [
-    "b3",
+    "b6",
     "l2",
-    "s2",
     "s4",
+    "s5",
     "d6"
    ],
    "total": [
-    2194,
-    177,
-    223,
-    60,
-    41
+    2057,
+    173,
+    195,
+    58,
+    37
    ]
   },
   "Domingo": {
    "tipo": "descanso",
    "ids": [
     "b7",
-    "l1",
+    "l6",
     "s2",
-    "s3",
-    "d1"
+    "s10",
+    "d5"
    ],
    "total": [
-    2110,
+    2158,
     172,
-    215,
-    56,
-    42
+    217,
+    61,
+    38
    ]
   }
  },
@@ -3152,7 +3230,8 @@
    "guascas",
    "papa criolla"
   ],
-  "consigue": "Harina PAN, arepas de paquete y plátano maduro sí los consigue en Adelaide."
+  "consigue": "Harina PAN, arepas de paquete y plátano maduro sí los consigue en Adelaide.",
+  "snacks": "Todos dulces. Los salados los siente un trámite."
  },
  "olla": {
   "modelo": "Philips All-in-One 6 L",

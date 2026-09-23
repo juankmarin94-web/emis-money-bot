@@ -46,6 +46,7 @@ CLAVES = {
  "Caldo Campbell's": ["caldo"], "Salsa de soya": ["soya"],
  "Aceite de oliva": ["aceite", "espray"], "Whole Earth": ["whole earth", "dulce"],
  "Alcaparras": ["alcaparra"], "Salsa mild": ["salsa"], "Dolmio": ["dolmio"],
+ "Semillas de chía": ["chia"], "Cacao en polvo": ["cacao"],
  "Leche de soya": ["leche de soya"], "Sandía": ["sandia"],
 }
 # Palabras que, si aparecen en un paso, obligan a que el ingrediente esté en la lista.
@@ -53,7 +54,7 @@ REVERSO = {
  "limon": "Limón", "caldo": "Caldo", "yogurt": "Yogurt", "cottage": "Cottage",
  "aguacate": "Aguacate", "parmesano": "Parmesano", "cheddar": "Cheddar",
  "chocolate": "Chocolate", "naranja": "Naranja", "hummus": "Hummus",
- "ricotta": "Ricotta", "granola": "Granola",
+ "ricotta": "Ricotta", "granola": "Granola", "chia": "chía", "cacao": "Cacao",
 }
 
 def main():

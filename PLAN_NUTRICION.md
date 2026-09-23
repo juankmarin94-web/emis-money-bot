@@ -224,9 +224,10 @@ Son los platos de 10 minutos. No todo tiene que salir del congelador.
 
 31 recetas con tres reglas encima:
 
-1. **Los desayunos son de 8 minutos o menos** — huevos, avena o cereal. Nada de hornear entre semana.
-2. **Los almuerzos van en la olla** — chana masala, frijoles a la colombiana, sancocho, arroz con carne vegetal, curry rojo, risotto.
-3. **Todo se consigue donde tú compras en Adelaide.** La Harina PAN, las arepas de paquete y el plátano maduro sí los encuentras, así que están dentro. Las guascas y la papa criolla no, y sin guascas no hay ajiaco — por eso el sancocho de papa, camote y mazorca ocupa ese lugar en vez de una versión triste del ajiaco.
+2. **Los desayunos son de 8 minutos o menos** — huevos, avena o cereal. Nada de hornear entre semana.
+1. **Los snacks son todos dulces** — mousse de chocolate, arroz con leche proteico, cottage batido tipo postre, manzana asada, pudding de chía. Un snack salado se siente un trámite; uno dulce es lo que evita que acabes en el chocolate de verdad.
+3. **Los almuerzos van en la olla** — chana masala, frijoles a la colombiana, sancocho, arroz con carne vegetal, curry rojo, risotto.
+4. **Todo se consigue donde tú compras en Adelaide.** La Harina PAN, las arepas de paquete y el plátano maduro sí los encuentras, así que están dentro. Las guascas y la papa criolla no, y sin guascas no hay ajiaco — por eso el sancocho de papa, camote y mazorca ocupa ese lugar en vez de una versión triste del ajiaco.
 
 Vegetariano, sin pescado y sin tahini. Los macros salen de `data/foods.json`, no están escritos a mano.
 
@@ -288,14 +289,14 @@ días de entreno, el batido de después vale la pena hacerlo de 45 g.
 | ID | Receta | Cómo se cocina | kcal | P | C | G | Fibra |
 |---|---|---|---|---|---|---|---|
 | `s1` | Batido de proteína con berries | Licuadora | 192 | **22 g** | 18 g | 3 g | 8 g |
-| `s10` | Hummus con bastones de verdura | Sin fuego | 192 | **8 g** | 21 g | 8 g | 8 g |
+| `s10` | Pudding de chía con berries | Sin fuego | 236 | **21 g** | 23 g | 7 g | 10 g |
 | `s11` | Tajadas de plátano maduro al horno | **Olla** | 183 | **2 g** | 48 g | 1 g | 3 g |
 | `s2` | Batido de mango con yogurt | Licuadora | 286 | **33 g** | 32 g | 3 g | 4 g |
-| `s3` | Dos huevos duros | **Olla** | 143 | **13 g** | 1 g | 10 g | 0 g |
+| `s3` | Mousse de chocolate proteico | Sin fuego | 211 | **30 g** | 17 g | 3 g | 5 g |
 | `s4` | Yogurt con berries y canela | Sin fuego | 205 | **25 g** | 20 g | 1 g | 3 g |
-| `s5` | Edamame con sal y chili | Estufa | 182 | **18 g** | 14 g | 8 g | 8 g |
-| `s6` | Cottage con tomate y sriracha | Sin fuego | 198 | **26 g** | 11 g | 5 g | 1 g |
-| `s7` | Garbanzos crocantes especiados | **Olla** | 188 | **8 g** | 19 g | 8 g | 7 g |
+| `s5` | Cottage batido con berries y vainilla | Licuadora | 193 | **22 g** | 15 g | 5 g | 3 g |
+| `s6` | Arroz con leche proteico | Microondas | 237 | **20 g** | 36 g | 2 g | 3 g |
+| `s7` | Manzana asada con canela | **Olla** | 209 | **21 g** | 29 g | 2 g | 5 g |
 | `s8` | Manzana con mantequilla de maní | Sin fuego | 214 | **6 g** | 28 g | 10 g | 6 g |
 | `s9` | Batido pre-gym de banana y avena | Licuadora | 423 | **44 g** | 50 g | 5 g | 7 g |
 
@@ -311,17 +312,17 @@ Cada día está armado y comprobado contra los objetivos, no estimado a ojo.
 
 | Día | | Menú | kcal | P | C | G | Fibra |
 |---|---|---|---|---|---|---|---|
-| **Lunes** | entreno | Bowl de yogurt con granola y mango · Curry rojo tailandés de tofu · Batido de mango con yogurt · Edamame con sal y chili · Shakshuka | 2004 | **172** | 191 | 60 | 40 |
-| **Martes** | entreno | Overnight oats de la nevera · Arroz con carne vegetal y verduras · Yogurt con berries y canela · Edamame con sal y chili · Tofu al ajillo con brócoli | 1976 | **173** | 176 | 60 | 42 |
-| **Miércoles** | descanso | Omelette de champiñones y cheddar · Chana masala · Yogurt con berries y canela · Edamame con sal y chili · Sopa cremosa de tomate rostizado y lenteja roja | 2028 | **173** | 188 | 57 | 44 |
-| **Jueves** | entreno | Arepa con huevos pericos · Curry rojo tailandés de tofu · Yogurt con berries y canela · Edamame con sal y chili · Dal cremoso de lentejas y frijol rojo | 2028 | **172** | 187 | 59 | 43 |
-| **Viernes** | entreno | Overnight oats de la nevera · Arroz con carne vegetal y verduras · Batido de mango con yogurt · Hummus con bastones de verdura · Shakshuka | 2043 | **171** | 200 | 58 | 40 |
-| **Sábado** | descanso | Avena caliente con proteína y banana · Frijoles paisas con plátano y huevo · Batido de mango con yogurt · Yogurt con berries y canela · Tofu al ajillo con brócoli | 2194 | **177** | 223 | 60 | 41 |
-| **Domingo** | descanso | Calentado paisa · Chana masala · Batido de mango con yogurt · Dos huevos duros · Dal cremoso de lentejas y frijol rojo | 2110 | **172** | 215 | 56 | 42 |
-| | | **Promedio diario** | **2054** | **172** | 197 | 58 | 41 |
+| **Lunes** | entreno | Bowl de yogurt con granola y mango · Curry rojo tailandés de tofu · Mousse de chocolate proteico · Pudding de chía con berries · Shakshuka | 1983 | **172** | 185 | 59 | 43 |
+| **Martes** | entreno | Omelette de champiñones y cheddar · Arroz con carne vegetal y verduras · Yogurt con berries y canela · Cottage batido con berries y vainilla · Feijoada vegetariana | 1986 | **174** | 179 | 58 | 41 |
+| **Miércoles** | descanso | Calentado paisa · Sancocho de tres tubérculos · Mousse de chocolate proteico · Yogurt con berries y canela · Tofu al ajillo con brócoli | 2033 | **172** | 197 | 58 | 37 |
+| **Jueves** | entreno | Overnight oats de la nevera · Curry rojo tailandés de tofu · Mousse de chocolate proteico · Pudding de chía con berries · Shakshuka | 2010 | **173** | 179 | 63 | 46 |
+| **Viernes** | entreno | Huevos pericos con tostada · Arroz con carne vegetal y verduras · Mousse de chocolate proteico · Cottage batido con berries y vainilla · Feijoada vegetariana | 2052 | **172** | 194 | 63 | 47 |
+| **Sábado** | descanso | Bowl de yogurt con granola y mango · Frijoles paisas con plátano y huevo · Yogurt con berries y canela · Cottage batido con berries y vainilla · Tofu al ajillo con brócoli | 2057 | **173** | 195 | 58 | 37 |
+| **Domingo** | descanso | Calentado paisa · Risotto de champiñones · Batido de mango con yogurt · Pudding de chía con berries · Sopa cremosa de tomate rostizado y lenteja roja | 2158 | **172** | 217 | 61 | 38 |
+| | | **Promedio diario** | **2039** | **172** | 192 | 60 | 41 |
 
-Promedio real: **2.053 kcal · 172 g de proteína · 58 g de grasa · 41 g de fibra.**
-Déficit de 765 kcal/día → **0,70 kg/semana.**
+Promedio real: **2.039 kcal · 172 g de proteína · 60 g de grasa · 41 g de fibra.**
+Déficit de 779 kcal/día → **0,71 kg/semana.**
 
 *El sábado y el domingo corren unas 150–200 kcal por encima: los frijoles paisas y el calentado
 son platos grandes y no tiene sentido encogerlos hasta que dejen de ser ellos. La semana
@@ -635,14 +636,16 @@ Proteína en polvo 30 g · Berries congelados 150 g
 1. **Licuadora** — Proteína en 300 ml de agua fría con los berries congelados. Agita o licúa.
 2. **Sin fuego** — 21 g de proteína y el 99% del hierro del día. No lo tomes con café ni té: bloquean el hierro.
 
-**`s10` Hummus con bastones de verdura** — Sin fuego  
-192 kcal · 8 g P · 21 g C · 8 g G · 8 g fibra
+**`s10` Pudding de chía con berries** — Sin fuego  
+236 kcal · 21 g P · 23 g C · 7 g G · 10 g fibra
 
-Hummus 80 g · Zanahoria 100 g · Pepino 100 g
+Semillas de chía 15 g · Leche descremada 150 g · Proteína en polvo 18 g · Berries congelados 80 g
 
-*Condimentos:* Sal 0.5 g (1 pizca)
+*Condimentos:* Canela 1 g (½ cdta) · Vainilla 2 g (unas gotas) · Whole Earth 3 g (al gusto)
 
-1. **Sin fuego** — Zanahoria y pepino en bastones, cortados el domingo. Hummus al lado.
+1. **Sin fuego** — Chía + leche + proteína + vainilla en un frasco. Revuelve BIEN y vuelve a revolver a los 5 min: si no, la chía se apelmaza en el fondo.
+2. **Nevera** — Mínimo 4 horas, mejor toda la noche.
+3. **Sin fuego** — Berries encima al servir. 7 g de fibra de la chía sola.
 
 **`s11` Tajadas de plátano maduro al horno** — Olla  
 183 kcal · 2 g P · 48 g C · 1 g G · 3 g fibra
@@ -662,15 +665,16 @@ Mango 150 g · Yogurt griego casero 150 g · Proteína en polvo 25 g
 
 1. **Licuadora** — Mango congelado, yogurt y proteína. Licúa hasta que quede tipo helado.
 
-**`s3` Dos huevos duros** — Olla  
-143 kcal · 13 g P · 1 g C · 10 g G · 0 g fibra
+**`s3` Mousse de chocolate proteico** — Sin fuego  
+211 kcal · 30 g P · 17 g C · 3 g G · 5 g fibra
 
-Huevo entero 100 g
+Yogurt griego casero 150 g · Proteína en polvo 20 g · Cacao en polvo 4 g · Berries congelados 50 g
 
-*Condimentos:* Sal 1 g (1 pizca) · Pimienta negra 0.5 g (al gusto)
+*Condimentos:* Cacao en polvo 0 g (ya contado arriba) · Canela 1 g (½ cdta) · Whole Earth 3 g (al gusto)
 
-1. **Olla** — Del domingo: 1 taza de agua en la OLLA, la canasta, hasta 12 huevos. Pressure cook 5 min, liberación natural 5 min.
-2. **Sin fuego** — Baño de hielo 3 min. Pelan sin pelear. Aguantan 7 días en la nevera.
+1. **Sin fuego** — Yogurt, proteína y cacao en un bowl. Bate FUERTE con tenedor 1 min: el aire es lo que lo vuelve mousse y no papilla.
+2. **Nevera** — 20 min en la nevera si aguantas. Queda más firme.
+3. **Sin fuego** — Berries encima. Tu proteína ya viene con cacao, así que la cucharadita extra solo le sube el amargo. Si la quieres más dulce, Whole Earth.
 
 **`s4` Yogurt con berries y canela** — Sin fuego  
 205 kcal · 25 g P · 20 g C · 1 g G · 3 g fibra
@@ -681,35 +685,38 @@ Yogurt griego casero 250 g · Berries congelados 80 g · Whole Earth 5 g
 
 1. **Sin fuego** — Yogurt, berries y canela. Whole Earth si lo quieres dulce: endulza a cero calorías.
 
-**`s5` Edamame con sal y chili** — Estufa  
-182 kcal · 18 g P · 14 g C · 8 g G · 8 g fibra
+**`s5` Cottage batido con berries y vainilla** — Licuadora  
+193 kcal · 22 g P · 15 g C · 5 g G · 3 g fibra
 
-Edamame congelado 150 g
+Cottage alto en proteína 170 g · Berries congelados 80 g
 
-*Condimentos:* Sal gruesa 2 g (1 cdta) · Chili en hojuelas 1 g (½ cdta)
+*Condimentos:* Vainilla 2 g (unas gotas) · Canela 1 g (½ cdta) · Whole Earth 3 g (al gusto)
 
-1. **Estufa** — Edamame congelado directo a agua hirviendo, 4 min. Escurre.
-2. **Sin fuego** — Sal gruesa y chili en hojuelas. Se comen exprimiendo la vaina con los dientes.
+1. **Licuadora** — Licúa el cottage SOLO, con la vainilla, 30 segundos. Ese batido es lo que le quita los grumos y lo deja como postre.
+2. **Sin fuego** — Berries encima, semi-descongelados, y canela. 26 g de proteína que saben a postre.
 
-**`s6` Cottage con tomate y sriracha** — Sin fuego  
-198 kcal · 26 g P · 11 g C · 5 g G · 1 g fibra
+**`s6` Arroz con leche proteico** — Microondas  
+237 kcal · 20 g P · 36 g C · 2 g G · 3 g fibra
 
-Cottage alto en proteína 200 g · Tomate 100 g
+Arroz basmati crudo 20 g · Leche descremada 150 g · Proteína en polvo 18 g · Banana 50 g
 
-*Condimentos:* Sriracha 8 g (2 cdtas) · Sal 0.5 g (1 pizca)
+*Condimentos:* Canela 2 g (1 cdta, y una astilla si tienes) · Whole Earth 4 g (al gusto) · Sal 0.5 g (1 pizca)
 
-1. **Sin fuego** — Cottage en un bowl, tomate picado, sriracha generosa. 26 g de proteína en dos minutos.
+1. **Sin fuego** — El arroz sale cocido de la tanda del domingo. Este snack existe por eso.
+2. **Microondas** — Arroz + leche + canela + la pizca de sal, 3 min. Revuelve y 2 min más hasta que espese.
+3. **Sin fuego** — Deja bajar el hervor un minuto ANTES de meter la proteína, o se corta.
+4. **Sin fuego** — Banana en rodajas encima. Frío del día siguiente también sirve.
 
-**`s7` Garbanzos crocantes especiados** — Olla  
-188 kcal · 8 g P · 19 g C · 8 g G · 7 g fibra
+**`s7` Manzana asada con canela** — Olla  
+209 kcal · 21 g P · 29 g C · 2 g G · 5 g fibra
 
-Garbanzos de lata 120 g · Aceite de oliva 5 g
+Manzana 160 g · Yogurt griego casero 120 g · Proteína en polvo 12 g
 
-*Condimentos:* Paprika ahumada 2 g (1 cdta) · Comino molido 1 g (½ cdta) · Ajo en polvo 2 g (1 cdta) · Sal 2 g (1 cdta, al final)
+*Condimentos:* Canela 2 g (1 cdta) · Whole Earth 3 g (al gusto) · Espray de aceite 1 g (2 segundos)
 
-1. **Sin fuego** — Garbanzos escurridos y MUY secos con papel. El agua es lo único que impide que crujan.
-2. **Olla · Bake** — Aceite, paprika ahumada, comino y ajo en polvo. OLLA en Bake 30 min, sacudiendo a la mitad.
-3. **Sin fuego** — Sal al final. En frasco abierto duran 3 días; cerrado se ablandan.
+1. **Sin fuego** — Manzana en gajos gruesos, sin pelar: la cáscara es la fibra.
+2. **Olla · Bake** — Espray, canela y Whole Earth encima. OLLA en Bake 30 min. Quedan blandas y caramelizadas por su propia azúcar.
+3. **Sin fuego** — Yogurt batido con la proteína al lado, frío. El contraste frío-caliente es medio postre de restaurante.
 
 **`s8` Manzana con mantequilla de maní** — Sin fuego  
 214 kcal · 6 g P · 28 g C · 10 g G · 6 g fibra
@@ -861,7 +868,7 @@ Lo que no compras, no te lo comes. Es la regla más barata del plan.
 
 Suma los ingredientes de los 7 días del menú, resta lo que hay en `data/pantry.json` y convierte
 el resto a unidades de compra. Cambias el menú o la despensa, corres el comando, y la lista queda
-al día. La de esta semana son **35 líneas**, porque las recetas traen despensa nueva: carne vegetal
+al día. La de esta semana son **41 líneas**, porque las recetas traen despensa nueva: carne vegetal
 molida, arroz arborio, pasta de curry rojo, leche de coco light, passata, tempeh.
 
 Esa despensa se compra una vez y rinde meses. La compra de la semana siguiente vuelve a ser corta.
