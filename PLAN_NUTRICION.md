@@ -247,57 +247,57 @@ días de entreno, el batido de después vale la pena hacerlo de 45 g.
 
 **Desayunos**
 
-| ID | Receta | kcal | P | C | G | Fibra |
-|---|---|---|---|---|---|---|
-| `b1` | Huevos pericos con tostada | 512 | **40 g** | 35 g | 23 g | 8 g |
-| `b10` | Arepa rápida con huevo y queso | 478 | **45 g** | 29 g | 19 g | 2 g |
-| `b2` | Overnight oats de la nevera | 483 | **43 g** | 47 g | 12 g | 10 g |
-| `b3` | Avena caliente con proteína y banana | 500 | **35 g** | 64 g | 12 g | 10 g |
-| `b4` | Weet-Bix con leche y batido | 425 | **32 g** | 66 g | 3 g | 10 g |
-| `b5` | Huevos duros con tostada de aguacate | 534 | **37 g** | 36 g | 27 g | 8 g |
-| `b6` | Bowl de yogurt con granola y mango | 456 | **42 g** | 53 g | 8 g | 7 g |
-| `b7` | Calentado paisa | 516 | **38 g** | 47 g | 19 g | 8 g |
-| `b8` | Omelette de champiñones y cheddar | 452 | **47 g** | 17 g | 20 g | 4 g |
-| `b9` | Arepa con huevos pericos | 529 | **46 g** | 44 g | 18 g | 5 g |
+| ID | Receta | Cómo se cocina | kcal | P | C | G | Fibra |
+|---|---|---|---|---|---|---|---|
+| `b1` | Huevos pericos con tostada | **Olla** · Sofrito 8 min | 512 | **40 g** | 35 g | 23 g | 8 g |
+| `b10` | Arepa rápida con huevo y queso | **Olla** · Sofrito 5 min | 478 | **45 g** | 29 g | 19 g | 2 g |
+| `b2` | Overnight oats de la nevera | Sin cocina · sale de la nevera | 483 | **43 g** | 47 g | 12 g | 10 g |
+| `b3` | Avena caliente con proteína y banana | Microondas 5 min | 500 | **35 g** | 64 g | 12 g | 10 g |
+| `b4` | Weet-Bix con leche y batido | Sin cocina · cereal y batido | 425 | **32 g** | 66 g | 3 g | 10 g |
+| `b5` | Huevos duros con tostada de aguacate | Tostadora · los huevos son del domingo | 534 | **37 g** | 36 g | 27 g | 8 g |
+| `b6` | Bowl de yogurt con granola y mango | Sin cocina · se arma en el bowl | 456 | **42 g** | 53 g | 8 g | 7 g |
+| `b7` | Calentado paisa | **Olla** · Sofrito 8 min | 516 | **38 g** | 47 g | 19 g | 8 g |
+| `b8` | Omelette de champiñones y cheddar | **Olla** · Sofrito 8 min | 452 | **47 g** | 17 g | 20 g | 4 g |
+| `b9` | Arepa con huevos pericos | **Olla** · Sofrito 10 min | 529 | **46 g** | 44 g | 18 g | 5 g |
 
 **Almuerzos**
 
-| ID | Receta | kcal | P | C | G | Fibra |
-|---|---|---|---|---|---|---|
-| `l1` | Chana masala | 613 | **42 g** | 76 g | 14 g | 16 g |
-| `l2` | Frijoles paisas con plátano y huevo | 665 | **42 g** | 72 g | 21 g | 14 g |
-| `l3` | Sancocho de tres tubérculos | 563 | **37 g** | 78 g | 12 g | 11 g |
-| `l4` | Arroz con carne vegetal y verduras | 568 | **45 g** | 60 g | 16 g | 11 g |
-| `l5` | Curry rojo tailandés de tofu | 566 | **37 g** | 52 g | 22 g | 14 g |
-| `l6` | Risotto de champiñones | 550 | **39 g** | 56 g | 18 g | 4 g |
+| ID | Receta | Cómo se cocina | kcal | P | C | G | Fibra |
+|---|---|---|---|---|---|---|---|
+| `l1` | Chana masala | **Olla** · Presión 8 min · liberación natural | 613 | **42 g** | 76 g | 14 g | 16 g |
+| `l2` | Frijoles paisas con plátano y huevo | **Olla** · Presión 30 min · liberación natural | 665 | **42 g** | 72 g | 21 g | 14 g |
+| `l3` | Sancocho de tres tubérculos | **Olla** · Presión 12 min · liberación natural | 563 | **37 g** | 78 g | 12 g | 11 g |
+| `l4` | Arroz con carne vegetal y verduras | **Olla** · Presión 5 min · liberación natural 10 min | 568 | **45 g** | 60 g | 16 g | 11 g |
+| `l5` | Curry rojo tailandés de tofu | **Olla** · Presión 5 min · liberación rápida | 566 | **37 g** | 52 g | 22 g | 14 g |
+| `l6` | Risotto de champiñones | **Olla** · Presión 6 min · liberación rápida | 550 | **39 g** | 56 g | 18 g | 4 g |
 
 **Cenas**
 
-| ID | Receta | kcal | P | C | G | Fibra |
-|---|---|---|---|---|---|---|
-| `d1` | Dal cremoso de lentejas y frijol rojo | 546 | **46 g** | 57 g | 10 g | 13 g |
-| `d2` | Chili con chocolate amargo | 633 | **43 g** | 63 g | 20 g | 23 g |
-| `d3` | Bolognesa de carne vegetal | 550 | **36 g** | 63 g | 16 g | 11 g |
-| `d4` | Feijoada vegetariana | 568 | **35 g** | 67 g | 16 g | 20 g |
-| `d5` | Sopa cremosa de tomate rostizado y lenteja roja | 570 | **41 g** | 59 g | 14 g | 12 g |
-| `d6` | Tofu al ajillo con brócoli | 538 | **42 g** | 35 g | 23 g | 10 g |
-| `d7` | Shakshuka | 514 | **42 g** | 40 g | 19 g | 7 g |
+| ID | Receta | Cómo se cocina | kcal | P | C | G | Fibra |
+|---|---|---|---|---|---|---|---|
+| `d1` | Dal cremoso de lentejas y frijol rojo | **Olla** · Presión 12 min · liberación natural | 546 | **46 g** | 57 g | 10 g | 13 g |
+| `d2` | Chili con chocolate amargo | **Olla** · Presión 10 min · liberación natural | 633 | **43 g** | 63 g | 20 g | 23 g |
+| `d3` | Bolognesa de carne vegetal | **Olla** · Presión 10 min · liberación natural | 550 | **36 g** | 63 g | 16 g | 11 g |
+| `d4` | Feijoada vegetariana | **Olla** · Presión 30 min · liberación natural | 568 | **35 g** | 67 g | 16 g | 20 g |
+| `d5` | Sopa cremosa de tomate rostizado y lenteja roja | **Olla** · Presión 6 min · liberación natural | 570 | **41 g** | 59 g | 14 g | 12 g |
+| `d6` | Tofu al ajillo con brócoli | **Olla** · Sofrito 15 min | 538 | **42 g** | 35 g | 23 g | 10 g |
+| `d7` | Shakshuka | **Olla** · Sofrito 18 min | 514 | **42 g** | 40 g | 19 g | 7 g |
 
 **Snacks**
 
-| ID | Receta | kcal | P | C | G | Fibra |
-|---|---|---|---|---|---|---|
-| `s1` | Batido de proteína con berries | 192 | **22 g** | 18 g | 3 g | 8 g |
-| `s10` | Hummus con bastones de verdura | 192 | **8 g** | 21 g | 8 g | 8 g |
-| `s11` | Tajadas de plátano maduro al horno | 183 | **2 g** | 48 g | 1 g | 3 g |
-| `s2` | Batido de mango con yogurt | 286 | **33 g** | 32 g | 3 g | 4 g |
-| `s3` | Dos huevos duros | 143 | **13 g** | 1 g | 10 g | 0 g |
-| `s4` | Yogurt con berries y canela | 205 | **25 g** | 20 g | 1 g | 3 g |
-| `s5` | Edamame con sal y chili | 182 | **18 g** | 14 g | 8 g | 8 g |
-| `s6` | Cottage con tomate y sriracha | 198 | **26 g** | 11 g | 5 g | 1 g |
-| `s7` | Garbanzos crocantes especiados | 188 | **8 g** | 19 g | 8 g | 7 g |
-| `s8` | Manzana con mantequilla de maní | 214 | **6 g** | 28 g | 10 g | 6 g |
-| `s9` | Batido pre-gym de banana y avena | 423 | **44 g** | 50 g | 5 g | 7 g |
+| ID | Receta | Cómo se cocina | kcal | P | C | G | Fibra |
+|---|---|---|---|---|---|---|---|
+| `s1` | Batido de proteína con berries | Licuadora | 192 | **22 g** | 18 g | 3 g | 8 g |
+| `s10` | Hummus con bastones de verdura | Sin cocina · corta y sirve | 192 | **8 g** | 21 g | 8 g | 8 g |
+| `s11` | Tajadas de plátano maduro al horno | **Olla** · Horno 25 min | 183 | **2 g** | 48 g | 1 g | 3 g |
+| `s2` | Batido de mango con yogurt | Licuadora | 286 | **33 g** | 32 g | 3 g | 4 g |
+| `s3` | Dos huevos duros | **Olla** · Del domingo · presión 5 min | 143 | **13 g** | 1 g | 10 g | 0 g |
+| `s4` | Yogurt con berries y canela | Sin cocina | 205 | **25 g** | 20 g | 1 g | 3 g |
+| `s5` | Edamame con sal y chili | Agua hirviendo 4 min | 182 | **18 g** | 14 g | 8 g | 8 g |
+| `s6` | Cottage con tomate y sriracha | Sin cocina | 198 | **26 g** | 11 g | 5 g | 1 g |
+| `s7` | Garbanzos crocantes especiados | **Olla** · Horno 30 min | 188 | **8 g** | 19 g | 8 g | 7 g |
+| `s8` | Manzana con mantequilla de maní | Sin cocina | 214 | **6 g** | 28 g | 10 g | 6 g |
+| `s9` | Batido pre-gym de banana y avena | Licuadora | 423 | **44 g** | 50 g | 5 g | 7 g |
 
 ### La regla que resume todo
 
@@ -336,111 +336,145 @@ adelgaza nada.*
 ### Desayunos
 
 **`b1` Huevos pericos con tostada** — 512 kcal · 40 g P · 35 g C · 23 g G · 8 g fibra  
+*Olla · Sofrito 8 min*  
 Huevo entero 150 g · Clara de huevo 120 g · Tomate 100 g · Cebolla larga 35 g · Tostada integral 60 g · Aguacate 35 g
 
 **`b10` Arepa rápida con huevo y queso** — 478 kcal · 45 g P · 29 g C · 19 g G · 2 g fibra  
+*Olla · Sofrito 5 min*  
 Arepa Sary con queso 60 g · Huevo entero 100 g · Clara de huevo 120 g · Tomate 80 g · Cottage alto en proteína 120 g
 
 **`b2` Overnight oats de la nevera** — 483 kcal · 43 g P · 47 g C · 12 g G · 10 g fibra  
+*Sin cocina · sale de la nevera*  
 Avena en hojuelas 45 g · Yogurt griego casero 170 g · Proteína en polvo 25 g · Berries congelados 85 g · Mantequilla de maní 10 g
 
 **`b3` Avena caliente con proteína y banana** — 500 kcal · 35 g P · 64 g C · 12 g G · 10 g fibra  
+*Microondas 5 min*  
 Avena en hojuelas 50 g · Leche descremada 220 g · Proteína en polvo 25 g · Banana 85 g · Mantequilla de maní 10 g
 
 **`b4` Weet-Bix con leche y batido** — 425 kcal · 32 g P · 66 g C · 3 g G · 10 g fibra  
+*Sin cocina · cereal y batido*  
 Weet-Bix 50 g · Leche descremada 220 g · Proteína en polvo 25 g · Banana 85 g
 
 **`b5` Huevos duros con tostada de aguacate** — 534 kcal · 37 g P · 36 g C · 27 g G · 8 g fibra  
+*Tostadora · los huevos son del domingo*  
 Huevo entero 150 g · Tostada integral 60 g · Aguacate 50 g · Tomate 70 g · Cottage alto en proteína 85 g
 
 **`b6` Bowl de yogurt con granola y mango** — 456 kcal · 42 g P · 53 g C · 8 g G · 7 g fibra  
+*Sin cocina · se arma en el bowl*  
 Yogurt griego casero 240 g · Proteína en polvo 20 g · Granola 30 g · Mango 100 g · Berries congelados 50 g
 
 **`b7` Calentado paisa** — 516 kcal · 38 g P · 47 g C · 19 g G · 8 g fibra  
+*Olla · Sofrito 8 min*  
 Huevo entero 150 g · Clara de huevo 90 g · Arroz basmati crudo 20 g · Frijol rojo de lata 80 g · Plátano maduro 45 g · Cebolla larga 30 g · Aguacate 20 g
 
 **`b8` Omelette de champiñones y cheddar** — 452 kcal · 47 g P · 17 g C · 20 g G · 4 g fibra  
+*Olla · Sofrito 8 min*  
 Huevo entero 150 g · Clara de huevo 120 g · Champiñones 100 g · Espinaca 70 g · Queso cheddar light 25 g · Tostada integral 30 g
 
 **`b9` Arepa con huevos pericos** — 529 kcal · 46 g P · 44 g C · 18 g G · 5 g fibra  
+*Olla · Sofrito 10 min*  
 Harina PAN 40 g · Huevo entero 100 g · Clara de huevo 150 g · Tomate 90 g · Cebolla larga 30 g · Cottage alto en proteína 100 g · Aguacate 30 g
 
 ### Almuerzos
 
 **`l1` Chana masala** — 613 kcal · 42 g P · 76 g C · 14 g G · 16 g fibra  
+*Olla · Presión 8 min · liberación natural*  
 Garbanzos de lata 210 g · Passata de tomate 130 g · Cebolla 70 g · Yogurt griego casero 100 g · Arroz basmati crudo 25 g · Cottage alto en proteína 100 g · Aceite de oliva 5 g
 
 **`l2` Frijoles paisas con plátano y huevo** — 665 kcal · 42 g P · 72 g C · 21 g G · 14 g fibra  
+*Olla · Presión 30 min · liberación natural*  
 Frijol rojo seco 50 g · Plátano maduro 50 g · Tomate 100 g · Cebolla 60 g · Zanahoria 40 g · Arroz basmati crudo 20 g · Aguacate 25 g · Huevo entero 100 g · Cottage alto en proteína 100 g · Aceite de oliva 4 g
 
 **`l3` Sancocho de tres tubérculos** — 563 kcal · 37 g P · 78 g C · 12 g G · 11 g fibra  
+*Olla · Presión 12 min · liberación natural*  
 Papa 140 g · Camote 100 g · Maíz tierno 85 g · Caldo Campbell's 440 g · Cottage alto en proteína 220 g · Aguacate 35 g · Cebolla larga 35 g
 
 **`l4` Arroz con carne vegetal y verduras** — 568 kcal · 45 g P · 60 g C · 16 g G · 11 g fibra  
+*Olla · Presión 5 min · liberación natural 10 min*  
 Carne vegetal molida 170 g · Arroz basmati crudo 35 g · Pimentón 85 g · Habichuela 85 g · Maíz tierno 50 g · Caldo Campbell's 170 g · Cottage alto en proteína 70 g · Aceite de oliva 5 g
 
 **`l5` Curry rojo tailandés de tofu** — 566 kcal · 37 g P · 52 g C · 22 g G · 14 g fibra  
+*Olla · Presión 5 min · liberación rápida*  
 Tofu firme 160 g · Garbanzos de lata 85 g · Leche de coco light 60 g · Pasta de curry rojo 20 g · Pimentón 85 g · Habichuela 85 g · Espinaca 70 g · Arroz jazmín crudo 25 g · Limón 15 g
 
 **`l6` Risotto de champiñones** — 550 kcal · 39 g P · 56 g C · 18 g G · 4 g fibra  
+*Olla · Presión 6 min · liberación rápida*  
 Arroz arborio crudo 50 g · Champiñones 220 g · Cebolla 45 g · Caldo Campbell's 350 g · Parmesano 15 g · Ricotta light 50 g · Cottage alto en proteína 130 g · Aceite de oliva 5 g
 
 ### Cenas
 
 **`d1` Dal cremoso de lentejas y frijol rojo** — 546 kcal · 46 g P · 57 g C · 10 g G · 13 g fibra  
+*Olla · Presión 12 min · liberación natural*  
 Lentejas cafés secas 50 g · Frijol rojo de lata 70 g · Passata de tomate 130 g · Cebolla 60 g · Yogurt griego casero 100 g · Cottage alto en proteína 130 g · Aceite de oliva 5 g
 
 **`d2` Chili con chocolate amargo** — 633 kcal · 43 g P · 63 g C · 20 g G · 23 g fibra  
+*Olla · Presión 10 min · liberación natural*  
 Frijoles negros de lata 100 g · Frijol rojo de lata 85 g · Passata de tomate 160 g · Pimentón 100 g · Cebolla 60 g · Chocolate 85% 5 g · Carne vegetal molida 70 g · Cottage alto en proteína 100 g · Aguacate 35 g · Aceite de oliva 5 g
 
 **`d3` Bolognesa de carne vegetal** — 550 kcal · 36 g P · 63 g C · 16 g G · 11 g fibra  
+*Olla · Presión 10 min · liberación natural*  
 Carne vegetal molida 120 g · Pasta cruda 45 g · Pasta de tomate 25 g · Passata de tomate 170 g · Cebolla 50 g · Zanahoria 45 g · Apio 35 g · Parmesano 15 g · Aceite de oliva 5 g
 
 **`d4` Feijoada vegetariana** — 568 kcal · 35 g P · 67 g C · 16 g G · 20 g fibra  
+*Olla · Presión 30 min · liberación natural*  
 Frijoles negros secos 50 g · Tempeh 85 g · Naranja 70 g · Cebolla 60 g · Passata de tomate 100 g · Arroz basmati crudo 20 g · Espinaca 130 g · Aceite de oliva 5 g
 
 **`d5` Sopa cremosa de tomate rostizado y lenteja roja** — 570 kcal · 41 g P · 59 g C · 14 g G · 12 g fibra  
+*Olla · Presión 6 min · liberación natural*  
 Tomate 300 g · Lentejas rojas secas 50 g · Cebolla 60 g · Caldo Campbell's 350 g · Ricotta light 45 g · Cottage alto en proteína 130 g · Tostada integral 30 g · Aceite de oliva 5 g
 
 **`d6` Tofu al ajillo con brócoli** — 538 kcal · 42 g P · 35 g C · 23 g G · 10 g fibra  
+*Olla · Sofrito 15 min*  
 Tofu firme 200 g · Brócoli 170 g · Champiñones 130 g · Cebolla larga 35 g · Salsa de soya 15 g · Arroz basmati crudo 25 g · Aceite de oliva 5 g
 
 **`d7` Shakshuka** — 514 kcal · 42 g P · 40 g C · 19 g G · 7 g fibra  
+*Olla · Sofrito 18 min*  
 Huevo entero 100 g · Clara de huevo 90 g · Passata de tomate 170 g · Pimentón 100 g · Cebolla 60 g · Cottage alto en proteína 100 g · Tostada integral 30 g · Aceite de oliva 5 g
 
 ### Snacks
 
 **`s1` Batido de proteína con berries** — 192 kcal · 22 g P · 18 g C · 3 g G · 8 g fibra  
+*Licuadora*  
 Proteína en polvo 30 g · Berries congelados 150 g
 
 **`s10` Hummus con bastones de verdura** — 192 kcal · 8 g P · 21 g C · 8 g G · 8 g fibra  
+*Sin cocina · corta y sirve*  
 Hummus 80 g · Zanahoria 100 g · Pepino 100 g
 
 **`s11` Tajadas de plátano maduro al horno** — 183 kcal · 2 g P · 48 g C · 1 g G · 3 g fibra  
+*Olla · Horno 25 min*  
 Plátano maduro 150 g
 
 **`s2` Batido de mango con yogurt** — 286 kcal · 33 g P · 32 g C · 3 g G · 4 g fibra  
+*Licuadora*  
 Mango 150 g · Yogurt griego casero 150 g · Proteína en polvo 25 g
 
 **`s3` Dos huevos duros** — 143 kcal · 13 g P · 1 g C · 10 g G · 0 g fibra  
+*Olla · Del domingo · presión 5 min*  
 Huevo entero 100 g
 
 **`s4` Yogurt con berries y canela** — 205 kcal · 25 g P · 20 g C · 1 g G · 3 g fibra  
+*Sin cocina*  
 Yogurt griego casero 250 g · Berries congelados 80 g · Whole Earth 5 g
 
 **`s5` Edamame con sal y chili** — 182 kcal · 18 g P · 14 g C · 8 g G · 8 g fibra  
+*Agua hirviendo 4 min*  
 Edamame congelado 150 g
 
 **`s6` Cottage con tomate y sriracha** — 198 kcal · 26 g P · 11 g C · 5 g G · 1 g fibra  
+*Sin cocina*  
 Cottage alto en proteína 200 g · Tomate 100 g
 
 **`s7` Garbanzos crocantes especiados** — 188 kcal · 8 g P · 19 g C · 8 g G · 7 g fibra  
+*Olla · Horno 30 min*  
 Garbanzos de lata 120 g · Aceite de oliva 5 g
 
 **`s8` Manzana con mantequilla de maní** — 214 kcal · 6 g P · 28 g C · 10 g G · 6 g fibra  
+*Sin cocina*  
 Manzana 180 g · Mantequilla de maní 20 g
 
 **`s9` Batido pre-gym de banana y avena** — 423 kcal · 44 g P · 50 g C · 5 g G · 7 g fibra  
+*Licuadora*  
 Yogurt griego casero 200 g · Banana 110 g · Avena en hojuelas 20 g · Proteína en polvo 30 g
 
 ---

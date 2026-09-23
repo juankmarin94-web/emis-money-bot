@@ -70,6 +70,10 @@
      "**Apaga cuando todavía se vean húmedos**: se terminan de cuajar solos.",
      "Tostada con aguacate machacado al lado. Ocho minutos de reloj."
     ]
+   },
+   "coccion": {
+    "donde": "olla",
+    "texto": "Sofrito 8 min"
    }
   },
   "b2": {
@@ -108,6 +112,10 @@
     "nevera_dias": 4,
     "congela": false,
     "nota": "Cuatro frascos el domingo y los desayunos de la semana están resueltos. Cero cocina."
+   },
+   "coccion": {
+    "donde": "nada",
+    "texto": "Sin cocina · sale de la nevera"
    }
   },
   "b3": {
@@ -156,6 +164,10 @@
      "**Deja que baje del hervor un minuto antes de meter la proteína.** Si la echas hirviendo se corta y queda grumosa.",
      "Banana en rodajas y la mantequilla de maní encima."
     ]
+   },
+   "coccion": {
+    "donde": "otro",
+    "texto": "Microondas 5 min"
    }
   },
   "b4": {
@@ -190,6 +202,10 @@
     "nevera_dias": 0,
     "congela": false,
     "nota": "Cereal solo te deja corto de proteína. El batido al lado es lo que lo salva."
+   },
+   "coccion": {
+    "donde": "nada",
+    "texto": "Sin cocina · cereal y batido"
    }
   },
   "b5": {
@@ -228,6 +244,10 @@
     "nevera_dias": 0,
     "congela": false,
     "nota": "Los huevos salen del domingo. Cinco minutos: tostar, machacar y montar."
+   },
+   "coccion": {
+    "donde": "otro",
+    "texto": "Tostadora · los huevos son del domingo"
    }
   },
   "b6": {
@@ -266,6 +286,10 @@
     "nevera_dias": 0,
     "congela": false,
     "nota": "La granola justo antes de comer o se ablanda. Dos minutos."
+   },
+   "coccion": {
+    "donde": "nada",
+    "texto": "Sin cocina · se arma en el bowl"
    }
   },
   "b7": {
@@ -324,6 +348,10 @@
      "Huevo frito encima, con la yema blanda. Aguacate al lado.",
      "El desayuno de tu casa, en ocho minutos y cuadrado con los macros."
     ]
+   },
+   "coccion": {
+    "donde": "olla",
+    "texto": "Sofrito 8 min"
    }
   },
   "b8": {
@@ -377,6 +405,10 @@
      "Baja a **Sauté/sear low**. Huevos y claras batidos, 2 min sin tocar hasta que cuaje el fondo.",
      "Cheddar sobre una mitad, dobla, 1 min. Tostada al lado."
     ]
+   },
+   "coccion": {
+    "donde": "olla",
+    "texto": "Sofrito 8 min"
    }
   },
   "l1": {
@@ -435,6 +467,10 @@
      "**Pressure cook 8 min**, liberación natural.",
      "Fuera del fuego: yogurt y limón. **El yogurt hirviendo se corta.** Cilantro encima."
     ]
+   },
+   "coccion": {
+    "donde": "olla",
+    "texto": "Presión 8 min · liberación natural"
    }
   },
   "l2": {
@@ -505,6 +541,10 @@
      "Machaca un cucharón contra la pared de la olla para espesar.",
      "Huevo frito encima, arroz y aguacate al lado. Tajadas de plátano (`s11`) si quieres el plato completo."
     ]
+   },
+   "coccion": {
+    "donde": "olla",
+    "texto": "Presión 30 min · liberación natural"
    }
   },
   "l3": {
@@ -563,6 +603,10 @@
      "Machaca un par de papas contra la pared: eso espesa el caldo y lo vuelve sancocho, no sopa.",
      "Al plato: cottage batido en vez de crema (te sube 22 g de proteína), aguacate y cilantro fresco."
     ]
+   },
+   "coccion": {
+    "donde": "olla",
+    "texto": "Presión 12 min · liberación natural"
    }
   },
   "l4": {
@@ -625,6 +669,10 @@
      "**Pressure cook 5 min**, natural 10 min. Suelta con tenedor.",
      "Un plato, una olla, veinte minutos."
     ]
+   },
+   "coccion": {
+    "donde": "olla",
+    "texto": "Presión 5 min · liberación natural 10 min"
    }
   },
   "l5": {
@@ -690,6 +738,10 @@
      "Leche de coco, garbanzos, pimentón y habichuela. **Pressure cook 5 min**, liberación rápida.",
      "Devuelve el tofu, espinaca con el calor residual, limón y albahaca. Arroz jazmín aparte."
     ]
+   },
+   "coccion": {
+    "donde": "olla",
+    "texto": "Presión 5 min · liberación rápida"
    }
   },
   "l6": {
@@ -752,6 +804,10 @@
      "**Cancel.** Champiñones, parmesano y ricotta. Bate 1 min: ahí aparece la cremosidad.",
      "Cottage y pimienta al servir. Sin una gota de crema."
     ]
+   },
+   "coccion": {
+    "donde": "olla",
+    "texto": "Presión 6 min · liberación rápida"
    }
   },
   "d1": {
@@ -811,6 +867,10 @@
      "Fuera del fuego: yogurt y cottage. Cilantro.",
      "22 g de fibra y sabe a restaurante indio."
     ]
+   },
+   "coccion": {
+    "donde": "olla",
+    "texto": "Presión 12 min · liberación natural"
    }
   },
   "d2": {
@@ -881,6 +941,10 @@
      "**Pressure cook 10 min**, natural. El chocolate no lo vuelve dulce: le da el fondo oscuro que un chili casero nunca tiene.",
      "Cottage y aguacate encima. Cilantro y limón."
     ]
+   },
+   "coccion": {
+    "donde": "olla",
+    "texto": "Presión 10 min · liberación natural"
    }
   },
   "d3": {
@@ -946,6 +1010,10 @@
      "Passata, laurel y orégano. **Pressure cook 10 min**, natural.",
      "Pasta al dente aparte. Parmesano al final."
     ]
+   },
+   "coccion": {
+    "donde": "olla",
+    "texto": "Presión 10 min · liberación natural"
    }
   },
   "d4": {
@@ -1008,6 +1076,10 @@
      "Junta con el frijol, **la cáscara y el jugo de media naranja**, Sauté/sear low 10 min. La naranja corta la pesadez: eso es lo que hace la feijoada.",
      "Arroz y espinaca salteada al lado. Gajos de naranja al plato."
     ]
+   },
+   "coccion": {
+    "donde": "olla",
+    "texto": "Presión 30 min · liberación natural"
    }
   },
   "d5": {
@@ -1070,6 +1142,10 @@
      "Licúa con la ricotta y albahaca. Cremosa sin una gota de crema.",
      "Cottage encima. Tostada al lado. La lenteja no se ve: solo sientes que la sopa tiene cuerpo."
     ]
+   },
+   "coccion": {
+    "donde": "olla",
+    "texto": "Presión 6 min · liberación natural"
    }
   },
   "d6": {
@@ -1128,6 +1204,10 @@
      "**Mucho ajo laminado al final, 1 min** — al principio se quema y amarga.",
      "Devuelve el tofu, salsa de soya y chili en hojuelas. Arroz aparte."
     ]
+   },
+   "coccion": {
+    "donde": "olla",
+    "texto": "Sofrito 15 min"
    }
   },
   "d7": {
@@ -1191,6 +1271,10 @@
      "**Tapa sin presión 5 min**: la clara cuaja y la yema queda cremosa.",
      "Cottage en cucharadas, fuera del fuego. Tostada para mojar."
     ]
+   },
+   "coccion": {
+    "donde": "olla",
+    "texto": "Sofrito 18 min"
    }
   },
   "s1": {
@@ -1217,6 +1301,10 @@
     "nevera_dias": 0,
     "congela": false,
     "nota": "30 g en 300 ml de agua fría. 21 g de proteína y el 99% del hierro del día."
+   },
+   "coccion": {
+    "donde": "otro",
+    "texto": "Licuadora"
    }
   },
   "s2": {
@@ -1247,6 +1335,10 @@
     "nevera_dias": 0,
     "congela": false,
     "nota": "Mango congelado y queda tipo helado."
+   },
+   "coccion": {
+    "donde": "otro",
+    "texto": "Licuadora"
    }
   },
   "s3": {
@@ -1278,6 +1370,10 @@
      "1 taza de agua, canasta, hasta 12 huevos. **5 min de presión + 5 de natural.**",
      "Baño de hielo 3 min. Pelan sin pelear."
     ]
+   },
+   "coccion": {
+    "donde": "olla",
+    "texto": "Del domingo · presión 5 min"
    }
   },
   "s4": {
@@ -1308,6 +1404,10 @@
     "nevera_dias": 0,
     "congela": false,
     "nota": "Endulzar a cero calorías es adherencia pura."
+   },
+   "coccion": {
+    "donde": "nada",
+    "texto": "Sin cocina"
    }
   },
   "s5": {
@@ -1330,6 +1430,10 @@
     "nevera_dias": 0,
     "congela": false,
     "nota": "4 min en agua hirviendo. Sal gruesa y chili."
+   },
+   "coccion": {
+    "donde": "otro",
+    "texto": "Agua hirviendo 4 min"
    }
   },
   "s6": {
@@ -1356,6 +1460,10 @@
     "nevera_dias": 0,
     "congela": false,
     "nota": "26 g de proteína en dos minutos."
+   },
+   "coccion": {
+    "donde": "nada",
+    "texto": "Sin cocina"
    }
   },
   "s7": {
@@ -1392,6 +1500,10 @@
      "Aceite, paprika ahumada, comino y ajo en polvo. **Bake 30 min**, sacudiendo a la mitad.",
      "Sal al final. En frasco abierto duran 3 días; cerrado se ablandan."
     ]
+   },
+   "coccion": {
+    "donde": "olla",
+    "texto": "Horno 30 min"
    }
   },
   "s8": {
@@ -1418,6 +1530,10 @@
     "nevera_dias": 0,
     "congela": false,
     "nota": "PÉSALOS. La cucharada a ojo son 35-40 g: 130 kcal fantasma."
+   },
+   "coccion": {
+    "donde": "nada",
+    "texto": "Sin cocina"
    }
   },
   "s9": {
@@ -1452,6 +1568,10 @@
     "nevera_dias": 0,
     "congela": false,
     "nota": "60-90 min antes de entrenar."
+   },
+   "coccion": {
+    "donde": "otro",
+    "texto": "Licuadora"
    }
   },
   "s10": {
@@ -1482,6 +1602,10 @@
     "nevera_dias": 0,
     "congela": false,
     "nota": "Corta la verdura el domingo y ya está resuelto."
+   },
+   "coccion": {
+    "donde": "nada",
+    "texto": "Sin cocina · corta y sirve"
    }
   },
   "b9": {
@@ -1540,6 +1664,10 @@
      "Huevos y claras batidos, revuelve constante 2 min. **Apaga cuando todavía se vean húmedos.**",
      "Cottage y aguacate al lado. La arepa la haces del tamaño que tú decidas: 40 g de harina son ~145 kcal, contra los 60 g por porción de las de paquete."
     ]
+   },
+   "coccion": {
+    "donde": "olla",
+    "texto": "Sofrito 10 min"
    }
   },
   "b10": {
@@ -1589,6 +1717,10 @@
      "Cottage encima fuera del fuego.",
      "Cinco minutos. Este es el desayuno de los días que te levantaste tarde."
     ]
+   },
+   "coccion": {
+    "donde": "olla",
+    "texto": "Sofrito 5 min"
    }
   },
   "s11": {
@@ -1622,6 +1754,10 @@
      "**Bake 25 min**, voltea a los 15. Quedan doradas por fuera y cremosas por dentro.",
      "Una pizca de sal al final: es lo que hace que sepan a tajada y no a postre."
     ]
+   },
+   "coccion": {
+    "donde": "olla",
+    "texto": "Horno 25 min"
    }
   }
  },

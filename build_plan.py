@@ -26,12 +26,16 @@ def main():
 
     tablas = []
     for grupo, titulo in GRUPOS.items():
-        tablas += [f"**{titulo}**\n", "| ID | Receta | kcal | P | C | G | Fibra |",
-                   "|---|---|---|---|---|---|---|"]
+        tablas += [f"**{titulo}**\n",
+                   "| ID | Receta | Cómo se cocina | kcal | P | C | G | Fibra |",
+                   "|---|---|---|---|---|---|---|---|"]
         for k, r in sorted(recetas.items()):
-            if r["g"] == grupo:
-                tablas.append(f"| `{k}` | {r['n']} | {r['kcal']} | **{r['p']} g** "
-                              f"| {r['c']} g | {r['f']} g | {r['fib']} g |")
+            if r["g"] != grupo:
+                continue
+            c = r.get("coccion", {})
+            como = ("**Olla** · " if c.get("donde") == "olla" else "") + c.get("texto", "—")
+            tablas.append(f"| `{k}` | {r['n']} | {como} | {r['kcal']} | **{r['p']} g** "
+                          f"| {r['c']} g | {r['f']} g | {r['fib']} g |")
         tablas.append("")
 
     filas = ["| Día | | Menú | kcal | P | C | G | Fibra |",
@@ -54,8 +58,11 @@ def main():
             if r["g"] != grupo:
                 continue
             ings = " · ".join(f"{n} {int(g)} g" for n, g in r["ing"])
+            c = r.get("coccion", {})
+            como = ("Olla · " if c.get("donde") == "olla" else "") + c.get("texto", "")
             detalle.append(f"**`{k}` {r['n']}** — {r['kcal']} kcal · {r['p']} g P · "
-                           f"{r['c']} g C · {r['f']} g G · {r['fib']} g fibra  \n{ings}\n")
+                           f"{r['c']} g C · {r['f']} g G · {r['fib']} g fibra  \n"
+                           f"*{como}*  \n{ings}\n")
 
     doc = (open("plan_template.md", encoding="utf8").read()
            .replace("{{TABLAS}}", "\n".join(tablas).rstrip())
