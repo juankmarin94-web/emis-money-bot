@@ -283,6 +283,7 @@ días de entreno, el batido de después vale la pena hacerlo de 45 g.
 | `d5` | Sopa cremosa de tomate rostizado y lenteja roja | **Olla + Licuadora + Tostadora** | 570 | **41 g** | 59 g | 14 g | 12 g |
 | `d6` | Tofu al ajillo con brócoli | **Sartén + Olla** | 538 | **42 g** | 35 g | 23 g | 10 g |
 | `d7` | Shakshuka | Sartén + Tostadora | 514 | **42 g** | 40 g | 19 g | 7 g |
+| `d8` | Revuelto grande de huevos con espinaca y cottage | Sartén + Tostadora | 549 | **56 g** | 25 g | 24 g | 8 g |
 
 **Snacks**
 
@@ -318,8 +319,8 @@ Cada día está armado y comprobado contra los objetivos, no estimado a ojo.
 | **Jueves** | entreno | Overnight oats de la nevera · Curry rojo tailandés de tofu · Mousse de chocolate proteico · Pudding de chía con berries · Shakshuka | 2010 | **173** | 179 | 63 | 46 |
 | **Viernes** | entreno | Huevos pericos con tostada · Arroz con carne vegetal y verduras · Mousse de chocolate proteico · Cottage batido con berries y vainilla · Feijoada vegetariana | 2052 | **172** | 194 | 63 | 47 |
 | **Sábado** | descanso | Bowl de yogurt con granola y mango · Frijoles paisas con plátano y huevo · Yogurt con berries y canela · Cottage batido con berries y vainilla · Tofu al ajillo con brócoli | 2057 | **173** | 195 | 58 | 37 |
-| **Domingo** | descanso | Calentado paisa · Risotto de champiñones · Batido de mango con yogurt · Pudding de chía con berries · Sopa cremosa de tomate rostizado y lenteja roja | 2158 | **172** | 217 | 61 | 38 |
-| | | **Promedio diario** | **2039** | **172** | 192 | 60 | 41 |
+| **Domingo** | descanso | Calentado paisa · Risotto de champiñones · Batido de mango con yogurt · Pudding de chía con berries · Revuelto grande de huevos con espinaca y cottage | 2137 | **187** | 183 | 71 | 34 |
+| | | **Promedio diario** | **2036** | **174** | 187 | 61 | 40 |
 
 Promedio real: **2.039 kcal · 172 g de proteína · 60 g de grasa · 41 g de fibra.**
 Déficit de 779 kcal/día → **0,71 kg/semana.**
@@ -625,6 +626,20 @@ Huevo entero 100 g · Clara de huevo 90 g · Passata de tomate 170 g · Pimentó
 4. **Sartén** — Haz huecos con la cuchara, casca los huevos dentro y vierte las claras alrededor.
 5. **Sartén** — TAPA la sartén 5 min: la clara cuaja y la yema queda cremosa.
 6. **Tostadora** — La tostada para mojar. Cottage en cucharadas encima, fuera del fuego.
+
+**`d8` Revuelto grande de huevos con espinaca y cottage** — Sartén + Tostadora  
+549 kcal · 56 g P · 25 g C · 24 g G · 8 g fibra
+
+Huevo entero 100 g · Clara de huevo 150 g · Espinaca 150 g · Champiñones 120 g · Cottage alto en proteína 120 g · Tostada integral 30 g · Aguacate 25 g · Aceite de oliva 5 g
+
+*Condimentos:* Sal 1 g (1 pizca) · Pimienta negra 0.5 g (al gusto) · Paprika 1 g (½ cdta) · Ajo 3 g (1 diente picado)
+
+1. **Sartén** — Sartén a fuego alto con el aceite: champiñones en láminas 4 min SIN SAL hasta que doren. Si los salas antes sueltan agua y se hierven.
+2. **Sartén** — Ajo picado y espinaca, 1 min. Escurre el agua que suelte o el revuelto queda aguado.
+3. **Sartén** — Baja a fuego bajo. Huevos y claras batidos con sal, pimienta y paprika. Revuelve constante 3 min.
+4. **Sartén** — APAGA cuando todavía se vean húmedos: se terminan de cuajar con el calor de la sartén. Ese es el único truco.
+5. **Sin fuego** — Cottage encima fuera del fuego y aguacate al lado.
+6. **Tostadora** — La tostada mientras tanto, si quieres con qué acompañar.
 
 ### Snacks
 

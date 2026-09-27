@@ -3083,6 +3083,118 @@
      "m": "2 segundos"
     }
    ]
+  },
+  "d8": {
+   "n": "Revuelto grande de huevos con espinaca y cottage",
+   "g": "cena",
+   "min": 10,
+   "ing": [
+    [
+     "Huevo entero",
+     100
+    ],
+    [
+     "Clara de huevo",
+     150
+    ],
+    [
+     "Espinaca",
+     150
+    ],
+    [
+     "Champiñones",
+     120
+    ],
+    [
+     "Cottage alto en proteína",
+     120
+    ],
+    [
+     "Tostada integral",
+     30
+    ],
+    [
+     "Aguacate",
+     25
+    ],
+    [
+     "Aceite de oliva",
+     5
+    ]
+   ],
+   "kcal": 549,
+   "p": 56,
+   "c": 25,
+   "f": 24,
+   "fib": 8,
+   "condimentos": [
+    {
+     "n": "Sal",
+     "g": 1,
+     "m": "1 pizca"
+    },
+    {
+     "n": "Pimienta negra",
+     "g": 0.5,
+     "m": "al gusto"
+    },
+    {
+     "n": "Paprika",
+     "g": 1,
+     "m": "½ cdta"
+    },
+    {
+     "n": "Ajo",
+     "g": 3,
+     "m": "1 diente picado"
+    }
+   ],
+   "olla": {
+    "modo": "Sauté/sear",
+    "min": 10,
+    "liberacion": "—",
+    "pasos": []
+   },
+   "coccion": {
+    "donde": "otro",
+    "texto": "Sartén + Tostadora",
+    "aparatos": [
+     "sarten",
+     "tostadora"
+    ]
+   },
+   "pasos": [
+    {
+     "d": "sarten",
+     "t": "Sartén a fuego alto con el aceite: champiñones en láminas 4 min SIN SAL hasta que doren. Si los salas antes sueltan agua y se hierven."
+    },
+    {
+     "d": "sarten",
+     "t": "Ajo picado y espinaca, 1 min. Escurre el agua que suelte o el revuelto queda aguado."
+    },
+    {
+     "d": "sarten",
+     "t": "Baja a fuego bajo. Huevos y claras batidos con sal, pimienta y paprika. Revuelve constante 3 min."
+    },
+    {
+     "d": "sarten",
+     "t": "APAGA cuando todavía se vean húmedos: se terminan de cuajar con el calor de la sartén. Ese es el único truco."
+    },
+    {
+     "d": "sinfuego",
+     "t": "Cottage encima fuera del fuego y aguacate al lado."
+    },
+    {
+     "d": "tostadora",
+     "t": "La tostada mientras tanto, si quieres con qué acompañar."
+    }
+   ],
+   "tanda": {
+    "max_porciones": 1,
+    "nevera_dias": 0,
+    "congela": false,
+    "nota": "Al momento. El huevo revuelto recalentado es horrible, pero son 10 minutos."
+   }
   }
  },
  "semana": {
@@ -3195,14 +3307,14 @@
     "l6",
     "s2",
     "s10",
-    "d5"
+    "d8"
    ],
    "total": [
-    2158,
-    172,
-    217,
-    61,
-    38
+    2137,
+    187,
+    183,
+    71,
+    34
    ]
   }
  },
