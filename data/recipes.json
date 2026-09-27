@@ -3085,48 +3085,40 @@
    ]
   },
   "d8": {
-   "n": "Revuelto grande de huevos con espinaca y cottage",
+   "n": "Revuelto ligero de claras con espinaca y tomate",
    "g": "cena",
-   "min": 10,
+   "min": 8,
    "ing": [
     [
-     "Huevo entero",
-     100
+     "Clara de huevo",
+     250
     ],
     [
-     "Clara de huevo",
-     150
+     "Huevo entero",
+     50
     ],
     [
      "Espinaca",
      150
     ],
     [
-     "Champiñones",
-     120
+     "Tomate",
+     150
     ],
     [
      "Cottage alto en proteína",
-     120
+     100
     ],
     [
      "Tostada integral",
      30
-    ],
-    [
-     "Aguacate",
-     25
-    ],
-    [
-     "Aceite de oliva",
-     5
     ]
    ],
-   "kcal": 549,
-   "p": 56,
+   "kcal": 428,
+   "p": 55,
    "c": 25,
-   "f": 24,
-   "fib": 8,
+   "f": 10,
+   "fib": 7,
    "condimentos": [
     {
      "n": "Sal",
@@ -3139,14 +3131,14 @@
      "m": "al gusto"
     },
     {
-     "n": "Paprika",
-     "g": 1,
-     "m": "½ cdta"
-    },
-    {
      "n": "Ajo",
      "g": 3,
      "m": "1 diente picado"
+    },
+    {
+     "n": "Espray de aceite",
+     "g": 1,
+     "m": "2 segundos, nada más"
     }
    ],
    "olla": {
@@ -3166,34 +3158,34 @@
    "pasos": [
     {
      "d": "sarten",
-     "t": "Sartén a fuego alto con el aceite: champiñones en láminas 4 min SIN SAL hasta que doren. Si los salas antes sueltan agua y se hierven."
+     "t": "Sartén a fuego medio con espray: tomate picado y ajo, 3 min hasta que suelten el agua."
     },
     {
      "d": "sarten",
-     "t": "Ajo picado y espinaca, 1 min. Escurre el agua que suelte o el revuelto queda aguado."
+     "t": "Espinaca, 1 min. Escurre lo que suelte o el revuelto queda aguado."
     },
     {
      "d": "sarten",
-     "t": "Baja a fuego bajo. Huevos y claras batidos con sal, pimienta y paprika. Revuelve constante 3 min."
+     "t": "Baja el fuego. Claras y el huevo batidos con sal y pimienta, revuelve constante 3 min."
     },
     {
      "d": "sarten",
-     "t": "APAGA cuando todavía se vean húmedos: se terminan de cuajar con el calor de la sartén. Ese es el único truco."
+     "t": "APAGA cuando todavía se vean húmedos: se terminan de cuajar solos. Ese es el único truco."
     },
     {
      "d": "sinfuego",
-     "t": "Cottage encima fuera del fuego y aguacate al lado."
+     "t": "Cottage encima fuera del fuego."
     },
     {
      "d": "tostadora",
-     "t": "La tostada mientras tanto, si quieres con qué acompañar."
+     "t": "Una tostada al lado, seca. Nada de grasa encima: de noche es la que pesa."
     }
    ],
    "tanda": {
     "max_porciones": 1,
     "nevera_dias": 0,
     "congela": false,
-    "nota": "Al momento. El huevo revuelto recalentado es horrible, pero son 10 minutos."
+    "nota": "Al momento. Ocho minutos."
    }
   }
  },
@@ -3310,11 +3302,11 @@
     "d8"
    ],
    "total": [
-    2137,
-    187,
+    2016,
+    186,
     183,
-    71,
-    34
+    57,
+    33
    ]
   }
  },
@@ -3343,7 +3335,8 @@
    "papa criolla"
   ],
   "consigue": "Harina PAN, arepas de paquete y plátano maduro sí los consigue en Adelaide.",
-  "snacks": "Todos dulces. Los salados los siente un trámite."
+  "snacks": "Todos dulces. Los salados los siente un trámite.",
+  "cenas": "Ligeras entre semana: poca grasa de noche. Fácil > elaborado."
  },
  "olla": {
   "modelo": "Philips All-in-One 6 L",

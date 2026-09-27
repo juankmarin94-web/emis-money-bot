@@ -283,7 +283,7 @@ días de entreno, el batido de después vale la pena hacerlo de 45 g.
 | `d5` | Sopa cremosa de tomate rostizado y lenteja roja | **Olla + Licuadora + Tostadora** | 570 | **41 g** | 59 g | 14 g | 12 g |
 | `d6` | Tofu al ajillo con brócoli | **Sartén + Olla** | 538 | **42 g** | 35 g | 23 g | 10 g |
 | `d7` | Shakshuka | Sartén + Tostadora | 514 | **42 g** | 40 g | 19 g | 7 g |
-| `d8` | Revuelto grande de huevos con espinaca y cottage | Sartén + Tostadora | 549 | **56 g** | 25 g | 24 g | 8 g |
+| `d8` | Revuelto ligero de claras con espinaca y tomate | Sartén + Tostadora | 428 | **55 g** | 25 g | 10 g | 7 g |
 
 **Snacks**
 
@@ -319,8 +319,8 @@ Cada día está armado y comprobado contra los objetivos, no estimado a ojo.
 | **Jueves** | entreno | Overnight oats de la nevera · Curry rojo tailandés de tofu · Mousse de chocolate proteico · Pudding de chía con berries · Shakshuka | 2010 | **173** | 179 | 63 | 46 |
 | **Viernes** | entreno | Huevos pericos con tostada · Arroz con carne vegetal y verduras · Mousse de chocolate proteico · Cottage batido con berries y vainilla · Feijoada vegetariana | 2052 | **172** | 194 | 63 | 47 |
 | **Sábado** | descanso | Bowl de yogurt con granola y mango · Frijoles paisas con plátano y huevo · Yogurt con berries y canela · Cottage batido con berries y vainilla · Tofu al ajillo con brócoli | 2057 | **173** | 195 | 58 | 37 |
-| **Domingo** | descanso | Calentado paisa · Risotto de champiñones · Batido de mango con yogurt · Pudding de chía con berries · Revuelto grande de huevos con espinaca y cottage | 2137 | **187** | 183 | 71 | 34 |
-| | | **Promedio diario** | **2036** | **174** | 187 | 61 | 40 |
+| **Domingo** | descanso | Calentado paisa · Risotto de champiñones · Batido de mango con yogurt · Pudding de chía con berries · Revuelto ligero de claras con espinaca y tomate | 2016 | **186** | 183 | 57 | 33 |
+| | | **Promedio diario** | **2019** | **174** | 187 | 59 | 40 |
 
 Promedio real: **2.039 kcal · 172 g de proteína · 60 g de grasa · 41 g de fibra.**
 Déficit de 779 kcal/día → **0,71 kg/semana.**
@@ -627,19 +627,19 @@ Huevo entero 100 g · Clara de huevo 90 g · Passata de tomate 170 g · Pimentó
 5. **Sartén** — TAPA la sartén 5 min: la clara cuaja y la yema queda cremosa.
 6. **Tostadora** — La tostada para mojar. Cottage en cucharadas encima, fuera del fuego.
 
-**`d8` Revuelto grande de huevos con espinaca y cottage** — Sartén + Tostadora  
-549 kcal · 56 g P · 25 g C · 24 g G · 8 g fibra
+**`d8` Revuelto ligero de claras con espinaca y tomate** — Sartén + Tostadora  
+428 kcal · 55 g P · 25 g C · 10 g G · 7 g fibra
 
-Huevo entero 100 g · Clara de huevo 150 g · Espinaca 150 g · Champiñones 120 g · Cottage alto en proteína 120 g · Tostada integral 30 g · Aguacate 25 g · Aceite de oliva 5 g
+Clara de huevo 250 g · Huevo entero 50 g · Espinaca 150 g · Tomate 150 g · Cottage alto en proteína 100 g · Tostada integral 30 g
 
-*Condimentos:* Sal 1 g (1 pizca) · Pimienta negra 0.5 g (al gusto) · Paprika 1 g (½ cdta) · Ajo 3 g (1 diente picado)
+*Condimentos:* Sal 1 g (1 pizca) · Pimienta negra 0.5 g (al gusto) · Ajo 3 g (1 diente picado) · Espray de aceite 1 g (2 segundos, nada más)
 
-1. **Sartén** — Sartén a fuego alto con el aceite: champiñones en láminas 4 min SIN SAL hasta que doren. Si los salas antes sueltan agua y se hierven.
-2. **Sartén** — Ajo picado y espinaca, 1 min. Escurre el agua que suelte o el revuelto queda aguado.
-3. **Sartén** — Baja a fuego bajo. Huevos y claras batidos con sal, pimienta y paprika. Revuelve constante 3 min.
-4. **Sartén** — APAGA cuando todavía se vean húmedos: se terminan de cuajar con el calor de la sartén. Ese es el único truco.
-5. **Sin fuego** — Cottage encima fuera del fuego y aguacate al lado.
-6. **Tostadora** — La tostada mientras tanto, si quieres con qué acompañar.
+1. **Sartén** — Sartén a fuego medio con espray: tomate picado y ajo, 3 min hasta que suelten el agua.
+2. **Sartén** — Espinaca, 1 min. Escurre lo que suelte o el revuelto queda aguado.
+3. **Sartén** — Baja el fuego. Claras y el huevo batidos con sal y pimienta, revuelve constante 3 min.
+4. **Sartén** — APAGA cuando todavía se vean húmedos: se terminan de cuajar solos. Ese es el único truco.
+5. **Sin fuego** — Cottage encima fuera del fuego.
+6. **Tostadora** — Una tostada al lado, seca. Nada de grasa encima: de noche es la que pesa.
 
 ### Snacks
 
