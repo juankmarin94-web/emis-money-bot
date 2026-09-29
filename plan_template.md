@@ -182,10 +182,10 @@ La olla queda ocupada **~3 h**, casi todo desatendido.
 | | Qué | Olla | Rinde |
 |---|---|---|---|
 | 1 | **12 huevos duros** | 5 min presión + 5 natural + hielo | toda la semana |
-| 2 | **Dal cremoso** `d1` | Pressure cook 12 min, natural | ×4 · nevera 4 días · congela |
-| 3 | **Chili con chocolate** `d2` | Pressure cook 10 min, natural | ×4 · nevera 5 días · congela |
-| 4 | **Frijoles a la colombiana** `l2` | Pressure cook 30 min, natural | ×4 · nevera 4 días · congela |
-| 5 | **Overnight oats** `b2` | sin olla, 5 min | ×4 frascos · nevera 4 días |
+| 2 | **Chili mexicano** `l3` | Pressure cook 10 min, natural | ×4 · nevera 5 días · congela |
+| 3 | **Lentejas guisadas** `l2` | Pressure cook 9 min, natural | ×4 · nevera 4 días · congela |
+| 4 | **Garbanzos guisados** `l1` | Pressure cook 8 min, natural | ×4 · nevera 4 días · congela |
+| 5 | **Overnight oats** `b4` | sin olla, 3 min | ×4 frascos · nevera 4 días |
 | 6 | **Arroz al caldo** | Pressure cook 5 min, natural 10 | 6 porciones |
 | — | **2 L de yogurt** *(de noche)* | Yogurt, 9 h | ~120 g de proteína |
 
@@ -224,10 +224,12 @@ Son los platos de 10 minutos. No todo tiene que salir del congelador.
 
 31 recetas con tres reglas encima:
 
-2. **Los desayunos son de 8 minutos o menos** — huevos, avena o cereal. Nada de hornear entre semana.
-1. **Los snacks son todos dulces** — mousse de chocolate, arroz con leche proteico, cottage batido tipo postre, manzana asada, pudding de chía. Un snack salado se siente un trámite; uno dulce es lo que evita que acabes en el chocolate de verdad.
-3. **Los almuerzos van en la olla** — chana masala, frijoles a la colombiana, sancocho, arroz con carne vegetal, curry rojo, risotto.
-4. **Todo se consigue donde tú compras en Adelaide.** La Harina PAN, las arepas de paquete y el plátano maduro sí los encuentras, así que están dentro. Las guascas y la papa criolla no, y sin guascas no hay ajiaco — por eso el sancocho de papa, camote y mazorca ocupa ese lugar en vez de una versión triste del ajiaco.
+2. **Los desayunos son de 8 minutos o menos** — huevos con arepa o tostada, avena, yogur o cereal. Nada más.
+1. **Los snacks son comprados o de dos minutos** — YoPRO con granola, batido de proteína, yogur griego con berries, cottage con granola. Dulces, sin cocinar y sin nada que lavar. Un snack que hay que preparar es un snack que no te comes.
+3. **Los almuerzos van en la olla y tienen sabor** — chili mexicano, tinga de garbanzos, arroz mexicano con frijoles, lasaña, pasta bolognesa, garbanzos guisados, lentejas. Lo que se cocina solo mientras haces otra cosa.
+
+4. **Las cenas son de una sartén** — un revuelto, un omelette, un wrap, o un bowl frío sin prender nada.
+5. **Todo se consigue donde tú compras en Adelaide.** La Harina PAN, las arepas de paquete y el plátano maduro sí los encuentras, así que están dentro. Las guascas y la papa criolla no, y sin guascas no hay ajiaco — por eso el sancocho de papa, camote y mazorca ocupa ese lugar en vez de una versión triste del ajiaco.
 
 Vegetariano, sin pescado y sin tahini. Los macros salen de `data/foods.json`, no están escritos a mano.
 
@@ -260,8 +262,8 @@ Cada día está armado y comprobado contra los objetivos, no estimado a ojo.
 
 {{SEMANA}}
 
-Promedio real: **2.039 kcal · 172 g de proteína · 60 g de grasa · 41 g de fibra.**
-Déficit de 779 kcal/día → **0,71 kg/semana.**
+Promedio real: **2.026 kcal · 173 g de proteína · 59 g de grasa · 39 g de fibra.**
+Déficit de 792 kcal/día → **0,72 kg/semana.**
 
 *El sábado y el domingo corren unas 150–200 kcal por encima: los frijoles paisas y el calentado
 son platos grandes y no tiene sentido encogerlos hasta que dejen de ser ellos. La semana
@@ -413,7 +415,7 @@ equivalente allá es el Coles Firm Tofu.
 
 Suma los ingredientes de los 7 días del menú, resta lo que hay en `data/pantry.json` y convierte
 el resto a unidades de compra. Cambias el menú o la despensa, corres el comando, y la lista queda
-al día. La de esta semana son **40 líneas**, porque las recetas traen despensa nueva: carne vegetal
+al día. La de esta semana son **30 líneas**, porque las recetas traen despensa nueva: carne vegetal
 molida, arroz arborio, pasta de curry rojo, leche de coco light, passata, tempeh.
 
 Esa despensa se compra una vez y rinde meses. La compra de la semana siguiente vuelve a ser corta.

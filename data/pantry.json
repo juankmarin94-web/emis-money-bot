@@ -280,6 +280,22 @@
   "Cacao en polvo": [
    250,
    "tarro de 250 g"
+  ],
+  "YoPRO": [
+   160,
+   "pouch de 160 g"
+  ],
+  "Tortilla de maíz": [
+   300,
+   "paquete de 300 g"
+  ],
+  "Arepa casera (Harina PAN)": [
+   1000,
+   "bolsa de 1 kg"
+  ],
+  "Mozzarella light": [
+   250,
+   "bloque de 250 g"
   ]
  },
  "_marcas_coles": {
@@ -578,6 +594,22 @@
   "_especias": [
    "Masterfoods",
    "toda la línea está en Coles, frascos de 25-50 g"
+  ],
+  "YoPRO": [
+   "Danone YoPRO pouch 160 g",
+   "nevera de yogures"
+  ],
+  "Tortilla de maíz": [
+   "Mission Corn Tortillas 300 g",
+   "pasillo mexicano"
+  ],
+  "Arepa casera (Harina PAN)": [
+   "Harina P.A.N. 1 kg",
+   "tienda latina"
+  ],
+  "Mozzarella light": [
+   "Perfect Italiano Mozzarella 250 g",
+   ""
   ]
  },
  "_nota_marcas": "Nombres y tamaños cambian cada temporada: guíate por la descripción, no por el nombre exacto. La marca propia de Coles suele ser la más barata y sirve igual en todo lo básico."

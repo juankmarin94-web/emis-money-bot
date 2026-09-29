@@ -47,6 +47,10 @@ CLAVES = {
  "Aceite de oliva": ["aceite", "espray"], "Whole Earth": ["whole earth", "dulce"],
  "Alcaparras": ["alcaparra"], "Salsa mild": ["salsa"], "Dolmio": ["dolmio"],
  "Semillas de chía": ["chia"], "Cacao en polvo": ["cacao"],
+ "YoPRO": ["yopro"], "Tortilla de maíz": ["tortilla"],
+ "Wrap Mission wholegrain": ["wrap"],
+ "Arepa casera (Harina PAN)": ["arepa", "masa", "harina pan"],
+ "Mozzarella light": ["mozzarella"], "Queso cheddar light": ["queso", "cheddar"],
  "Leche de soya": ["leche de soya"], "Sandía": ["sandia"],
 }
 # Palabras que, si aparecen en un paso, obligan a que el ingrediente esté en la lista.

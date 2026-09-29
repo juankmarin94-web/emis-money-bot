@@ -182,10 +182,10 @@ La olla queda ocupada **~3 h**, casi todo desatendido.
 | | Qué | Olla | Rinde |
 |---|---|---|---|
 | 1 | **12 huevos duros** | 5 min presión + 5 natural + hielo | toda la semana |
-| 2 | **Dal cremoso** `d1` | Pressure cook 12 min, natural | ×4 · nevera 4 días · congela |
-| 3 | **Chili con chocolate** `d2` | Pressure cook 10 min, natural | ×4 · nevera 5 días · congela |
-| 4 | **Frijoles a la colombiana** `l2` | Pressure cook 30 min, natural | ×4 · nevera 4 días · congela |
-| 5 | **Overnight oats** `b2` | sin olla, 5 min | ×4 frascos · nevera 4 días |
+| 2 | **Chili mexicano** `l3` | Pressure cook 10 min, natural | ×4 · nevera 5 días · congela |
+| 3 | **Lentejas guisadas** `l2` | Pressure cook 9 min, natural | ×4 · nevera 4 días · congela |
+| 4 | **Garbanzos guisados** `l1` | Pressure cook 8 min, natural | ×4 · nevera 4 días · congela |
+| 5 | **Overnight oats** `b4` | sin olla, 3 min | ×4 frascos · nevera 4 días |
 | 6 | **Arroz al caldo** | Pressure cook 5 min, natural 10 | 6 porciones |
 | — | **2 L de yogurt** *(de noche)* | Yogurt, 9 h | ~120 g de proteína |
 
@@ -224,10 +224,12 @@ Son los platos de 10 minutos. No todo tiene que salir del congelador.
 
 31 recetas con tres reglas encima:
 
-2. **Los desayunos son de 8 minutos o menos** — huevos, avena o cereal. Nada de hornear entre semana.
-1. **Los snacks son todos dulces** — mousse de chocolate, arroz con leche proteico, cottage batido tipo postre, manzana asada, pudding de chía. Un snack salado se siente un trámite; uno dulce es lo que evita que acabes en el chocolate de verdad.
-3. **Los almuerzos van en la olla** — chana masala, frijoles a la colombiana, sancocho, arroz con carne vegetal, curry rojo, risotto.
-4. **Todo se consigue donde tú compras en Adelaide.** La Harina PAN, las arepas de paquete y el plátano maduro sí los encuentras, así que están dentro. Las guascas y la papa criolla no, y sin guascas no hay ajiaco — por eso el sancocho de papa, camote y mazorca ocupa ese lugar en vez de una versión triste del ajiaco.
+2. **Los desayunos son de 8 minutos o menos** — huevos con arepa o tostada, avena, yogur o cereal. Nada más.
+1. **Los snacks son comprados o de dos minutos** — YoPRO con granola, batido de proteína, yogur griego con berries, cottage con granola. Dulces, sin cocinar y sin nada que lavar. Un snack que hay que preparar es un snack que no te comes.
+3. **Los almuerzos van en la olla y tienen sabor** — chili mexicano, tinga de garbanzos, arroz mexicano con frijoles, lasaña, pasta bolognesa, garbanzos guisados, lentejas. Lo que se cocina solo mientras haces otra cosa.
+
+4. **Las cenas son de una sartén** — un revuelto, un omelette, un wrap, o un bowl frío sin prender nada.
+5. **Todo se consigue donde tú compras en Adelaide.** La Harina PAN, las arepas de paquete y el plátano maduro sí los encuentras, así que están dentro. Las guascas y la papa criolla no, y sin guascas no hay ajiaco — por eso el sancocho de papa, camote y mazorca ocupa ese lugar en vez de una versión triste del ajiaco.
 
 Vegetariano, sin pescado y sin tahini. Los macros salen de `data/foods.json`, no están escritos a mano.
 
@@ -250,56 +252,49 @@ días de entreno, el batido de después vale la pena hacerlo de 45 g.
 
 | ID | Receta | Cómo se cocina | kcal | P | C | G | Fibra |
 |---|---|---|---|---|---|---|---|
-| `b1` | Huevos pericos con tostada | Sartén + Tostadora | 512 | **40 g** | 35 g | 23 g | 8 g |
-| `b10` | Arepa rápida con huevo y queso | Sartén | 478 | **45 g** | 29 g | 19 g | 2 g |
-| `b2` | Overnight oats de la nevera | Sin fuego | 483 | **43 g** | 47 g | 12 g | 10 g |
-| `b3` | Avena caliente con proteína y banana | Microondas | 500 | **35 g** | 64 g | 12 g | 10 g |
-| `b4` | Weet-Bix con leche y batido | Sin fuego | 425 | **32 g** | 66 g | 3 g | 10 g |
-| `b5` | Huevos duros con tostada de aguacate | Tostadora | 534 | **37 g** | 36 g | 27 g | 8 g |
-| `b6` | Bowl de yogurt con granola y mango | Sin fuego | 456 | **42 g** | 53 g | 8 g | 7 g |
-| `b7` | Calentado paisa | Sartén | 516 | **38 g** | 47 g | 19 g | 8 g |
-| `b8` | Omelette de champiñones y cheddar | Sartén + Tostadora | 452 | **47 g** | 17 g | 20 g | 4 g |
-| `b9` | Arepa con huevos pericos | Sartén | 529 | **46 g** | 44 g | 18 g | 5 g |
+| `b1` | Huevos pericos con arepa | Sartén | 515 | **46 g** | 40 g | 18 g | 3 g |
+| `b2` | Huevos revueltos con tostada y cottage | Tostadora + Sartén | 542 | **54 g** | 33 g | 20 g | 4 g |
+| `b3` | Arepa con huevo frito y queso | Sartén | 466 | **34 g** | 25 g | 26 g | 4 g |
+| `b4` | Overnight oats | Sin fuego | 521 | **49 g** | 50 g | 12 g | 11 g |
+| `b5` | Yogur griego con granola y berries | Sin fuego | 497 | **48 g** | 51 g | 9 g | 9 g |
+| `b6` | Weet-Bix con leche y batido | Sin fuego | 478 | **37 g** | 73 g | 4 g | 11 g |
+| `b7` | Calentado paisa | Sartén | 493 | **38 g** | 36 g | 20 g | 9 g |
+| `b8` | Huevos duros con tostada y aguacate | Tostadora | 552 | **39 g** | 37 g | 28 g | 8 g |
 
 **Almuerzos**
 
 | ID | Receta | Cómo se cocina | kcal | P | C | G | Fibra |
 |---|---|---|---|---|---|---|---|
-| `l1` | Chana masala | **Olla** | 619 | **42 g** | 78 g | 14 g | 17 g |
-| `l2` | Frijoles paisas con plátano y huevo | **Olla + Sartén** | 665 | **42 g** | 72 g | 21 g | 14 g |
-| `l3` | Sancocho de tres tubérculos | **Olla** | 563 | **37 g** | 78 g | 12 g | 11 g |
-| `l4` | Arroz con carne vegetal y verduras | **Olla** | 568 | **45 g** | 60 g | 16 g | 11 g |
-| `l5` | Curry rojo tailandés de tofu | **Sartén + Olla** | 566 | **37 g** | 52 g | 22 g | 14 g |
-| `l6` | Risotto de champiñones | **Olla** | 550 | **39 g** | 56 g | 18 g | 4 g |
+| `l1` | Garbanzos guisados con arroz | **Olla** | 553 | **31 g** | 75 g | 13 g | 16 g |
+| `l2` | Lentejas guisadas | **Olla** | 523 | **34 g** | 66 g | 9 g | 10 g |
+| `l3` | Chili mexicano | **Olla** | 707 | **52 g** | 74 g | 20 g | 24 g |
+| `l4` | Arroz mexicano con frijoles | **Olla** | 649 | **35 g** | 91 g | 15 g | 18 g |
+| `l5` | Pasta con bolognesa de carne vegetal | **Olla + Estufa** | 557 | **36 g** | 64 g | 16 g | 10 g |
+| `l6` | Lasaña de olla | **Olla** | 654 | **48 g** | 60 g | 23 g | 10 g |
+| `l7` | Tinga de garbanzos con tortillas | **Olla + Sartén** | 633 | **35 g** | 79 g | 19 g | 20 g |
 
 **Cenas**
 
 | ID | Receta | Cómo se cocina | kcal | P | C | G | Fibra |
 |---|---|---|---|---|---|---|---|
-| `d1` | Dal cremoso de lentejas y frijol rojo | **Olla** | 546 | **46 g** | 57 g | 10 g | 13 g |
-| `d2` | Chili con chocolate amargo | **Olla** | 633 | **43 g** | 63 g | 20 g | 23 g |
-| `d3` | Bolognesa de carne vegetal | **Olla + Estufa** | 550 | **36 g** | 63 g | 16 g | 11 g |
-| `d4` | Feijoada vegetariana | **Olla + Sartén** | 568 | **35 g** | 67 g | 16 g | 20 g |
-| `d5` | Sopa cremosa de tomate rostizado y lenteja roja | **Olla + Licuadora + Tostadora** | 570 | **41 g** | 59 g | 14 g | 12 g |
-| `d6` | Tofu al ajillo con brócoli | **Sartén + Olla** | 538 | **42 g** | 35 g | 23 g | 10 g |
-| `d7` | Shakshuka | Sartén + Tostadora | 514 | **42 g** | 40 g | 19 g | 7 g |
-| `d8` | Revuelto ligero de claras con espinaca y tomate | Sartén + Tostadora | 428 | **55 g** | 25 g | 10 g | 7 g |
+| `d1` | Revuelto ligero de claras con espinaca y tomate | Sartén | 390 | **49 g** | 24 g | 9 g | 6 g |
+| `d2` | Bowl frío de cottage, huevo y verduras | Tostadora | 480 | **41 g** | 32 g | 21 g | 7 g |
+| `d3` | Tofu al ajillo con brócoli | **Sartén + Olla** | 525 | **41 g** | 35 g | 23 g | 10 g |
+| `d4` | Shakshuka | Sartén + Tostadora | 545 | **47 g** | 41 g | 20 g | 8 g |
+| `d5` | Wrap de carne vegetal con ensalada | Sartén | 578 | **43 g** | 51 g | 21 g | 12 g |
+| `d6` | Omelette de tres huevos con queso | Sartén + Tostadora | 451 | **46 g** | 19 g | 20 g | 5 g |
 
 **Snacks**
 
 | ID | Receta | Cómo se cocina | kcal | P | C | G | Fibra |
 |---|---|---|---|---|---|---|---|
-| `s1` | Batido de proteína con berries | Licuadora | 192 | **22 g** | 18 g | 3 g | 8 g |
-| `s10` | Pudding de chía con berries | Sin fuego | 236 | **21 g** | 23 g | 7 g | 10 g |
-| `s11` | Tajadas de plátano maduro al horno | **Olla** | 183 | **2 g** | 48 g | 1 g | 3 g |
-| `s2` | Batido de mango con yogurt | Licuadora | 286 | **33 g** | 32 g | 3 g | 4 g |
-| `s3` | Mousse de chocolate proteico | Sin fuego | 211 | **30 g** | 17 g | 3 g | 5 g |
-| `s4` | Yogurt con berries y canela | Sin fuego | 205 | **25 g** | 20 g | 1 g | 3 g |
-| `s5` | Cottage batido con berries y vainilla | Licuadora | 193 | **22 g** | 15 g | 5 g | 3 g |
-| `s6` | Arroz con leche proteico | Microondas | 237 | **20 g** | 36 g | 2 g | 3 g |
-| `s7` | Manzana asada con canela | **Olla** | 209 | **21 g** | 29 g | 2 g | 5 g |
-| `s8` | Manzana con mantequilla de maní | Sin fuego | 214 | **6 g** | 28 g | 10 g | 6 g |
-| `s9` | Batido pre-gym de banana y avena | Licuadora | 423 | **44 g** | 50 g | 5 g | 7 g |
+| `s1` | YoPRO con granola | Sin fuego | 264 | **19 g** | 34 g | 5 g | 5 g |
+| `s2` | Batido de proteína con berries | Licuadora | 192 | **22 g** | 18 g | 3 g | 8 g |
+| `s3` | Yogur griego con proteína y berries | Sin fuego | 283 | **39 g** | 22 g | 3 g | 5 g |
+| `s4` | YoPRO solo | Sin fuego | 99 | **15 g** | 8 g | 0 g | 0 g |
+| `s5` | Cottage con granola y canela | Sin fuego | 322 | **28 g** | 30 g | 9 g | 4 g |
+| `s6` | Banana con mantequilla de maní | Sin fuego | 227 | **6 g** | 30 g | 10 g | 4 g |
+| `s7` | Batido pre-gym de banana y avena | Licuadora | 423 | **44 g** | 50 g | 5 g | 7 g |
 
 ### La regla que resume todo
 
@@ -313,17 +308,17 @@ Cada día está armado y comprobado contra los objetivos, no estimado a ojo.
 
 | Día | | Menú | kcal | P | C | G | Fibra |
 |---|---|---|---|---|---|---|---|
-| **Lunes** | entreno | Bowl de yogurt con granola y mango · Curry rojo tailandés de tofu · Mousse de chocolate proteico · Pudding de chía con berries · Shakshuka | 1983 | **172** | 185 | 59 | 43 |
-| **Martes** | entreno | Omelette de champiñones y cheddar · Arroz con carne vegetal y verduras · Yogurt con berries y canela · Cottage batido con berries y vainilla · Feijoada vegetariana | 1986 | **174** | 179 | 58 | 41 |
-| **Miércoles** | descanso | Calentado paisa · Sancocho de tres tubérculos · Mousse de chocolate proteico · Yogurt con berries y canela · Tofu al ajillo con brócoli | 2033 | **172** | 197 | 58 | 37 |
-| **Jueves** | entreno | Overnight oats de la nevera · Curry rojo tailandés de tofu · Mousse de chocolate proteico · Pudding de chía con berries · Shakshuka | 2010 | **173** | 179 | 63 | 46 |
-| **Viernes** | entreno | Huevos pericos con tostada · Arroz con carne vegetal y verduras · Mousse de chocolate proteico · Cottage batido con berries y vainilla · Feijoada vegetariana | 2052 | **172** | 194 | 63 | 47 |
-| **Sábado** | descanso | Bowl de yogurt con granola y mango · Frijoles paisas con plátano y huevo · Yogurt con berries y canela · Cottage batido con berries y vainilla · Tofu al ajillo con brócoli | 2057 | **173** | 195 | 58 | 37 |
-| **Domingo** | descanso | Calentado paisa · Risotto de champiñones · Batido de mango con yogurt · Pudding de chía con berries · Revuelto ligero de claras con espinaca y tomate | 2016 | **186** | 183 | 57 | 33 |
-| | | **Promedio diario** | **2019** | **174** | 187 | 59 | 40 |
+| **Lunes** | entreno | Overnight oats · Tinga de garbanzos con tortillas · YoPRO solo · Cottage con granola y canela · Omelette de tres huevos con queso | 2026 | **173** | 186 | 60 | 40 |
+| **Martes** | entreno | Arepa con huevo frito y queso · Lentejas guisadas · Batido de proteína con berries · Yogur griego con proteína y berries · Wrap de carne vegetal con ensalada | 2042 | **172** | 182 | 62 | 39 |
+| **Miércoles** | descanso | Yogur griego con granola y berries · Lasaña de olla · Batido de proteína con berries · YoPRO solo · Tofu al ajillo con brócoli | 1967 | **174** | 172 | 58 | 37 |
+| **Jueves** | entreno | Overnight oats · Pasta con bolognesa de carne vegetal · YoPRO con granola · Batido de proteína con berries · Omelette de tres huevos con queso | 1985 | **172** | 185 | 56 | 39 |
+| **Viernes** | entreno | Huevos revueltos con tostada y cottage · Lentejas guisadas · YoPRO con granola · Batido de proteína con berries · Wrap de carne vegetal con ensalada | 2099 | **172** | 202 | 58 | 39 |
+| **Sábado** | descanso | Huevos pericos con arepa · Tinga de garbanzos con tortillas · Yogur griego con proteína y berries · YoPRO solo · Tofu al ajillo con brócoli | 2055 | **176** | 184 | 63 | 38 |
+| **Domingo** | descanso | Huevos duros con tostada y aguacate · Chili mexicano · YoPRO con granola · YoPRO solo · Revuelto ligero de claras con espinaca y tomate | 2012 | **174** | 177 | 62 | 43 |
+| | | **Promedio diario** | **2026** | **173** | 184 | 59 | 39 |
 
-Promedio real: **2.039 kcal · 172 g de proteína · 60 g de grasa · 41 g de fibra.**
-Déficit de 779 kcal/día → **0,71 kg/semana.**
+Promedio real: **2.026 kcal · 173 g de proteína · 59 g de grasa · 39 g de fibra.**
+Déficit de 792 kcal/día → **0,72 kg/semana.**
 
 *El sábado y el domingo corren unas 150–200 kcal por encima: los frijoles paisas y el calentado
 son platos grandes y no tiene sentido encogerlos hasta que dejen de ser ellos. La semana
@@ -337,419 +332,326 @@ adelgaza nada.*
 
 ### Desayunos
 
-**`b1` Huevos pericos con tostada** — Sartén + Tostadora  
-512 kcal · 40 g P · 35 g C · 23 g G · 8 g fibra
+**`b1` Huevos pericos con arepa** — Sartén  
+515 kcal · 46 g P · 40 g C · 18 g G · 3 g fibra
 
-Huevo entero 150 g · Clara de huevo 120 g · Tomate 100 g · Cebolla larga 35 g · Tostada integral 60 g · Aguacate 35 g
+Huevo entero 150 g · Clara de huevo 120 g · Tomate 95 g · Cebolla larga 30 g · Arepa casera (Harina PAN) 40 g · Cottage alto en proteína 75 g
 
-*Condimentos:* Sal 1 g (1 pizca) · Comino molido 1 g (½ cdta) · Pimienta negra 0.5 g (al gusto) · Espray de aceite 1 g (2 segundos) · Limón 5 g (unas gotas sobre el aguacate)
+*Condimentos:* Sal 1 g (1 pizca) · Comino molido 1 g (½ cdta) · Espray de aceite 1 g (2 segundos)
 
-1. **Sartén** — Sartén a fuego medio con espray: tomate y cebolla larga picados, 3 min hasta que suelten el agua.
-2. **Sartén** — Baja a fuego bajo. Huevos y claras batidos con sal y comino, revuelve constante 3 min.
-3. **Sartén** — Apaga cuando todavía se vean húmedos: se terminan de cuajar con el calor de la sartén.
-4. **Tostadora** — El pan mientras tanto. Aguacate machacado encima con sal y limón.
+1. **Sin fuego** — Masa: 40 g de Harina PAN por 60 ml de agua tibia con sal. Amasa y deja reposar 5 min.
+2. **Sartén** — Sartén seca a fuego medio: la arepa 4 min por lado. Suena hueca cuando está.
+3. **Sartén** — Misma sartén, fuego bajo con espray: tomate y cebolla larga 3 min.
+4. **Sartén** — Huevos y claras batidos, revuelve 3 min. Apaga cuando aún se vean húmedos.
+5. **Sin fuego** — Cottage al lado.
 
-**`b10` Arepa rápida con huevo y queso** — Sartén  
-478 kcal · 45 g P · 29 g C · 19 g G · 2 g fibra
+**`b2` Huevos revueltos con tostada y cottage** — Tostadora + Sartén  
+542 kcal · 54 g P · 33 g C · 20 g G · 4 g fibra
 
-Arepa Sary con queso 60 g · Huevo entero 100 g · Clara de huevo 120 g · Tomate 80 g · Cottage alto en proteína 120 g
+Huevo entero 150 g · Clara de huevo 150 g · Tostada integral 60 g · Cottage alto en proteína 95 g · Tomate 75 g
 
-*Condimentos:* Sal 1 g (1 pizca)
+*Condimentos:* Sal 1 g (1 pizca) · Pimienta negra 0.5 g (al gusto) · Espray de aceite 1 g (2 segundos)
+
+1. **Tostadora** — El pan al tostador.
+2. **Sartén** — Sartén a fuego bajo con espray: huevos y claras batidos, revuelve constante 3 min.
+3. **Sartén** — Apaga cuando aún se vean húmedos: se terminan de cuajar solos.
+4. **Sin fuego** — Sobre la tostada, con el cottage y el tomate en rodajas al lado.
+
+**`b3` Arepa con huevo frito y queso** — Sartén  
+466 kcal · 34 g P · 25 g C · 26 g G · 4 g fibra
+
+Arepa Sary con queso 60 g · Huevo entero 100 g · Clara de huevo 90 g · Queso cheddar light 25 g · Aguacate 40 g
+
+*Condimentos:* Sal 1 g (1 pizca) · Espray de aceite 1 g (2 segundos)
 
 1. **Sartén** — La arepa de paquete directo a la sartén seca, 2 min por lado.
-2. **Sartén** — Fuego bajo: huevos y claras batidos con el tomate, 2 min.
-3. **Sin fuego** — Cottage encima fuera del fuego. Cinco minutos de reloj.
+2. **Sartén** — Espray, el huevo frito con la yema blanda y las claras vertidas alrededor.
+3. **Sin fuego** — Queso rallado encima del huevo caliente para que se derrita, aguacate al lado.
 
-**`b2` Overnight oats de la nevera** — Sin fuego  
-483 kcal · 43 g P · 47 g C · 12 g G · 10 g fibra
+**`b4` Overnight oats** — Sin fuego  
+521 kcal · 49 g P · 50 g C · 12 g G · 11 g fibra
 
-Avena en hojuelas 45 g · Yogurt griego casero 170 g · Proteína en polvo 25 g · Berries congelados 85 g · Mantequilla de maní 10 g
+Avena en hojuelas 45 g · Yogurt griego casero 190 g · Proteína en polvo 30 g · Berries congelados 95 g · Mantequilla de maní 10 g
 
 *Condimentos:* Canela 1 g (½ cdta)
 
-1. **Nevera** — En un frasco la noche antes: avena + yogurt + proteína + mantequilla de maní + canela. Revuelve bien.
-2. **Nevera** — Tapa y a la nevera. Mínimo 6 horas.
-3. **Sin fuego** — En la mañana los berries encima. Cero cocina.
+1. **Nevera** — En un frasco la noche antes: avena, yogurt, proteína, mantequilla de maní y canela. Revuelve bien.
+2. **Nevera** — Tapa y a la nevera, mínimo 6 horas.
+3. **Sin fuego** — Berries encima en la mañana. Cero cocina.
 
-**`b3` Avena caliente con proteína y banana** — Microondas  
-500 kcal · 35 g P · 64 g C · 12 g G · 10 g fibra
+**`b5` Yogur griego con granola y berries** — Sin fuego  
+497 kcal · 48 g P · 51 g C · 9 g G · 9 g fibra
 
-Avena en hojuelas 50 g · Leche descremada 220 g · Proteína en polvo 25 g · Banana 85 g · Mantequilla de maní 10 g
+Yogurt griego casero 260 g · Proteína en polvo 25 g · Granola 40 g · Berries congelados 95 g
 
-*Condimentos:* Canela 1 g (½ cdta) · Sal 0.5 g (1 pizca)
+*Condimentos:* Canela 1 g (½ cdta)
 
-1. **Microondas** — Avena + leche + canela en un bowl hondo, 2 min. Revuelve y 1 min más.
-2. **Sin fuego** — Deja que baje del hervor un minuto ANTES de meter la proteína. Hirviendo se corta y queda grumosa.
-3. **Sin fuego** — Banana en rodajas y la mantequilla de maní encima. Se derrite sola.
+1. **Sin fuego** — Yogurt y proteína, revuelve hasta que quede liso.
+2. **Sin fuego** — Berries encima y la granola de última, o se ablanda. Dos minutos.
 
-**`b4` Weet-Bix con leche y batido** — Sin fuego  
-425 kcal · 32 g P · 66 g C · 3 g G · 10 g fibra
+**`b6` Weet-Bix con leche y batido** — Sin fuego  
+478 kcal · 37 g P · 73 g C · 4 g G · 11 g fibra
 
-Weet-Bix 50 g · Leche descremada 220 g · Proteína en polvo 25 g · Banana 85 g
+Weet-Bix 55 g · Leche descremada 240 g · Proteína en polvo 30 g · Banana 95 g
 
-1. **Sin fuego** — Weet-Bix con la leche fría.
-2. **Sin fuego** — El batido aparte: proteína en 300 ml de agua, agitado. La banana al lado.
-3. **Sin fuego** — El cereal solo te deja en 12 g de proteína. El batido no es opcional.
+*Condimentos:* Canela 1 g (½ cdta)
 
-**`b5` Huevos duros con tostada de aguacate** — Tostadora  
-534 kcal · 37 g P · 36 g C · 27 g G · 8 g fibra
+1. **Sin fuego** — Weet-Bix con la leche fría y la banana en rodajas.
+2. **Sin fuego** — El batido aparte: proteína en 300 ml de agua. El cereal solo te deja en 12 g de proteína; el batido es lo que lo salva.
 
-Huevo entero 150 g · Tostada integral 60 g · Aguacate 50 g · Tomate 70 g · Cottage alto en proteína 85 g
+**`b7` Calentado paisa** — Sartén  
+493 kcal · 38 g P · 36 g C · 20 g G · 9 g fibra
+
+Huevo entero 150 g · Clara de huevo 90 g · Arroz basmati crudo 20 g · Frijol rojo de lata 95 g · Cebolla larga 30 g · Aguacate 30 g
+
+*Condimentos:* Sal 1 g (1 pizca) · Comino molido 1 g (½ cdta) · Espray de aceite 1 g (2 segundos)
+
+1. **Sartén** — Sartén caliente con espray: arroz y frijol del domingo juntos, 4 min sin moverlos hasta que el arroz tome color.
+2. **Sartén** — Cebolla larga, comino y sal, 2 min.
+3. **Sartén** — Al plato. En la misma sartén el huevo frito con la yema blanda y las claras alrededor.
+4. **Sin fuego** — Aguacate al lado.
+
+**`b8` Huevos duros con tostada y aguacate** — Tostadora  
+552 kcal · 39 g P · 37 g C · 28 g G · 8 g fibra
+
+Huevo entero 150 g · Tostada integral 60 g · Aguacate 55 g · Cottage alto en proteína 95 g · Tomate 75 g
 
 *Condimentos:* Sal 1 g (1 pizca) · Pimienta negra 0.5 g (al gusto) · Limón 5 g (unas gotas)
 
 1. **Nevera** — Los huevos ya están: salieron de la olla el domingo. Pélalos.
 2. **Tostadora** — El pan al tostador.
-3. **Sin fuego** — Aguacate machacado con sal, limón y pimienta sobre la tostada. Tomate en rodajas y el cottage al lado.
-
-**`b6` Bowl de yogurt con granola y mango** — Sin fuego  
-456 kcal · 42 g P · 53 g C · 8 g G · 7 g fibra
-
-Yogurt griego casero 240 g · Proteína en polvo 20 g · Granola 30 g · Mango 100 g · Berries congelados 50 g
-
-*Condimentos:* Canela 1 g (½ cdta)
-
-1. **Sin fuego** — Yogurt y proteína en el bowl, revuelve hasta que quede liso.
-2. **Sin fuego** — Mango y berries encima.
-3. **Sin fuego** — La granola de última, justo antes de comer, o se ablanda.
-
-**`b7` Calentado paisa** — Sartén  
-516 kcal · 38 g P · 47 g C · 19 g G · 8 g fibra
-
-Huevo entero 150 g · Clara de huevo 90 g · Arroz basmati crudo 20 g · Frijol rojo de lata 80 g · Plátano maduro 45 g · Cebolla larga 30 g · Aguacate 20 g
-
-*Condimentos:* Sal 1 g (1 pizca) · Comino molido 1 g (½ cdta) · Color / achiote 1 g (½ cdta) · Espray de aceite 1 g (2 segundos)
-
-1. **Sartén** — Sartén bien caliente con espray: el arroz y el frijol del domingo, juntos, 4 min SIN moverlos mucho hasta que el arroz tome color.
-2. **Sartén** — Cebolla larga y tomate picados, 2 min más. Comino, color y sal.
-3. **Sartén** — Sácalo al plato. En la misma sartén, el huevo frito con la yema blanda, y las claras vertidas alrededor para que cuajen con él.
-4. **Sartén** — Las tajadas de plátano, 2 min por lado, si no las horneaste antes.
-5. **Sin fuego** — Aguacate al lado. Ocho minutos y es el desayuno de tu casa.
-
-**`b8` Omelette de champiñones y cheddar** — Sartén + Tostadora  
-452 kcal · 47 g P · 17 g C · 20 g G · 4 g fibra
-
-Huevo entero 150 g · Clara de huevo 120 g · Champiñones 100 g · Espinaca 70 g · Queso cheddar light 25 g · Tostada integral 30 g
-
-*Condimentos:* Sal 1 g (1 pizca) · Pimienta negra 0.5 g (al gusto) · Espray de aceite 1 g (2 segundos)
-
-1. **Sartén** — Sartén a fuego alto con espray: champiñones en láminas 4 min SIN SAL hasta que doren. Si los salas antes sueltan agua y se hierven.
-2. **Sartén** — Espinaca 1 min. Escurre el agua que suelte o el omelette queda aguado. Saca todo.
-3. **Sartén** — Baja a fuego bajo. Huevos y claras batidos, 2 min sin tocar hasta que cuaje el fondo.
-4. **Sartén** — El relleno y el cheddar sobre una mitad, dobla, 1 min más.
-5. **Tostadora** — La tostada al lado.
-
-**`b9` Arepa con huevos pericos** — Sartén  
-529 kcal · 46 g P · 44 g C · 18 g G · 5 g fibra
-
-Harina PAN 40 g · Huevo entero 100 g · Clara de huevo 150 g · Tomate 90 g · Cebolla larga 30 g · Cottage alto en proteína 100 g · Aguacate 30 g
-
-*Condimentos:* Sal 2 g (1 cdta (la masa la necesita)) · Espray de aceite 1 g (2 segundos)
-
-1. **Sin fuego** — La masa: 40 g de Harina PAN por 60 ml de agua tibia con sal. Amasa 1 min y DEJA REPOSAR 5 MIN. Sin reposo se agrieta al asarla.
-2. **Sartén** — Sartén a fuego medio, seca: la arepa 4 min por lado. Está lista cuando suena hueca al golpearla.
-3. **Sartén** — Sácala. Fuego bajo: tomate y cebolla larga 3 min, luego huevos y claras batidos, 2 min revolviendo.
-4. **Sin fuego** — Cottage y aguacate al lado.
+3. **Sin fuego** — Aguacate machacado con sal, limón y pimienta sobre la tostada. Tomate y cottage al lado.
 
 ### Almuerzos
 
-**`l1` Chana masala** — Olla  
-619 kcal · 42 g P · 78 g C · 14 g G · 17 g fibra
+**`l1` Garbanzos guisados con arroz** — Olla  
+553 kcal · 31 g P · 75 g C · 13 g G · 16 g fibra
 
-Garbanzos de lata 210 g · Passata de tomate 130 g · Cebolla 70 g · Yogurt griego casero 100 g · Arroz basmati crudo 25 g · Cottage alto en proteína 100 g · Aceite de oliva 5 g · Limón 15 g · Caldo Campbell's 31 g
+Garbanzos de lata 190 g · Passata de tomate 120 g · Cebolla 65 g · Pimentón 65 g · Arroz basmati crudo 30 g · Caldo Campbell's 40 g · Cottage alto en proteína 95 g · Aceite de oliva 5 g
 
-*Condimentos:* Ajo 6 g (2 dientes) · Jengibre fresco 5 g (1 cm rallado) · Comino molido 2 g (1 cdta) · Cilantro molido 2 g (1 cdta) · Cúrcuma 1 g (½ cdta) · Garam masala 3 g (1½ cdta) · Sal 2 g (1 cdta) · Cilantro fresco 5 g (1 puñado)
+*Condimentos:* Ajo 6 g (2 dientes) · Comino molido 2 g (1 cdta) · Paprika 2 g (1 cdta) · Laurel 0.2 g (1 hoja) · Sal 2 g (1 cdta) · Cilantro fresco 5 g (1 puñado)
 
-1. **Olla** — OLLA en Sauté/sear high (el botón de sofreír) con el aceite: cebolla picada 6 min hasta que dore de verdad. Ahí está el fondo del plato.
-2. **Olla** — Jengibre, ajo, comino, cúrcuma y garam masala, 45 segundos. Si empieza a oler, va bien.
-3. **Olla** — Passata 5 min. Garbanzos escurridos y 100 ml de agua. Machaca un tercio con el tenedor: espesa sin harina.
-4. **Olla** — Tapa. Botón Pressure cook, 8 min. Cuando termine NO sueltes la presión: espera a que baje sola (liberación natural, ~10 min).
-5. **Sin fuego** — Yogurt, cottage y el limón al servir, fuera del fuego. El yogurt hirviendo se corta. Cilantro encima.
-6. **Olla** — El arroz aparte: 1 taza de arroz por 1¼ de caldo, Pressure cook 5 min, natural 10.
+1. **Olla** — OLLA en Sauté/sear high con el aceite: cebolla y pimentón picados, 6 min.
+2. **Olla** — Ajo, comino y paprika, 45 segundos. Passata y laurel, 3 min.
+3. **Olla** — Garbanzos escurridos y 100 ml de agua. Machaca un tercio con el tenedor: espesa sin harina.
+4. **Olla** — Tapa. Pressure cook 8 min. Cuando termine NO sueltes la presión: espera a que baje sola.
+5. **Olla** — El arroz aparte: 1 taza de arroz por 1¼ de caldo, Pressure cook 5 min.
+6. **Sin fuego** — Cottage y cilantro al servir.
 
-**`l2` Frijoles paisas con plátano y huevo** — Olla + Sartén  
-665 kcal · 42 g P · 72 g C · 21 g G · 14 g fibra
+**`l2` Lentejas guisadas** — Olla  
+523 kcal · 34 g P · 66 g C · 9 g G · 10 g fibra
 
-Frijol rojo seco 50 g · Plátano maduro 50 g · Tomate 100 g · Cebolla 60 g · Zanahoria 40 g · Arroz basmati crudo 20 g · Aguacate 25 g · Huevo entero 100 g · Cottage alto en proteína 100 g · Aceite de oliva 4 g
+Lentejas cafés secas 55 g · Passata de tomate 100 g · Cebolla 55 g · Zanahoria 55 g · Caldo Campbell's 280 g · Arroz basmati crudo 25 g · Cottage alto en proteína 120 g · Aceite de oliva 5 g
 
-*Condimentos:* Ajo 3 g (1 diente) · Comino molido 2 g (1 cdta) · Color / achiote 2 g (1 cdta) · Sal 2 g (1 cdta) · Cilantro fresco 5 g (1 puñado)
+*Condimentos:* Ajo 6 g (2 dientes) · Comino molido 2 g (1 cdta) · Color / achiote 2 g (1 cdta) · Laurel 0.2 g (1 hoja) · Sal 2 g (1 cdta)
 
-1. **Olla** — OLLA: frijol rojo SECO sin remojar, 4 partes de agua, la zanahoria rallada y un trozo de plátano maduro. Pressure cook 30 min, liberación natural 15.
-2. **Olla** — El plátano y la zanahoria se deshacen y dan el dulce que el frijol paisa necesita.
-3. **Sartén** — El hogao en sartén con el aceite de oliva: cebolla y tomate 8 min con comino, color y sal. Va al frijol AL FINAL, no al principio.
-4. **Olla** — Machaca un cucharón de frijol contra la pared de la olla para espesar.
-5. **Sartén** — El huevo frito en la misma sartén del hogao.
-6. **Sin fuego** — Al plato: arroz, aguacate, el cottage batido al lado y cilantro. Las tajadas si las tienes.
+1. **Olla** — OLLA en Sauté/sear high con el aceite: cebolla y zanahoria en cubos, 6 min.
+2. **Olla** — Ajo, comino y color, 45 segundos. Passata 3 min.
+3. **Olla** — Lentejas, caldo y laurel. Pressure cook 9 min, deja que la presión baje sola.
+4. **Olla** — Arroz aparte, Pressure cook 5 min.
+5. **Sin fuego** — Cottage batido al servir.
 
-**`l3` Sancocho de tres tubérculos** — Olla  
-563 kcal · 37 g P · 78 g C · 12 g G · 11 g fibra
+**`l3` Chili mexicano** — Olla  
+707 kcal · 52 g P · 74 g C · 20 g G · 24 g fibra
 
-Papa 140 g · Camote 100 g · Maíz tierno 85 g · Caldo Campbell's 440 g · Cottage alto en proteína 220 g · Aguacate 35 g · Cebolla larga 35 g
+Carne vegetal molida 120 g · Frijol rojo de lata 120 g · Frijoles negros de lata 80 g · Passata de tomate 140 g · Pimentón 80 g · Cebolla 55 g · Maíz tierno 50 g · Cottage alto en proteína 95 g · Aguacate 30 g · Aceite de oliva 5 g
 
-*Condimentos:* Ajo 6 g (2 dientes) · Comino molido 2 g (1 cdta) · Color / achiote 2 g (1 cdta) · Sal 3 g (1½ cdta (es una sopa grande)) · Cilantro fresco 10 g (con tallo, 2 puñados)
+*Condimentos:* Ajo 6 g (2 dientes) · Comino molido 3 g (1½ cdta) · Paprika ahumada 2 g (1 cdta) · Chili en polvo 2 g (1 cdta) · Orégano seco 1 g (½ cdta) · Sal 2 g (1 cdta) · Cilantro fresco 5 g (1 puñado) · Limón 10 g (½ limón)
 
-1. **Olla** — OLLA en Sauté/sear high: cebolla larga y ajo 3 min con comino y color.
-2. **Olla** — Papa y camote en trozos grandes, mazorca en rodajas, el caldo y cilantro con tallo.
-3. **Olla** — Pressure cook 12 min, liberación natural.
-4. **Olla** — Machaca un par de papas contra la pared: eso espesa el caldo y lo vuelve sancocho, no sopa.
-5. **Sin fuego** — Al plato: cottage batido en vez de crema, aguacate y cilantro fresco.
+1. **Olla** — OLLA en Sauté/sear high con el aceite: la carne vegetal 5 min sin moverla mucho, hasta que tueste.
+2. **Olla** — Cebolla y pimentón 5 min. Ajo, comino, paprika ahumada, chili y orégano, 45 segundos.
+3. **Olla** — Passata, los frijoles escurridos y el maíz. Pressure cook 10 min, la presión baja sola.
+4. **Sin fuego** — Cottage, aguacate, cilantro y limón al servir.
 
-**`l4` Arroz con carne vegetal y verduras** — Olla  
-568 kcal · 45 g P · 60 g C · 16 g G · 11 g fibra
+**`l4` Arroz mexicano con frijoles** — Olla  
+649 kcal · 35 g P · 91 g C · 15 g G · 18 g fibra
 
-Carne vegetal molida 170 g · Arroz basmati crudo 35 g · Pimentón 85 g · Habichuela 85 g · Maíz tierno 50 g · Caldo Campbell's 170 g · Cottage alto en proteína 70 g · Aceite de oliva 5 g
+Arroz basmati crudo 45 g · Frijoles negros de lata 140 g · Passata de tomate 95 g · Caldo Campbell's 140 g · Pimentón 65 g · Cebolla 50 g · Maíz tierno 50 g · Cottage alto en proteína 120 g · Aguacate 30 g · Limón 10 g · Aceite de oliva 5 g
 
-*Condimentos:* Ajo 6 g (2 dientes) · Comino molido 2 g (1 cdta) · Paprika 2 g (1 cdta) · Color / achiote 2 g (1 cdta) · Sal 2 g (1 cdta)
+*Condimentos:* Ajo 6 g (2 dientes) · Comino molido 2 g (1 cdta) · Paprika 2 g (1 cdta) · Sal 2 g (1 cdta) · Cilantro fresco 5 g (1 puñado)
 
-1. **Olla** — OLLA en Sauté/sear high con el aceite: la carne vegetal 6 min SIN moverla mucho, hasta que tueste. Si la revuelves todo el tiempo se hace papilla.
-2. **Olla** — Comino, paprika, ajo y color. Pimentón y habichuela 3 min.
-3. **Olla** — Arroz y caldo (1 taza de arroz por 1¼ de caldo). El maíz encima SIN revolver.
-4. **Sin fuego** — El cottage batido al servir, encima del arroz. Sube 10 g de proteína sin tocar el sabor.
+1. **Olla** — OLLA en Sauté/sear high con el aceite: cebolla y pimentón 5 min. Ajo, comino y paprika, 45 s.
+2. **Olla** — El arroz 1 min, hasta que los granos se vean vidriosos. Passata y caldo (1 taza de arroz por 1¼ de líquido).
+3. **Olla** — El maíz encima SIN revolver. Pressure cook 5 min, la presión baja sola 10 min.
+4. **Olla** — Suelta con tenedor. Los frijoles escurridos por encima, con el calor que queda.
+5. **Sin fuego** — Cottage, aguacate, cilantro y limón. Un plato, una olla.
 
-**`l5` Curry rojo tailandés de tofu** — Sartén + Olla  
-566 kcal · 37 g P · 52 g C · 22 g G · 14 g fibra
+**`l5` Pasta con bolognesa de carne vegetal** — Olla + Estufa  
+557 kcal · 36 g P · 64 g C · 16 g G · 10 g fibra
 
-Tofu firme 160 g · Garbanzos de lata 85 g · Leche de coco light 60 g · Pasta de curry rojo 20 g · Pimentón 85 g · Habichuela 85 g · Espinaca 70 g · Arroz jazmín crudo 25 g · Limón 15 g
+Carne vegetal molida 120 g · Pasta cruda 50 g · Passata de tomate 160 g · Pasta de tomate 25 g · Cebolla 50 g · Zanahoria 40 g · Parmesano 15 g · Aceite de oliva 5 g
 
-*Condimentos:* Albahaca fresca 5 g (1 puñado) · Sal 1 g (½ cdta (la pasta de curry ya trae))
+*Condimentos:* Ajo 3 g (1 diente) · Laurel 0.2 g (1 hoja) · Orégano seco 1 g (½ cdta) · Sal 3 g (1½ cdta, la pasta también se sala) · Pimienta negra 0.5 g (al gusto)
 
-1. **Sartén** — El tofu primero: seco y apretado con papel, en cubos, sartén caliente 5 min hasta dorar. Resérvalo.
-2. **Olla** — OLLA en Sauté/sear high: fríe la pasta de curry 1 min ANTES de mojarla. Saltarse esto es la diferencia entre curry y agua con color.
-3. **Olla** — Leche de coco, garbanzos, pimentón y habichuela. Pressure cook 5 min, liberación RÁPIDA (suelta la válvula apenas termine).
-4. **Sin fuego** — El tofu de vuelta, espinaca con el calor que queda, limón y albahaca.
-5. **Olla** — Arroz jazmín aparte, Pressure cook 5 min.
+1. **Olla** — OLLA en Sauté/sear high con el aceite: cebolla y zanahoria picadas finas, 6 min.
+2. **Olla** — La carne vegetal 5 min hasta que tueste. La pasta de tomate 2 min: tostarla da el color oscuro.
+3. **Olla** — Passata, laurel y orégano. Pressure cook 10 min, la presión baja sola.
+4. **Estufa** — La pasta aparte en agua hirviendo con sal, al dente.
+5. **Sin fuego** — Parmesano rallado al final.
 
-**`l6` Risotto de champiñones** — Olla  
-550 kcal · 39 g P · 56 g C · 18 g G · 4 g fibra
+**`l6` Lasaña de olla** — Olla  
+654 kcal · 48 g P · 60 g C · 23 g G · 10 g fibra
 
-Arroz arborio crudo 50 g · Champiñones 220 g · Cebolla 45 g · Caldo Campbell's 350 g · Parmesano 15 g · Ricotta light 50 g · Cottage alto en proteína 130 g · Aceite de oliva 5 g
+Carne vegetal molida 120 g · Pasta cruda 45 g · Passata de tomate 180 g · Ricotta light 80 g · Mozzarella light 30 g · Cebolla 50 g · Espinaca 80 g · Aceite de oliva 5 g
 
-*Condimentos:* Tomillo seco 1 g (½ cdta) · Sal 2 g (1 cdta) · Pimienta negra 1 g (generosa)
+*Condimentos:* Ajo 6 g (2 dientes) · Orégano seco 2 g (1 cdta) · Sal 2 g (1 cdta) · Pimienta negra 0.5 g (al gusto)
 
-1. **Olla** — OLLA en Sauté/sear high con el aceite de oliva: champiñones en cuartos 6 min SIN SAL y sin moverlos, hasta que doren. Sácalos.
-2. **Olla** — Cebolla 4 min, luego el arroz 2 min hasta que los granos se vean vidriosos por fuera.
-3. **Olla** — Caldo caliente y tomillo. Pressure cook 6 min, liberación RÁPIDA. Con natural se pasa de cocción.
-4. **Olla** — Cancel. Devuelve los champiñones, el parmesano y la ricotta. Bate fuerte 1 min: ahí aparece la cremosidad.
-5. **Sin fuego** — Cottage y pimienta al servir.
+1. **Olla** — OLLA en Sauté/sear high con el aceite: cebolla 4 min, la carne vegetal 5 min hasta que tueste.
+2. **Olla** — Ajo y orégano 45 s, passata 5 min. Saca la mitad de la salsa y resérvala.
+3. **Olla** — Arma por capas dentro de la olla: salsa, láminas de pasta partidas para que quepan, ricotta y espinaca. Repite.
+4. **Olla** — Mozzarella encima. Bake 30 min. La pasta se cuece en la salsa: no hay que hervirla antes.
+5. **Sin fuego** — Deja reposar 10 min antes de servir o se desarma.
+
+**`l7` Tinga de garbanzos con tortillas** — Olla + Sartén  
+633 kcal · 35 g P · 79 g C · 19 g G · 20 g fibra
+
+Garbanzos de lata 190 g · Passata de tomate 120 g · Cebolla 70 g · Tortilla de maíz 60 g · Cottage alto en proteína 120 g · Aguacate 30 g · Limón 10 g · Aceite de oliva 5 g
+
+*Condimentos:* Ajo 6 g (2 dientes) · Comino molido 2 g (1 cdta) · Paprika ahumada 3 g (1½ cdta) · Orégano seco 1 g (½ cdta) · Sal 2 g (1 cdta) · Cilantro fresco 5 g (1 puñado)
+
+1. **Olla** — OLLA en Sauté/sear high con el aceite: cebolla en pluma 6 min, hasta que dore.
+2. **Olla** — Ajo, comino, paprika ahumada y orégano, 45 s. Esa paprika es la que hace la tinga.
+3. **Olla** — Passata y garbanzos escurridos. Pressure cook 8 min, la presión baja sola.
+4. **Olla** — Machaca un tercio para espesar.
+5. **Sartén** — Las tortillas 30 segundos por lado en sartén seca.
+6. **Sin fuego** — Arma los tacos: garbanzos, cottage, aguacate, cilantro y limón.
 
 ### Cenas
 
-**`d1` Dal cremoso de lentejas y frijol rojo** — Olla  
-546 kcal · 46 g P · 57 g C · 10 g G · 13 g fibra
+**`d1` Revuelto ligero de claras con espinaca y tomate** — Sartén  
+390 kcal · 49 g P · 24 g C · 9 g G · 6 g fibra
 
-Lentejas cafés secas 50 g · Frijol rojo de lata 70 g · Passata de tomate 130 g · Cebolla 60 g · Yogurt griego casero 100 g · Cottage alto en proteína 130 g · Aceite de oliva 5 g
+Clara de huevo 210 g · Huevo entero 50 g · Espinaca 130 g · Tomate 130 g · Cottage alto en proteína 90 g · Tostada integral 30 g
 
-*Condimentos:* Ajo 6 g (2 dientes) · Jengibre fresco 5 g (1 cm rallado) · Comino molido 2 g (1 cdta) · Garam masala 3 g (1½ cdta) · Sal 2 g (1 cdta) · Cilantro fresco 5 g (1 puñado)
+*Condimentos:* Sal 1 g (1 pizca) · Pimienta negra 0.5 g (al gusto) · Ajo 3 g (1 diente picado) · Espray de aceite 1 g (2 segundos)
 
-1. **Olla** — OLLA en Sauté/sear high con el aceite: cebolla 6 min, luego jengibre, ajo, comino y garam masala 45 segundos.
-2. **Olla** — Passata 5 min. Lentejas cafés, frijol rojo escurrido y 400 ml de agua.
-3. **Olla** — Pressure cook 12 min, liberación natural.
-4. **Olla** — Vuelve a Sauté/sear low y machaca 10 min contra la pared de la olla. Ese machacado es lo que lo vuelve cremoso, no la crema.
-5. **Sin fuego** — Yogurt y cottage al servir, fuera del fuego. Cilantro.
+1. **Sartén** — Sartén a fuego medio con espray: tomate y ajo, 3 min.
+2. **Sartén** — Espinaca 1 min. Escurre lo que suelte o queda aguado.
+3. **Sartén** — Fuego bajo. Claras y el huevo batidos, revuelve constante 3 min.
+4. **Sartén** — Apaga cuando aún se vean húmedos.
+5. **Sin fuego** — Cottage encima. Una tostada seca al lado.
 
-**`d2` Chili con chocolate amargo** — Olla  
-633 kcal · 43 g P · 63 g C · 20 g G · 23 g fibra
+**`d2` Bowl frío de cottage, huevo y verduras** — Tostadora  
+480 kcal · 41 g P · 32 g C · 21 g G · 7 g fibra
 
-Frijoles negros de lata 100 g · Frijol rojo de lata 85 g · Passata de tomate 160 g · Pimentón 100 g · Cebolla 60 g · Chocolate 85% 5 g · Carne vegetal molida 70 g · Cottage alto en proteína 100 g · Aguacate 35 g · Aceite de oliva 5 g
+Cottage alto en proteína 180 g · Huevo entero 100 g · Tomate 130 g · Pepino 110 g · Aguacate 35 g · Tostada integral 30 g · Limón 15 g
 
-*Condimentos:* Ajo 6 g (2 dientes) · Comino molido 3 g (1½ cdta) · Orégano seco 1 g (½ cdta) · Paprika ahumada 3 g (1½ cdta) · Chili en polvo 2 g (1 cdta) · Sal 2 g (1 cdta) · Cilantro fresco 5 g (1 puñado) · Limón 10 g (½ limón)
+*Condimentos:* Sal 1 g (1 pizca) · Pimienta negra 0.5 g (al gusto) · Orégano seco 1 g (½ cdta)
 
-1. **Olla** — OLLA en Sauté/sear high con el aceite de oliva: la carne vegetal 6 min sin moverla hasta que tueste. Sácala.
-2. **Olla** — Cebolla y pimentón 6 min. Comino, orégano, paprika ahumada y chili, 45 segundos.
-3. **Olla** — Passata, los frijoles escurridos, la carne de vuelta y los 8 g de chocolate 85%.
-4. **Olla** — Pressure cook 10 min, liberación natural. El chocolate no lo vuelve dulce: le da el fondo oscuro que un chili casero nunca tiene.
-5. **Sin fuego** — Cottage y aguacate encima. Cilantro y limón.
+1. **Nevera** — Los huevos duros ya están del domingo. Pélalos y pártelos.
+2. **Sin fuego** — Tomate y pepino en cubos, aguacate en tajadas.
+3. **Sin fuego** — Todo en un bowl con el cottage, limón, sal, pimienta y orégano.
+4. **Tostadora** — Una tostada al lado. Cinco minutos y no se prende nada.
 
-**`d3` Bolognesa de carne vegetal** — Olla + Estufa  
-550 kcal · 36 g P · 63 g C · 16 g G · 11 g fibra
+**`d3` Tofu al ajillo con brócoli** — Sartén + Olla  
+525 kcal · 41 g P · 35 g C · 23 g G · 10 g fibra
 
-Carne vegetal molida 120 g · Pasta cruda 45 g · Pasta de tomate 25 g · Passata de tomate 170 g · Cebolla 50 g · Zanahoria 45 g · Apio 35 g · Parmesano 15 g · Aceite de oliva 5 g
-
-*Condimentos:* Ajo 3 g (1 diente) · Laurel 0.2 g (1 hoja) · Orégano seco 1 g (½ cdta) · Sal 3 g (1½ cdta (la pasta también se sala)) · Pimienta negra 0.5 g (al gusto)
-
-1. **Olla** — OLLA en Sauté/sear high con el aceite de oliva: sofrito de cebolla, zanahoria y apio picados finos, 8 min. Sin ese sofrito no hay bolognesa.
-2. **Olla** — La carne vegetal 6 min hasta que tueste. Luego la pasta de tomate 2 min: tostarla es lo que da el color oscuro.
-3. **Olla** — Passata, laurel y orégano. Pressure cook 10 min, liberación natural.
-4. **Estufa** — La pasta aparte en una olla con agua hirviendo y sal, al dente. Pruébala 1 min antes de lo que dice la caja.
-5. **Sin fuego** — Parmesano rallado al final.
-
-**`d4` Feijoada vegetariana** — Olla + Sartén  
-568 kcal · 35 g P · 67 g C · 16 g G · 20 g fibra
-
-Frijoles negros secos 50 g · Tempeh 85 g · Naranja 70 g · Cebolla 60 g · Passata de tomate 100 g · Arroz basmati crudo 20 g · Espinaca 130 g · Aceite de oliva 5 g
-
-*Condimentos:* Ajo 6 g (2 dientes) · Laurel 0.4 g (2 hojas) · Paprika ahumada 3 g (1½ cdta) · Sal 2 g (1 cdta)
-
-1. **Olla** — OLLA: frijol negro SECO sin remojar, 4 partes de agua y laurel. Pressure cook 30 min, liberación natural 15. Escurre y reserva.
-2. **Olla** — Sauté/sear high con el aceite de oliva: tempeh en cubos 6 min con paprika ahumada. Esa paprika es la que hace el ahumado.
-3. **Olla** — Cebolla y passata 6 min, ajo al final.
-4. **Olla** — Junta con el frijol, la cáscara y el jugo de media naranja. Sauté/sear low 10 min. La naranja corta la pesadez del frijol: eso es lo que hace la feijoada.
-5. **Sartén** — La espinaca salteada aparte, 2 min con ajo.
-6. **Sin fuego** — Arroz al lado y gajos de naranja al plato.
-
-**`d5` Sopa cremosa de tomate rostizado y lenteja roja** — Olla + Licuadora + Tostadora  
-570 kcal · 41 g P · 59 g C · 14 g G · 12 g fibra
-
-Tomate 300 g · Lentejas rojas secas 50 g · Cebolla 60 g · Caldo Campbell's 350 g · Ricotta light 45 g · Cottage alto en proteína 130 g · Tostada integral 30 g · Aceite de oliva 5 g
-
-*Condimentos:* Ajo 6 g (2 dientes) · Albahaca fresca 8 g (1 puñado grande) · Sal 2 g (1 cdta) · Pimienta negra 0.5 g (al gusto)
-
-1. **Olla** — OLLA en Sauté/sear high con el aceite: tomate en mitades, boca abajo, 8 min SIN moverlos hasta que se chamusquen. Ese tostado es toda la sopa.
-2. **Olla** — Cebolla y ajo 4 min. Lentejas rojas y el caldo.
-3. **Olla** — Pressure cook 6 min, liberación natural.
-4. **Licuadora** — Licúa con la ricotta y un puñado de albahaca hasta que quede cremosa. Sin una gota de crema.
-5. **Tostadora** — La tostada mientras tanto. Cottage y albahaca encima de la sopa.
-
-**`d6` Tofu al ajillo con brócoli** — Sartén + Olla  
-538 kcal · 42 g P · 35 g C · 23 g G · 10 g fibra
-
-Tofu firme 200 g · Brócoli 170 g · Champiñones 130 g · Cebolla larga 35 g · Salsa de soya 15 g · Arroz basmati crudo 25 g · Aceite de oliva 5 g
+Tofu firme 190 g · Brócoli 180 g · Champiñones 110 g · Cebolla larga 35 g · Salsa de soya 20 g · Arroz basmati crudo 25 g · Aceite de oliva 5 g
 
 *Condimentos:* Ajo 12 g (4 dientes laminados) · Chili en hojuelas 1 g (½ cdta) · Sal 1 g (1 pizca)
 
-1. **Sartén** — Tofu en lonjas de 1,5 cm, apretado con papel 2 min. Sartén MUY caliente con el aceite de oliva, 4 min por lado SIN tocarlo. Ahí se forma la costra.
-2. **Sartén** — Sácalo. Champiñones 5 min sin sal, luego el brócoli 4 min.
-3. **Sartén** — Mucho ajo laminado AL FINAL, 1 min. Si lo pones al principio se quema y amarga.
-4. **Sartén** — Devuelve el tofu, salsa de soya y chili en hojuelas. Cebolla larga encima.
-5. **Olla** — El arroz aparte en la olla, Pressure cook 5 min.
+1. **Sartén** — Tofu en lonjas, apretado con papel 2 min. Sartén MUY caliente con el aceite, 4 min por lado sin tocarlo.
+2. **Sartén** — Sácalo. Champiñones 4 min sin sal, brócoli 4 min.
+3. **Sartén** — Ajo laminado AL FINAL, 1 min: al principio se quema y amarga.
+4. **Sartén** — Devuelve el tofu, salsa de soya, chili y cebolla larga.
+5. **Olla** — Arroz aparte en la olla, Pressure cook 5 min.
 
-**`d7` Shakshuka** — Sartén + Tostadora  
-514 kcal · 42 g P · 40 g C · 19 g G · 7 g fibra
+**`d4` Shakshuka** — Sartén + Tostadora  
+545 kcal · 47 g P · 41 g C · 20 g G · 8 g fibra
 
-Huevo entero 100 g · Clara de huevo 90 g · Passata de tomate 170 g · Pimentón 100 g · Cebolla 60 g · Cottage alto en proteína 100 g · Tostada integral 30 g · Aceite de oliva 5 g
+Huevo entero 100 g · Clara de huevo 120 g · Passata de tomate 180 g · Pimentón 110 g · Cebolla 60 g · Cottage alto en proteína 110 g · Tostada integral 30 g · Aceite de oliva 5 g
 
 *Condimentos:* Comino molido 2 g (1 cdta) · Paprika ahumada 2 g (1 cdta) · Chili en polvo 1 g (½ cdta) · Sal 2 g (1 cdta) · Pimienta negra 0.5 g (al gusto)
 
-1. **Sartén** — Sartén amplia a fuego medio con el aceite: cebolla y pimentón en tiras, 6 min.
-2. **Sartén** — Comino, paprika ahumada y chili, 30 segundos. Ese tostado de las especias es toda la receta.
-3. **Sartén** — Passata, 8 min a fuego bajo hasta que espese de verdad. Aguada no sirve.
-4. **Sartén** — Haz huecos con la cuchara, casca los huevos dentro y vierte las claras alrededor.
-5. **Sartén** — TAPA la sartén 5 min: la clara cuaja y la yema queda cremosa.
-6. **Tostadora** — La tostada para mojar. Cottage en cucharadas encima, fuera del fuego.
+1. **Sartén** — Sartén amplia con el aceite: cebolla y pimentón en tiras, 6 min.
+2. **Sartén** — Comino, paprika ahumada y chili, 30 s. Ese tostado es toda la receta.
+3. **Sartén** — Passata, 8 min a fuego bajo hasta que espese de verdad.
+4. **Sartén** — Huecos con la cuchara, casca los huevos dentro y las claras alrededor. TAPA 5 min.
+5. **Tostadora** — Tostada para mojar. Cottage encima fuera del fuego.
 
-**`d8` Revuelto ligero de claras con espinaca y tomate** — Sartén + Tostadora  
-428 kcal · 55 g P · 25 g C · 10 g G · 7 g fibra
+**`d5` Wrap de carne vegetal con ensalada** — Sartén  
+578 kcal · 43 g P · 51 g C · 21 g G · 12 g fibra
 
-Clara de huevo 250 g · Huevo entero 50 g · Espinaca 150 g · Tomate 150 g · Cottage alto en proteína 100 g · Tostada integral 30 g
+Carne vegetal molida 130 g · Wrap Mission wholegrain 71 g · Espinaca 70 g · Tomate 90 g · Cottage alto en proteína 90 g · Aguacate 25 g · Limón 15 g · Aceite de oliva 5 g
 
-*Condimentos:* Sal 1 g (1 pizca) · Pimienta negra 0.5 g (al gusto) · Ajo 3 g (1 diente picado) · Espray de aceite 1 g (2 segundos, nada más)
+*Condimentos:* Ajo 3 g (1 diente) · Comino molido 2 g (1 cdta) · Paprika ahumada 2 g (1 cdta) · Sal 1 g (1 pizca)
 
-1. **Sartén** — Sartén a fuego medio con espray: tomate picado y ajo, 3 min hasta que suelten el agua.
-2. **Sartén** — Espinaca, 1 min. Escurre lo que suelte o el revuelto queda aguado.
-3. **Sartén** — Baja el fuego. Claras y el huevo batidos con sal y pimienta, revuelve constante 3 min.
-4. **Sartén** — APAGA cuando todavía se vean húmedos: se terminan de cuajar solos. Ese es el único truco.
-5. **Sin fuego** — Cottage encima fuera del fuego.
-6. **Tostadora** — Una tostada al lado, seca. Nada de grasa encima: de noche es la que pesa.
+1. **Sartén** — Sartén caliente con el aceite: la carne vegetal 6 min sin moverla mucho, con comino, paprika y ajo.
+2. **Sartén** — El wrap 20 segundos por lado en la sartén seca: se dobla sin romperse.
+3. **Sin fuego** — Rellena con la carne, espinaca, tomate, cottage y aguacate. Limón y enrolla apretado.
+
+**`d6` Omelette de tres huevos con queso** — Sartén + Tostadora  
+451 kcal · 46 g P · 19 g C · 20 g G · 5 g fibra
+
+Huevo entero 150 g · Clara de huevo 120 g · Espinaca 90 g · Tomate 90 g · Queso cheddar light 25 g · Tostada integral 30 g
+
+*Condimentos:* Sal 1 g (1 pizca) · Pimienta negra 0.5 g (al gusto) · Espray de aceite 1 g (2 segundos)
+
+1. **Sartén** — Sartén a fuego medio con espray: tomate 2 min, espinaca 1 min. Escurre y saca.
+2. **Sartén** — Fuego bajo. Huevos y claras batidos, 2 min SIN tocar hasta que cuaje el fondo.
+3. **Sartén** — El relleno y el queso sobre una mitad, dobla, 1 min más.
+4. **Tostadora** — Tostada al lado.
 
 ### Snacks
 
-**`s1` Batido de proteína con berries** — Licuadora  
+**`s1` YoPRO con granola** — Sin fuego  
+264 kcal · 19 g P · 34 g C · 5 g G · 5 g fibra
+
+YoPRO 160 g · Granola 30 g · Berries congelados 60 g
+
+1. **Sin fuego** — Abre el YoPRO, granola y berries encima. Un minuto y nada que lavar.
+
+**`s2` Batido de proteína con berries** — Licuadora  
 192 kcal · 22 g P · 18 g C · 3 g G · 8 g fibra
 
 Proteína en polvo 30 g · Berries congelados 150 g
 
 1. **Licuadora** — Proteína en 300 ml de agua fría con los berries congelados. Agita o licúa.
-2. **Sin fuego** — 21 g de proteína y el 99% del hierro del día. No lo tomes con café ni té: bloquean el hierro.
+2. **Sin fuego** — 21 g de proteína y el 99% del hierro del día. No con café ni té: bloquean el hierro.
 
-**`s10` Pudding de chía con berries** — Sin fuego  
-236 kcal · 21 g P · 23 g C · 7 g G · 10 g fibra
+**`s3` Yogur griego con proteína y berries** — Sin fuego  
+283 kcal · 39 g P · 22 g C · 3 g G · 5 g fibra
 
-Semillas de chía 15 g · Leche descremada 150 g · Proteína en polvo 18 g · Berries congelados 80 g
+Yogurt griego casero 250 g · Proteína en polvo 20 g · Berries congelados 80 g
 
-*Condimentos:* Canela 1 g (½ cdta) · Vainilla 2 g (unas gotas) · Whole Earth 3 g (al gusto)
+*Condimentos:* Canela 1 g (½ cdta) · Whole Earth 3 g (al gusto)
 
-1. **Sin fuego** — Chía + leche + proteína + vainilla en un frasco. Revuelve BIEN y vuelve a revolver a los 5 min: si no, la chía se apelmaza en el fondo.
-2. **Nevera** — Mínimo 4 horas, mejor toda la noche.
-3. **Sin fuego** — Berries encima al servir. 7 g de fibra de la chía sola.
+1. **Sin fuego** — Yogurt y proteína, revuelve. Berries y canela encima.
 
-**`s11` Tajadas de plátano maduro al horno** — Olla  
-183 kcal · 2 g P · 48 g C · 1 g G · 3 g fibra
+**`s4` YoPRO solo** — Sin fuego  
+99 kcal · 15 g P · 8 g C · 0 g G · 0 g fibra
 
-Plátano maduro 150 g
+YoPRO 160 g
 
-*Condimentos:* Sal 1 g (1 pizca, al final) · Espray de aceite 1 g (2 segundos)
+1. **Sin fuego** — Un YoPRO del refrigerador, directo. 15 g de proteína, cero azúcar añadido y nada que lavar.
 
-1. **Sin fuego** — Plátano BIEN maduro, con manchas negras: ahí está el dulce. Tajadas diagonales de 1 cm.
-2. **Olla · Bake** — Espray de aceite y nada más. OLLA en Bake 25 min, voltea a los 15.
-3. **Sin fuego** — Una pizca de sal al final: es lo que hace que sepan a tajada y no a postre. Fritas serían más de 400 kcal; al horno son 183.
+**`s5` Cottage con granola y canela** — Sin fuego  
+322 kcal · 28 g P · 30 g C · 9 g G · 4 g fibra
 
-**`s2` Batido de mango con yogurt** — Licuadora  
-286 kcal · 33 g P · 32 g C · 3 g G · 4 g fibra
+Cottage alto en proteína 200 g · Granola 25 g · Berries congelados 60 g
 
-Mango 150 g · Yogurt griego casero 150 g · Proteína en polvo 25 g
+*Condimentos:* Canela 1 g (½ cdta) · Whole Earth 3 g (al gusto)
 
-1. **Licuadora** — Mango congelado, yogurt y proteína. Licúa hasta que quede tipo helado.
+1. **Sin fuego** — Cottage en un bowl, granola y berries encima, canela. Dulce y 26 g de proteína.
 
-**`s3` Mousse de chocolate proteico** — Sin fuego  
-211 kcal · 30 g P · 17 g C · 3 g G · 5 g fibra
+**`s6` Banana con mantequilla de maní** — Sin fuego  
+227 kcal · 6 g P · 30 g C · 10 g G · 4 g fibra
 
-Yogurt griego casero 150 g · Proteína en polvo 20 g · Cacao en polvo 4 g · Berries congelados 50 g
-
-*Condimentos:* Cacao en polvo 0 g (ya contado arriba) · Canela 1 g (½ cdta) · Whole Earth 3 g (al gusto)
-
-1. **Sin fuego** — Yogurt, proteína y cacao en un bowl. Bate FUERTE con tenedor 1 min: el aire es lo que lo vuelve mousse y no papilla.
-2. **Nevera** — 20 min en la nevera si aguantas. Queda más firme.
-3. **Sin fuego** — Berries encima. Tu proteína ya viene con cacao, así que la cucharadita extra solo le sube el amargo. Si la quieres más dulce, Whole Earth.
-
-**`s4` Yogurt con berries y canela** — Sin fuego  
-205 kcal · 25 g P · 20 g C · 1 g G · 3 g fibra
-
-Yogurt griego casero 250 g · Berries congelados 80 g · Whole Earth 5 g
+Banana 120 g · Mantequilla de maní 20 g
 
 *Condimentos:* Canela 1 g (½ cdta)
 
-1. **Sin fuego** — Yogurt, berries y canela. Whole Earth si lo quieres dulce: endulza a cero calorías.
+1. **Sin fuego** — Banana en rodajas con 20 g de mantequilla de maní. PÉSALOS: la cucharada a ojo son 35-40 g.
 
-**`s5` Cottage batido con berries y vainilla** — Licuadora  
-193 kcal · 22 g P · 15 g C · 5 g G · 3 g fibra
-
-Cottage alto en proteína 170 g · Berries congelados 80 g
-
-*Condimentos:* Vainilla 2 g (unas gotas) · Canela 1 g (½ cdta) · Whole Earth 3 g (al gusto)
-
-1. **Licuadora** — Licúa el cottage SOLO, con la vainilla, 30 segundos. Ese batido es lo que le quita los grumos y lo deja como postre.
-2. **Sin fuego** — Berries encima, semi-descongelados, y canela. 26 g de proteína que saben a postre.
-
-**`s6` Arroz con leche proteico** — Microondas  
-237 kcal · 20 g P · 36 g C · 2 g G · 3 g fibra
-
-Arroz basmati crudo 20 g · Leche descremada 150 g · Proteína en polvo 18 g · Banana 50 g
-
-*Condimentos:* Canela 2 g (1 cdta, y una astilla si tienes) · Whole Earth 4 g (al gusto) · Sal 0.5 g (1 pizca)
-
-1. **Sin fuego** — El arroz sale cocido de la tanda del domingo. Este snack existe por eso.
-2. **Microondas** — Arroz + leche + canela + la pizca de sal, 3 min. Revuelve y 2 min más hasta que espese.
-3. **Sin fuego** — Deja bajar el hervor un minuto ANTES de meter la proteína, o se corta.
-4. **Sin fuego** — Banana en rodajas encima. Frío del día siguiente también sirve.
-
-**`s7` Manzana asada con canela** — Olla  
-209 kcal · 21 g P · 29 g C · 2 g G · 5 g fibra
-
-Manzana 160 g · Yogurt griego casero 120 g · Proteína en polvo 12 g
-
-*Condimentos:* Canela 2 g (1 cdta) · Whole Earth 3 g (al gusto) · Espray de aceite 1 g (2 segundos)
-
-1. **Sin fuego** — Manzana en gajos gruesos, sin pelar: la cáscara es la fibra.
-2. **Olla · Bake** — Espray, canela y Whole Earth encima. OLLA en Bake 30 min. Quedan blandas y caramelizadas por su propia azúcar.
-3. **Sin fuego** — Yogurt batido con la proteína al lado, frío. El contraste frío-caliente es medio postre de restaurante.
-
-**`s8` Manzana con mantequilla de maní** — Sin fuego  
-214 kcal · 6 g P · 28 g C · 10 g G · 6 g fibra
-
-Manzana 180 g · Mantequilla de maní 20 g
-
-*Condimentos:* Canela 1 g (½ cdta)
-
-1. **Sin fuego** — Manzana en gajos y 20 g de mantequilla de maní. PÉSALOS: la cucharada a ojo son 35-40 g y ahí se van 130 kcal fantasma.
-
-**`s9` Batido pre-gym de banana y avena** — Licuadora  
+**`s7` Batido pre-gym de banana y avena** — Licuadora  
 423 kcal · 44 g P · 50 g C · 5 g G · 7 g fibra
 
 Yogurt griego casero 200 g · Banana 110 g · Avena en hojuelas 20 g · Proteína en polvo 30 g
 
 *Condimentos:* Canela 1 g (½ cdta)
 
-1. **Licuadora** — Yogurt, banana, avena y proteína con 150 ml de agua y hielo. Tómalo 60-90 min antes de entrenar.
+1. **Licuadora** — Yogurt griego, banana, avena y proteína en polvo a la licuadora con 150 ml de agua y hielo.
+2. **Sin fuego** — Tómalo 60-90 min antes de entrenar.
 
 ---
 
@@ -889,7 +791,7 @@ equivalente allá es el Coles Firm Tofu.
 
 Suma los ingredientes de los 7 días del menú, resta lo que hay en `data/pantry.json` y convierte
 el resto a unidades de compra. Cambias el menú o la despensa, corres el comando, y la lista queda
-al día. La de esta semana son **40 líneas**, porque las recetas traen despensa nueva: carne vegetal
+al día. La de esta semana son **30 líneas**, porque las recetas traen despensa nueva: carne vegetal
 molida, arroz arborio, pasta de curry rojo, leche de coco light, passata, tempeh.
 
 Esa despensa se compra una vez y rinde meses. La compra de la semana siguiente vuelve a ser corta.
